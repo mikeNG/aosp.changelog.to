@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-11.0.0_r3 to android-11.0.0_r4 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-11.0.0_r3 to android-11.0.0_r4 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/aa462ee010">aa462ee010</a> :  Version bump to RP1A.201005.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9a6afb121f">9a6afb121f</a> :  Version bump to RP1A.201005.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8b316d4870">8b316d4870</a> :  Version bump to RP1A.201005.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e42523e9f3">e42523e9f3</a> :  Update Security String to 2020-10-05<br />
+<a href="https://android.googlesource.com/platform/build/+/1e463f60b8">1e463f60b8</a> :  Update Security String to 2020-10-01<br />
+<a href="https://android.googlesource.com/platform/build/+/73fb337300">73fb337300</a> :  Version bump to RP1A.200720.012 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bonito-show" class="showLink" onclick="show('device_google_bonito');return false;">+</a><a href="#" id="device_google_bonito-hide" class="hideLink" onclick="hide('device_google_bonito');return false;">-</a>&nbsp;<a name="device_google_bonito" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bonito">device/google/bonito</a></h2>
+<div id="device_google_bonito"><a href="https://android.googlesource.com/device/google/bonito/+/230d8700">230d8700</a> :  DO NOT MERGE Update Bonito SVN to 30<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_coral-show" class="showLink" onclick="show('device_google_coral');return false;">+</a><a href="#" id="device_google_coral-hide" class="hideLink" onclick="hide('device_google_coral');return false;">-</a>&nbsp;<a name="device_google_coral" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/coral">device/google/coral</a></h2>
+<div id="device_google_coral"><a href="https://android.googlesource.com/device/google/coral/+/fe0fec6e">fe0fec6e</a> :  Update Coral SVN to 28<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_sunfish-show" class="showLink" onclick="show('device_google_sunfish');return false;">+</a><a href="#" id="device_google_sunfish-hide" class="hideLink" onclick="hide('device_google_sunfish');return false;">-</a>&nbsp;<a name="device_google_sunfish" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/sunfish">device/google/sunfish</a></h2>
+<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/bec324b">bec324b</a> :  Update Sunfish SVN to 13<br />
+<a href="https://android.googlesource.com/device/google/sunfish/+/0fcf450">0fcf450</a> :  Update Sunfish SVN to 12<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/426d1e21ab62">426d1e21ab62</a> :  Support dispatchNullEvent virtual method<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/62f66da68af4">62f66da68af4</a> :  Do not leak dump objects.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/979cb4566c6a">979cb4566c6a</a> :  Make non-blockable notification more robust<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3d725e8768c3">3d725e8768c3</a> :  Notify IORap without including packages for secondary dex opt.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a95061ca2d46">a95061ca2d46</a> :  Mark implicit PendingIntents as immutable<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cbcf477e8b05">cbcf477e8b05</a> :  Add missing isShellUser check<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/be61754a3a">be61754a3a</a> :  Fix refresh rate callback fan-out for choreographer<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/e0984b06cb">e0984b06cb</a> :  GpuService: secure setUpdatableDriverPath<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/cfaf9f980a">cfaf9f980a</a> :  Add package checking with Uid in EuiccController#getEid<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Contacts-show" class="showLink" onclick="show('platform_packages_apps_Contacts');return false;">+</a><a href="#" id="platform_packages_apps_Contacts-hide" class="hideLink" onclick="hide('platform_packages_apps_Contacts');return false;">-</a>&nbsp;<a name="platform_packages_apps_Contacts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Contacts">platform/packages/apps/Contacts</a></h2>
+<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/c98709525">c98709525</a> :  Correct vulnerability when setting pending intents on import/export notifications by setting FLAG_IMMUTABLE<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/c7c9e80d5">c7c9e80d5</a> :  Store mHistoricTimes as longs intead of floats<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/15bcf24af">15bcf24af</a> :  Fixing wrong velocity state when there are too few samples<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Stk-show" class="showLink" onclick="show('platform_packages_apps_Stk');return false;">+</a><a href="#" id="platform_packages_apps_Stk-hide" class="hideLink" onclick="hide('platform_packages_apps_Stk');return false;">-</a>&nbsp;<a name="platform_packages_apps_Stk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Stk">platform/packages/apps/Stk</a></h2>
+<div id="platform_packages_apps_Stk"><a href="https://android.googlesource.com/platform/packages/apps/Stk/+/9f8fc0e">9f8fc0e</a> :  Treat recentapps as home press for STK dialogs<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_core-show" class="showLink" onclick="show('platform_system_core');return false;">+</a><a href="#" id="platform_system_core-hide" class="hideLink" onclick="hide('platform_system_core');return false;">-</a>&nbsp;<a name="platform_system_core" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/core">platform/system/core</a></h2>
+<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/bad50ed24">bad50ed24</a> :  libutils: check vsnprintf error<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

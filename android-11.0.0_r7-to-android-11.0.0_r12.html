@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-11.0.0_r7 to android-11.0.0_r12 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-11.0.0_r7 to android-11.0.0_r12 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/bdf165e1fb">bdf165e1fb</a> :  Version bump to RD1A.201105.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/396c50cc0f">396c50cc0f</a> :  Version bump to RD1A.201105.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8a9125c9bf">8a9125c9bf</a> :  Update Security String to 2020-11-05<br />
+<a href="https://android.googlesource.com/platform/build/+/4f6231ac72">4f6231ac72</a> :  Update Security String to 2020-11-01 am: 727715f100<br />
+<a href="https://android.googlesource.com/platform/build/+/c0a38105dd">c0a38105dd</a> :  Version bump to RD1A.201101.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/13128ac521">13128ac521</a> :  Version bump to RD1A.201101.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e2a89200a9">e2a89200a9</a> :  Version bump to RD1A.201101.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d12bf86a18">d12bf86a18</a> :  Version bump to RD1A.200929.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0734a79c8b">0734a79c8b</a> :  Version bump to RD1A.200810.022 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b044d9bb61">b044d9bb61</a> :  Version bump to RD1A.200810.021 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/2c34f295204">2c34f295204</a> :  Update LocaleListTest to accept repeated locales.<br />
+<a href="https://android.googlesource.com/platform/cts/+/110f10bc2f5">110f10bc2f5</a> :  DO NOT MERGE Add test for instant app permissions in PackageInfo.<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redbull-show" class="showLink" onclick="show('device_google_redbull');return false;">+</a><a href="#" id="device_google_redbull-hide" class="hideLink" onclick="hide('device_google_redbull');return false;">-</a>&nbsp;<a name="device_google_redbull" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redbull">device/google/redbull</a></h2>
+<div id="device_google_redbull"><a href="https://android.googlesource.com/device/google/redbull/+/b7ea400">b7ea400</a> :  Update SVN to 4 for SMR<br />
+<a href="https://android.googlesource.com/device/google/redbull/+/2242c5b">2242c5b</a> :  Update SVN to 2 for Nov SMR<br />
+<a href="https://android.googlesource.com/device/google/redbull/+/506c5f2">506c5f2</a> :  qcril: fix MT SMS sent during power off<br />
+<a href="https://android.googlesource.com/device/google/redbull/+/079f28a">079f28a</a> :  AT&amp;T icons at 115% of correct size<br />
+<a href="https://android.googlesource.com/device/google/redbull/+/5af5ca4">5af5ca4</a> :  Increase at&amp;t 5g icons by 50%<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redfin-show" class="showLink" onclick="show('device_google_redfin');return false;">+</a><a href="#" id="device_google_redfin-hide" class="hideLink" onclick="hide('device_google_redfin');return false;">-</a>&nbsp;<a name="device_google_redfin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redfin">device/google/redfin</a></h2>
+<div id="device_google_redfin"><a href="https://android.googlesource.com/device/google/redfin/+/ca210da">ca210da</a> :  audio: update the threshold for vpbr on speaker amps.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_aac-show" class="showLink" onclick="show('platform_external_aac');return false;">+</a><a href="#" id="platform_external_aac-hide" class="hideLink" onclick="hide('platform_external_aac');return false;">-</a>&nbsp;<a name="platform_external_aac" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/aac">platform/external/aac</a></h2>
+<div id="platform_external_aac"><a href="https://android.googlesource.com/platform/external/aac/+/4b60a04">4b60a04</a> :  Fix heap buffer overflow in sbrDecoder_AssignQmfChannels2SbrChannels().<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_iptables-show" class="showLink" onclick="show('platform_external_iptables');return false;">+</a><a href="#" id="platform_external_iptables-hide" class="hideLink" onclick="hide('platform_external_iptables');return false;">-</a>&nbsp;<a name="platform_external_iptables" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/iptables">platform/external/iptables</a></h2>
+<div id="platform_external_iptables"><a href="https://android.googlesource.com/platform/external/iptables/+/6595202a">6595202a</a> :  ANDROID: do not leak memory in iptables-restore<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_libexif-show" class="showLink" onclick="show('platform_external_libexif');return false;">+</a><a href="#" id="platform_external_libexif-hide" class="hideLink" onclick="hide('platform_external_libexif');return false;">-</a>&nbsp;<a name="platform_external_libexif" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/libexif">platform/external/libexif</a></h2>
+<div id="platform_external_libexif"><a href="https://android.googlesource.com/platform/external/libexif/+/460a31e">460a31e</a> :  libexif: Avoid buffer overflow due to compiler optimization<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/d88d1c7820e0">d88d1c7820e0</a> :  Add read/write logic for SubscriptionPlan network types field<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a06fbd239762">a06fbd239762</a> :  RESTRICT AUTOMERGE Make task visible if activity launched behind<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e15e87e92a14">e15e87e92a14</a> :  Add telecom to priorityOnlyDndExemptPackages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b7fcdc7b6e8b">b7fcdc7b6e8b</a> :  Add screenshot back to power menu for some devices<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6d3a134a6344">6d3a134a6344</a> :  Sanitize more of the notification text fields<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4cf2d7c35c5e">4cf2d7c35c5e</a> :  Accept repeated locale as an input of LocaleList construction.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/597a3da445c5">597a3da445c5</a> :  Require permission to create trusted displays<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/da23c6e608c1">da23c6e608c1</a> :  DO NOT MERGE Fix NPE in executeDeletePackageLIF.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/714dbd9a105b">714dbd9a105b</a> :  DO NOT MERGE Don't allow non-instant permissions for instant apps.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/4ea6dd3886">4ea6dd3886</a> :  libbinder_ndk: fix failure when dump/shell are unset<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/098f5d3f08">098f5d3f08</a> :  DCT get SubscriptionPlans when initialized<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_CellBroadcastReceiver-show" class="showLink" onclick="show('platform_packages_apps_CellBroadcastReceiver');return false;">+</a><a href="#" id="platform_packages_apps_CellBroadcastReceiver-hide" class="hideLink" onclick="hide('platform_packages_apps_CellBroadcastReceiver');return false;">-</a>&nbsp;<a name="platform_packages_apps_CellBroadcastReceiver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver">platform/packages/apps/CellBroadcastReceiver</a></h2>
+<div id="platform_packages_apps_CellBroadcastReceiver"><a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/49486d53">49486d53</a> :  Fix exported broadcast receiver vulnerability<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Nfc-show" class="showLink" onclick="show('platform_packages_apps_Nfc');return false;">+</a><a href="#" id="platform_packages_apps_Nfc-hide" class="hideLink" onclick="hide('platform_packages_apps_Nfc');return false;">-</a>&nbsp;<a name="platform_packages_apps_Nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Nfc">platform/packages/apps/Nfc</a></h2>
+<div id="platform_packages_apps_Nfc"><a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/a27a4eca">a27a4eca</a> :  Ensure pending intent on beam notification is immutable<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/68c2ffb240">68c2ffb240</a> :  Guard against flickering of dynamic injection items<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_DnsResolver-show" class="showLink" onclick="show('platform_packages_modules_DnsResolver');return false;">+</a><a href="#" id="platform_packages_modules_DnsResolver-hide" class="hideLink" onclick="hide('platform_packages_modules_DnsResolver');return false;">-</a>&nbsp;<a name="platform_packages_modules_DnsResolver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/DnsResolver">platform/packages/modules/DnsResolver</a></h2>
+<div id="platform_packages_modules_DnsResolver"><a href="https://android.googlesource.com/platform/packages/modules/DnsResolver/+/8af19e6">8af19e6</a> :  Fix OOB read in DNS resolver<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/4341325d">4341325d</a> :  Support Playlist#Members uri in LegacMediaProvider<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/f016e1741">f016e1741</a> :  Require MODIFY_PHONE_STATE for preferred TTY mode<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/fa68b1bea">fa68b1bea</a> :  Fix security vulnerability of TelecomManager#getPhoneAccountsForPackage<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/e079682e3">e079682e3</a> :  Remove protected broadcast from preferred tty mode<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telephony/+/f964e4ac3">f964e4ac3</a> :  Add MANAGE_SUBSCRIPTION_PLAN permission<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/3ec014a">3ec014a</a> :  NFC - Memory disclosure in rw_i93_sm_format<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

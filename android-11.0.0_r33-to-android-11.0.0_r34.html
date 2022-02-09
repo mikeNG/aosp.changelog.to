@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-11.0.0_r33 to android-11.0.0_r34 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-11.0.0_r33 to android-11.0.0_r34 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/f1ea820b87">f1ea820b87</a> :  Version bump to RQ2A.210405.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/95c9616b4b">95c9616b4b</a> :  Version bump to RQ2A.210405.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b8eecc6015">b8eecc6015</a> :  Version bump to RQ2A.210405.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4a5bbd7a7a">4a5bbd7a7a</a> :  Version bump to RQ2A.210405.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/48c9d69a0f">48c9d69a0f</a> :  Update Security String to 2021-04-05<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bonito-show" class="showLink" onclick="show('device_google_bonito');return false;">+</a><a href="#" id="device_google_bonito-hide" class="hideLink" onclick="hide('device_google_bonito');return false;">-</a>&nbsp;<a name="device_google_bonito" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bonito">device/google/bonito</a></h2>
+<div id="device_google_bonito"><a href="https://android.googlesource.com/device/google/bonito/+/b6456e3a">b6456e3a</a> :  DO NOT MERGE Update Bonito SVN to 37<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_coral-show" class="showLink" onclick="show('device_google_coral');return false;">+</a><a href="#" id="device_google_coral-hide" class="hideLink" onclick="hide('device_google_coral');return false;">-</a>&nbsp;<a name="device_google_coral" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/coral">device/google/coral</a></h2>
+<div id="device_google_coral"><a href="https://android.googlesource.com/device/google/coral/+/499ee183">499ee183</a> :  fsync after block device writes<br />
+<a href="https://android.googlesource.com/device/google/coral/+/300ff44c">300ff44c</a> :  Update Coral SVN to 36<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redbull-show" class="showLink" onclick="show('device_google_redbull');return false;">+</a><a href="#" id="device_google_redbull-hide" class="hideLink" onclick="hide('device_google_redbull');return false;">-</a>&nbsp;<a name="device_google_redbull" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redbull">device/google/redbull</a></h2>
+<div id="device_google_redbull"><a href="https://android.googlesource.com/device/google/redbull/+/932bf6b">932bf6b</a> :  fsync after block device writes<br />
+<a href="https://android.googlesource.com/device/google/redbull/+/3b1f43a">3b1f43a</a> :  Update Redbull SVN to 24<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_sunfish-show" class="showLink" onclick="show('device_google_sunfish');return false;">+</a><a href="#" id="device_google_sunfish-hide" class="hideLink" onclick="hide('device_google_sunfish');return false;">-</a>&nbsp;<a name="device_google_sunfish" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/sunfish">device/google/sunfish</a></h2>
+<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/71ad3e9">71ad3e9</a> :  fsync after block device writes<br />
+<a href="https://android.googlesource.com/device/google/sunfish/+/5ff66fa">5ff66fa</a> :  Update Sunfish SVN to 21<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/e5bfb560a6">e5bfb560a6</a> :  Fix double free of play policy in a race condition.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/14937e0195">14937e0195</a> :  Fix potential decrypt src pointer overflow.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/70b6d10c3de3">70b6d10c3de3</a> :  Revert "Only allow BROWSABLE &amp;&amp; DEFAULT Intents to be always opened"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/77a098a332eb">77a098a332eb</a> :  Fix legacy APIs when VPN switches to suspended underlying network.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c5c0b99e7f00">c5c0b99e7f00</a> :  Backport test coverage from aosp/1547496.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7b6707b4844a">7b6707b4844a</a> :  Backport some helpers in ConnectivityServiceTest.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0f3f49a660c7">0f3f49a660c7</a> :  Test for bugs with suspended VPN underlying networks.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ab175f7f6dec">ab175f7f6dec</a> :  Add a test for getDefaultNetworkCapabilitiesForUser.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1d1ae5e7f44d">1d1ae5e7f44d</a> :  Improve testing of CONNECTIVITY_ACTION broadcasts.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3007352939ae">3007352939ae</a> :  Test passing an underlying network array with null network in it.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/287e315cddbb">287e315cddbb</a> :  Make testVpnNetworkActive more deterministic.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d8689463cf93">d8689463cf93</a> :  Make MockVpn more realistic and easier to use.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e9b4a895afd8">e9b4a895afd8</a> :  Increase test coverage for VPN info sent to NetworkStatsService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/531c1795567e">531c1795567e</a> :  Simplify MockVpn.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d86495591654">d86495591654</a> :  Test a VPN with an underlying network that does not yet exist.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/41e9055fc37f">41e9055fc37f</a> :  Get ApplicationInfo using usr id<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/02d2eb5204ee">02d2eb5204ee</a> :  [DO NOT MERGE] Close screenshot process on user switched<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/75419418cfd2">75419418cfd2</a> :  RESTRICT AUTOMERGE Allow CDM to hide overlays<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8e4928820e97">8e4928820e97</a> :  RESTRICT AUTOMERGE Prevent non-system overlays from showing over CDM UI<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/70a5fd9979ee">70a5fd9979ee</a> :  Fix thread safety issue on clearing cache<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/459f6cbe7537">459f6cbe7537</a> :  [SettingsProvider] extend font size scale range<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/19845bc16e53">19845bc16e53</a> :  [RESTRICT AUTOMERGE] Fix potential out of bounds writes in LogEvent.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a5eb01054b44">a5eb01054b44</a> :  Only update native InputApplicationHandle once<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0864ae973224">0864ae973224</a> :  Only allow BROWSABLE &amp;&amp; DEFAULT Intents to be always opened<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/95602e325ae1">95602e325ae1</a> :  DO NOT MERGE: Do not inject mock location to chipset<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/260e747d200c">260e747d200c</a> :  Check mode/boost index before accessing cached support value<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_hardware_interfaces-show" class="showLink" onclick="show('platform_frameworks_hardware_interfaces');return false;">+</a><a href="#" id="platform_frameworks_hardware_interfaces-hide" class="hideLink" onclick="hide('platform_frameworks_hardware_interfaces');return false;">-</a>&nbsp;<a name="platform_frameworks_hardware_interfaces" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/hardware/interfaces">platform/frameworks/hardware/interfaces</a></h2>
+<div id="platform_frameworks_hardware_interfaces"><a href="https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/f511fda">f511fda</a> :  Use strong pointer in ALooper to avoid use-after-free<br />
+<a href="https://android.googlesource.com/platform/frameworks/hardware/interfaces/+/429804c">429804c</a> :  Ensure looper isn't used after invalidateSensorQueue<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_interfaces-show" class="showLink" onclick="show('platform_hardware_interfaces');return false;">+</a><a href="#" id="platform_hardware_interfaces-hide" class="hideLink" onclick="hide('platform_hardware_interfaces');return false;">-</a>&nbsp;<a name="platform_hardware_interfaces" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/interfaces">platform/hardware/interfaces</a></h2>
+<div id="platform_hardware_interfaces"><a href="https://android.googlesource.com/platform/hardware/interfaces/+/2658c0da4">2658c0da4</a> :  Fix potential decrypt src pointer overflow.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Contacts-show" class="showLink" onclick="show('platform_packages_apps_Contacts');return false;">+</a><a href="#" id="platform_packages_apps_Contacts-hide" class="hideLink" onclick="hide('platform_packages_apps_Contacts');return false;">-</a>&nbsp;<a name="platform_packages_apps_Contacts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Contacts">platform/packages/apps/Contacts</a></h2>
+<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/93c93923c">93c93923c</a> :  Stop returning intent data in QuickContact in onActivityResult<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/448e2f1bf">448e2f1bf</a> :  Prevent overlays on vCard import flows<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/1283f546d">1283f546d</a> :  Fix missing grid for devices that upgrade from R<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/a1669905f1">a1669905f1</a> :  RESTRICT AUTOMERGE Update String<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/6d996e0138">6d996e0138</a> :  DO NOT MERGE: resolve merge conflicts of c17ec818af7159f4fd678dab3bbad7ef308a7be4 to rvc-qpr-dev<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/e985df65">e985df65</a> :  Allow permission dialog to show more than 2 lines.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_core-show" class="showLink" onclick="show('platform_system_core');return false;">+</a><a href="#" id="platform_system_core-hide" class="hideLink" onclick="hide('platform_system_core');return false;">-</a>&nbsp;<a name="platform_system_core" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/core">platform/system/core</a></h2>
+<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/7b51190ed">7b51190ed</a> :  init: do not create dev.mnt. properties for emulated mounts<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_libhidl-show" class="showLink" onclick="show('platform_system_libhidl');return false;">+</a><a href="#" id="platform_system_libhidl-hide" class="hideLink" onclick="hide('platform_system_libhidl');return false;">-</a>&nbsp;<a name="platform_system_libhidl" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/libhidl">platform/system/libhidl</a></h2>
+<div id="platform_system_libhidl"><a href="https://android.googlesource.com/platform/system/libhidl/+/6c6cd37">6c6cd37</a> :  Rip out getProcessAgeMs.<br />
+<a href="https://android.googlesource.com/platform/system/libhidl/+/56c311e">56c311e</a> :  getProcessAgeMs: better error messages<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/02f7762">02f7762</a> :  OOB Write in NFC stack when handling MIFARE Classic TLVs<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

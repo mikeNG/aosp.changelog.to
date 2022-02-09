@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-11.0.0_r4 to android-11.0.0_r25 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-11.0.0_r4 to android-11.0.0_r25 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/f3c1d4d1c8">f3c1d4d1c8</a> :  Revert "Revert "product: Remove wifi-service off SystemServerCla..."<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_android-clat-show" class="showLink" onclick="show('platform_external_android-clat');return false;">+</a><a href="#" id="platform_external_android-clat-hide" class="hideLink" onclick="hide('platform_external_android-clat');return false;">-</a>&nbsp;<a name="platform_external_android-clat" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/android-clat">platform/external/android-clat</a></h2>
+<div id="platform_external_android-clat"><a href="https://android.googlesource.com/platform/external/android-clat/+/4ecaa7d">4ecaa7d</a> :  update last poll time when the interface poll frequency is reached<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_iptables-show" class="showLink" onclick="show('platform_external_iptables');return false;">+</a><a href="#" id="platform_external_iptables-hide" class="hideLink" onclick="hide('platform_external_iptables');return false;">-</a>&nbsp;<a name="platform_external_iptables" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/iptables">platform/external/iptables</a></h2>
+<div id="platform_external_iptables"><a href="https://android.googlesource.com/platform/external/iptables/+/ca3325e4">ca3325e4</a> :  ANDROID: do not leak memory in iptables-restore<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/e465c6b2e7">e465c6b2e7</a> :  Camera: Fix request metadata override for repeating request<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/ef56e21b1082">ef56e21b1082</a> :  Update INTERNET perm state cache to use uids instead of appIds.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/639fe4c90e93">639fe4c90e93</a> :  RESTRICT AUTOMERGE Make task visible if activity launched behind<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/652f2f0fa197">652f2f0fa197</a> :  Cancel pending timeouts when media data is removed<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7e93f15670c8">7e93f15670c8</a> :  Update listener instead of creating a new one<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2788239dd69c">2788239dd69c</a> :  Add screenshot back to power menu for some devices<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/90ac770ae9be">90ac770ae9be</a> :  Add telecom to priorityOnlyDndExemptPackages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6b12ae0ec8ca">6b12ae0ec8ca</a> :  Update requested state after applying pending frames<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/593e53f9814f">593e53f9814f</a> :  [RESTRICT AUTOMERGE] Update the visibility of activities on sleeping display<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5a171406df5c">5a171406df5c</a> :  Add guts to media player on long press<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bb980bb03a12">bb980bb03a12</a> :  Revert "Revert "SystemServer: Dynamically load wifi-service"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6ef16e3840bf">6ef16e3840bf</a> :  Allow empty tokens in strict grammar<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4290693f5d7a">4290693f5d7a</a> :  Don't update height if recycler view was scrolled<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/56a33b5af9a1">56a33b5af9a1</a> :  Add bottom offset to the intial padding rather than accumulating it.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4ce02f599682">4ce02f599682</a> :  Force enable vertical scrolling on profile tab change<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/7b6a56ef2a">7b6a56ef2a</a> :  DO NOT MERGE: fillInputInfo: Guard against integer overflow.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_qcom_audio-show" class="showLink" onclick="show('platform_hardware_qcom_audio');return false;">+</a><a href="#" id="platform_hardware_qcom_audio-hide" class="hideLink" onclick="hide('platform_hardware_qcom_audio');return false;">-</a>&nbsp;<a name="platform_hardware_qcom_audio" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/qcom/audio">platform/hardware/qcom/audio</a></h2>
+<div id="platform_hardware_qcom_audio"><a href="https://android.googlesource.com/platform/hardware/qcom/audio/+/9986196">9986196</a> :  hal: remove out_standby_l when usb headset is unplugged during playback of compress-offload<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/281ded05">281ded05</a> :  Support Playlist#Members uri in LegacMediaProvider<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/a872de59c">a872de59c</a> :  Require MODIFY_PHONE_STATE for preferred TTY mode<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/61aaf28dd">61aaf28dd</a> :  Remove protected broadcast from preferred tty mode<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

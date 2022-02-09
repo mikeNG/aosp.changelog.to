@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-11.0.0_r22 to android-11.0.0_r26 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-11.0.0_r22 to android-11.0.0_r26 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/7c553a1c74">7c553a1c74</a> :  Version bump to RQ1A.210105.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/34d6aff04e">34d6aff04e</a> :  Update Security String to 2021-01-05<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bonito-show" class="showLink" onclick="show('device_google_bonito');return false;">+</a><a href="#" id="device_google_bonito-hide" class="hideLink" onclick="hide('device_google_bonito');return false;">-</a>&nbsp;<a name="device_google_bonito" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bonito">device/google/bonito</a></h2>
+<div id="device_google_bonito"><a href="https://android.googlesource.com/device/google/bonito/+/fa488ebe">fa488ebe</a> :  DO NOT MERGE Update Bonito SVN to 33<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_coral-show" class="showLink" onclick="show('device_google_coral');return false;">+</a><a href="#" id="device_google_coral-hide" class="hideLink" onclick="hide('device_google_coral');return false;">-</a>&nbsp;<a name="device_google_coral" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/coral">device/google/coral</a></h2>
+<div id="device_google_coral"><a href="https://android.googlesource.com/device/google/coral/+/a4be41d3">a4be41d3</a> :  Update Coral SVN to 31<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redbull-show" class="showLink" onclick="show('device_google_redbull');return false;">+</a><a href="#" id="device_google_redbull-hide" class="hideLink" onclick="hide('device_google_redbull');return false;">-</a>&nbsp;<a name="device_google_redbull" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redbull">device/google/redbull</a></h2>
+<div id="device_google_redbull"><a href="https://android.googlesource.com/device/google/redbull/+/f18b643">f18b643</a> :  Update Redbull SVN to 15<br />
+<a href="https://android.googlesource.com/device/google/redbull/+/d223089">d223089</a> :  Update Redbull SVN to 12<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redfin-show" class="showLink" onclick="show('device_google_redfin');return false;">+</a><a href="#" id="device_google_redfin-hide" class="hideLink" onclick="hide('device_google_redfin');return false;">-</a>&nbsp;<a name="device_google_redfin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redfin">device/google/redfin</a></h2>
+<div id="device_google_redfin"><a href="https://android.googlesource.com/device/google/redfin/+/0bb40e9">0bb40e9</a> :  audio: update audio volume curve table<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_sunfish-show" class="showLink" onclick="show('device_google_sunfish');return false;">+</a><a href="#" id="device_google_sunfish-hide" class="hideLink" onclick="hide('device_google_sunfish');return false;">-</a>&nbsp;<a name="device_google_sunfish" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/sunfish">device/google/sunfish</a></h2>
+<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/3729400">3729400</a> :  Update Sunfish SVN to 17<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_freetype-show" class="showLink" onclick="show('platform_external_freetype');return false;">+</a><a href="#" id="platform_external_freetype-hide" class="hideLink" onclick="hide('platform_external_freetype');return false;">-</a>&nbsp;<a name="platform_external_freetype" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/freetype">platform/external/freetype</a></h2>
+<div id="platform_external_freetype"><a href="https://android.googlesource.com/platform/external/freetype/+/358c23840">358c23840</a> :  Cherry-pick one upstream patch<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_gptfdisk-show" class="showLink" onclick="show('platform_external_gptfdisk');return false;">+</a><a href="#" id="platform_external_gptfdisk-hide" class="hideLink" onclick="hide('platform_external_gptfdisk');return false;">-</a>&nbsp;<a name="platform_external_gptfdisk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/gptfdisk">platform/external/gptfdisk</a></h2>
+<div id="platform_external_gptfdisk"><a href="https://android.googlesource.com/platform/external/gptfdisk/+/6d36945">6d36945</a> :  RESTRICT AUTOMERGE ANDROID: Fix negative stack write in sgdisk<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_libexif-show" class="showLink" onclick="show('platform_external_libexif');return false;">+</a><a href="#" id="platform_external_libexif-hide" class="hideLink" onclick="hide('platform_external_libexif');return false;">-</a>&nbsp;<a name="platform_external_libexif" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/libexif">platform/external/libexif</a></h2>
+<div id="platform_external_libexif"><a href="https://android.googlesource.com/platform/external/libexif/+/8b37da2">8b37da2</a> :  fixes some (not all) buffer overreads during decoding pentax makernote entries.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/bb460899b9">bb460899b9</a> :  Fix potential overflow in WAV extractor<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/8ea3bdb5ef">8ea3bdb5ef</a> :  Fix memory overflow in ESQueue<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/0b610a27ba60">0b610a27ba60</a> :  Ignore GrantCredentials call with unexpected calling uid.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/828fe0b915f3">828fe0b915f3</a> :  Protect GrantCredentialsPermissionActivity against overlay.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/90cfe17643aa">90cfe17643aa</a> :  Hide overlays over uninstall confirm dialog<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c4ce178c261e">c4ce178c261e</a> :  Revoke permission on non-runtime -&gt; runtime upgrade<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/03da463b2a94">03da463b2a94</a> :  Ensure permissions are revoked on state changes<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0c17049d39b5">0c17049d39b5</a> :  RESTRICT AUTOMERGE Fix CDM package check<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e237a83f9576">e237a83f9576</a> :  remove sensitive pii from safetynet logging<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9588cd7de1f8">9588cd7de1f8</a> :  DO NOT MERGE Check fingerprint client against top activity in auth callback<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9ac71ec05aec">9ac71ec05aec</a> :  Enforce permission checks in getting app exit reasons<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a185996c829a">a185996c829a</a> :  Fix the issue provider can be wrong when requesting slice permission<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_minikin-show" class="showLink" onclick="show('platform_frameworks_minikin');return false;">+</a><a href="#" id="platform_frameworks_minikin-hide" class="hideLink" onclick="hide('platform_frameworks_minikin');return false;">-</a>&nbsp;<a name="platform_frameworks_minikin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/minikin">platform/frameworks/minikin</a></h2>
+<div id="platform_frameworks_minikin"><a href="https://android.googlesource.com/platform/frameworks/minikin/+/ffb33bc">ffb33bc</a> :  Break layout context before and after bidi control character<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/dc6cb05ebe">dc6cb05ebe</a> :  libbinder: Add ClientCounterCallbackImpl to LazyServiceRegistrar<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/adb416ac46">adb416ac46</a> :  Prevent mEventCache UAF in SensorEventConnection<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Car-show" class="showLink" onclick="show('platform_packages_services_Car');return false;">+</a><a href="#" id="platform_packages_services_Car-hide" class="hideLink" onclick="hide('platform_packages_services_Car');return false;">-</a>&nbsp;<a name="platform_packages_services_Car" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Car">platform/packages/services/Car</a></h2>
+<div id="platform_packages_services_Car"><a href="https://android.googlesource.com/platform/packages/services/Car/+/768c8bfbe">768c8bfbe</a> :  Grpc Graph - fix use after free<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_security-show" class="showLink" onclick="show('platform_system_security');return false;">+</a><a href="#" id="platform_system_security-hide" class="hideLink" onclick="hide('platform_system_security');return false;">-</a>&nbsp;<a name="platform_system_security" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/security">platform/system/security</a></h2>
+<div id="platform_system_security"><a href="https://android.googlesource.com/platform/system/security/+/33b83f6">33b83f6</a> :  Make mIsDeviceLockedForUser synchronized.<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

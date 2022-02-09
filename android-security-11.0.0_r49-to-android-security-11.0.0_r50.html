@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-11.0.0_r49 to android-security-11.0.0_r50 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-11.0.0_r49 to android-security-11.0.0_r50 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/d5db7aa9c5">d5db7aa9c5</a> :  Version bump to RSV1.210329.026 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_tremolo-show" class="showLink" onclick="show('platform_external_tremolo');return false;">+</a><a href="#" id="platform_external_tremolo-hide" class="hideLink" onclick="hide('platform_external_tremolo');return false;">-</a>&nbsp;<a name="platform_external_tremolo" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/tremolo">platform/external/tremolo</a></h2>
+<div id="platform_external_tremolo"><a href="https://android.googlesource.com/platform/external/tremolo/+/68eae60">68eae60</a> :  handle cases where order isn't a multiple of dimension<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/3a99c64063">3a99c64063</a> :  C2SoftMp3Dec: fix OOB write in output buffer<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/49f82072af">49f82072af</a> :  Fix heap-buffer-overflow in MPEG4Extractor am: d13a4efc7a<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/e53058051e97">e53058051e97</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1ecf7eb35c5f">1ecf7eb35c5f</a> :  Disallow overlays for ResolverActivity<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8ee4e2e67848">8ee4e2e67848</a> :  DO NOT MERGE KeyStore ChunkedStreamer must tolerate update consuming 0 bytes.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dfc99fc242a4">dfc99fc242a4</a> :  Do not show the notification footer until the user is set up.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/15426eacadef">15426eacadef</a> :  Fix serialization bug in GpsNavigationMessage<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6bce93c759c9">6bce93c759c9</a> :  Fix NPE on getTitle()<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Contacts-show" class="showLink" onclick="show('platform_packages_apps_Contacts');return false;">+</a><a href="#" id="platform_packages_apps_Contacts-hide" class="hideLink" onclick="hide('platform_packages_apps_Contacts');return false;">-</a>&nbsp;<a name="platform_packages_apps_Contacts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Contacts">platform/packages/apps/Contacts</a></h2>
+<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/c364352a8">c364352a8</a> :  Address photo editing security bug<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_KeyChain-show" class="showLink" onclick="show('platform_packages_apps_KeyChain');return false;">+</a><a href="#" id="platform_packages_apps_KeyChain-hide" class="hideLink" onclick="hide('platform_packages_apps_KeyChain');return false;">-</a>&nbsp;<a name="platform_packages_apps_KeyChain" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/KeyChain">platform/packages/apps/KeyChain</a></h2>
+<div id="platform_packages_apps_KeyChain"><a href="https://android.googlesource.com/platform/packages/apps/KeyChain/+/e4a77de">e4a77de</a> :  DO NOT MERGE KeyChain protect against overlays.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/KeyChain/+/62fffb1">62fffb1</a> :  DO NOT MERGE Hide overlay on KeyChainActivity<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Nfc-show" class="showLink" onclick="show('platform_packages_apps_Nfc');return false;">+</a><a href="#" id="platform_packages_apps_Nfc-hide" class="hideLink" onclick="hide('platform_packages_apps_Nfc');return false;">-</a>&nbsp;<a name="platform_packages_apps_Nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Nfc">platform/packages/apps/Nfc</a></h2>
+<div id="platform_packages_apps_Nfc"><a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/ef451cd1">ef451cd1</a> :  OOBW due to incorrect error handling<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_QuickSearchBox-show" class="showLink" onclick="show('platform_packages_apps_QuickSearchBox');return false;">+</a><a href="#" id="platform_packages_apps_QuickSearchBox-hide" class="hideLink" onclick="hide('platform_packages_apps_QuickSearchBox');return false;">-</a>&nbsp;<a name="platform_packages_apps_QuickSearchBox" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/QuickSearchBox">platform/packages/apps/QuickSearchBox</a></h2>
+<div id="platform_packages_apps_QuickSearchBox"><a href="https://android.googlesource.com/platform/packages/apps/QuickSearchBox/+/17086b4">17086b4</a> :  Secure the pendingIntent in SearchWidgetProvider.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/81092fd7f4">81092fd7f4</a> :  BluetoothSecurity: Add BLUETOOTH_PRIVILEGED permission for pairing dialog<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_ContactsProvider-show" class="showLink" onclick="show('platform_packages_providers_ContactsProvider');return false;">+</a><a href="#" id="platform_packages_providers_ContactsProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_ContactsProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_ContactsProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider">platform/packages/providers/ContactsProvider</a></h2>
+<div id="platform_packages_providers_ContactsProvider"><a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/b9ac3ae3">b9ac3ae3</a> :  Fix issue with call log last modified not being updated.<br />
+<a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/4cd8ab24">4cd8ab24</a> :  Ensure update/deletes in the call log notify content observers.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/8e802ca6">8e802ca6</a> :  Fix use-after-free bug in FuseDaemon<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_tools_aidl-show" class="showLink" onclick="show('platform_system_tools_aidl');return false;">+</a><a href="#" id="platform_system_tools_aidl-hide" class="hideLink" onclick="hide('platform_system_tools_aidl');return false;">-</a>&nbsp;<a name="platform_system_tools_aidl" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/tools/aidl">platform/system/tools/aidl</a></h2>
+<div id="platform_system_tools_aidl"><a href="https://android.googlesource.com/platform/system/tools/aidl/+/db561c94">db561c94</a> :  An enum is initialized as zero if it doesn't have default value<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
