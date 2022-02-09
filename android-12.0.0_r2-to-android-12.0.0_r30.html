@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-12.0.0_r2 to android-12.0.0_r30 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-12.0.0_r2 to android-12.0.0_r30 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/5e687b0d0e">5e687b0d0e</a> :  Version bump to SP1A.210812.016.B1 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/a415243d5295">a415243d5295</a> :  Adding native flag namespace for lmkd.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ae8826ef3c0b">ae8826ef3c0b</a> :  Do not let QS handle touches where clipped.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6bd8e5a7c369">6bd8e5a7c369</a> :  [DO NOT MERGE] Use orientation value from config change event<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dafebaddbd9b">dafebaddbd9b</a> :  Hide security footer container (QSBH) in portrait<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/63f8c1d5337f">63f8c1d5337f</a> :  Cancel the existing recents animation before any initialization<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7f8a2df9bd90">7f8a2df9bd90</a> :  Don't allow background apps to change theme<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5bb731044d3e">5bb731044d3e</a> :  Fixed an issue where the statusbar was made opaque even though it wasnt<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/22f301e7ba3b">22f301e7ba3b</a> :  Fix shade flicker &amp; touch absorption<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9682bb0098f6">9682bb0098f6</a> :  Fix SysUI volume controls not appearing<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/07ee04d1ebd4">07ee04d1ebd4</a> :  Plumb config to output switcher indication chip<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6120921596b2">6120921596b2</a> :  Re-enable volume control for non-grouped devices<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/25be465630f2">25be465630f2</a> :  Tweak volume adjustment rules<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8c6c832d40b1">8c6c832d40b1</a> :  Fix initialization of snapshot SkImage instance<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f752a243dfb6">f752a243dfb6</a> :  Conditionally cache RenderEffect results<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/eeaffc086c26">eeaffc086c26</a> :  Handle duplicate DOWN event<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d8f18c0f1620">d8f18c0f1620</a> :  Prevent nesting of ContextThemeWrapper<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/ba42c547f">ba42c547f</a> :  Fix testStressSwipeToOverview<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/f54361bde">f54361bde</a> :  Fix issues with starting new recents animation before previous onRecentsAnimationStart<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/a20cd538c">a20cd538c</a> :  Fixing ModelPreload cancelling existing load<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/527faf59f1">527faf59f1</a> :  Fix USB tether option<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/789cca815a">789cca815a</a> :  [Provider Model] Add cutout for signal icon if the mobile data is disabled<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/05b9814d5">05b9814d5</a> :  Fix sorting issue during emergency call attempt.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_core-show" class="showLink" onclick="show('platform_system_core');return false;">+</a><a href="#" id="platform_system_core-hide" class="hideLink" onclick="hide('platform_system_core');return false;">-</a>&nbsp;<a name="platform_system_core" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/core">platform/system/core</a></h2>
+<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/da8ec2cca">da8ec2cca</a> :  init.rc: disable creation of bootreceiver tracing instance for kernels &gt;=4.9 and &lt;= 5.4<br />
+<a href="https://android.googlesource.com/platform/system/core/+/2adc0240e">2adc0240e</a> :  Restrict creation of bootreceiver tracing instance to 64-bit systems.<br />
+<a href="https://android.googlesource.com/platform/system/core/+/1ccb3415c">1ccb3415c</a> :  init: introduce ro.kernel.version property<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_memory_lmkd-show" class="showLink" onclick="show('platform_system_memory_lmkd');return false;">+</a><a href="#" id="platform_system_memory_lmkd-hide" class="hideLink" onclick="hide('platform_system_memory_lmkd');return false;">-</a>&nbsp;<a name="platform_system_memory_lmkd" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/memory/lmkd">platform/system/memory/lmkd</a></h2>
+<div id="platform_system_memory_lmkd"><a href="https://android.googlesource.com/platform/system/memory/lmkd/+/45ec287">45ec287</a> :  lmkd: Do not re-initialize lmkd when persistent properties are loaded<br />
+<a href="https://android.googlesource.com/platform/system/memory/lmkd/+/84f2edd">84f2edd</a> :  lmkd: Add support for persist.device_config.lmkd_native.* properties<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_sepolicy-show" class="showLink" onclick="show('platform_system_sepolicy');return false;">+</a><a href="#" id="platform_system_sepolicy-hide" class="hideLink" onclick="hide('platform_system_sepolicy');return false;">-</a>&nbsp;<a name="platform_system_sepolicy" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/sepolicy">platform/system/sepolicy</a></h2>
+<div id="platform_system_sepolicy"><a href="https://android.googlesource.com/platform/system/sepolicy/+/7c85186be">7c85186be</a> :  sepolicy updates for adding native flag namespace for lmkd<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

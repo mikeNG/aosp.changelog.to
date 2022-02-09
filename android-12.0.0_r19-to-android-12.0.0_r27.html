@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-12.0.0_r19 to android-12.0.0_r27 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-12.0.0_r19 to android-12.0.0_r27 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/4d9d163e1b">4d9d163e1b</a> :  [DO NOT MERGE] Update Security String to 2022-01-05<br />
+<a href="https://android.googlesource.com/platform/build/+/aa96a7e0d5">aa96a7e0d5</a> :  Version bump to SQ1D.220105.006 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/68fd0c45963">68fd0c45963</a> :  Modify test case for setTurnScreenOn can only used to wakeup device.<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_raviole-show" class="showLink" onclick="show('device_google_raviole');return false;">+</a><a href="#" id="device_google_raviole-hide" class="hideLink" onclick="hide('device_google_raviole');return false;">-</a>&nbsp;<a name="device_google_raviole" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/raviole">device/google/raviole</a></h2>
+<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/18d301f">18d301f</a> :  Update SVN to 18 for O6R4 Feb MPR 2022<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/0d86fbd">0d86fbd</a> :  Update SVN to 17 for O6R4 Feb MPR 2022<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/bda124f">bda124f</a> :  Update SVN to 16 for O6R4 Jan MPR 2022<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/1a6ee28">1a6ee28</a> :  Update SVN to 15 for O6R4 Jan MPR 2022<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/773bf5d">773bf5d</a> :  Update SVN to 14 for O6R4 Jan MPR 2022<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/0923379">0923379</a> :  Update SVN to 13 for O6R4 December QPR 2021<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/3c18563">3c18563</a> :  Update SVN to 12 for O6R4 December QPR 2021<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/3a897fe">3a897fe</a> :  Update SVN to 11 for O6R4 December QPR 2021<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/c203888c0084">c203888c0084</a> :  Show scrimmed bouncer from BiometricUnlockCtrl<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/90fbe5952005">90fbe5952005</a> :  Allow udfps when strong auth is required<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e3046d5139e4">e3046d5139e4</a> :  Ignore ui mode change caused by Morris overlay in PiP<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3a1142907b9f">3a1142907b9f</a> :  Fix issue with alphas not being applied to the same view on unlock<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d7868c44f1dc">d7868c44f1dc</a> :  Fix SysUI volume controls not appearing<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/57358e94146f">57358e94146f</a> :  Plumb config to output switcher indication chip<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/03847f2f844c">03847f2f844c</a> :  Re-enable volume control for non-grouped devices<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ba6ab166b944">ba6ab166b944</a> :  Tweak volume adjustment rules<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8d4d1e6bb003">8d4d1e6bb003</a> :  Only register listeners if setView was success.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/97cccd7e6a46">97cccd7e6a46</a> :  setTurnScreenOn can only used as wakeup<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5801f8f2ea81">5801f8f2ea81</a> :  Block SHELL_UID from overlay fabricate and clear shell overlays on boot<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bd44af4b07db">bd44af4b07db</a> :  Fix black frame flicker in UNOCCLUDE transition.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_google_graphics_common-show" class="showLink" onclick="show('platform_hardware_google_graphics_common');return false;">+</a><a href="#" id="platform_hardware_google_graphics_common-hide" class="hideLink" onclick="hide('platform_hardware_google_graphics_common');return false;">-</a>&nbsp;<a name="platform_hardware_google_graphics_common" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/google/graphics/common">platform/hardware/google/graphics/common</a></h2>
+<div id="platform_hardware_google_graphics_common"><a href="https://android.googlesource.com/platform/hardware/google/graphics/common/+/1dd9243">1dd9243</a> :  libhwc2.1: invalidate mTargetBuffer after ComposerClient has died<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/f57f56ed">f57f56ed</a> :  Only factory reset  during the setup wizard flow for organization-owned devices.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/96c5e72e1">96c5e72e1</a> :  Fix sorting issue during emergency call attempt.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/7476b152a">7476b152a</a> :  Ensure PIN/PUK status is taken into account on HAL 1.4+<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telephony/+/a2fe223a0">a2fe223a0</a> :  Fix crash in SubscriptionInfoHelper for null display name.<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
