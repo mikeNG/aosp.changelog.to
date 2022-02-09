@@ -1,16 +1,14 @@
 #!/bin/bash
 
 AOSP_DIRECTORY=$1
-WORK_DIRECTORY=./aosp/checkouts/build
+WORK_DIRECTORY=$AOSP_DIRECTORY/build/make
 GENERATOR_BASE_DIR=$(pwd)
 
 # Prepare the AOSP working directory with the templates and executables used for the changelog generation
-if [ ! -d $AOSP_DIRECTORY ]; then
-    mkdir -p $AOSP_DIRECTORY
-fi
 cp get_gitlog.sh $AOSP_DIRECTORY/
 cp get_project_gitlog.sh $AOSP_DIRECTORY/
 cp gitlog_to_html $AOSP_DIRECTORY/
+rm -r $AOSP_DIRECTORY/html_templates
 cp -r html_templates $AOSP_DIRECTORY/
 
 # Retrieve the target tag
