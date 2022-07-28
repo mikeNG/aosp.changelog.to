@@ -12,4 +12,4 @@ echo "Generating changelog from $PARENT_TAG to $TARGET_TAG"
 # Enter the AOSP working directory
 cd $AOSP_DIRECTORY
 
-./get_gitlog.sh $PARENT_TAG $TARGET_TAG
+$WORK_DIRECTORY/../aosp.changelog.to/get_gitlog.sh $PARENT_TAG $TARGET_TAG
