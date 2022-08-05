@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-12.0.0_r37 to android-security-12.0.0_r38 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-12.0.0_r37 to android-security-12.0.0_r38 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/8e1f593666">8e1f593666</a> :  Version bump to SSV1.210916.037 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/42942b4443">42942b4443</a> :  Version bump to SSV1.210916.036 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/3b933840bc">3b933840bc</a> :  Avoid read out of bounds<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/e86156084bcf">e86156084bcf</a> :  Only allow the system server to connect to sync adapters<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d8f82ebc74c7">d8f82ebc74c7</a> :  Stop using invalid URL to prevent unexpected crash<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/acc83ab08d46">acc83ab08d46</a> :  Remove package title from notification access confirmation intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4648456345b6">4648456345b6</a> :  Make CheckOp return allowed if any attr tag for a package is excluded<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9f5ca339b0f3">9f5ca339b0f3</a> :  Allow system server uid to bypass location restriction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/14b0649e2656">14b0649e2656</a> :  Disallow privileged apps to bypass location restriction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f796ac71c3c5">f796ac71c3c5</a> :  DO NOT MERGE. Add a permissions check to LocationManagerService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/90fece0bec5e">90fece0bec5e</a> :  Clear mInterface before calling resetIkeState()<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/05cd832c241a">05cd832c241a</a> :  Make sure callingPackage belongs to callingUid when checking BG-FGS restrictions.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/627dcb8bdbff">627dcb8bdbff</a> :  DO NOT MERGE Suppress notifications when device enter lockdown<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6ae9525c7fd6">6ae9525c7fd6</a> :  [RESTRICT AUTOMERGE]Only allow system and same app to apply relinquishTaskIdentity<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/a49c413aee">a49c413aee</a> :  RESTRICT AUTOMERGE SurfaceFlinger: fix a potential race condition in stealReceiveChannel<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/06ea6b3811">06ea6b3811</a> :  DO NOT MERGE: SurfaceControl: Ensure unused fields are zeroed<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9d7b4f0fa2">9d7b4f0fa2</a> :  Extract app label from component name in notification access confirmation UI<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/1de10d24aa">1de10d24aa</a> :  [DO NOT MERGE] Fix can't change notification sound for work profile.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9bd1402e5a">9bd1402e5a</a> :  [DO NOT MERGE] Fix Settings crash when setting a null ringtone<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/ba075274a7">ba075274a7</a> :  RESTRICT AUTOMERGE Fix: policy enforcement for location wifi scanning<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/645407c8e6">645407c8e6</a> :  Do not let guest user disable secuer nfc via SettingsSlice<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/01b6a6222e">01b6a6222e</a> :  RESTRICT AUTOMERGE Make bluetooth not discoverable via SliceDeepLinkTrampoline<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/a9da6b8099">a9da6b8099</a> :  Verify ringtone from ringtone picker is audio<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_ContactsProvider-show" class="showLink" onclick="show('platform_packages_providers_ContactsProvider');return false;">+</a><a href="#" id="platform_packages_providers_ContactsProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_ContactsProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_ContactsProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider">platform/packages/providers/ContactsProvider</a></h2>
+<div id="platform_packages_providers_ContactsProvider"><a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/281b42db">281b42db</a> :  enforce stricter CallLogProvider query<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
