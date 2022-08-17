@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-13.0.0_r1 to android-13.0.0_r2 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-13.0.0_r1 to android-13.0.0_r2 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/8141d08408">8141d08408</a> :  Version bump to TP1A.220624.021 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5821c51c5d">5821c51c5d</a> :  Version bump to TP1A.220624.020 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f74a6809e9">f74a6809e9</a> :  Version bump to TP1A.220624.019 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9b615fdafb">9b615fdafb</a> :  Version bump to TP1A.220624.018 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d4f1f84e4a">d4f1f84e4a</a> :  Version bump to TP1A.220624.017 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a4992884d4">a4992884d4</a> :  Version bump to TP1A.220624.016 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/de072d3d49">de072d3d49</a> :  Version bump to TP1A.220624.015 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/17ba53513e0">17ba53513e0</a> :  Ensure lines are not drawn on pixel edges<br />
+<a href="https://android.googlesource.com/platform/cts/+/454b392eea4">454b392eea4</a> :  Correct CtsVerifier version.<br />
+<a href="https://android.googlesource.com/platform/cts/+/29c5ad9ec8a">29c5ad9ec8a</a> :  Fix TaskFragmentTrustedModeTest<br />
+<a href="https://android.googlesource.com/platform/cts/+/7a3674e9c00">7a3674e9c00</a> :  Skip TaskFragmentTrustedModeTest for device not supporting AE<br />
+<a href="https://android.googlesource.com/platform/cts/+/8e48941b1aa">8e48941b1aa</a> :  DO NOT MERGE: skip CtsGraphicsTestCases[instant] android.graphics.cts.ImageDecoderTest#testDecode10BitHeifWithLowRam<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bluejay-show" class="showLink" onclick="show('device_google_bluejay');return false;">+</a><a href="#" id="device_google_bluejay-hide" class="hideLink" onclick="hide('device_google_bluejay');return false;">-</a>&nbsp;<a name="device_google_bluejay" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay">device/google/bluejay</a></h2>
+<div id="device_google_bluejay"><a href="https://android.googlesource.com/device/google/bluejay/+/e507b03">e507b03</a> :  gps: extend min GPS week number<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/bf6ad47">bf6ad47</a> :  Update B3 SVN to 13<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/a7f003f">a7f003f</a> :  Update B3 SVN to 12<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/ac4bb63">ac4bb63</a> :  Update B3 SVN to 11<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/7afe52d">7afe52d</a> :  Update B3 SVN to 10<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/c3f6caf">c3f6caf</a> :  Update B3 SVN to 9<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/3021bf0">3021bf0</a> :  Update SVN to 8<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/d29bd77">d29bd77</a> :  Jump SVN to 7<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/41e93f3">41e93f3</a> :  Jump SVN to 6<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_gs101-show" class="showLink" onclick="show('device_google_gs101');return false;">+</a><a href="#" id="device_google_gs101-hide" class="hideLink" onclick="hide('device_google_gs101');return false;">-</a>&nbsp;<a name="device_google_gs101" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/gs101">device/google/gs101</a></h2>
+<div id="device_google_gs101"><a href="https://android.googlesource.com/device/google/gs101/+/8a765c0">8a765c0</a> :  gps: extend min GPS week number<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_raviole-show" class="showLink" onclick="show('device_google_raviole');return false;">+</a><a href="#" id="device_google_raviole-hide" class="hideLink" onclick="hide('device_google_raviole');return false;">-</a>&nbsp;<a name="device_google_raviole" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/raviole">device/google/raviole</a></h2>
+<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/583ae08">583ae08</a> :  Update oriole SVN to 36<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/3a35980">3a35980</a> :  Update raven SVN to 36<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/80ea4f0">80ea4f0</a> :  Update raven SVN to 35<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/d13f3a4">d13f3a4</a> :  Update oriole SVN to 35<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/2b1865a">2b1865a</a> :  Update oriole SVN to 34<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/dd15699">dd15699</a> :  Update raven SVN to 34<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/677d319">677d319</a> :  Update raven SVN to 33<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/141a50e">141a50e</a> :  Update oriole SVN to 33<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/8ca036af9f">8ca036af9f</a> :  NuPlayerRenderer: extend offload pause wakelock duration<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/92902a0268">92902a0268</a> :  Revert "NuPlayer: use acquireWakeLockAsync in AWakeLock"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/edcb214c8a26">edcb214c8a26</a> :  Fix squished notifications on the lockscreen.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e32d71e67e7b">e32d71e67e7b</a> :  Fix TaskFragmentTrustedModeTest<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/ac62491449">ac62491449</a> :  Reconcile native and Java parcel code for WorkSource.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/c1a7decf1b">c1a7decf1b</a> :  Revert "Fix APM race conditions in ServiceStateTracker"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/ef1c055b5d">ef1c055b5d</a> :  Revert "Fixes a bug in the BluetoothDevice#getIdentityAddress API where it"<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/44496dc25a">44496dc25a</a> :  Fixes a bug in the BluetoothDevice#getIdentityAddress API where it returns the mAddress field of the device instead of null when the identity address is not known.<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
