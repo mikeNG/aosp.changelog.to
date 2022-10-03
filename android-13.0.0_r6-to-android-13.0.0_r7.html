@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-13.0.0_r6 to android-13.0.0_r7 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-13.0.0_r6 to android-13.0.0_r7 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/d0d363fbc2">d0d363fbc2</a> :  Version bump to TP1A.220905.004.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/54ff408c55">54ff408c55</a> :  Version bump to TP1A.221005.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/307262928b">307262928b</a> :  Version bump to TP1A.220905.004.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5c33e05e09">5c33e05e09</a> :  Update Security String to 2022-10-05<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_barbet-show" class="showLink" onclick="show('device_google_barbet');return false;">+</a><a href="#" id="device_google_barbet-hide" class="hideLink" onclick="hide('device_google_barbet');return false;">-</a>&nbsp;<a name="device_google_barbet" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/barbet">device/google/barbet</a></h2>
+<div id="device_google_barbet"><a href="https://android.googlesource.com/device/google/barbet/+/4a98874">4a98874</a> :  Update barbet SVN to 27<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bluejay-show" class="showLink" onclick="show('device_google_bluejay');return false;">+</a><a href="#" id="device_google_bluejay-hide" class="hideLink" onclick="hide('device_google_bluejay');return false;">-</a>&nbsp;<a name="device_google_bluejay" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay">device/google/bluejay</a></h2>
+<div id="device_google_bluejay"><a href="https://android.googlesource.com/device/google/bluejay/+/0e44412">0e44412</a> :  Update bluejay SVN to 17<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/5a3fc89">5a3fc89</a> :  Update bluejay SVN to 16<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/7ad3b98">7ad3b98</a> :  Update bluejay SVN to 16<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_coral-show" class="showLink" onclick="show('device_google_coral');return false;">+</a><a href="#" id="device_google_coral-hide" class="hideLink" onclick="hide('device_google_coral');return false;">-</a>&nbsp;<a name="device_google_coral" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/coral">device/google/coral</a></h2>
+<div id="device_google_coral"><a href="https://android.googlesource.com/device/google/coral/+/097aa2c3">097aa2c3</a> :  Update coral SVN to 64<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_raviole-show" class="showLink" onclick="show('device_google_raviole');return false;">+</a><a href="#" id="device_google_raviole-hide" class="hideLink" onclick="hide('device_google_raviole');return false;">-</a>&nbsp;<a name="device_google_raviole" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/raviole">device/google/raviole</a></h2>
+<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/21e5506">21e5506</a> :  Update oriole SVN to 39<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/8b39869">8b39869</a> :  Update raven SVN to 39<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/791248c">791248c</a> :  Update raven SVN to 38<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/f3dfedd">f3dfedd</a> :  Update oriole SVN to 38<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/4d917eb">4d917eb</a> :  Update raven SVN to 38<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/ba9c2b0">ba9c2b0</a> :  Update oriole SVN to 38<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redbull-show" class="showLink" onclick="show('device_google_redbull');return false;">+</a><a href="#" id="device_google_redbull-hide" class="hideLink" onclick="hide('device_google_redbull');return false;">-</a>&nbsp;<a name="device_google_redbull" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redbull">device/google/redbull</a></h2>
+<div id="device_google_redbull"><a href="https://android.googlesource.com/device/google/redbull/+/7bbbec8">7bbbec8</a> :  Update redbull SVN to 53<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_sunfish-show" class="showLink" onclick="show('device_google_sunfish');return false;">+</a><a href="#" id="device_google_sunfish-hide" class="hideLink" onclick="hide('device_google_sunfish');return false;">-</a>&nbsp;<a name="device_google_sunfish" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/sunfish">device/google/sunfish</a></h2>
+<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/7f27d7e">7f27d7e</a> :  Update sunfish SVN to 49<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_dtc-show" class="showLink" onclick="show('platform_external_dtc');return false;">+</a><a href="#" id="platform_external_dtc-hide" class="hideLink" onclick="hide('platform_external_dtc');return false;">-</a>&nbsp;<a name="platform_external_dtc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/dtc">platform/external/dtc</a></h2>
+<div id="platform_external_dtc"><a href="https://android.googlesource.com/platform/external/dtc/+/fba4a44">fba4a44</a> :  [automerge] FROMGIT: libfdt: fdt_offset_ptr(): Fix comparison warnings 2p: 6f0fef2b2a 2p: 736c673f28<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/ae4a755761">ae4a755761</a> :  MediaPlayer: fix channel mask handling<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/91fddd9386">91fddd9386</a> :  Add missing bounds checks<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/adfffded75">adfffded75</a> :  Cache MMAP client silenced state.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/82bcb2a43449">82bcb2a43449</a> :  Fix race condition in QSTileHost<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c6f280af4d64">c6f280af4d64</a> :  Skip sending VpnManager events for Settings VPNs<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/22ab60b4ed38">22ab60b4ed38</a> :  RemoteViews: fix BitmapCache after immutable Bitmap switch<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ccaebb4f641e">ccaebb4f641e</a> :  Do not create starting window if there is no task.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1b9dc28da949">1b9dc28da949</a> :  Prevent loading of Icon resources from the wrong package<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8c1f443b554e">8c1f443b554e</a> :  [Output Switcher] Add platform config for Output Switcher<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/64795ff0cf1e">64795ff0cf1e</a> :  [Output Swithcer] Fix volume control issue for Group<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0c607e70982b">0c607e70982b</a> :  Enforce zen rule limit on a package level.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9a186a4de353">9a186a4de353</a> :  Move accountname and typeName length check from Account.java to AccountManagerService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e5dd8be748c7">e5dd8be748c7</a> :  Strip transition information from activityoptions when sent to app<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9194bce0d580">9194bce0d580</a> :  Block FullScreenIntent while device is in use if notification has a silencing GroupAlertBehavior.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/aefdf0866644">aefdf0866644</a> :  Fix Notification redaction when power cycling a non-dozing device while occluded.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/95e7a3ee33d3">95e7a3ee33d3</a> :  Perform the user-allowlist check after all other fixed allowlist check<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/494599d3d7b2">494599d3d7b2</a> :  Fix crash when loading album art by resource<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cf5893107728">cf5893107728</a> :  Revert "Revert "Limit the number of concurrently snoozed notifications""<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/31c837747ff1">31c837747ff1</a> :  Stop crashing the system on hitting the alarm limit<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/1dedaf61fd">1dedaf61fd</a> :  Fixed a crash when data network does not have PCO<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/c1b6f39d50">c1b6f39d50</a> :  Fixed a race condition for early arrived PCO data<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/92e563cbb3">92e563cbb3</a> :  Fixed a crash when data network does not have PCO<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/c841332b94">c841332b94</a> :  Fixed a race condition for early arrived PCO data<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_interfaces-show" class="showLink" onclick="show('platform_hardware_interfaces');return false;">+</a><a href="#" id="platform_hardware_interfaces-hide" class="hideLink" onclick="hide('platform_hardware_interfaces');return false;">-</a>&nbsp;<a name="platform_hardware_interfaces" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/interfaces">platform/hardware/interfaces</a></h2>
+<div id="platform_hardware_interfaces"><a href="https://android.googlesource.com/platform/hardware/interfaces/+/bbf8f4e99">bbf8f4e99</a> :  Fix array out of bound in audioTransportToHal.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_qcom_sm7250_display-show" class="showLink" onclick="show('platform_hardware_qcom_sm7250_display');return false;">+</a><a href="#" id="platform_hardware_qcom_sm7250_display-hide" class="hideLink" onclick="hide('platform_hardware_qcom_sm7250_display');return false;">-</a>&nbsp;<a name="platform_hardware_qcom_sm7250_display" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/qcom/sm7250/display">platform/hardware/qcom/sm7250/display</a></h2>
+<div id="platform_hardware_qcom_sm7250_display"><a href="https://android.googlesource.com/platform/hardware/qcom/sm7250/display/+/eb1937eb">eb1937eb</a> :  gralloc: Fix issue with mmap/munmap meta due to reserved size<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_qcom_sm8150_display-show" class="showLink" onclick="show('platform_hardware_qcom_sm8150_display');return false;">+</a><a href="#" id="platform_hardware_qcom_sm8150_display-hide" class="hideLink" onclick="hide('platform_hardware_qcom_sm8150_display');return false;">-</a>&nbsp;<a name="platform_hardware_qcom_sm8150_display" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/qcom/sm8150/display">platform/hardware/qcom/sm8150/display</a></h2>
+<div id="platform_hardware_qcom_sm8150_display"><a href="https://android.googlesource.com/platform/hardware/qcom/sm8150/display/+/cc44aee6">cc44aee6</a> :  gralloc: Fix issue with mmap/munmap meta due to reserved size<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/b2b614e169">b2b614e169</a> :  Removing tabWidth calculation and using DeviceProfile directly<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/86a6cb0694">86a6cb0694</a> :  Fixing tab width and panner not aligned with the all-apps icons<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/de33480583">de33480583</a> :  Wi-Fi panel doesn't need to check permission<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/58e574ea2c">58e574ea2c</a> :  Don't cancel passkey entry pairing autonomously<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/9d8fd77804">9d8fd77804</a> :  DO NOT MERGE - Revert "Add length check when copy AVDTP packet"<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/6e2717b739">6e2717b739</a> :  Save UUIDs using properties rather than the pairing_cb_t<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/6a0e8569cf">6a0e8569cf</a> :  Check cached command for ack_pause<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/90d2a6a82b">90d2a6a82b</a> :  Ignore calls to set the address policy after it has already been set<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8f848255de">8f848255de</a> :  Reconfigure Address policy on last bond removed<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/3a830aa7c8">3a830aa7c8</a> :  Add length check when copy AVDTP packet<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/089b7e344f">089b7e344f</a> :  Fix potential interger overflow when parsing vendor response<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/c48ab912e4">c48ab912e4</a> :  Revert "Add btm_cb.notify_when_complete_cb when inquiry is cancelled"<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/1a74e9f79a">1a74e9f79a</a> :  Use proper resolved address upon connection fail or timeout<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Connectivity-show" class="showLink" onclick="show('platform_packages_modules_Connectivity');return false;">+</a><a href="#" id="platform_packages_modules_Connectivity-hide" class="hideLink" onclick="hide('platform_packages_modules_Connectivity');return false;">-</a>&nbsp;<a name="platform_packages_modules_Connectivity" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Connectivity">platform/packages/modules/Connectivity</a></h2>
+<div id="platform_packages_modules_Connectivity"><a href="https://android.googlesource.com/platform/packages/modules/Connectivity/+/b00f79db7">b00f79db7</a> :  Test that VpnManager events will never be sent to Settings VPNs<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/4f212514d">4f212514d</a> :  isDataOrObbPath blocks access to Android/[data|obb] dirs only<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/3ff21076">3ff21076</a> :  The length of a packet should be non-zero<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
