@@ -1,0 +1,509 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-13.0.0_r7 to android-13.0.0_r12 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-13.0.0_r7 to android-13.0.0_r12 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/9de99946ed">9de99946ed</a> :  Version bump to TP1A.221105.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/636878a24b">636878a24b</a> :  Add kernel license text.<br />
+<a href="https://android.googlesource.com/platform/build/+/cfe5bd519e">cfe5bd519e</a> :  Update Security String to 2022-11-05<br />
+<a href="https://android.googlesource.com/platform/build/+/7e74854727">7e74854727</a> :  Version bump to TP1A.221005.003 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/f49d1a5dbc2">f49d1a5dbc2</a> :  Add NPE check before checking for the path<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_barbet-show" class="showLink" onclick="show('device_google_barbet');return false;">+</a><a href="#" id="device_google_barbet-hide" class="hideLink" onclick="hide('device_google_barbet');return false;">-</a>&nbsp;<a name="device_google_barbet" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/barbet">device/google/barbet</a></h2>
+<div id="device_google_barbet"><a href="https://android.googlesource.com/device/google/barbet/+/daba7e7">daba7e7</a> :  Update barbet SVN to 28<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bluejay-show" class="showLink" onclick="show('device_google_bluejay');return false;">+</a><a href="#" id="device_google_bluejay-hide" class="hideLink" onclick="hide('device_google_bluejay');return false;">-</a>&nbsp;<a name="device_google_bluejay" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay">device/google/bluejay</a></h2>
+<div id="device_google_bluejay"><a href="https://android.googlesource.com/device/google/bluejay/+/cf45ece">cf45ece</a> :  Update bluejay SVN to 18<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_cuttlefish_prebuilts-show" class="showLink" onclick="show('device_google_cuttlefish_prebuilts');return false;">+</a><a href="#" id="device_google_cuttlefish_prebuilts-hide" class="hideLink" onclick="hide('device_google_cuttlefish_prebuilts');return false;">-</a>&nbsp;<a name="device_google_cuttlefish_prebuilts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/cuttlefish_prebuilts">device/google/cuttlefish_prebuilts</a></h2>
+<div id="device_google_cuttlefish_prebuilts"><a href="https://android.googlesource.com/device/google/cuttlefish_prebuilts/+/c73744f5">c73744f5</a> :  Snap for 8762204 from f22743fad7035d4462d7990dfe115e89e9e82919 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_raviole-show" class="showLink" onclick="show('device_google_raviole');return false;">+</a><a href="#" id="device_google_raviole-hide" class="hideLink" onclick="hide('device_google_raviole');return false;">-</a>&nbsp;<a name="device_google_raviole" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/raviole">device/google/raviole</a></h2>
+<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/e55086f">e55086f</a> :  Update oriole SVN to 40<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/642bc06">642bc06</a> :  Update raven SVN to 40<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redbull-show" class="showLink" onclick="show('device_google_redbull');return false;">+</a><a href="#" id="device_google_redbull-hide" class="hideLink" onclick="hide('device_google_redbull');return false;">-</a>&nbsp;<a name="device_google_redbull" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redbull">device/google/redbull</a></h2>
+<div id="device_google_redbull"><a href="https://android.googlesource.com/device/google/redbull/+/4551b24">4551b24</a> :  Update redbull SVN to 54<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_sunfish-show" class="showLink" onclick="show('device_google_sunfish');return false;">+</a><a href="#" id="device_google_sunfish-hide" class="hideLink" onclick="hide('device_google_sunfish');return false;">-</a>&nbsp;<a name="device_google_sunfish" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/sunfish">device/google/sunfish</a></h2>
+<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/46b7587">46b7587</a> :  Update sunfish SVN to 50<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_chromium-webview-show" class="showLink" onclick="show('platform_external_chromium-webview');return false;">+</a><a href="#" id="platform_external_chromium-webview-hide" class="hideLink" onclick="hide('platform_external_chromium-webview');return false;">-</a>&nbsp;<a name="platform_external_chromium-webview" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/chromium-webview">platform/external/chromium-webview</a></h2>
+<div id="platform_external_chromium-webview"><a href="https://android.googlesource.com/platform/external/chromium-webview/+/af7d729">af7d729</a> :  Snap for 8572535 from d87ab7af6a94f073acfea01933c03683db20da69 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_dtc-show" class="showLink" onclick="show('platform_external_dtc');return false;">+</a><a href="#" id="platform_external_dtc-hide" class="hideLink" onclick="hide('platform_external_dtc');return false;">-</a>&nbsp;<a name="platform_external_dtc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/dtc">platform/external/dtc</a></h2>
+<div id="platform_external_dtc"><a href="https://android.googlesource.com/platform/external/dtc/+/922334f">922334f</a> :  Fix integer wrap sanitisation.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_linux-kselftest-show" class="showLink" onclick="show('platform_external_linux-kselftest');return false;">+</a><a href="#" id="platform_external_linux-kselftest-hide" class="hideLink" onclick="hide('platform_external_linux-kselftest');return false;">-</a>&nbsp;<a name="platform_external_linux-kselftest" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/linux-kselftest">platform/external/linux-kselftest</a></h2>
+<div id="platform_external_linux-kselftest"><a href="https://android.googlesource.com/platform/external/linux-kselftest/+/af97d4fadfb1">af97d4fadfb1</a> :  Snap for 8364269 from e9ebf262fc0229aefd9f2366fba8870c2b17fdf5 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_subsampling-scale-image-view-show" class="showLink" onclick="show('platform_external_subsampling-scale-image-view');return false;">+</a><a href="#" id="platform_external_subsampling-scale-image-view-hide" class="hideLink" onclick="hide('platform_external_subsampling-scale-image-view');return false;">-</a>&nbsp;<a name="platform_external_subsampling-scale-image-view" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/subsampling-scale-image-view">platform/external/subsampling-scale-image-view</a></h2>
+<div id="platform_external_subsampling-scale-image-view"><a href="https://android.googlesource.com/platform/external/subsampling-scale-image-view/+/576f504">576f504</a> :  Snap for 7809064 from af6e4abba82e7811dbfe7dc7b93e146946bd7c78 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_timezone-boundary-builder-show" class="showLink" onclick="show('platform_external_timezone-boundary-builder');return false;">+</a><a href="#" id="platform_external_timezone-boundary-builder-hide" class="hideLink" onclick="hide('platform_external_timezone-boundary-builder');return false;">-</a>&nbsp;<a name="platform_external_timezone-boundary-builder" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/timezone-boundary-builder">platform/external/timezone-boundary-builder</a></h2>
+<div id="platform_external_timezone-boundary-builder"><a href="https://android.googlesource.com/platform/external/timezone-boundary-builder/+/f0df979">f0df979</a> :  Android additions to timezone-boundary-builder am: 4fd94cfcf9 am: 1d4954a75e am: 416012905c am: 82d8ad561d<br />
+<a href="https://android.googlesource.com/platform/external/timezone-boundary-builder/+/b53c148">b53c148</a> :  Snap for 7450497 from 0bed5d61b29c35d7730a3bd74ea87e254cec37e0 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/0a9d181281">0a9d181281</a> :  [Fix vulnerability] setSecurityLevel in clearkey<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/ecbed81c3a33">ecbed81c3a33</a> :  Do not dismiss keyguard after SIM PUK unlock<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/23e3c741225c">23e3c741225c</a> :  Fix system zen rules by using owner package name if caller is system<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/80c15ed65916">80c15ed65916</a> :  Remove legacy WRITE_EXTERNAL_STORAGE permission check for Installers<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e533796b4545">e533796b4545</a> :  Trim any long string inputs that come in to AutomaticZenRule<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0873a30210d6">0873a30210d6</a> :  Fix auto-grant of AR runtime permission if device is upgrading from pre-Q<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/83183e08c1ca">83183e08c1ca</a> :  Check rule package name in ZenModeHelper.addAutomaticRule<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1aae720772a8">1aae720772a8</a> :  Update BaseBundle to not use LazyValues when using ReadWriteHelper<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7b9ea7a75ed2">7b9ea7a75ed2</a> :  Do not send AccessibilityEvent if notification is for different user.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/54e57bbbd679">54e57bbbd679</a> :  Do not send new Intent to non-exported activity when navigateUpTo<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/76769dc120ba">76769dc120ba</a> :  switch TelecomManager List getters to ParceledListSlice<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_nxp_nfc-show" class="showLink" onclick="show('platform_hardware_nxp_nfc');return false;">+</a><a href="#" id="platform_hardware_nxp_nfc-hide" class="hideLink" onclick="hide('platform_hardware_nxp_nfc');return false;">-</a>&nbsp;<a name="platform_hardware_nxp_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/nxp/nfc">platform/hardware/nxp/nfc</a></h2>
+<div id="platform_hardware_nxp_nfc"><a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/4ef6287">4ef6287</a> :  OOBW in phNxpNciHal_write_unlocked()<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_4.19_arm64-show" class="showLink" onclick="show('kernel_prebuilts_4.19_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_4.19_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_4.19_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_4.19_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/4.19/arm64">kernel/prebuilts/4.19/arm64</a></h2>
+<div id="kernel_prebuilts_4.19_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/4.19/arm64/+/6799aa1">6799aa1</a> :  Snap for 8492635 from 828ea81742fe99208f2eb83d0bf7bc44b5847c47 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.10_arm64-show" class="showLink" onclick="show('kernel_prebuilts_5.10_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_5.10_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.10_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.10_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.10/arm64">kernel/prebuilts/5.10/arm64</a></h2>
+<div id="kernel_prebuilts_5.10_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/5.10/arm64/+/1713ddd">1713ddd</a> :  Snap for 8762204 from bfb0c801017fc7c0c9d9eef047ec28e28b36d56c to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.10_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_5.10_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_5.10_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.10_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.10_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.10/x86-64">kernel/prebuilts/5.10/x86-64</a></h2>
+<div id="kernel_prebuilts_5.10_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/5.10/x86-64/+/dc91927">dc91927</a> :  Snap for 8762204 from 05709b12855ea0aab7e26250847f912146ecddbf to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.15_arm64-show" class="showLink" onclick="show('kernel_prebuilts_5.15_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_5.15_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.15_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.15_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.15/arm64">kernel/prebuilts/5.15/arm64</a></h2>
+<div id="kernel_prebuilts_5.15_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/5.15/arm64/+/1407356">1407356</a> :  Snap for 8762204 from 9ce2252b4804918e2e609ec27f958227dc841c71 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.15_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_5.15_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_5.15_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.15_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.15_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.15/x86-64">kernel/prebuilts/5.15/x86-64</a></h2>
+<div id="kernel_prebuilts_5.15_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/5.15/x86-64/+/ef80b69">ef80b69</a> :  Snap for 8762204 from c358c8114a2255945d91e8d797db828884dd85b2 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.4_arm64-show" class="showLink" onclick="show('kernel_prebuilts_5.4_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_5.4_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.4_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.4_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.4/arm64">kernel/prebuilts/5.4/arm64</a></h2>
+<div id="kernel_prebuilts_5.4_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/5.4/arm64/+/30929a5">30929a5</a> :  Snap for 8508895 from 98a74d03cf2698ac0bb8c2cab4b2d4c6bedea973 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.4_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_5.4_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_5.4_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.4_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.4_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.4/x86-64">kernel/prebuilts/5.4/x86-64</a></h2>
+<div id="kernel_prebuilts_5.4_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/5.4/x86-64/+/5dbd6e6">5dbd6e6</a> :  Snap for 8508895 from 8e8388020b8eed53c8fb136f6b62708e507b58f8 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_4.19_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_4.19_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_4.19_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_4.19_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_4.19_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/4.19/arm64">kernel/prebuilts/common-modules/virtual-device/4.19/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_4.19_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/4.19/arm64/+/31fa2c2">31fa2c2</a> :  Initial empty repository<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_4.19_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_4.19_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_4.19_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_4.19_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_4.19_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/4.19/x86-64">kernel/prebuilts/common-modules/virtual-device/4.19/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_4.19_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/4.19/x86-64/+/396ea43">396ea43</a> :  Initial empty repository<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.10_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.10_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.10_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.10_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.10_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.10/arm64">kernel/prebuilts/common-modules/virtual-device/5.10/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.10_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.10/arm64/+/b76e2e0">b76e2e0</a> :  Snap for 8762204 from b68abcb5fe12b100933c33455ea545e6ea28d0fd to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.10_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.10_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.10_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.10_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.10_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.10/x86-64">kernel/prebuilts/common-modules/virtual-device/5.10/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.10_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.10/x86-64/+/f45820e">f45820e</a> :  Snap for 8762204 from b186f1bd99803c2ddd2dd5bf16f2ae606a8ee89d to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.15_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.15_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.15_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.15_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.15_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.15/arm64">kernel/prebuilts/common-modules/virtual-device/5.15/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.15_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.15/arm64/+/f506677">f506677</a> :  Snap for 8762204 from 42e80ad9d35d92f5625c551fa8b199ed19f98512 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.15_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.15_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.15_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.15_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.15_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.15/x86-64">kernel/prebuilts/common-modules/virtual-device/5.15/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.15_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.15/x86-64/+/a475878">a475878</a> :  Snap for 8762204 from 3390e5fbbc86b664ac5ddbcf83806a6ce7079392 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.4_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.4_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.4_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.4_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.4_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.4/arm64">kernel/prebuilts/common-modules/virtual-device/5.4/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.4_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.4/arm64/+/f15e54b">f15e54b</a> :  Snap for 8508895 from df9b86f15b7bddaaef978a0ef4c5a527f8575038 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.4_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.4_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.4_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.4_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.4_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.4/x86-64">kernel/prebuilts/common-modules/virtual-device/5.4/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.4_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.4/x86-64/+/0938e41">0938e41</a> :  Snap for 8508895 from cb3f6044c1e801c4106eae69fdc9d51b270bce9e to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_mainline_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_mainline_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_mainline_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/arm64">kernel/prebuilts/common-modules/virtual-device/mainline/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_mainline_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/arm64/+/2852f76">2852f76</a> :  Snap for 7904187 from 6e9848e472b6f66b90b2d364c09017c45836aa0a to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_mainline_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_mainline_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/x86-64">kernel/prebuilts/common-modules/virtual-device/mainline/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/x86-64/+/3795dd2">3795dd2</a> :  Snap for 7904187 from 3e167c39dd51744d8f6709fd7ad413c3e7013d20 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_mainline_arm64-show" class="showLink" onclick="show('kernel_prebuilts_mainline_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_mainline_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_mainline_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_mainline_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/mainline/arm64">kernel/prebuilts/mainline/arm64</a></h2>
+<div id="kernel_prebuilts_mainline_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/mainline/arm64/+/70e1673">70e1673</a> :  Snap for 8598607 from 8213bd72fc0b8daafa1a8f1752adffc0e3bf1171 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_mainline_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_mainline_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_mainline_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_mainline_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_mainline_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/mainline/x86-64">kernel/prebuilts/mainline/x86-64</a></h2>
+<div id="kernel_prebuilts_mainline_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/mainline/x86-64/+/71bf770">71bf770</a> :  Update kernel to builds 7874781 am: b66c3ac1bb am: 00658648b9 am: 90809e3aac am: 2cf236bd9f am: d35138ebad<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_ArtPrebuilt-show" class="showLink" onclick="show('platform_packages_modules_ArtPrebuilt');return false;">+</a><a href="#" id="platform_packages_modules_ArtPrebuilt-hide" class="hideLink" onclick="hide('platform_packages_modules_ArtPrebuilt');return false;">-</a>&nbsp;<a name="platform_packages_modules_ArtPrebuilt" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/ArtPrebuilt">platform/packages/modules/ArtPrebuilt</a></h2>
+<div id="platform_packages_modules_ArtPrebuilt"><a href="https://android.googlesource.com/platform/packages/modules/ArtPrebuilt/+/da95393">da95393</a> :  Snap for 8176975 from 2363a7573c76c3731c66f36a858ab7811e373b1a to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/bb48be1756">bb48be1756</a> :  Add buffer in pin_reply in bluetooth.cc<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/83d9a99f1d">83d9a99f1d</a> :  Add negative length check in process_service_search_rsp<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7281ef11c0">7281ef11c0</a> :  Add local to pan_api.cc<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_BootPrebuilt_5.10_arm64-show" class="showLink" onclick="show('platform_packages_modules_BootPrebuilt_5.10_arm64');return false;">+</a><a href="#" id="platform_packages_modules_BootPrebuilt_5.10_arm64-hide" class="hideLink" onclick="hide('platform_packages_modules_BootPrebuilt_5.10_arm64');return false;">-</a>&nbsp;<a name="platform_packages_modules_BootPrebuilt_5.10_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/BootPrebuilt/5.10/arm64">platform/packages/modules/BootPrebuilt/5.10/arm64</a></h2>
+<div id="platform_packages_modules_BootPrebuilt_5.10_arm64"><a href="https://android.googlesource.com/platform/packages/modules/BootPrebuilt/5.10/arm64/+/95cfa20">95cfa20</a> :  Update prebuilts to 7069541. am: ebf863dccb am: 47e5bd7704 am: a6d5110fa8<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_BootPrebuilt_5.4_arm64-show" class="showLink" onclick="show('platform_packages_modules_BootPrebuilt_5.4_arm64');return false;">+</a><a href="#" id="platform_packages_modules_BootPrebuilt_5.4_arm64-hide" class="hideLink" onclick="hide('platform_packages_modules_BootPrebuilt_5.4_arm64');return false;">-</a>&nbsp;<a name="platform_packages_modules_BootPrebuilt_5.4_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/BootPrebuilt/5.4/arm64">platform/packages/modules/BootPrebuilt/5.4/arm64</a></h2>
+<div id="platform_packages_modules_BootPrebuilt_5.4_arm64"><a href="https://android.googlesource.com/platform/packages/modules/BootPrebuilt/5.4/arm64/+/53e3914">53e3914</a> :  Snap for 7160100 from 3130a05a2f71e6c43892db92148956af0b05a406 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/1fed5ab99d">1fed5ab99d</a> :  [DO NOT MERGE] wifi: remove certificates for network factory reset<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_TelephonyProvider-show" class="showLink" onclick="show('platform_packages_providers_TelephonyProvider');return false;">+</a><a href="#" id="platform_packages_providers_TelephonyProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_TelephonyProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_TelephonyProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider">platform/packages/providers/TelephonyProvider</a></h2>
+<div id="platform_packages_providers_TelephonyProvider"><a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/fc6557b9">fc6557b9</a> :  Check dir path before updating permissions.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/9c4fc215e">9c4fc215e</a> :  Fix security vulnerability issue for multi user call redirections.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/03bf117dd">03bf117dd</a> :  switch TelecomManager List getters to ParceledListSlice<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_abi-dumps_ndk-show" class="showLink" onclick="show('platform_prebuilts_abi-dumps_ndk');return false;">+</a><a href="#" id="platform_prebuilts_abi-dumps_ndk-hide" class="hideLink" onclick="hide('platform_prebuilts_abi-dumps_ndk');return false;">-</a>&nbsp;<a name="platform_prebuilts_abi-dumps_ndk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/ndk">platform/prebuilts/abi-dumps/ndk</a></h2>
+<div id="platform_prebuilts_abi-dumps_ndk"><a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/ndk/+/a220bdd">a220bdd</a> :  Snap for 8557337 from dc88dd220f0f674b7241046958414859a5213fd6 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_abi-dumps_platform-show" class="showLink" onclick="show('platform_prebuilts_abi-dumps_platform');return false;">+</a><a href="#" id="platform_prebuilts_abi-dumps_platform-hide" class="hideLink" onclick="hide('platform_prebuilts_abi-dumps_platform');return false;">-</a>&nbsp;<a name="platform_prebuilts_abi-dumps_platform" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/platform">platform/prebuilts/abi-dumps/platform</a></h2>
+<div id="platform_prebuilts_abi-dumps_platform"><a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/platform/+/25b3f41">25b3f41</a> :  Snap for 8557337 from 12aeb694cb383d7708605c04b6b6797f75dd1176 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_abi-dumps_vndk-show" class="showLink" onclick="show('platform_prebuilts_abi-dumps_vndk');return false;">+</a><a href="#" id="platform_prebuilts_abi-dumps_vndk-hide" class="hideLink" onclick="hide('platform_prebuilts_abi-dumps_vndk');return false;">-</a>&nbsp;<a name="platform_prebuilts_abi-dumps_vndk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/vndk">platform/prebuilts/abi-dumps/vndk</a></h2>
+<div id="platform_prebuilts_abi-dumps_vndk"><a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/vndk/+/29296456">29296456</a> :  Snap for 8677156 from 15820ac81b43a5aca3d2b342218c70630775e93a to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_android-emulator-show" class="showLink" onclick="show('platform_prebuilts_android-emulator');return false;">+</a><a href="#" id="platform_prebuilts_android-emulator-hide" class="hideLink" onclick="hide('platform_prebuilts_android-emulator');return false;">-</a>&nbsp;<a name="platform_prebuilts_android-emulator" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/android-emulator">platform/prebuilts/android-emulator</a></h2>
+<div id="platform_prebuilts_android-emulator"><a href="https://android.googlesource.com/platform/prebuilts/android-emulator/+/055094f">055094f</a> :  Snap for 8698879 from 49cbabdf352960b69e3f2270af3684c7d54d70b9 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_asuite-show" class="showLink" onclick="show('platform_prebuilts_asuite');return false;">+</a><a href="#" id="platform_prebuilts_asuite-hide" class="hideLink" onclick="hide('platform_prebuilts_asuite');return false;">-</a>&nbsp;<a name="platform_prebuilts_asuite" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/asuite">platform/prebuilts/asuite</a></h2>
+<div id="platform_prebuilts_asuite"><a href="https://android.googlesource.com/platform/prebuilts/asuite/+/1434f4d">1434f4d</a> :  Snap for 8671863 from 3ce1d5822735ed390a8f1a60cf6cb4bea4c6041b to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_bazel_darwin-x86_64-show" class="showLink" onclick="show('platform_prebuilts_bazel_darwin-x86_64');return false;">+</a><a href="#" id="platform_prebuilts_bazel_darwin-x86_64-hide" class="hideLink" onclick="hide('platform_prebuilts_bazel_darwin-x86_64');return false;">-</a>&nbsp;<a name="platform_prebuilts_bazel_darwin-x86_64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/bazel/darwin-x86_64">platform/prebuilts/bazel/darwin-x86_64</a></h2>
+<div id="platform_prebuilts_bazel_darwin-x86_64"><a href="https://android.googlesource.com/platform/prebuilts/bazel/darwin-x86_64/+/6a1205d">6a1205d</a> :  Snap for 7953399 from cb27dfd0f0087ad206e062cbbae9f0531044d1fd to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_bazel_linux-x86_64-show" class="showLink" onclick="show('platform_prebuilts_bazel_linux-x86_64');return false;">+</a><a href="#" id="platform_prebuilts_bazel_linux-x86_64-hide" class="hideLink" onclick="hide('platform_prebuilts_bazel_linux-x86_64');return false;">-</a>&nbsp;<a name="platform_prebuilts_bazel_linux-x86_64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/bazel/linux-x86_64">platform/prebuilts/bazel/linux-x86_64</a></h2>
+<div id="platform_prebuilts_bazel_linux-x86_64"><a href="https://android.googlesource.com/platform/prebuilts/bazel/linux-x86_64/+/bde7425">bde7425</a> :  Snap for 7953399 from ef59c37ad35a770417121585d276444cb75d77e6 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_build-tools-show" class="showLink" onclick="show('platform_prebuilts_build-tools');return false;">+</a><a href="#" id="platform_prebuilts_build-tools-hide" class="hideLink" onclick="hide('platform_prebuilts_build-tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_build-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/build-tools">platform/prebuilts/build-tools</a></h2>
+<div id="platform_prebuilts_build-tools"><a href="https://android.googlesource.com/platform/prebuilts/build-tools/+/7f3afba">7f3afba</a> :  Snap for 8401211 from 5c0790beff1c15142c28b7852784be9c3b06c5ca to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_bundletool-show" class="showLink" onclick="show('platform_prebuilts_bundletool');return false;">+</a><a href="#" id="platform_prebuilts_bundletool-hide" class="hideLink" onclick="hide('platform_prebuilts_bundletool');return false;">-</a>&nbsp;<a name="platform_prebuilts_bundletool" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/bundletool">platform/prebuilts/bundletool</a></h2>
+<div id="platform_prebuilts_bundletool"><a href="https://android.googlesource.com/platform/prebuilts/bundletool/+/1f8184a">1f8184a</a> :  Snap for 8261343 from 392c25154aac1d61aea84cfbc1be7d920f27b357 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_checkcolor-show" class="showLink" onclick="show('platform_prebuilts_checkcolor');return false;">+</a><a href="#" id="platform_prebuilts_checkcolor-hide" class="hideLink" onclick="hide('platform_prebuilts_checkcolor');return false;">-</a>&nbsp;<a name="platform_prebuilts_checkcolor" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/checkcolor">platform/prebuilts/checkcolor</a></h2>
+<div id="platform_prebuilts_checkcolor"><a href="https://android.googlesource.com/platform/prebuilts/checkcolor/+/b3b4112">b3b4112</a> :  Snap for 8151064 from 47d4cfb86c5001ef70ef9f9fbed6db04209f1775 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_checkstyle-show" class="showLink" onclick="show('platform_prebuilts_checkstyle');return false;">+</a><a href="#" id="platform_prebuilts_checkstyle-hide" class="hideLink" onclick="hide('platform_prebuilts_checkstyle');return false;">-</a>&nbsp;<a name="platform_prebuilts_checkstyle" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/checkstyle">platform/prebuilts/checkstyle</a></h2>
+<div id="platform_prebuilts_checkstyle"><a href="https://android.googlesource.com/platform/prebuilts/checkstyle/+/0b716cd">0b716cd</a> :  Snap for 8323531 from fd988c15302ded7109388dd80456ae282ccaef82 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_clang-tools-show" class="showLink" onclick="show('platform_prebuilts_clang-tools');return false;">+</a><a href="#" id="platform_prebuilts_clang-tools-hide" class="hideLink" onclick="hide('platform_prebuilts_clang-tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_clang-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/clang-tools">platform/prebuilts/clang-tools</a></h2>
+<div id="platform_prebuilts_clang-tools"><a href="https://android.googlesource.com/platform/prebuilts/clang-tools/+/d00e613">d00e613</a> :  Snap for 8220313 from 8be4a2386eef2e2337c654ace5ceeb1d4d9c4615 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_clang_host_linux-x86-show" class="showLink" onclick="show('platform_prebuilts_clang_host_linux-x86');return false;">+</a><a href="#" id="platform_prebuilts_clang_host_linux-x86-hide" class="hideLink" onclick="hide('platform_prebuilts_clang_host_linux-x86');return false;">-</a>&nbsp;<a name="platform_prebuilts_clang_host_linux-x86" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86">platform/prebuilts/clang/host/linux-x86</a></h2>
+<div id="platform_prebuilts_clang_host_linux-x86"><a href="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/f3480869e">f3480869e</a> :  Snap for 8540474 from 3e473165be9dcddf80705ceecced66aec172e51a to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_cmdline-tools-show" class="showLink" onclick="show('platform_prebuilts_cmdline-tools');return false;">+</a><a href="#" id="platform_prebuilts_cmdline-tools-hide" class="hideLink" onclick="hide('platform_prebuilts_cmdline-tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_cmdline-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/cmdline-tools">platform/prebuilts/cmdline-tools</a></h2>
+<div id="platform_prebuilts_cmdline-tools"><a href="https://android.googlesource.com/platform/prebuilts/cmdline-tools/+/5f9ba09">5f9ba09</a> :  Snap for 8191477 from f46cd25af9309e403566d1f3a34d3c46371bdd80 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_devtools-show" class="showLink" onclick="show('platform_prebuilts_devtools');return false;">+</a><a href="#" id="platform_prebuilts_devtools-hide" class="hideLink" onclick="hide('platform_prebuilts_devtools');return false;">-</a>&nbsp;<a name="platform_prebuilts_devtools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/devtools">platform/prebuilts/devtools</a></h2>
+<div id="platform_prebuilts_devtools"><a href="https://android.googlesource.com/platform/prebuilts/devtools/+/7880027">7880027</a> :  Merge "Make the linter use a JAXB jar instead of the deprecated module." am: 5410a8a911 am: 6089fd5fdd am: d74c94e4d5 am: bc11a72a91<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8-show" class="showLink" onclick="show('platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8');return false;">+</a><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8-hide" class="hideLink" onclick="hide('platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8');return false;">-</a>&nbsp;<a name="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8">platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8</a></h2>
+<div id="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8"><a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/+/58b0359">58b0359</a> :  Snap for 8228242 from c2f3c6976a1b064810179e70351b67fa577fbc80 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8-show" class="showLink" onclick="show('platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8');return false;">+</a><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8-hide" class="hideLink" onclick="hide('platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8');return false;">-</a>&nbsp;<a name="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8">platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8</a></h2>
+<div id="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8"><a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8/+/0c0c5402">0c0c5402</a> :  Snap for 8261343 from 5f20d5fab91331118a3c8b31038fd1400457ea26 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_go_darwin-x86-show" class="showLink" onclick="show('platform_prebuilts_go_darwin-x86');return false;">+</a><a href="#" id="platform_prebuilts_go_darwin-x86-hide" class="hideLink" onclick="hide('platform_prebuilts_go_darwin-x86');return false;">-</a>&nbsp;<a name="platform_prebuilts_go_darwin-x86" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/go/darwin-x86">platform/prebuilts/go/darwin-x86</a></h2>
+<div id="platform_prebuilts_go_darwin-x86"><a href="https://android.googlesource.com/platform/prebuilts/go/darwin-x86/+/7993f4a54">7993f4a54</a> :  Snap for 8345013 from 893b08824d8dba0f345148e63e5db55922db4db6 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_go_linux-x86-show" class="showLink" onclick="show('platform_prebuilts_go_linux-x86');return false;">+</a><a href="#" id="platform_prebuilts_go_linux-x86-hide" class="hideLink" onclick="hide('platform_prebuilts_go_linux-x86');return false;">-</a>&nbsp;<a name="platform_prebuilts_go_linux-x86" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/go/linux-x86">platform/prebuilts/go/linux-x86</a></h2>
+<div id="platform_prebuilts_go_linux-x86"><a href="https://android.googlesource.com/platform/prebuilts/go/linux-x86/+/284f531d1">284f531d1</a> :  Snap for 8345013 from 54b24a8b0acb4627a3e352121f262a92fecdad24 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_gradle-plugin-show" class="showLink" onclick="show('platform_prebuilts_gradle-plugin');return false;">+</a><a href="#" id="platform_prebuilts_gradle-plugin-hide" class="hideLink" onclick="hide('platform_prebuilts_gradle-plugin');return false;">-</a>&nbsp;<a name="platform_prebuilts_gradle-plugin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/gradle-plugin">platform/prebuilts/gradle-plugin</a></h2>
+<div id="platform_prebuilts_gradle-plugin"><a href="https://android.googlesource.com/platform/prebuilts/gradle-plugin/+/7cf84d14">7cf84d14</a> :  Snap for 8464171 from 25cfd7c24a6c1258ebd209cc9b45e1a349fae4ec to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk11-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk11');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk11-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk11');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk11" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk11">platform/prebuilts/jdk/jdk11</a></h2>
+<div id="platform_prebuilts_jdk_jdk11"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk11/+/cedd7bf">cedd7bf</a> :  Snap for 8261343 from 3a4731d3c4e968419e008b7721b9704ccb40ddf2 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk17-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk17');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk17-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk17');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk17" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk17">platform/prebuilts/jdk/jdk17</a></h2>
+<div id="platform_prebuilts_jdk_jdk17"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk17/+/0c3e375">0c3e375</a> :  Snap for 8429428 from cda5b277874fedc254be5c0331682a2e6b487e78 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk8-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk8');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk8-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk8');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk8">platform/prebuilts/jdk/jdk8</a></h2>
+<div id="platform_prebuilts_jdk_jdk8"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk8/+/74e4f18">74e4f18</a> :  [automerger skipped] DO NOT MERGE - Merge pi-dev@5234907 into stage-aosp-master am: bffc2ec6f2 -s ours am skip reason: subject contains skip directive<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk9-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk9');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk9-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk9');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk9" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk9">platform/prebuilts/jdk/jdk9</a></h2>
+<div id="platform_prebuilts_jdk_jdk9"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk9/+/1f0b937">1f0b937</a> :  [automerger skipped] [DO NOT MERGE] Add remote toolchain inputs for java and javac. am: 38b18b13d9 am: fc8dfbc09e -s ours am: a8aac0cb4f am: 2f4fe5e060 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_ktlint-show" class="showLink" onclick="show('platform_prebuilts_ktlint');return false;">+</a><a href="#" id="platform_prebuilts_ktlint-hide" class="hideLink" onclick="hide('platform_prebuilts_ktlint');return false;">-</a>&nbsp;<a name="platform_prebuilts_ktlint" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/ktlint">platform/prebuilts/ktlint</a></h2>
+<div id="platform_prebuilts_ktlint"><a href="https://android.googlesource.com/platform/prebuilts/ktlint/+/14f4bde">14f4bde</a> :  Snap for 8352742 from b549aeeae2c18e5c5f47fac3aa751093be51b58a to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_manifest-merger-show" class="showLink" onclick="show('platform_prebuilts_manifest-merger');return false;">+</a><a href="#" id="platform_prebuilts_manifest-merger-hide" class="hideLink" onclick="hide('platform_prebuilts_manifest-merger');return false;">-</a>&nbsp;<a name="platform_prebuilts_manifest-merger" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/manifest-merger">platform/prebuilts/manifest-merger</a></h2>
+<div id="platform_prebuilts_manifest-merger"><a href="https://android.googlesource.com/platform/prebuilts/manifest-merger/+/1ca5016">1ca5016</a> :  Snap for 7809064 from ecfeee7607781bcdd1139abf162a83c3d2d50c06 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_maven_repo_android-show" class="showLink" onclick="show('platform_prebuilts_maven_repo_android');return false;">+</a><a href="#" id="platform_prebuilts_maven_repo_android-hide" class="hideLink" onclick="hide('platform_prebuilts_maven_repo_android');return false;">-</a>&nbsp;<a name="platform_prebuilts_maven_repo_android" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/maven_repo/android">platform/prebuilts/maven_repo/android</a></h2>
+<div id="platform_prebuilts_maven_repo_android"><a href="https://android.googlesource.com/platform/prebuilts/maven_repo/android/+/1057296c">1057296c</a> :  [automerger skipped] DO NOT MERGE - qt-qpr1-dev-plus-aosp-without-vendor@5915889 into stage-aosp-master am: c78944d200 am: ecc2406087 -s ours am skip reason: subject contains skip directive<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_maven_repo_bumptech-show" class="showLink" onclick="show('platform_prebuilts_maven_repo_bumptech');return false;">+</a><a href="#" id="platform_prebuilts_maven_repo_bumptech-hide" class="hideLink" onclick="hide('platform_prebuilts_maven_repo_bumptech');return false;">-</a>&nbsp;<a name="platform_prebuilts_maven_repo_bumptech" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/maven_repo/bumptech">platform/prebuilts/maven_repo/bumptech</a></h2>
+<div id="platform_prebuilts_maven_repo_bumptech"><a href="https://android.googlesource.com/platform/prebuilts/maven_repo/bumptech/+/aa92bc0">aa92bc0</a> :  Snap for 7809064 from 135733fda5d783880efdcd273c5b3c62374a1ffb to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_misc-show" class="showLink" onclick="show('platform_prebuilts_misc');return false;">+</a><a href="#" id="platform_prebuilts_misc-hide" class="hideLink" onclick="hide('platform_prebuilts_misc');return false;">-</a>&nbsp;<a name="platform_prebuilts_misc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/misc">platform/prebuilts/misc</a></h2>
+<div id="platform_prebuilts_misc"><a href="https://android.googlesource.com/platform/prebuilts/misc/+/f2d3842">f2d3842</a> :  Snap for 8485504 from 8bd8b591c23d4591508a0eb3d75da488e5f52870 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_AdServices-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_AdServices');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_AdServices-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_AdServices');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_AdServices" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AdServices">platform/prebuilts/module_sdk/AdServices</a></h2>
+<div id="platform_prebuilts_module_sdk_AdServices"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AdServices/+/d147aa4">d147aa4</a> :  Merge cherrypicks of [19099703] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_AppSearch-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_AppSearch');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_AppSearch-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_AppSearch');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_AppSearch" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AppSearch">platform/prebuilts/module_sdk/AppSearch</a></h2>
+<div id="platform_prebuilts_module_sdk_AppSearch"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AppSearch/+/ecee1d0">ecee1d0</a> :  Merge cherrypicks of [19098516] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Bluetooth-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Bluetooth');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Bluetooth-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Bluetooth');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Bluetooth">platform/prebuilts/module_sdk/Bluetooth</a></h2>
+<div id="platform_prebuilts_module_sdk_Bluetooth"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Bluetooth/+/35fd974">35fd974</a> :  Snap for 8698879 from 2e124459d26733861709c83f4de2136b09794440 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Connectivity-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Connectivity');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Connectivity-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Connectivity');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Connectivity" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Connectivity">platform/prebuilts/module_sdk/Connectivity</a></h2>
+<div id="platform_prebuilts_module_sdk_Connectivity"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Connectivity/+/75858bc">75858bc</a> :  Merge cherrypicks of [19100037] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_IPsec-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_IPsec');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_IPsec-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_IPsec');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_IPsec" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/IPsec">platform/prebuilts/module_sdk/IPsec</a></h2>
+<div id="platform_prebuilts_module_sdk_IPsec"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/IPsec/+/d76d2cc">d76d2cc</a> :  Merge cherrypicks of [19099960] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Media-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Media');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Media-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Media');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Media" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Media">platform/prebuilts/module_sdk/Media</a></h2>
+<div id="platform_prebuilts_module_sdk_Media"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Media/+/4f672ba">4f672ba</a> :  Merge cherrypicks of [19099932] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_MediaProvider-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_MediaProvider');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_MediaProvider-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_MediaProvider');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/MediaProvider">platform/prebuilts/module_sdk/MediaProvider</a></h2>
+<div id="platform_prebuilts_module_sdk_MediaProvider"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/MediaProvider/+/d706649">d706649</a> :  Merge cherrypicks of [19099993] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_OnDevicePersonalization-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_OnDevicePersonalization');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_OnDevicePersonalization-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_OnDevicePersonalization');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_OnDevicePersonalization" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/OnDevicePersonalization">platform/prebuilts/module_sdk/OnDevicePersonalization</a></h2>
+<div id="platform_prebuilts_module_sdk_OnDevicePersonalization"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/OnDevicePersonalization/+/116b271">116b271</a> :  Merge cherrypicks of [19100088] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Permission-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Permission');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Permission-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Permission');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Permission">platform/prebuilts/module_sdk/Permission</a></h2>
+<div id="platform_prebuilts_module_sdk_Permission"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Permission/+/3b18510">3b18510</a> :  Merge cherrypicks of [19100090] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Scheduling-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Scheduling');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Scheduling-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Scheduling');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Scheduling" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Scheduling">platform/prebuilts/module_sdk/Scheduling</a></h2>
+<div id="platform_prebuilts_module_sdk_Scheduling"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Scheduling/+/b973654">b973654</a> :  Merge cherrypicks of [19099487] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_SdkExtensions-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_SdkExtensions');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_SdkExtensions-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_SdkExtensions');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_SdkExtensions" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/SdkExtensions">platform/prebuilts/module_sdk/SdkExtensions</a></h2>
+<div id="platform_prebuilts_module_sdk_SdkExtensions"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/SdkExtensions/+/bcb7a97">bcb7a97</a> :  Merge cherrypicks of [19097922] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_StatsD-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_StatsD');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_StatsD-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_StatsD');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_StatsD" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/StatsD">platform/prebuilts/module_sdk/StatsD</a></h2>
+<div id="platform_prebuilts_module_sdk_StatsD"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/StatsD/+/1cc5587">1cc5587</a> :  Merge cherrypicks of [19100089] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Uwb-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Uwb');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Uwb-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Uwb');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Uwb" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Uwb">platform/prebuilts/module_sdk/Uwb</a></h2>
+<div id="platform_prebuilts_module_sdk_Uwb"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Uwb/+/ff912b9">ff912b9</a> :  Merge cherrypicks of [19100093] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Wifi-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Wifi');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Wifi-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Wifi');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Wifi">platform/prebuilts/module_sdk/Wifi</a></h2>
+<div id="platform_prebuilts_module_sdk_Wifi"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Wifi/+/5eac544">5eac544</a> :  Merge cherrypicks of [19246006] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_art-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_art');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_art-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_art');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_art" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/art">platform/prebuilts/module_sdk/art</a></h2>
+<div id="platform_prebuilts_module_sdk_art"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/art/+/6de16c5">6de16c5</a> :  Merge cherrypicks of [19100013] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_conscrypt-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_conscrypt');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_conscrypt-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_conscrypt');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_conscrypt" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/conscrypt">platform/prebuilts/module_sdk/conscrypt</a></h2>
+<div id="platform_prebuilts_module_sdk_conscrypt"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/conscrypt/+/c6fbbde">c6fbbde</a> :  Merge cherrypicks of [19099677] into tm-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_ndk-show" class="showLink" onclick="show('platform_prebuilts_ndk');return false;">+</a><a href="#" id="platform_prebuilts_ndk-hide" class="hideLink" onclick="hide('platform_prebuilts_ndk');return false;">-</a>&nbsp;<a name="platform_prebuilts_ndk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/ndk">platform/prebuilts/ndk</a></h2>
+<div id="platform_prebuilts_ndk"><a href="https://android.googlesource.com/platform/prebuilts/ndk/+/d193911b2">d193911b2</a> :  Snap for 8508895 from ee71351fae66b9f499d2783d332c66b8780c7ba6 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_qemu-kernel-show" class="showLink" onclick="show('platform_prebuilts_qemu-kernel');return false;">+</a><a href="#" id="platform_prebuilts_qemu-kernel-hide" class="hideLink" onclick="hide('platform_prebuilts_qemu-kernel');return false;">-</a>&nbsp;<a name="platform_prebuilts_qemu-kernel" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/qemu-kernel">platform/prebuilts/qemu-kernel</a></h2>
+<div id="platform_prebuilts_qemu-kernel"><a href="https://android.googlesource.com/platform/prebuilts/qemu-kernel/+/0b96b56">0b96b56</a> :  Snap for 7422738 from 841f4661bd5fcd086206d4e3ed16eb0432493679 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_r8-show" class="showLink" onclick="show('platform_prebuilts_r8');return false;">+</a><a href="#" id="platform_prebuilts_r8-hide" class="hideLink" onclick="hide('platform_prebuilts_r8');return false;">-</a>&nbsp;<a name="platform_prebuilts_r8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/r8">platform/prebuilts/r8</a></h2>
+<div id="platform_prebuilts_r8"><a href="https://android.googlesource.com/platform/prebuilts/r8/+/f9b1ef5">f9b1ef5</a> :  Snap for 8637088 from 39d54c694c4ff29daac0d83ebee1a758002f70be to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_remoteexecution-client-show" class="showLink" onclick="show('platform_prebuilts_remoteexecution-client');return false;">+</a><a href="#" id="platform_prebuilts_remoteexecution-client-hide" class="hideLink" onclick="hide('platform_prebuilts_remoteexecution-client');return false;">-</a>&nbsp;<a name="platform_prebuilts_remoteexecution-client" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/remoteexecution-client">platform/prebuilts/remoteexecution-client</a></h2>
+<div id="platform_prebuilts_remoteexecution-client"><a href="https://android.googlesource.com/platform/prebuilts/remoteexecution-client/+/99af7e5">99af7e5</a> :  Snap for 8710048 from 39b70a6ccac34d708de66465c349114ac10675ef to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_runtime-show" class="showLink" onclick="show('platform_prebuilts_runtime');return false;">+</a><a href="#" id="platform_prebuilts_runtime-hide" class="hideLink" onclick="hide('platform_prebuilts_runtime');return false;">-</a>&nbsp;<a name="platform_prebuilts_runtime" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/runtime">platform/prebuilts/runtime</a></h2>
+<div id="platform_prebuilts_runtime"><a href="https://android.googlesource.com/platform/prebuilts/runtime/+/b2c287c">b2c287c</a> :  Snap for 8561975 from 1c14d5fdcbcd80581acffb9c42d3c95c8d00092d to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_rust-show" class="showLink" onclick="show('platform_prebuilts_rust');return false;">+</a><a href="#" id="platform_prebuilts_rust-hide" class="hideLink" onclick="hide('platform_prebuilts_rust');return false;">-</a>&nbsp;<a name="platform_prebuilts_rust" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/rust">platform/prebuilts/rust</a></h2>
+<div id="platform_prebuilts_rust"><a href="https://android.googlesource.com/platform/prebuilts/rust/+/388a1131">388a1131</a> :  Snap for 8310722 from 3bd33ffd0f448c15acb98d576c9705d7e6244c9d to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_sdk-show" class="showLink" onclick="show('platform_prebuilts_sdk');return false;">+</a><a href="#" id="platform_prebuilts_sdk-hide" class="hideLink" onclick="hide('platform_prebuilts_sdk');return false;">-</a>&nbsp;<a name="platform_prebuilts_sdk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/sdk">platform/prebuilts/sdk</a></h2>
+<div id="platform_prebuilts_sdk"><a href="https://android.googlesource.com/platform/prebuilts/sdk/+/01f7b13e0">01f7b13e0</a> :  Snap for 8750474 from 48d9f223aeb121a7993b40dcb9006a03bb5cb8c6 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_tools-show" class="showLink" onclick="show('platform_prebuilts_tools');return false;">+</a><a href="#" id="platform_prebuilts_tools-hide" class="hideLink" onclick="hide('platform_prebuilts_tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/tools">platform/prebuilts/tools</a></h2>
+<div id="platform_prebuilts_tools"><a href="https://android.googlesource.com/platform/prebuilts/tools/+/658bc5394">658bc5394</a> :  Snap for 8492635 from 3320ae6b9b16e257de530ddd37074c56f91c02fa to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v28-show" class="showLink" onclick="show('platform_prebuilts_vndk_v28');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v28-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v28');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v28" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v28">platform/prebuilts/vndk/v28</a></h2>
+<div id="platform_prebuilts_vndk_v28"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v28/+/d3db739">d3db739</a> :  Snap for 8254899 from 682bb53451739cc166c4cbcb08ef0a4891f076af to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v29-show" class="showLink" onclick="show('platform_prebuilts_vndk_v29');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v29-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v29');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v29" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v29">platform/prebuilts/vndk/v29</a></h2>
+<div id="platform_prebuilts_vndk_v29"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v29/+/598b4c9">598b4c9</a> :  Snap for 7895410 from a7448d28ad2928dfd39c962fd1f717efe9f9775e to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v30-show" class="showLink" onclick="show('platform_prebuilts_vndk_v30');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v30-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v30');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v30" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v30">platform/prebuilts/vndk/v30</a></h2>
+<div id="platform_prebuilts_vndk_v30"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v30/+/b72026c">b72026c</a> :  Snap for 8362632 from 7355dd0cf03d4662304fbc9a6cd5f0e42eba3814 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v31-show" class="showLink" onclick="show('platform_prebuilts_vndk_v31');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v31-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v31');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v31" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v31">platform/prebuilts/vndk/v31</a></h2>
+<div id="platform_prebuilts_vndk_v31"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v31/+/07c7f59">07c7f59</a> :  Snap for 8372459 from da8a9e946a7aafdf481bb14c87bad378c6311ab7 to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v32-show" class="showLink" onclick="show('platform_prebuilts_vndk_v32');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v32-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v32');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v32" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v32">platform/prebuilts/vndk/v32</a></h2>
+<div id="platform_prebuilts_vndk_v32"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v32/+/5426aa8">5426aa8</a> :  Snap for 8661790 from 77d12843bda4e7cf21c4b5723b017f03997e93cc to tm-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_tools_tradefederation_prebuilts-show" class="showLink" onclick="show('platform_tools_tradefederation_prebuilts');return false;">+</a><a href="#" id="platform_tools_tradefederation_prebuilts-hide" class="hideLink" onclick="hide('platform_tools_tradefederation_prebuilts');return false;">-</a>&nbsp;<a name="platform_tools_tradefederation_prebuilts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/tools/tradefederation/prebuilts">platform/tools/tradefederation/prebuilts</a></h2>
+<div id="platform_tools_tradefederation_prebuilts"><a href="https://android.googlesource.com/platform/tools/tradefederation/prebuilts/+/afab069">afab069</a> :  Snap for 8762204 from f9071df4d6192e7d3627f9571407d963e3e1f5b3 to tm-release<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
