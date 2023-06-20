@@ -1,0 +1,852 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-13.0.0_r52 to android-13.0.0_r56 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-13.0.0_r52 to android-13.0.0_r56 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/ca8fe47fab">ca8fe47fab</a> :  Version bump to TQ3A.230605.012 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/52ea1d197c">52ea1d197c</a> :  Version bump to TQ3A.230605.010.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e2bf5dfd44">e2bf5dfd44</a> :  Update Security String to 2023-07-05<br />
+<a href="https://android.googlesource.com/platform/build/+/9c3a19c928">9c3a19c928</a> :  Update Security String to 2023-07-05<br />
+<a href="https://android.googlesource.com/platform/build/+/e88b8f4552">e88b8f4552</a> :  Version bump to TQ3A.230605.011 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/029df1931d">029df1931d</a> :  Version bump to TQ3A.230605.010 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_barbet-show" class="showLink" onclick="show('device_google_barbet');return false;">+</a><a href="#" id="device_google_barbet-hide" class="hideLink" onclick="hide('device_google_barbet');return false;">-</a>&nbsp;<a name="device_google_barbet" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/barbet">device/google/barbet</a></h2>
+<div id="device_google_barbet"><a href="https://android.googlesource.com/device/google/barbet/+/1c45c5d">1c45c5d</a> :  Update barbet SVN to 42<br />
+<a href="https://android.googlesource.com/device/google/barbet/+/b990180">b990180</a> :  Update barbet SVN to 42<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bluejay-show" class="showLink" onclick="show('device_google_bluejay');return false;">+</a><a href="#" id="device_google_bluejay-hide" class="hideLink" onclick="hide('device_google_bluejay');return false;">-</a>&nbsp;<a name="device_google_bluejay" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay">device/google/bluejay</a></h2>
+<div id="device_google_bluejay"><a href="https://android.googlesource.com/device/google/bluejay/+/ed9a678">ed9a678</a> :  Update bluejay SVN to 36<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/45a399d">45a399d</a> :  Update bluejay SVN to 36<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/c62a9cf">c62a9cf</a> :  Update bluejay SVN to 36<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_cuttlefish_prebuilts-show" class="showLink" onclick="show('device_google_cuttlefish_prebuilts');return false;">+</a><a href="#" id="device_google_cuttlefish_prebuilts-hide" class="hideLink" onclick="hide('device_google_cuttlefish_prebuilts');return false;">-</a>&nbsp;<a name="device_google_cuttlefish_prebuilts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/cuttlefish_prebuilts">device/google/cuttlefish_prebuilts</a></h2>
+<div id="device_google_cuttlefish_prebuilts"><a href="https://android.googlesource.com/device/google/cuttlefish_prebuilts/+/e358b880">e358b880</a> :  Snap for 9470583 from b2137f163c25c2541873e80a0cf21a3c22207941 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_lynx-show" class="showLink" onclick="show('device_google_lynx');return false;">+</a><a href="#" id="device_google_lynx-hide" class="hideLink" onclick="hide('device_google_lynx');return false;">-</a>&nbsp;<a name="device_google_lynx" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/lynx">device/google/lynx</a></h2>
+<div id="device_google_lynx"><a href="https://android.googlesource.com/device/google/lynx/+/3ae6841">3ae6841</a> :  Update lynx SVN to 7<br />
+<a href="https://android.googlesource.com/device/google/lynx/+/dfb0e32">dfb0e32</a> :  Update lynx SVN to 7<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_pantah-show" class="showLink" onclick="show('device_google_pantah');return false;">+</a><a href="#" id="device_google_pantah-hide" class="hideLink" onclick="hide('device_google_pantah');return false;">-</a>&nbsp;<a name="device_google_pantah" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/pantah">device/google/pantah</a></h2>
+<div id="device_google_pantah"><a href="https://android.googlesource.com/device/google/pantah/+/de7f5e9">de7f5e9</a> :  Update pantah SVN to 22<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/8a132fe">8a132fe</a> :  Update pantah SVN to 22<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_raviole-show" class="showLink" onclick="show('device_google_raviole');return false;">+</a><a href="#" id="device_google_raviole-hide" class="hideLink" onclick="hide('device_google_raviole');return false;">-</a>&nbsp;<a name="device_google_raviole" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/raviole">device/google/raviole</a></h2>
+<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/34a84b3">34a84b3</a> :  Update raviole SVN to 57<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/c36cdf9">c36cdf9</a> :  Update raviole SVN to 57<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/355cd0f">355cd0f</a> :  Update raviole SVN to 57<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redbull-show" class="showLink" onclick="show('device_google_redbull');return false;">+</a><a href="#" id="device_google_redbull-hide" class="hideLink" onclick="hide('device_google_redbull');return false;">-</a>&nbsp;<a name="device_google_redbull" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redbull">device/google/redbull</a></h2>
+<div id="device_google_redbull"><a href="https://android.googlesource.com/device/google/redbull/+/470085a">470085a</a> :  Update redbull SVN to 68<br />
+<a href="https://android.googlesource.com/device/google/redbull/+/e022ced">e022ced</a> :  Update redbull SVN to 68<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_sunfish-show" class="showLink" onclick="show('device_google_sunfish');return false;">+</a><a href="#" id="device_google_sunfish-hide" class="hideLink" onclick="hide('device_google_sunfish');return false;">-</a>&nbsp;<a name="device_google_sunfish" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/sunfish">device/google/sunfish</a></h2>
+<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/262060a">262060a</a> :  Update sunfish SVN to 62<br />
+<a href="https://android.googlesource.com/device/google/sunfish/+/98b509a">98b509a</a> :  Update sunfish SVN to 62<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_tangorpro-show" class="showLink" onclick="show('device_google_tangorpro');return false;">+</a><a href="#" id="device_google_tangorpro-hide" class="hideLink" onclick="hide('device_google_tangorpro');return false;">-</a>&nbsp;<a name="device_google_tangorpro" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/tangorpro">device/google/tangorpro</a></h2>
+<div id="device_google_tangorpro"><a href="https://android.googlesource.com/device/google/tangorpro/+/8133393">8133393</a> :  Update Limb SAR value in Regulatory Label<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/db41914">db41914</a> :  audio: disable raw for USB Dock<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/88163f2">88163f2</a> :  Decrease the touch slop to prevent unintentional long presses<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/199fb48">199fb48</a> :  [T6pro] Updating the Waves tuning.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/fbb68c0">fbb68c0</a> :  Enable lidControlsSleep config.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ee927d8">ee927d8</a> :  [T6pro] Updating the ForteMedia tuning files.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b09d970">b09d970</a> :  [T6pro] Updating the volume table for voice calls.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/9e0c93f">9e0c93f</a> :  powerhint: Boost GPU(302000) by 1st frame<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/8b8d1c6">8b8d1c6</a> :  thermal: Add permission for trigger_sensor sysfs<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/0ee09b6">0ee09b6</a> :  Camera powerhint update<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/82957e6">82957e6</a> :  Revert "Don't reset BatteryStats on high battery level or signif..."<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/f9607f6">f9607f6</a> :  [DO NOT MERGE] Use GmsCorePrebuilt y2023w06 for tangorpro devices<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/9c6a87e">9c6a87e</a> :  Camera: Add the property to bypass sensor binning resolution condition.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a32a836">a32a836</a> :  Don't reset BatteryStats on high battery level or significant charge<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/9a6261a">9a6261a</a> :  Bluetooth: update US/CA SAR tables<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/1fe9c52">1fe9c52</a> :  thermal: Update VSkin equation<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/13d556f">13d556f</a> :  Make tangorpro board work with aae-on-phone<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/6578828">6578828</a> :  [T6pro] Updating the Waves tuning.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/131578d">131578d</a> :  Audio: update permission of speaker file<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/1fbd602">1fbd602</a> :  uwb: update uwb calibration for ch9 delay<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b2c5c17">b2c5c17</a> :  [DO NOT MERGE] fingerprint: Enable fingerprint status flag<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/c760f7a">c760f7a</a> :  Bluetooth: update SAR tables<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4e4c9b5">4e4c9b5</a> :  Enable dynamic recomposition by default<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/724c317">724c317</a> :  Update speaker-mic-post setting for increasing gain<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/15cf13a">15cf13a</a> :  thermal: thermal config clean up<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/1834a40">1834a40</a> :  display: golden files update<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/37dc2b7">37dc2b7</a> :  thermal: update USBC throttling policy<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e45d8c5">e45d8c5</a> :  thermal: align the tpu, gxp throttling policy with P22<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/47c84e1">47c84e1</a> :  Set DWB transition speed and high light range<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/62ef578">62ef578</a> :  update uwb calibration<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/46b613c">46b613c</a> :  Update lock icon padding<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/3fcd20e">3fcd20e</a> :  Ring volume icon stuck at normal<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/1a722f9">1a722f9</a> :  Update low light and strong mode DWB values<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/c673705">c673705</a> :  Thermal: Remove Camera Powerhint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/cdee112">cdee112</a> :  thermal: Update Vskin shutdown threshold<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/807c27a">807c27a</a> :  thermal: Update trigger sensors<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/2dcd116">2dcd116</a> :  Add libcast_auth to PRODUCT_PACKAGES<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/1ea2931">1ea2931</a> :  [T6pro] Updating the volume tables.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/c73943a">c73943a</a> :  Display: permission to access cabc mode<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/c832852">c832852</a> :  [T6pro] Updating the Waves tuning.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/0b33f83">0b33f83</a> :  [DO NOT MERGE] Use GmsCorePrebuilt y2023w02 for tangorpro devices<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/18e3203">18e3203</a> :  Update x and y to align with the recent device configuration change.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/357bd39">357bd39</a> :  Change default notification stream audio<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b8d6a82">b8d6a82</a> :  Reveal model/make name in camera EXIF<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/dd52038">dd52038</a> :  Add template for generating tangorpro vendor blobs<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e10a95b">e10a95b</a> :  [DO NOT MERGE]lights: Add golden calibration support<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/291e1c2">291e1c2</a> :  Bluetooth: add BT SAR tables<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b2190f7">b2190f7</a> :  uwb: update T6P calibration file base on T6 PRD<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/bc7fa7c">bc7fa7c</a> :  Revert "Enable SAE upgrade offload"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/2a23a8f">2a23a8f</a> :  Enable Assistant hub mode settings on tangor<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/932308d">932308d</a> :  Add regulation e-label for TangorPro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/9d767c6">9d767c6</a> :  audio: support ultrasonic capture 3 ch<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/41bff6c">41bff6c</a> :  Enable SAE upgrade offload<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/45c1e5b">45c1e5b</a> :  Revert "DRM VTS Vendor module for castkey"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/767adb8">767adb8</a> :  DRM VTS Vendor module for castkey<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/8006d10">8006d10</a> :  waves: shift subtype since new rotation reporterd<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/5608305">5608305</a> :  Bluetooth: remove unsupported feature IBluetoothCcc settings<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e17926c">e17926c</a> :  thermal: modify GPU thermal throttling policy<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b137028">b137028</a> :  thermal: Remove face unlock powerhint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a15edc5">a15edc5</a> :  Change system property type<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/c3a8473">c3a8473</a> :  audio: adjust the latency for camcorder av sync<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/cff81aa">cff81aa</a> :  uwb: update T6P calibration file<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4b45975">4b45975</a> :  audio: update handsfree AEC<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/7685a7a">7685a7a</a> :  Thermal: update charger_skin_therm permission for thermalHAL<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/94157b7">94157b7</a> :  Thermal: Update passiveDelay and pollingDealy of trigger sensors<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/809d0d7">809d0d7</a> :  Disable unsupported BT profiles<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/d9c6a4a">d9c6a4a</a> :  Disable sensor power for off mode charging.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e8a062b">e8a062b</a> :  thermal: Update VIRTUAL-BACK-CHARGER Sensor<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/28d3ef8">28d3ef8</a> :  thermal: Update powerhint to use VIRTUAL-SKIN-HINT<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/66129c9">66129c9</a> :  bt: change bluetooth.uart.port property to soong config property this property is also tied to vendor partition usage<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/89d4a4b">89d4a4b</a> :  [T6pro] Updating the Waves tuning.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e28a493">e28a493</a> :  [2/2][Pro] Set orientation for boot animation and default display rotation.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/f1ea15f">f1ea15f</a> :  Mark that device is not voice capable<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/6744246">6744246</a> :  [DO NOT MERGE] Revert "Revert "[AudioProxy] Enable AudioProxy""<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/7661bc4">7661bc4</a> :  Remove UClampThreshold hint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4876730">4876730</a> :  power_profile: remove modem<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/40e6ca6">40e6ca6</a> :  Revert "[AudioProxy] Enable AudioProxy"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/32eaab9">32eaab9</a> :  [1/n][Pro] Change natural device orientation to portrait.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/2ba02fa">2ba02fa</a> :  Default pickupGesture enabled state is FALSE<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4c6b6d0">4c6b6d0</a> :  thermal: add charging throttling policy<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ab7bfdb">ab7bfdb</a> :  factory: default disable tap gesture function<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a913e08">a913e08</a> :  audio: add missed camcorder be_cfg in dsp latency<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/785443f">785443f</a> :  Disable legacy dream components<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/d9e676a">d9e676a</a> :  thermal: add CPU GPU throttling policy and VIRTUAL-SKIN-HINT<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b3c1e7f">b3c1e7f</a> :  Revert "Revert "init: Delay trusty app loading until storage is ..."<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/25cc882">25cc882</a> :  Revert "init: Delay trusty app loading until storage is ready"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/949ab7d">949ab7d</a> :  fingerprint: Correct power-key node<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/0ca6773">0ca6773</a> :  init: Delay trusty app loading until storage is ready<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/65582a5">65582a5</a> :  audio: update speaker firmware tuning bin files<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e1ba72a">e1ba72a</a> :  Add MIPI Coex tables for tangor cameras<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/622aac9">622aac9</a> :  audio: Update Fortemedia tuning<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/d233fb5">d233fb5</a> :  Enable CABC as default.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e8e806a">e8e806a</a> :  Overlay config_disable_all_cb_messages to true to disable WEA<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/f568c80">f568c80</a> :  uwb: update calibration file<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/f75c0dd">f75c0dd</a> :  [AudioProxy] Enable AudioProxy<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4e093e9">4e093e9</a> :  Add AOSP support for tangorpro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/dcd8724">dcd8724</a> :  thermal: update VIRTUAL-SKIN sensor equation for EVT2<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/8e4ecca">8e4ecca</a> :  Don't set the min CPU frequency to max frequency for CAMERA_SHOT<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/2620d68">2620d68</a> :  [T6] Camera: Enable the product properties.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4533d1c">4533d1c</a> :  audio: enable gapless offload flag<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a11b655">a11b655</a> :  Change the default cpuset of camera daemon<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4a6e85e">4a6e85e</a> :  waves: update mps with LR swap<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/7567ae2">7567ae2</a> :  powerhint: increase boost cap for large UI<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/20d00b6">20d00b6</a> :  RESTRICT AUTOMERGE: Set tangorpro as the tuning_product for tangorpro device.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a1e87a3">a1e87a3</a> :  powerhint: relax the cap when camera exit<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/6ddc5e8">6ddc5e8</a> :  Limit camera daemon cpuset to little cores when app launch<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ab96bc8">ab96bc8</a> :  audio: amcs: add 4 speaker numbers into arguments<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b034e89">b034e89</a> :  audio: disable 2.1 mode for qpr2<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/071893e">071893e</a> :  Display: update res config.xml<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/1d471c8">1d471c8</a> :  audio: add dynamics processing effect to audio_effects.xml<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/39c23b1">39c23b1</a> :  Display: add permission to access cabc mode<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/c4f94ee">c4f94ee</a> :  Import init.factory.rc<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/9286215">9286215</a> :  display: add golden files<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/6683620">6683620</a> :  Fix power_profile.xml location.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e2809f6">e2809f6</a> :  audio: remove haptic output<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ed008e1">ed008e1</a> :  Print error log only if result is empty<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4035c25">4035c25</a> :  lights: Add dusk mode support<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/574a8da">574a8da</a> :  audio: Update Fortemedia tuning for Dock<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/eac06d3">eac06d3</a> :  audio: correct waves output mode<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/0b65616">0b65616</a> :  audio: enable 2.1 mode with Waves<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/2cd57aa">2cd57aa</a> :  powerstats: add UWB state residency<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e4005cb">e4005cb</a> :  Update DWB values for T6pro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/72bf1d3">72bf1d3</a> :  Enable the dream setup component<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/45a461c">45a461c</a> :  touch: change permission for dumpstate used.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a7f6169">a7f6169</a> :  uwb: update calibration file<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/eff267c">eff267c</a> :  perf: add dex pre-opt for SystemUITitan<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/76a9b0d">76a9b0d</a> :  Fortemedia: update VoIP tuning to 32K<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/57fc1d2">57fc1d2</a> :  audio: update speaker firmware tuning bin files<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/d973860">d973860</a> :  powerstats: update specific data provider configurations<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ac90c68">ac90c68</a> :  mm: sync max_cached_processes settings<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/96e19e9">96e19e9</a> :  CastAuthApk: Add logs on mediaDRM plugin<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/506bca2">506bca2</a> :  audio: add support 4 individual speaker paths<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/954576d">954576d</a> :  powerhint: synchronize and remove unused hints<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/6be4ee2">6be4ee2</a> :  audio: add 4 amps rotation paths<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a18b62f">a18b62f</a> :  [DO NOT MERGE] Use GmsCorePrebuilt y2022w41 for tangorpro devices<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ddc73b2">ddc73b2</a> :  [T6pro] Updating the Waves tuning.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/5a293d9">5a293d9</a> :  audio: update ultrasonic capture setting<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/fc75279">fc75279</a> :  Update camera and face unlock related powerhint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4e115dc">4e115dc</a> :  T6pro: bypass csi crc error<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4d58b9a">4d58b9a</a> :  CastAuthApk: Fix build errors regarding 7-bit overflow using char<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/6eb4771">6eb4771</a> :  Set Cast SSID suffix<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ae7a623">ae7a623</a> :  [T6pro] Enable the flag to increase thread priority for nodes stop<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/d125960">d125960</a> :  Disable Android telephony euicc on Tablet products<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/78e8b81">78e8b81</a> :  [T6] Relax CPU minimum frequency boost for LAUNCH_CAMERA<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/6984305">6984305</a> :  Add component overrides to tangorpro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/d926f40">d926f40</a> :  Remove DCK property<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/af0b740">af0b740</a> :  audio: update FM tables<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/66c1664">66c1664</a> :  CastAuthApk: Castkey AIDL mediaDrm plugin<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/fb15d3b">fb15d3b</a> :  pogo: File nodes permission change<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e1a1e09">e1a1e09</a> :  RESTRICT AUTOMERGE: Update T6Pro soong_config target device<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/da4759d">da4759d</a> :  Start twoshay service on boot.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/271c7e8">271c7e8</a> :  [DO NOT MERGE] Use GmsCorePrebuilt y2022w39 for tangorpro devices<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/06f1e47">06f1e47</a> :  Revert "RESTRICT AUTOMERGE: [Camera 3A] Update T6Pro soong_config"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/fed96fe">fed96fe</a> :  RESTRICT AUTOMERGE: [Camera 3A] Update T6Pro soong_config<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/3c7314c">3c7314c</a> :  Add Ownership to powerhint files<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e4a986a">e4a986a</a> :  Set Lyric camera_hardware variable.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/761ee0a">761ee0a</a> :  powerstats: update Display energy consumer<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/7f1a1ba">7f1a1ba</a> :  Set correct the isp tuning project name<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/9d27aac">9d27aac</a> :  waves: support AUDIO_DEVICE_OUT_DGTL_DOCK_HEADSET<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/fa017cc">fa017cc</a> :  audio: extand the period number of hifi usecase<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/408df1d">408df1d</a> :  [T6pro] Updating the hotword pipeline gain settings.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/55da574">55da574</a> :  lights: Move version above fqname<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/54bda0f">54bda0f</a> :  powerhint: clean up unused hints in T6p<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e657950">e657950</a> :  Remove frequency boost of big cores for FACE_UNLOCK<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e9f6f92">e9f6f92</a> :  thermal: update control temp in powerhint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/546a717">546a717</a> :  zram: add zram size property<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/06b486d">06b486d</a> :  Build T6 Pro default CMF color wallpaper<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/001814c">001814c</a> :  Replace GPUMinFreq 151000 with 202000<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/0c9f44c">0c9f44c</a> :  Differentiate COD between phone and non-phone project<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/60f3c1e">60f3c1e</a> :  Config dex2oat according to thermal status<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/6e3022a">6e3022a</a> :  fingerprint: Add config for different product<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/2c147fd">2c147fd</a> :  fingerprint: Enable Clean ta flag<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b625c6d">b625c6d</a> :  fingerprint: Enable HIDL fingerprint status flag<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e3aca7b">e3aca7b</a> :  input: Add USI Device Certification Tool<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/de3d6dd">de3d6dd</a> :  Remove RestrictedCpuset hint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ba8ccf3">ba8ccf3</a> :  Enable ADPF CPU hints for SF<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/7ace69f">7ace69f</a> :  fingerprint: 1540.app take priority over cast_auth.app<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/03f5667">03f5667</a> :  thermal: seperate thermal config for charging<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b591430">b591430</a> :  audio: improve mute duration<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ca6b0c6">ca6b0c6</a> :  audio: update fm table<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/acf8bdf">acf8bdf</a> :  powerstats: update configuration of common data providers<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/99c90cb">99c90cb</a> :  Revert "Disable A2DP hardware offload"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/f4ee98a">f4ee98a</a> :  display: enable Lbe supported property<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/752f979">752f979</a> :  Disable Baro, Prox and HIFI sensors on Tablet products<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/f01909c">f01909c</a> :  Remove GPS settings<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/5efa290">5efa290</a> :  Bundle tablet_core_hardware.xml<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/71340dc">71340dc</a> :  Remove NFC settings<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/3483016">3483016</a> :  p2p: fix p2p configuration<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/905a74d">905a74d</a> :  powerstats: update display resolution<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/7f0987a">7f0987a</a> :  Add AIDL support on IBluetoothCcc<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/29de9af">29de9af</a> :  Factory: disable touch offload and v4l2.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/6ece128">6ece128</a> :  touch: change permission for dumpstate used.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/86dda98">86dda98</a> :  Add LE Audio policy file<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/c753682">c753682</a> :  bcl: update trigger condition for BAACL mechanism<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/96565d3">96565d3</a> :  powerstats: enable PowerStats HAL<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a643523">a643523</a> :  thermal: Update config_shutdownBatteryTemperature to 58<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e735068">e735068</a> :  Disable Android camera flash and autofocus on Tablet products<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/353ba4f">353ba4f</a> :  audio: update VOIP usecase config<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b3c6a07">b3c6a07</a> :  Remove device-specific support for GoogleBattery HAL<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/c0bced1">c0bced1</a> :  Disable A2DP hardware offload<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/2cf91a8">2cf91a8</a> :  [DO NOT MERGE] Use GmsCorePrebuilt y2022w28 for tangorpro devices<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/d6d793b">d6d793b</a> :  Correct speaker.cal permission for T6pro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/f6efa05">f6efa05</a> :  init: set vendor.all.modules.ready and vendor.all.devices.ready<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/cf0a71a">cf0a71a</a> :  audio: enable BAACL<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/df3093b">df3093b</a> :  audio: correct table of feature SoundTriggerDockTuning<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/5b39e84">5b39e84</a> :  audio: sync audio tables<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b7453e6">b7453e6</a> :  factory: create led calibrator folder<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/987953c">987953c</a> :  powerhal: update powerhint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/88c3717">88c3717</a> :  audio: update speaker diagnostic bin files<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/8b6b42d">8b6b42d</a> :  Synaptics Bluetooth A/B firmware update feature<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e35a7cc">e35a7cc</a> :  bcl: Initialize bcl configurations<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/50e31c0">50e31c0</a> :  add power_profile<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/1fc1da1">1fc1da1</a> :  [DO NOT MERGE] Use GmsCorePrebuilt y2022w24 for tangorpro devices<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/2599d76">2599d76</a> :  aoc: add USB setting<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ae8524f">ae8524f</a> :  audio: update speaker protection bin files<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/5d38609">5d38609</a> :  Enable lights HAL<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/0d44479">0d44479</a> :  Add the support of lights HAL<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/445a31f">445a31f</a> :  aoc: correct capture setting<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/fb24899">fb24899</a> :  Define namespaces to include libbinder_trusty_paidl.so and libcast_auth.so<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/939bf7c">939bf7c</a> :  castauth: load castauth TZ app<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/37a8657">37a8657</a> :  Check-in cast auth ICA.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/bec6a77">bec6a77</a> :  CastInstallKeybox: Enable provisioning tool<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/16ef75d">16ef75d</a> :  thermal: update sensor equation for VIRTUAL-SKIN<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/23c4803">23c4803</a> :  tangorpro: sync media_profiles from tangor<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4da6b64">4da6b64</a> :  audio: update slot position when using ultrasound playback for factory<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a5f7571">a5f7571</a> :  uwb: enable production stack on T6P<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/47c47c4">47c47c4</a> :  fingerprint: Enable SW42 version<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/e0e6499">e0e6499</a> :  thermal: update control temp in powerhint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/c2afe0f">c2afe0f</a> :  powerhal: correct the name of powertint "ReducePreferIdle"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/32b2e41">32b2e41</a> :  audio: set speaker safe path the same as speaker<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/8c2b39a">8c2b39a</a> :  Enable feature android.software.telecom<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a88f223">a88f223</a> :  remove cs40l26 hal<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/f199342">f199342</a> :  Set BOARD_WITHOUT_RADIO to true<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/16a0b3c">16a0b3c</a> :  tangorpro: move overlays before chipset mk<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a1e5737">a1e5737</a> :  tangorpro: sync overlays from tangor<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/bff4d9f">bff4d9f</a> :  Update density to 320 dpi.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ae0e8ef">ae0e8ef</a> :  Integrate wifi configuraions for tangorpro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/cd99ec4">cd99ec4</a> :  T6Pro Bluetooth bringup<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/f896a21">f896a21</a> :  tangorpro: rotate recovery UI by 90 degrees left<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/78cb84c">78cb84c</a> :  [REVERTME] tangorpro: set metadata_init_delete_all_keys to false<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/68323f2">68323f2</a> :  tangorpro: sync latest powerhint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/8c082f7">8c082f7</a> :  Set config_sms_capable to false<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/1903df3">1903df3</a> :  audio: waves: correct channel for reversed landscape<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/a47c5e6">a47c5e6</a> :  Update touch kernel module.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/99d9478">99d9478</a> :  Tangorpro: add requirement for vendor_kernel_boot partition<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/03ce73f">03ce73f</a> :  powerhal: sync latest powerhint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/05dbf73">05dbf73</a> :  Add touchscreen and stylus input configuration file.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/840e751">840e751</a> :  Initial touch sysfs config.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b9b19ef">b9b19ef</a> :  Integrate wifi configuraions for tangorpro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/24495fa">24495fa</a> :  ADPF: remove UclampMin_Granularity<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/8c02da2">8c02da2</a> :  audio: use legacy voip condition<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/2a78a2f">2a78a2f</a> :  Boost INTERACTION to 185 and remove DISPLAY_UPDATE_IMMINENT<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/bd253ea">bd253ea</a> :  Revert "[T6] Updating the hotword pipeline gain settings."<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/af6a083">af6a083</a> :  audio: allow mmap-record to set dsp volume<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/9b1d96e">9b1d96e</a> :  sthal: add dynamic tuning feature<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b75cbf1">b75cbf1</a> :  Switch BluetoothCcc to 1.1 version<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ea69da1">ea69da1</a> :  thermal: Disable Tskin policy<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/840cd35">840cd35</a> :  Reduce FG prefer_idle when display is idle<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/838ccb3">838ccb3</a> :  powerhint: Add Adpf Profiles for T6 Pro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/5a31409">5a31409</a> :  Remove unused haptics kernel module<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/de07b38">de07b38</a> :  [T6] Updating the hotword pipeline gain settings.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/0904a1f">0904a1f</a> :  audio: add immersive playback support<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/b3810b0">b3810b0</a> :  audio: sync mixer table for Eraser capture<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/712ba5e">712ba5e</a> :  set swiotlb as noforce<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/df277fb">df277fb</a> :  sched: move sysfs to procfs<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/25f7367">25f7367</a> :  audio: add audio_proxy_policy_configuration.xml<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/90b9e3f">90b9e3f</a> :  audio: sync last tuning settings<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/69f1274">69f1274</a> :  disable powerhint for F2FS gc_urgent mode<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/8ad6d70">8ad6d70</a> :  Temporarily disable GPU power hold during LAUNCH boost<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/dd5f546">dd5f546</a> :  Add device tangorpro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/4ae3365">4ae3365</a> :  Initial empty repository<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_tangorpro-sepolicy-show" class="showLink" onclick="show('device_google_tangorpro-sepolicy');return false;">+</a><a href="#" id="device_google_tangorpro-sepolicy-hide" class="hideLink" onclick="hide('device_google_tangorpro-sepolicy');return false;">-</a>&nbsp;<a name="device_google_tangorpro-sepolicy" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/tangorpro-sepolicy">device/google/tangorpro-sepolicy</a></h2>
+<div id="device_google_tangorpro-sepolicy"><a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/7e7ab2d">7e7ab2d</a> :  Allow sensor hal to access uhid devices.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/7e59945">7e59945</a> :  Allow platform_app:systemui to access system_update info<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/add3a60">add3a60</a> :  fingerprint: Allow fps HAL to access sysfs_batteryinfo<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/0f73376">0f73376</a> :  DO NOT MERGE Revert "Revert "Clean up debug.sf.ignore_hwc_physical_display_or..."<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/d831267">d831267</a> :  Revert^3 "Add SElinux policy for mediashell suffix property"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/9a9efab">9a9efab</a> :  Allow SystemUI to access fp hal.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/d8820e6">d8820e6</a> :  Revert "Clean up debug.sf.ignore_hwc_physical_display_orientation"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/37cb898">37cb898</a> :  Clean up debug.sf.ignore_hwc_physical_display_orientation<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/e1c1a2e">e1c1a2e</a> :  Revert "Add odm_cast_prop for Tangorpro"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/a2b4399">a2b4399</a> :  Add odm_cast_prop for Tangorpro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/74bdc80">74bdc80</a> :  Add sepolicy to allow lights to access display<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/9408168">9408168</a> :  Revert^2 "Add SElinux policy for mediashell suffix property"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/8b4d4d6">8b4d4d6</a> :  Revert "Add SElinux policy for mediashell suffix property"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/e729f1b">e729f1b</a> :  Add SElinux policy for mediashell suffix property<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/6d590c3">6d590c3</a> :  fingerprint: allow fps to access sysfs_leds<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/6f12e9f">6f12e9f</a> :  [DO NOT MERGE] Suppress linux denials<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/11808aa">11808aa</a> :  [1/2][Pro] Set orientation for boot animation and default display rotation.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/965a3fb">965a3fb</a> :  [5/n][Pro] Change natural device orientation to portrait.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/0fe5303">0fe5303</a> :  [AudioProxy] SEPolicy for AudioProxy<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/58e5a0d">58e5a0d</a> :  sepolicy: Allow fingerprint to access fwk hwservice<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/8b78d57">8b78d57</a> :  Fix FPS servicemanager sepolicy issue<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/bfba5df">bfba5df</a> :  Fix FPS hwservice sepolicy issue<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/c3ea668">c3ea668</a> :  Revert "Revert "CastAuth: SELinux rules for the MediaDrm plugin""<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/fae580c">fae580c</a> :  Revert "CastAuth: SELinux rules for the MediaDrm plugin"<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/c579440">c579440</a> :  CastAuth: SELinux rules for the MediaDrm plugin<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/938a12a">938a12a</a> :  Sepolicy for hall effect notification.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/36714be">36714be</a> :  sepolicy: add sysfs_wakeup labels for acpm<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/39b4f38">39b4f38</a> :  Add binder call for grilservice and hal_bluetooth<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/ccd9f49">ccd9f49</a> :  RESTRICT AUTOMERGE sepolicy: allow binder call for hal_power_stats and hal_bluetooth<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/f3b6df7">f3b6df7</a> :  sepolicy: add missing sysfs_wakeup labels<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/f7be842">f7be842</a> :  Migrate LED sepolicy used by dumpstate to gs201<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/aebc367">aebc367</a> :  Port pogo sepolicy for target<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/834dc1b">834dc1b</a> :  Allow vendor_init to read gesture_prop.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/5cc0905">5cc0905</a> :  Update SELinux error<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/3c989e7">3c989e7</a> :  Setup tracking folder<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/ae3a1d0">ae3a1d0</a> :  sepolicy: Correct the camera sepolicy for T6Pro<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/24d426e">24d426e</a> :  Add sepolicy to support lights HAL<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/904d1b1">904d1b1</a> :  fingerprint: Add new lable for capacitance fingerprint<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/07b7d71">07b7d71</a> :  sepolicy: allows dock power supply permission<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/37bb48c">37bb48c</a> :  T6Pro Bluetooth bringup<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/2d23765">2d23765</a> :  sepolicy: allow system_server to read sysfs_touch.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/b72de76">b72de76</a> :  Initial touch sepolicy.<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/aa2098e">aa2098e</a> :  Initial device tangorpro sepolicy<br />
+<a href="https://android.googlesource.com/device/google/tangorpro-sepolicy/+/eeb18c6">eeb18c6</a> :  Initial empty repository<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_chromium-webview-show" class="showLink" onclick="show('platform_external_chromium-webview');return false;">+</a><a href="#" id="platform_external_chromium-webview-hide" class="hideLink" onclick="hide('platform_external_chromium-webview');return false;">-</a>&nbsp;<a name="platform_external_chromium-webview" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/chromium-webview">platform/external/chromium-webview</a></h2>
+<div id="platform_external_chromium-webview"><a href="https://android.googlesource.com/platform/external/chromium-webview/+/fd5c5a7">fd5c5a7</a> :  Snap for 9527334 from 259ec8d2ad6dd574a7e6de96b317a80de87c227b to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_linux-kselftest-show" class="showLink" onclick="show('platform_external_linux-kselftest');return false;">+</a><a href="#" id="platform_external_linux-kselftest-hide" class="hideLink" onclick="hide('platform_external_linux-kselftest');return false;">-</a>&nbsp;<a name="platform_external_linux-kselftest" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/linux-kselftest">platform/external/linux-kselftest</a></h2>
+<div id="platform_external_linux-kselftest"><a href="https://android.googlesource.com/platform/external/linux-kselftest/+/e9ebf262fc02">e9ebf262fc02</a> :  Merge "Revert "Skip binderfs tests for kernels without support"" am: 70500fd1b2 am: be6c477fb0 am: 5db1b0bfbf<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_skia-show" class="showLink" onclick="show('platform_external_skia');return false;">+</a><a href="#" id="platform_external_skia-hide" class="hideLink" onclick="hide('platform_external_skia');return false;">-</a>&nbsp;<a name="platform_external_skia" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/skia">platform/external/skia</a></h2>
+<div id="platform_external_skia"><a href="https://android.googlesource.com/platform/external/skia/+/f3e1eaed89">f3e1eaed89</a> :  Enforce program stack limits on function parameters.<br />
+<a href="https://android.googlesource.com/platform/external/skia/+/de77516a80">de77516a80</a> :  Enforce program stack limits on function parameters.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_subsampling-scale-image-view-show" class="showLink" onclick="show('platform_external_subsampling-scale-image-view');return false;">+</a><a href="#" id="platform_external_subsampling-scale-image-view-hide" class="hideLink" onclick="hide('platform_external_subsampling-scale-image-view');return false;">-</a>&nbsp;<a name="platform_external_subsampling-scale-image-view" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/subsampling-scale-image-view">platform/external/subsampling-scale-image-view</a></h2>
+<div id="platform_external_subsampling-scale-image-view"><a href="https://android.googlesource.com/platform/external/subsampling-scale-image-view/+/af6e4ab">af6e4ab</a> :  [automerger skipped] Merge Android 12 am: 65c444d1ca -s ours am: c321495a9d -s ours am: 0111517992 -s ours am: 62fbd08488 -s ours am: be21297d53 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_timezone-boundary-builder-show" class="showLink" onclick="show('platform_external_timezone-boundary-builder');return false;">+</a><a href="#" id="platform_external_timezone-boundary-builder-hide" class="hideLink" onclick="hide('platform_external_timezone-boundary-builder');return false;">-</a>&nbsp;<a name="platform_external_timezone-boundary-builder" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/timezone-boundary-builder">platform/external/timezone-boundary-builder</a></h2>
+<div id="platform_external_timezone-boundary-builder"><a href="https://android.googlesource.com/platform/external/timezone-boundary-builder/+/82d8ad5">82d8ad5</a> :  Android additions to timezone-boundary-builder am: 4fd94cfcf9 am: 1d4954a75e am: 416012905c<br />
+<a href="https://android.googlesource.com/platform/external/timezone-boundary-builder/+/0bed5d6">0bed5d6</a> :  Merge remote-tracking branch 'aosp/upstream-master' am: a742137af6 am: 98f13a6355 am: ec66c3d5b4 am: 473e4fddaf<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/58c80875b248">58c80875b248</a> :  Visit URIs in landscape/portrait custom remote views.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/56e9c33cc91f">56e9c33cc91f</a> :  [RESTRICT AUTOMERGE] Prevent installing apps in policy restricted work profile using ADB<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ee3f2dddcc6b">ee3f2dddcc6b</a> :  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b75a5c625592">b75a5c625592</a> :  [1-time permissions] Use internal api to check proc states<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3b3110b5455b">3b3110b5455b</a> :  Watch uid proc state instead of importance for 1-time permissions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3f4d138a91fb">3f4d138a91fb</a> :  Truncate ShortcutInfo Id<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/67d1b351ea37">67d1b351ea37</a> :  Dismiss keyguard when simpin auth'd and...<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c14de1413b4b">c14de1413b4b</a> :  Only allow NEW_TASK flag when adjusting pending intents<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a067bd4266a1">a067bd4266a1</a> :  Grant URI permissions to the CallStyle-related ones<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0c4f9bd61a5f">0c4f9bd61a5f</a> :  Revert "Ensure that only SysUI can override pending intent launch flags"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0c2215c1bdad">0c2215c1bdad</a> :  Ensure that only SysUI can override pending intent launch flags<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cd82ce44fbec">cd82ce44fbec</a> :  Visit URIs in landscape/portrait custom remote views.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b68cd812d0ea">b68cd812d0ea</a> :  [RESTRICT AUTOMERGE] Prevent installing apps in policy restricted work profile using ADB<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/da894ded77b2">da894ded77b2</a> :  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b93922788a8a">b93922788a8a</a> :  [1-time permissions] Use internal api to check proc states<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b2fa796bcfe4">b2fa796bcfe4</a> :  Watch uid proc state instead of importance for 1-time permissions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f8621c6f6201">f8621c6f6201</a> :  Truncate ShortcutInfo Id<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/85ff5495758b">85ff5495758b</a> :  Dismiss keyguard when simpin auth'd and...<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8379fee09b56">8379fee09b56</a> :  Only allow NEW_TASK flag when adjusting pending intents<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1c3625e8258b">1c3625e8258b</a> :  Grant URI permissions to the CallStyle-related ones<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b6e862d45291">b6e862d45291</a> :  Sanitize VPN label to prevent HTML injection<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8d4767b63da5">8d4767b63da5</a> :  Revert "Ensure that only SysUI can override pending intent launch flags"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b18378bd79f8">b18378bd79f8</a> :  Ensure that only SysUI can override pending intent launch flags<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_4.19_arm64-show" class="showLink" onclick="show('kernel_prebuilts_4.19_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_4.19_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_4.19_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_4.19_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/4.19/arm64">kernel/prebuilts/4.19/arm64</a></h2>
+<div id="kernel_prebuilts_4.19_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/4.19/arm64/+/ed6d15e">ed6d15e</a> :  [automerger skipped] Update kernel to builds 7803428 am: 4954a67610 -s ours am: 34980c55db -s ours am: e428bf10f0 -s ours am: c7c936d71d -s ours am: 7ce0d68b16 -s ours am: 828ea81742 -s ours am: c288124220 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.10_arm64-show" class="showLink" onclick="show('kernel_prebuilts_5.10_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_5.10_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.10_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.10_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.10/arm64">kernel/prebuilts/5.10/arm64</a></h2>
+<div id="kernel_prebuilts_5.10_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/5.10/arm64/+/fb77336">fb77336</a> :  Snap for 9470583 from 2fbe93eaf61ae4500c6a85e0d12de52a98c2b42f to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.10_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_5.10_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_5.10_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.10_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.10_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.10/x86-64">kernel/prebuilts/5.10/x86-64</a></h2>
+<div id="kernel_prebuilts_5.10_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/5.10/x86-64/+/0f34086">0f34086</a> :  Snap for 9470583 from fddefbb688c8ac1e847f36fccbd9dd185fd1cf1f to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.15_arm64-show" class="showLink" onclick="show('kernel_prebuilts_5.15_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_5.15_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.15_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.15_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.15/arm64">kernel/prebuilts/5.15/arm64</a></h2>
+<div id="kernel_prebuilts_5.15_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/5.15/arm64/+/0edd97f">0edd97f</a> :  Snap for 9470583 from 3f13f27b2fc4b5b1ef768313296ebd0940b35836 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.15_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_5.15_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_5.15_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.15_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.15_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.15/x86-64">kernel/prebuilts/5.15/x86-64</a></h2>
+<div id="kernel_prebuilts_5.15_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/5.15/x86-64/+/d21990e">d21990e</a> :  Snap for 9470583 from 0860a865fd3e3449a3897f4e2bcb661ff46456d2 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.4_arm64-show" class="showLink" onclick="show('kernel_prebuilts_5.4_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_5.4_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.4_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.4_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.4/arm64">kernel/prebuilts/5.4/arm64</a></h2>
+<div id="kernel_prebuilts_5.4_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/5.4/arm64/+/e8ad5a9">e8ad5a9</a> :  Revert incorrect TM Branching Stage 4 merges am: 98a74d03cf am: 78a2d13c0c<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_5.4_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_5.4_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_5.4_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_5.4_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_5.4_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/5.4/x86-64">kernel/prebuilts/5.4/x86-64</a></h2>
+<div id="kernel_prebuilts_5.4_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/5.4/x86-64/+/31fc431">31fc431</a> :  Revert incorrect TM Branching Stage 4 merges am: 8e8388020b am: 41bff2a8a5<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_4.19_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_4.19_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_4.19_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_4.19_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_4.19_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/4.19/arm64">kernel/prebuilts/common-modules/virtual-device/4.19/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_4.19_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/4.19/arm64/+/31fa2c2">31fa2c2</a> :  Initial empty repository<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_4.19_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_4.19_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_4.19_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_4.19_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_4.19_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/4.19/x86-64">kernel/prebuilts/common-modules/virtual-device/4.19/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_4.19_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/4.19/x86-64/+/396ea43">396ea43</a> :  Initial empty repository<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.10_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.10_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.10_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.10_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.10_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.10/arm64">kernel/prebuilts/common-modules/virtual-device/5.10/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.10_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.10/arm64/+/38424fb">38424fb</a> :  Snap for 9470583 from 9f35cbf51fa0c83bd8bc03a72262d6157fedd070 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.10_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.10_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.10_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.10_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.10_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.10/x86-64">kernel/prebuilts/common-modules/virtual-device/5.10/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.10_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.10/x86-64/+/bbebab8">bbebab8</a> :  Snap for 9470583 from c3dd984c60db6022579b07ce69ce7708a532c4a2 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.15_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.15_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.15_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.15_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.15_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.15/arm64">kernel/prebuilts/common-modules/virtual-device/5.15/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.15_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.15/arm64/+/e8b061c">e8b061c</a> :  Snap for 9470583 from f4f9f9ed1cd5cf608694f73e6d25b453350a3142 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.15_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.15_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.15_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.15_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.15_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.15/x86-64">kernel/prebuilts/common-modules/virtual-device/5.15/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.15_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.15/x86-64/+/366a8f1">366a8f1</a> :  Snap for 9470583 from 9dadf4bd90ad4cdf38df77370760ce624c85e677 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.4_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.4_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.4_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.4_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.4_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.4/arm64">kernel/prebuilts/common-modules/virtual-device/5.4/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.4_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.4/arm64/+/ea8353a">ea8353a</a> :  Revert incorrect TM Branching Stage 4 merges am: df9b86f15b am: 9954c73afc<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.4_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_5.4_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_5.4_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_5.4_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_5.4_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.4/x86-64">kernel/prebuilts/common-modules/virtual-device/5.4/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_5.4_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/5.4/x86-64/+/4be15bb">4be15bb</a> :  Revert incorrect TM Branching Stage 4 merges am: cb3f6044c1 am: f112f77041<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_mainline_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_mainline_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_mainline_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/arm64">kernel/prebuilts/common-modules/virtual-device/mainline/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_mainline_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/arm64/+/6e9848e">6e9848e</a> :  Update kernel to builds 7874781 am: 1d105d1066 am: 13e3c81d88 am: bc90bc663f am: c8ccb1ece4 am: 4ed02e0e25<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_mainline_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_mainline_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/x86-64">kernel/prebuilts/common-modules/virtual-device/mainline/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/x86-64/+/3e167c3">3e167c3</a> :  Update kernel to builds 7874781 am: 2d40009e9b am: 5301682d5d am: bfac12ac5c am: a87f7acd57 am: 292caf1fb9<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_mainline_arm64-show" class="showLink" onclick="show('kernel_prebuilts_mainline_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_mainline_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_mainline_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_mainline_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/mainline/arm64">kernel/prebuilts/mainline/arm64</a></h2>
+<div id="kernel_prebuilts_mainline_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/mainline/arm64/+/9540c4e">9540c4e</a> :  Merge "Merge branch tm-release" into tm-gsi-dev am: e51848377e am: 8213bd72fc am: bc58829061<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_mainline_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_mainline_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_mainline_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_mainline_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_mainline_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/mainline/x86-64">kernel/prebuilts/mainline/x86-64</a></h2>
+<div id="kernel_prebuilts_mainline_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/mainline/x86-64/+/71bf770">71bf770</a> :  Update kernel to builds 7874781 am: b66c3ac1bb am: 00658648b9 am: 90809e3aac am: 2cf236bd9f am: d35138ebad<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/e16026c009">e16026c009</a> :  Fix: Bluetooth and Wifi scanning location MainSwitch page policy transparency.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/154a81a2a0">154a81a2a0</a> :  Fix: Bluetooth and Wifi scanning location MainSwitch page policy transparency.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_ArtPrebuilt-show" class="showLink" onclick="show('platform_packages_modules_ArtPrebuilt');return false;">+</a><a href="#" id="platform_packages_modules_ArtPrebuilt-hide" class="hideLink" onclick="hide('platform_packages_modules_ArtPrebuilt');return false;">-</a>&nbsp;<a name="platform_packages_modules_ArtPrebuilt" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/ArtPrebuilt">platform/packages/modules/ArtPrebuilt</a></h2>
+<div id="platform_packages_modules_ArtPrebuilt"><a href="https://android.googlesource.com/platform/packages/modules/ArtPrebuilt/+/2363a75">2363a75</a> :  [automerger skipped] Empty merge of sc-v2-dev-plus-aosp-without-vendor@8084891 am: 350205800f -s ours am: c5a66cfa31 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_BootPrebuilt_5.10_arm64-show" class="showLink" onclick="show('platform_packages_modules_BootPrebuilt_5.10_arm64');return false;">+</a><a href="#" id="platform_packages_modules_BootPrebuilt_5.10_arm64-hide" class="hideLink" onclick="hide('platform_packages_modules_BootPrebuilt_5.10_arm64');return false;">-</a>&nbsp;<a name="platform_packages_modules_BootPrebuilt_5.10_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/BootPrebuilt/5.10/arm64">platform/packages/modules/BootPrebuilt/5.10/arm64</a></h2>
+<div id="platform_packages_modules_BootPrebuilt_5.10_arm64"><a href="https://android.googlesource.com/platform/packages/modules/BootPrebuilt/5.10/arm64/+/95cfa20">95cfa20</a> :  Update prebuilts to 7069541. am: ebf863dccb am: 47e5bd7704 am: a6d5110fa8<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_BootPrebuilt_5.4_arm64-show" class="showLink" onclick="show('platform_packages_modules_BootPrebuilt_5.4_arm64');return false;">+</a><a href="#" id="platform_packages_modules_BootPrebuilt_5.4_arm64-hide" class="hideLink" onclick="hide('platform_packages_modules_BootPrebuilt_5.4_arm64');return false;">-</a>&nbsp;<a name="platform_packages_modules_BootPrebuilt_5.4_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/BootPrebuilt/5.4/arm64">platform/packages/modules/BootPrebuilt/5.4/arm64</a></h2>
+<div id="platform_packages_modules_BootPrebuilt_5.4_arm64"><a href="https://android.googlesource.com/platform/packages/modules/BootPrebuilt/5.4/arm64/+/3130a05">3130a05</a> :  [automerger skipped] Mark ab/7061308 as merged in stage. am: 841b750dee -s ours am: 7c18dd5080 -s ours am: 8b790581dd -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/fcdd42a212">fcdd42a212</a> :  [TOFU] Validate full cert chains before displaying dialog<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/1bf4e67a5b">1bf4e67a5b</a> :  Add pre-share key check for wapi<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/98406c43bd">98406c43bd</a> :  Limit the ServiceFriendlyNames and limit the number of Passpoint per App<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/ec40d14385">ec40d14385</a> :  Add size check on PPS#policy<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/5ff4b2dc72">5ff4b2dc72</a> :  [TOFU] Validate full cert chains before displaying dialog<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/0428149300">0428149300</a> :  Add pre-share key check for wapi<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/b569071094">b569071094</a> :  Limit the ServiceFriendlyNames and limit the number of Passpoint per App<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/35083b9768">35083b9768</a> :  Add size check on PPS#policy<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_abi-dumps_ndk-show" class="showLink" onclick="show('platform_prebuilts_abi-dumps_ndk');return false;">+</a><a href="#" id="platform_prebuilts_abi-dumps_ndk-hide" class="hideLink" onclick="hide('platform_prebuilts_abi-dumps_ndk');return false;">-</a>&nbsp;<a name="platform_prebuilts_abi-dumps_ndk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/ndk">platform/prebuilts/abi-dumps/ndk</a></h2>
+<div id="platform_prebuilts_abi-dumps_ndk"><a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/ndk/+/2f65d46">2f65d46</a> :  platform/prebuilts/abi-dumps/ndk - Create NDK ABI Dumps for API 33 am: dc88dd220f am: bf346d8680<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_abi-dumps_platform-show" class="showLink" onclick="show('platform_prebuilts_abi-dumps_platform');return false;">+</a><a href="#" id="platform_prebuilts_abi-dumps_platform-hide" class="hideLink" onclick="hide('platform_prebuilts_abi-dumps_platform');return false;">-</a>&nbsp;<a name="platform_prebuilts_abi-dumps_platform" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/platform">platform/prebuilts/abi-dumps/platform</a></h2>
+<div id="platform_prebuilts_abi-dumps_platform"><a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/platform/+/23b5443">23b5443</a> :  platform/prebuilts/abi-dumps/platform - Create platform ABI Dumps for API 33 am: 12aeb694cb am: 0b789fcff4<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_abi-dumps_vndk-show" class="showLink" onclick="show('platform_prebuilts_abi-dumps_vndk');return false;">+</a><a href="#" id="platform_prebuilts_abi-dumps_vndk-hide" class="hideLink" onclick="hide('platform_prebuilts_abi-dumps_vndk');return false;">-</a>&nbsp;<a name="platform_prebuilts_abi-dumps_vndk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/vndk">platform/prebuilts/abi-dumps/vndk</a></h2>
+<div id="platform_prebuilts_abi-dumps_vndk"><a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/vndk/+/6bd28ded">6bd28ded</a> :  Update BoringSSL ABI dumps to match latest BoringSSL. am: 15820ac81b am: 987adc76f9<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_android-emulator-show" class="showLink" onclick="show('platform_prebuilts_android-emulator');return false;">+</a><a href="#" id="platform_prebuilts_android-emulator-hide" class="hideLink" onclick="hide('platform_prebuilts_android-emulator');return false;">-</a>&nbsp;<a name="platform_prebuilts_android-emulator" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/android-emulator">platform/prebuilts/android-emulator</a></h2>
+<div id="platform_prebuilts_android-emulator"><a href="https://android.googlesource.com/platform/prebuilts/android-emulator/+/dfb9801">dfb9801</a> :  Upgrade emulator to emu-master-dev build 8748233 am: 4ad9d9fb27 am: 2a1a95ce53<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_asuite-show" class="showLink" onclick="show('platform_prebuilts_asuite');return false;">+</a><a href="#" id="platform_prebuilts_asuite-hide" class="hideLink" onclick="hide('platform_prebuilts_asuite');return false;">-</a>&nbsp;<a name="platform_prebuilts_asuite" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/asuite">platform/prebuilts/asuite</a></h2>
+<div id="platform_prebuilts_asuite"><a href="https://android.googlesource.com/platform/prebuilts/asuite/+/b4db530">b4db530</a> :  Snap for 9647254 from 2d5eaed1d33c29eba09ad1aa7511b01ba058d840 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_bazel_darwin-x86_64-show" class="showLink" onclick="show('platform_prebuilts_bazel_darwin-x86_64');return false;">+</a><a href="#" id="platform_prebuilts_bazel_darwin-x86_64-hide" class="hideLink" onclick="hide('platform_prebuilts_bazel_darwin-x86_64');return false;">-</a>&nbsp;<a name="platform_prebuilts_bazel_darwin-x86_64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/bazel/darwin-x86_64">platform/prebuilts/bazel/darwin-x86_64</a></h2>
+<div id="platform_prebuilts_bazel_darwin-x86_64"><a href="https://android.googlesource.com/platform/prebuilts/bazel/darwin-x86_64/+/cb27dfd">cb27dfd</a> :  Update bazel version to latest nightly. am: ed375e5f0e am: 3273dd4fee am: d4df90029a am: 36be4895fa<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_bazel_linux-x86_64-show" class="showLink" onclick="show('platform_prebuilts_bazel_linux-x86_64');return false;">+</a><a href="#" id="platform_prebuilts_bazel_linux-x86_64-hide" class="hideLink" onclick="hide('platform_prebuilts_bazel_linux-x86_64');return false;">-</a>&nbsp;<a name="platform_prebuilts_bazel_linux-x86_64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/bazel/linux-x86_64">platform/prebuilts/bazel/linux-x86_64</a></h2>
+<div id="platform_prebuilts_bazel_linux-x86_64"><a href="https://android.googlesource.com/platform/prebuilts/bazel/linux-x86_64/+/ef59c37">ef59c37</a> :  Update bazel version to latest nightly. am: 5f2de1cb69 am: 68f17219fa am: 4c968d3008 am: 4f084881c5<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_build-tools-show" class="showLink" onclick="show('platform_prebuilts_build-tools');return false;">+</a><a href="#" id="platform_prebuilts_build-tools-hide" class="hideLink" onclick="hide('platform_prebuilts_build-tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_build-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/build-tools">platform/prebuilts/build-tools</a></h2>
+<div id="platform_prebuilts_build-tools"><a href="https://android.googlesource.com/platform/prebuilts/build-tools/+/32fa157b">32fa157b</a> :  Snap for 9470583 from 2d50582619688b8c5fbb38f85d81179bc1dfb7ec to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_bundletool-show" class="showLink" onclick="show('platform_prebuilts_bundletool');return false;">+</a><a href="#" id="platform_prebuilts_bundletool-hide" class="hideLink" onclick="hide('platform_prebuilts_bundletool');return false;">-</a>&nbsp;<a name="platform_prebuilts_bundletool" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/bundletool">platform/prebuilts/bundletool</a></h2>
+<div id="platform_prebuilts_bundletool"><a href="https://android.googlesource.com/platform/prebuilts/bundletool/+/392c251">392c251</a> :  Add BUILD.bazel for bundletool. am: 9e0874fb8a am: 462a505a26 am: 1ca3da6d72<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_checkcolor-show" class="showLink" onclick="show('platform_prebuilts_checkcolor');return false;">+</a><a href="#" id="platform_prebuilts_checkcolor-hide" class="hideLink" onclick="hide('platform_prebuilts_checkcolor');return false;">-</a>&nbsp;<a name="platform_prebuilts_checkcolor" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/checkcolor">platform/prebuilts/checkcolor</a></h2>
+<div id="platform_prebuilts_checkcolor"><a href="https://android.googlesource.com/platform/prebuilts/checkcolor/+/47d4cfb">47d4cfb</a> :  Update checkcolor.py hashbang to Python 3 am: ee59816895 am: 8b7e6cc073 am: 4f8c37e10d am: 383d3e0bf1<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_checkstyle-show" class="showLink" onclick="show('platform_prebuilts_checkstyle');return false;">+</a><a href="#" id="platform_prebuilts_checkstyle-hide" class="hideLink" onclick="hide('platform_prebuilts_checkstyle');return false;">-</a>&nbsp;<a name="platform_prebuilts_checkstyle" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/checkstyle">platform/prebuilts/checkstyle</a></h2>
+<div id="platform_prebuilts_checkstyle"><a href="https://android.googlesource.com/platform/prebuilts/checkstyle/+/b8ea233">b8ea233</a> :  Snap for 9552684 from 833b585503ee9403f4358e05a4143770c5ed0464 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_clang-tools-show" class="showLink" onclick="show('platform_prebuilts_clang-tools');return false;">+</a><a href="#" id="platform_prebuilts_clang-tools-hide" class="hideLink" onclick="hide('platform_prebuilts_clang-tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_clang-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/clang-tools">platform/prebuilts/clang-tools</a></h2>
+<div id="platform_prebuilts_clang-tools"><a href="https://android.googlesource.com/platform/prebuilts/clang-tools/+/8be4a23">8be4a23</a> :  Update clang-tools to ab/8211976 am: ec8c89d523 am: 91f4dc745f am: a7e96bd5fb<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_clang_host_linux-x86-show" class="showLink" onclick="show('platform_prebuilts_clang_host_linux-x86');return false;">+</a><a href="#" id="platform_prebuilts_clang_host_linux-x86-hide" class="hideLink" onclick="hide('platform_prebuilts_clang_host_linux-x86');return false;">-</a>&nbsp;<a name="platform_prebuilts_clang_host_linux-x86" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86">platform/prebuilts/clang/host/linux-x86</a></h2>
+<div id="platform_prebuilts_clang_host_linux-x86"><a href="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/c9c9d70ad">c9c9d70ad</a> :  Merge "Update LLVM toolchain README" into tm-dev am: 3e473165be am: ef84731e9a<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_cmdline-tools-show" class="showLink" onclick="show('platform_prebuilts_cmdline-tools');return false;">+</a><a href="#" id="platform_prebuilts_cmdline-tools-hide" class="hideLink" onclick="hide('platform_prebuilts_cmdline-tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_cmdline-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/cmdline-tools">platform/prebuilts/cmdline-tools</a></h2>
+<div id="platform_prebuilts_cmdline-tools"><a href="https://android.googlesource.com/platform/prebuilts/cmdline-tools/+/f46cd25">f46cd25</a> :  Add tools.common.jar to lint_api am: 89b027aca7 am: 835cf78659 am: 68da060add<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_devtools-show" class="showLink" onclick="show('platform_prebuilts_devtools');return false;">+</a><a href="#" id="platform_prebuilts_devtools-hide" class="hideLink" onclick="hide('platform_prebuilts_devtools');return false;">-</a>&nbsp;<a name="platform_prebuilts_devtools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/devtools">platform/prebuilts/devtools</a></h2>
+<div id="platform_prebuilts_devtools"><a href="https://android.googlesource.com/platform/prebuilts/devtools/+/7880027">7880027</a> :  Merge "Make the linter use a JAXB jar instead of the deprecated module." am: 5410a8a911 am: 6089fd5fdd am: d74c94e4d5 am: bc11a72a91<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8-show" class="showLink" onclick="show('platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8');return false;">+</a><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8-hide" class="hideLink" onclick="hide('platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8');return false;">-</a>&nbsp;<a name="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8">platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8</a></h2>
+<div id="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8"><a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/+/c2f3c69">c2f3c69</a> :  Add linux/userfaultfd.h header file to host glibc am: 9993489d1c am: e49b4b3477 am: 007101a451<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8-show" class="showLink" onclick="show('platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8');return false;">+</a><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8-hide" class="hideLink" onclick="hide('platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8');return false;">-</a>&nbsp;<a name="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8">platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8</a></h2>
+<div id="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8"><a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8/+/5f20d5fa">5f20d5fa</a> :  Move comment to license_note am: 4b0c96b0cc am: d21797002e am: 85d51b305d<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_go_darwin-x86-show" class="showLink" onclick="show('platform_prebuilts_go_darwin-x86');return false;">+</a><a href="#" id="platform_prebuilts_go_darwin-x86-hide" class="hideLink" onclick="hide('platform_prebuilts_go_darwin-x86');return false;">-</a>&nbsp;<a name="platform_prebuilts_go_darwin-x86" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/go/darwin-x86">platform/prebuilts/go/darwin-x86</a></h2>
+<div id="platform_prebuilts_go_darwin-x86"><a href="https://android.googlesource.com/platform/prebuilts/go/darwin-x86/+/893b08824">893b08824</a> :  Update darwin-x86 Go 1.18 prebuilts from ab/8319976 am: 6b80ad3a33 am: ea0febe3b3 am: 37f9ecf925<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_go_linux-x86-show" class="showLink" onclick="show('platform_prebuilts_go_linux-x86');return false;">+</a><a href="#" id="platform_prebuilts_go_linux-x86-hide" class="hideLink" onclick="hide('platform_prebuilts_go_linux-x86');return false;">-</a>&nbsp;<a name="platform_prebuilts_go_linux-x86" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/go/linux-x86">platform/prebuilts/go/linux-x86</a></h2>
+<div id="platform_prebuilts_go_linux-x86"><a href="https://android.googlesource.com/platform/prebuilts/go/linux-x86/+/54b24a8b0">54b24a8b0</a> :  Update linux-x86 Go 1.18 prebuilts from ab/8319976 am: 1047e6df42 am: 451911222b am: e636a02221<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_gradle-plugin-show" class="showLink" onclick="show('platform_prebuilts_gradle-plugin');return false;">+</a><a href="#" id="platform_prebuilts_gradle-plugin-hide" class="hideLink" onclick="hide('platform_prebuilts_gradle-plugin');return false;">-</a>&nbsp;<a name="platform_prebuilts_gradle-plugin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/gradle-plugin">platform/prebuilts/gradle-plugin</a></h2>
+<div id="platform_prebuilts_gradle-plugin"><a href="https://android.googlesource.com/platform/prebuilts/gradle-plugin/+/4045aecd4">4045aecd4</a> :  Merge "Upgrade prebuilts to 30.3.0-alpha08" am: 37cad73020 am: db0c4beda5 am: 11ce91aaad am: 25cfd7c24a am: b88506981c<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk11-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk11');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk11-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk11');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk11" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk11">platform/prebuilts/jdk/jdk11</a></h2>
+<div id="platform_prebuilts_jdk_jdk11"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk11/+/3a4731d">3a4731d</a> :  Merge "make jdk prebuilts accessible to Bazel" am: 02ab11bdab am: 3d982efb92 am: 1f89a17241<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk17-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk17');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk17-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk17');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk17" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk17">platform/prebuilts/jdk/jdk17</a></h2>
+<div id="platform_prebuilts_jdk_jdk17"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk17/+/3a809a3">3a809a3</a> :  Add locally built bootstrap JDK am: 06631886c1 am: 8d04ad0068 am: f016faccb9 am: cda5b27787 am: 3a5a803066<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk8-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk8');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk8-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk8');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk8">platform/prebuilts/jdk/jdk8</a></h2>
+<div id="platform_prebuilts_jdk_jdk8"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk8/+/74e4f18">74e4f18</a> :  [automerger skipped] DO NOT MERGE - Merge pi-dev@5234907 into stage-aosp-master am: bffc2ec6f2 -s ours am skip reason: subject contains skip directive<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk9-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk9');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk9-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk9');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk9" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk9">platform/prebuilts/jdk/jdk9</a></h2>
+<div id="platform_prebuilts_jdk_jdk9"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk9/+/1f0b937">1f0b937</a> :  [automerger skipped] [DO NOT MERGE] Add remote toolchain inputs for java and javac. am: 38b18b13d9 am: fc8dfbc09e -s ours am: a8aac0cb4f am: 2f4fe5e060 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_ktlint-show" class="showLink" onclick="show('platform_prebuilts_ktlint');return false;">+</a><a href="#" id="platform_prebuilts_ktlint-hide" class="hideLink" onclick="hide('platform_prebuilts_ktlint');return false;">-</a>&nbsp;<a name="platform_prebuilts_ktlint" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/ktlint">platform/prebuilts/ktlint</a></h2>
+<div id="platform_prebuilts_ktlint"><a href="https://android.googlesource.com/platform/prebuilts/ktlint/+/a9fc796">a9fc796</a> :  Snap for 9470583 from aa768f01dbb57ceca4df0d14db981e3c97957ee2 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_manifest-merger-show" class="showLink" onclick="show('platform_prebuilts_manifest-merger');return false;">+</a><a href="#" id="platform_prebuilts_manifest-merger-hide" class="hideLink" onclick="hide('platform_prebuilts_manifest-merger');return false;">-</a>&nbsp;<a name="platform_prebuilts_manifest-merger" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/manifest-merger">platform/prebuilts/manifest-merger</a></h2>
+<div id="platform_prebuilts_manifest-merger"><a href="https://android.googlesource.com/platform/prebuilts/manifest-merger/+/ecfeee7">ecfeee7</a> :  [automerger skipped] Merge Android 12 am: 7bc98fae04 -s ours am: 251275938e -s ours am: 11be6eb68c -s ours am: bfeae14ba3 -s ours am: 11409c7cdc -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_maven_repo_android-show" class="showLink" onclick="show('platform_prebuilts_maven_repo_android');return false;">+</a><a href="#" id="platform_prebuilts_maven_repo_android-hide" class="hideLink" onclick="hide('platform_prebuilts_maven_repo_android');return false;">-</a>&nbsp;<a name="platform_prebuilts_maven_repo_android" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/maven_repo/android">platform/prebuilts/maven_repo/android</a></h2>
+<div id="platform_prebuilts_maven_repo_android"><a href="https://android.googlesource.com/platform/prebuilts/maven_repo/android/+/1057296c">1057296c</a> :  [automerger skipped] DO NOT MERGE - qt-qpr1-dev-plus-aosp-without-vendor@5915889 into stage-aosp-master am: c78944d200 am: ecc2406087 -s ours am skip reason: subject contains skip directive<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_maven_repo_bumptech-show" class="showLink" onclick="show('platform_prebuilts_maven_repo_bumptech');return false;">+</a><a href="#" id="platform_prebuilts_maven_repo_bumptech-hide" class="hideLink" onclick="hide('platform_prebuilts_maven_repo_bumptech');return false;">-</a>&nbsp;<a name="platform_prebuilts_maven_repo_bumptech" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/maven_repo/bumptech">platform/prebuilts/maven_repo/bumptech</a></h2>
+<div id="platform_prebuilts_maven_repo_bumptech"><a href="https://android.googlesource.com/platform/prebuilts/maven_repo/bumptech/+/135733f">135733f</a> :  [automerger skipped] Update glide to 4.12.0 am: e8b353fe03 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_misc-show" class="showLink" onclick="show('platform_prebuilts_misc');return false;">+</a><a href="#" id="platform_prebuilts_misc-hide" class="hideLink" onclick="hide('platform_prebuilts_misc');return false;">-</a>&nbsp;<a name="platform_prebuilts_misc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/misc">platform/prebuilts/misc</a></h2>
+<div id="platform_prebuilts_misc"><a href="https://android.googlesource.com/platform/prebuilts/misc/+/8d7ea36">8d7ea36</a> :  Snap for 9662272 from 0cc499dbced50ce43341423509b9cb798a27acfc to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_AdServices-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_AdServices');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_AdServices-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_AdServices');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_AdServices" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AdServices">platform/prebuilts/module_sdk/AdServices</a></h2>
+<div id="platform_prebuilts_module_sdk_AdServices"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AdServices/+/f5a2fa6">f5a2fa6</a> :  Snap for 9815530 from 5f73d8bc7d635d453e532b79ea53b6324919045c to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_AppSearch-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_AppSearch');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_AppSearch-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_AppSearch');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_AppSearch" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AppSearch">platform/prebuilts/module_sdk/AppSearch</a></h2>
+<div id="platform_prebuilts_module_sdk_AppSearch"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AppSearch/+/8a95499">8a95499</a> :  Snap for 9815530 from 4d4bec4abe78be84ff4b78e61905b56afc08248c to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Bluetooth-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Bluetooth');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Bluetooth-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Bluetooth');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Bluetooth">platform/prebuilts/module_sdk/Bluetooth</a></h2>
+<div id="platform_prebuilts_module_sdk_Bluetooth"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Bluetooth/+/5883c66">5883c66</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/23021275'] into tm-qpr3-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Connectivity-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Connectivity');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Connectivity-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Connectivity');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Connectivity" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Connectivity">platform/prebuilts/module_sdk/Connectivity</a></h2>
+<div id="platform_prebuilts_module_sdk_Connectivity"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Connectivity/+/99c1237">99c1237</a> :  Snap for 9815530 from 998034260d95b92e98f902a0d846ec1cfc16c555 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_IPsec-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_IPsec');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_IPsec-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_IPsec');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_IPsec" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/IPsec">platform/prebuilts/module_sdk/IPsec</a></h2>
+<div id="platform_prebuilts_module_sdk_IPsec"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/IPsec/+/1d2d94a">1d2d94a</a> :  Snap for 9815530 from c32128a668a89957b08f6d410a44dd19cb925b82 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Media-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Media');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Media-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Media');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Media" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Media">platform/prebuilts/module_sdk/Media</a></h2>
+<div id="platform_prebuilts_module_sdk_Media"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Media/+/2afbc28">2afbc28</a> :  Snap for 9815530 from 34c03f62e190950c106a8a322c124567a056d177 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_MediaProvider-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_MediaProvider');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_MediaProvider-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_MediaProvider');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/MediaProvider">platform/prebuilts/module_sdk/MediaProvider</a></h2>
+<div id="platform_prebuilts_module_sdk_MediaProvider"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/MediaProvider/+/bf4b865">bf4b865</a> :  Snap for 9815530 from efc4eebbc5a52d59e4c3a62ac2098ff7971e7a80 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_OnDevicePersonalization-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_OnDevicePersonalization');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_OnDevicePersonalization-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_OnDevicePersonalization');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_OnDevicePersonalization" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/OnDevicePersonalization">platform/prebuilts/module_sdk/OnDevicePersonalization</a></h2>
+<div id="platform_prebuilts_module_sdk_OnDevicePersonalization"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/OnDevicePersonalization/+/32d8dbd">32d8dbd</a> :  Snap for 9815530 from be434514fc7e6effe37bd6c9a7d80483ab2d338a to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Permission-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Permission');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Permission-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Permission');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Permission">platform/prebuilts/module_sdk/Permission</a></h2>
+<div id="platform_prebuilts_module_sdk_Permission"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Permission/+/2a3c330">2a3c330</a> :  Snap for 9815530 from 2af6a378e25400ec0841b724f7d02252bc358c22 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Scheduling-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Scheduling');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Scheduling-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Scheduling');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Scheduling" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Scheduling">platform/prebuilts/module_sdk/Scheduling</a></h2>
+<div id="platform_prebuilts_module_sdk_Scheduling"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Scheduling/+/7399b45">7399b45</a> :  Snap for 9815530 from b0ac65beda7c5c8dceb11603c310db12a80ffe07 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_SdkExtensions-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_SdkExtensions');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_SdkExtensions-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_SdkExtensions');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_SdkExtensions" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/SdkExtensions">platform/prebuilts/module_sdk/SdkExtensions</a></h2>
+<div id="platform_prebuilts_module_sdk_SdkExtensions"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/SdkExtensions/+/eb05c27">eb05c27</a> :  Snap for 9815530 from f59307a9f86fd5624117cab8243ad70c3fb452cd to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_StatsD-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_StatsD');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_StatsD-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_StatsD');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_StatsD" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/StatsD">platform/prebuilts/module_sdk/StatsD</a></h2>
+<div id="platform_prebuilts_module_sdk_StatsD"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/StatsD/+/9e787a2">9e787a2</a> :  Snap for 9815530 from 2163b15cb60be0bab4c228f4b806c38686222b8c to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Uwb-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Uwb');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Uwb-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Uwb');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Uwb" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Uwb">platform/prebuilts/module_sdk/Uwb</a></h2>
+<div id="platform_prebuilts_module_sdk_Uwb"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Uwb/+/5fe1e4e">5fe1e4e</a> :  Snap for 9815530 from 8af17cc2ff3f6285edb89855b1c3574461d9a877 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Wifi-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Wifi');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Wifi-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Wifi');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Wifi">platform/prebuilts/module_sdk/Wifi</a></h2>
+<div id="platform_prebuilts_module_sdk_Wifi"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Wifi/+/77a7f8f">77a7f8f</a> :  Snap for 9815530 from ce57cecf013ddc4eefde51b04c405b46c03f30bf to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_art-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_art');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_art-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_art');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_art" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/art">platform/prebuilts/module_sdk/art</a></h2>
+<div id="platform_prebuilts_module_sdk_art"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/art/+/cd8447c">cd8447c</a> :  Snap for 9815530 from 6606219e8ea3fc6d23f76edfd3aff36919ec521d to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_conscrypt-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_conscrypt');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_conscrypt-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_conscrypt');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_conscrypt" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/conscrypt">platform/prebuilts/module_sdk/conscrypt</a></h2>
+<div id="platform_prebuilts_module_sdk_conscrypt"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/conscrypt/+/817b43d">817b43d</a> :  Snap for 9815530 from 74f3bcf0371013c63048eee5b3379e0d69e6667a to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_ndk-show" class="showLink" onclick="show('platform_prebuilts_ndk');return false;">+</a><a href="#" id="platform_prebuilts_ndk-hide" class="hideLink" onclick="hide('platform_prebuilts_ndk');return false;">-</a>&nbsp;<a name="platform_prebuilts_ndk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/ndk">platform/prebuilts/ndk</a></h2>
+<div id="platform_prebuilts_ndk"><a href="https://android.googlesource.com/platform/prebuilts/ndk/+/44e35a40e">44e35a40e</a> :  Update NDK prebuilts to build 8474149. am: ee71351fae am: 3313fbb9d1<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_qemu-kernel-show" class="showLink" onclick="show('platform_prebuilts_qemu-kernel');return false;">+</a><a href="#" id="platform_prebuilts_qemu-kernel-hide" class="hideLink" onclick="hide('platform_prebuilts_qemu-kernel');return false;">-</a>&nbsp;<a name="platform_prebuilts_qemu-kernel" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/qemu-kernel">platform/prebuilts/qemu-kernel</a></h2>
+<div id="platform_prebuilts_qemu-kernel"><a href="https://android.googlesource.com/platform/prebuilts/qemu-kernel/+/841f466">841f466</a> :  Merge sc-mainline-prod<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_r8-show" class="showLink" onclick="show('platform_prebuilts_r8');return false;">+</a><a href="#" id="platform_prebuilts_r8-hide" class="hideLink" onclick="hide('platform_prebuilts_r8');return false;">-</a>&nbsp;<a name="platform_prebuilts_r8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/r8">platform/prebuilts/r8</a></h2>
+<div id="platform_prebuilts_r8"><a href="https://android.googlesource.com/platform/prebuilts/r8/+/80cd33e">80cd33e</a> :  Snap for 9470583 from 57fdc84a81fe1487d967decf617d00132ceba132 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_remoteexecution-client-show" class="showLink" onclick="show('platform_prebuilts_remoteexecution-client');return false;">+</a><a href="#" id="platform_prebuilts_remoteexecution-client-hide" class="hideLink" onclick="hide('platform_prebuilts_remoteexecution-client');return false;">-</a>&nbsp;<a name="platform_prebuilts_remoteexecution-client" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/remoteexecution-client">platform/prebuilts/remoteexecution-client</a></h2>
+<div id="platform_prebuilts_remoteexecution-client"><a href="https://android.googlesource.com/platform/prebuilts/remoteexecution-client/+/09faa52">09faa52</a> :  Snap for 9936701 from ffc3d3d60d908da320ad741c14197169d7f18d11 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_runtime-show" class="showLink" onclick="show('platform_prebuilts_runtime');return false;">+</a><a href="#" id="platform_prebuilts_runtime-hide" class="hideLink" onclick="hide('platform_prebuilts_runtime');return false;">-</a>&nbsp;<a name="platform_prebuilts_runtime" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/runtime">platform/prebuilts/runtime</a></h2>
+<div id="platform_prebuilts_runtime"><a href="https://android.googlesource.com/platform/prebuilts/runtime/+/9e38bf90">9e38bf90</a> :  Move Conscrypt host and test exports to live next to the SDK in am: 1c14d5fdcb am: d32fd22e9b<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_rust-show" class="showLink" onclick="show('platform_prebuilts_rust');return false;">+</a><a href="#" id="platform_prebuilts_rust-hide" class="hideLink" onclick="hide('platform_prebuilts_rust');return false;">-</a>&nbsp;<a name="platform_prebuilts_rust" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/rust">platform/prebuilts/rust</a></h2>
+<div id="platform_prebuilts_rust"><a href="https://android.googlesource.com/platform/prebuilts/rust/+/3bd33ffd">3bd33ffd</a> :  Add mgeisler to Rust owners am: e05ae145f1 am: 5321c0446d am: eab78edf67<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_sdk-show" class="showLink" onclick="show('platform_prebuilts_sdk');return false;">+</a><a href="#" id="platform_prebuilts_sdk-hide" class="hideLink" onclick="hide('platform_prebuilts_sdk');return false;">-</a>&nbsp;<a name="platform_prebuilts_sdk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/sdk">platform/prebuilts/sdk</a></h2>
+<div id="platform_prebuilts_sdk"><a href="https://android.googlesource.com/platform/prebuilts/sdk/+/fcd7b5768">fcd7b5768</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/22652469'] into tm-qpr3-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_tools-show" class="showLink" onclick="show('platform_prebuilts_tools');return false;">+</a><a href="#" id="platform_prebuilts_tools-hide" class="hideLink" onclick="hide('platform_prebuilts_tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/tools">platform/prebuilts/tools</a></h2>
+<div id="platform_prebuilts_tools"><a href="https://android.googlesource.com/platform/prebuilts/tools/+/89561c3b1">89561c3b1</a> :  Snap for 9635238 from b52409fb82a9456e1215fe9ac4999c53e5f12f75 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v28-show" class="showLink" onclick="show('platform_prebuilts_vndk_v28');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v28-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v28');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v28" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v28">platform/prebuilts/vndk/v28</a></h2>
+<div id="platform_prebuilts_vndk_v28"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v28/+/682bb53">682bb53</a> :  Move comment to license_note am: 9d6484f764 am: 2b590b678f am: 5de831e265<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v29-show" class="showLink" onclick="show('platform_prebuilts_vndk_v29');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v29-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v29');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v29" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v29">platform/prebuilts/vndk/v29</a></h2>
+<div id="platform_prebuilts_vndk_v29"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v29/+/cfdf43f">cfdf43f</a> :  Snap for 9470583 from 2ecf546a1a39e39e8267d34a1cd91b4a781c4966 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v30-show" class="showLink" onclick="show('platform_prebuilts_vndk_v30');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v30-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v30');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v30" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v30">platform/prebuilts/vndk/v30</a></h2>
+<div id="platform_prebuilts_vndk_v30"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v30/+/6b757e8">6b757e8</a> :  Snap for 9470583 from 3a0b486bb153814756b9df4525075e067cfdaff2 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v31-show" class="showLink" onclick="show('platform_prebuilts_vndk_v31');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v31-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v31');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v31" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v31">platform/prebuilts/vndk/v31</a></h2>
+<div id="platform_prebuilts_vndk_v31"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v31/+/7dceebe">7dceebe</a> :  Snap for 9470583 from 55da2580fd90f579dccc7c0e4690323c886a2e97 to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v32-show" class="showLink" onclick="show('platform_prebuilts_vndk_v32');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v32-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v32');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v32" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v32">platform/prebuilts/vndk/v32</a></h2>
+<div id="platform_prebuilts_vndk_v32"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v32/+/192cdda">192cdda</a> :  Snap for 9470583 from 4e2af32e906474b58bacbda9bcc0e5d11a359a2f to tm-qpr3-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/908f3cf">908f3cf</a> :  OOBW in rw_i93_send_to_upper()<br />
+<a href="https://android.googlesource.com/platform/system/nfc/+/352eb51">352eb51</a> :  OOBW in rw_i93_send_to_upper()<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_tools_tradefederation_prebuilts-show" class="showLink" onclick="show('platform_tools_tradefederation_prebuilts');return false;">+</a><a href="#" id="platform_tools_tradefederation_prebuilts-hide" class="hideLink" onclick="hide('platform_tools_tradefederation_prebuilts');return false;">-</a>&nbsp;<a name="platform_tools_tradefederation_prebuilts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/tools/tradefederation/prebuilts">platform/tools/tradefederation/prebuilts</a></h2>
+<div id="platform_tools_tradefederation_prebuilts"><a href="https://android.googlesource.com/platform/tools/tradefederation/prebuilts/+/dcb8956">dcb8956</a> :  Snap for 9919854 from 62b36960f05e94ebf705e0516adc9e47684c212a to tm-qpr3-release<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
