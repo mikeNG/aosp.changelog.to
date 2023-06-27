@@ -1,0 +1,665 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-13.0.0_r56 to android-13.0.0_r58 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-13.0.0_r56 to android-13.0.0_r58 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/fa1e4eba8d">fa1e4eba8d</a> :  Version bump to TQ3C.230605.010.C1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3744ea003a">3744ea003a</a> :  Version bump to TQ3C.230605.010 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/125b35c1ad">125b35c1ad</a> :  Version bump to TQ3C.230605.009.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/11a83dad21">11a83dad21</a> :  Version bump to TQ3C.230605.009 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/793db33652">793db33652</a> :  Version bump to TQ3A.230605.009.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/105f43f6a7">105f43f6a7</a> :  Version bump to TQ3A.230605.009 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/fb52fc719f">fb52fc719f</a> :  Version bump to TQ3C.230605.008 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c667fde9fb">c667fde9fb</a> :  Version bump to TQ3C.230605.006.Y1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9799817d65">9799817d65</a> :  Version bump to TQ3C.230605.006.X2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/345be9042b">345be9042b</a> :  Version bump to TQ3C.230605.007.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3e557ed8fd">3e557ed8fd</a> :  Version bump to TQ3A.230605.008 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/95396419b4">95396419b4</a> :  Version bump to TQ3C.230605.007.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d4c09ae113">d4c09ae113</a> :  Version bump to TQ3C.230605.007.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3e59050968">3e59050968</a> :  Version bump to TQ3C.230605.007.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/cc9ac272f9">cc9ac272f9</a> :  Version bump to TQ3C.230605.007 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/64a69307fc">64a69307fc</a> :  Version bump to TQ3A.230605.007 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bf7341845d">bf7341845d</a> :  Version bump to TQ3C.230605.006.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9c57281fac">9c57281fac</a> :  Version bump to TQ3A.230605.006.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3d31475042">3d31475042</a> :  Version bump to TQ3C.230605.006 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e044a9fb2e">e044a9fb2e</a> :  Version bump to TQ3A.230605.006 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/50a807138f">50a807138f</a> :  Version bump to TQ3C.230605.005.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2ef2b612a7">2ef2b612a7</a> :  Version bump to TQ3C.230605.005.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c233bbf9bf">c233bbf9bf</a> :  Version bump to TQ3A.230605.005.W1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/004d37d3be">004d37d3be</a> :  Version bump to TQ3C.230605.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6c2512c526">6c2512c526</a> :  Version bump to TQ3A.230605.005.Z1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/fc893fadc0">fc893fadc0</a> :  Version bump to TQ3A.230605.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/eb9af70c08">eb9af70c08</a> :  Version bump to TQ3C.230605.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a6ed4df1e0">a6ed4df1e0</a> :  Version bump to TQ3C.230605.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/089ee9febd">089ee9febd</a> :  Version bump to TQ3A.230605.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/52de1f51d4">52de1f51d4</a> :  Version bump to TQ3C.230605.002.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7a4506a912">7a4506a912</a> :  Version bump to TQ3A.230605.003.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ae2874482c">ae2874482c</a> :  Version bump to TQ3C.230605.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8c177e8be4">8c177e8be4</a> :  Version bump to TQ3A.230605.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1af14017a1">1af14017a1</a> :  Version bump to TQ3A.230605.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ba090515d6">ba090515d6</a> :  Version bump to TQ3C.230605.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/74c5cb3585">74c5cb3585</a> :  Version bump to TQ3A.230605.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b7b288fe48">b7b288fe48</a> :  Version bump to TQ3C.230412.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/98e20b0d4e">98e20b0d4e</a> :  Version bump to TQ3A.230407.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0cb8f7cb50">0cb8f7cb50</a> :  Version bump to TQ3A.230411.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/cae430a869">cae430a869</a> :  Version bump to TQ3A.230410.001.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/46675b454e">46675b454e</a> :  Version bump to TQ3A.230405.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9189023553">9189023553</a> :  Version bump to TQ3A.230331.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e3819ec56d">e3819ec56d</a> :  Version bump to TQ3A.230331.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7208f23412">7208f23412</a> :  Version bump to TQ3A.230324.001.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9f51771355">9f51771355</a> :  Version bump to TQ3A.230317.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a7ee9df00d">a7ee9df00d</a> :  Version bump to TQ3A.230313.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8f14dc87d9">8f14dc87d9</a> :  Version bump to TQ3A.230308.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f3c892fc26">f3c892fc26</a> :  Version bump to TQ3A.230308.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/aa15850d34">aa15850d34</a> :  Version bump to TQ3A.230306.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/73ca7d30eb">73ca7d30eb</a> :  Version bump to TQ3A.230303.002.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/de89b58d95">de89b58d95</a> :  Version bump to TQ3A.230303.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9edebfe7b5">9edebfe7b5</a> :  Version bump to TQ3A.230302.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/62cee24591">62cee24591</a> :  Version bump to TQ3A.230223.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/fb1bdc2a91">fb1bdc2a91</a> :  Version bump to TQ3A.230221.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d0446f59ca">d0446f59ca</a> :  Version bump to TQ3A.230216.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/14d4b7c6b1">14d4b7c6b1</a> :  Version bump to TQ3A.230215.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d1c9cf5548">d1c9cf5548</a> :  Version bump to TQ3A.230213.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/36a6826611">36a6826611</a> :  Version bump to TQ3A.230127.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7440043e3c">7440043e3c</a> :  Version bump to TQ3A.230130.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/322f151dae">322f151dae</a> :  Version bump to TQ3A.230117.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/360fb83265">360fb83265</a> :  Version bump to TQ3A.230113.002 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/16ce6cdc30d">16ce6cdc30d</a> :  DO NOT MERGE Skip part of testRejectThenErrorFromForegroundActivity (acquired info)<br />
+<a href="https://android.googlesource.com/platform/cts/+/7b94a1c85cd">7b94a1c85cd</a> :  DO NOT MERGE Skip part of testRejectThenErrorFromForegroundActivity (acquired info)<br />
+<a href="https://android.googlesource.com/platform/cts/+/72a6779b37e">72a6779b37e</a> :  Revert "Create new AttributionSource tests for unparceling."<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bluejay-show" class="showLink" onclick="show('device_google_bluejay');return false;">+</a><a href="#" id="device_google_bluejay-hide" class="hideLink" onclick="hide('device_google_bluejay');return false;">-</a>&nbsp;<a name="device_google_bluejay" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay">device/google/bluejay</a></h2>
+<div id="device_google_bluejay"><a href="https://android.googlesource.com/device/google/bluejay/+/a7f63b1">a7f63b1</a> :  [DO NOT MERGE] Update bluejay SVN to 85<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_felix-show" class="showLink" onclick="show('device_google_felix');return false;">+</a><a href="#" id="device_google_felix-hide" class="hideLink" onclick="hide('device_google_felix');return false;">-</a>&nbsp;<a name="device_google_felix" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/felix">device/google/felix</a></h2>
+<div id="device_google_felix"><a href="https://android.googlesource.com/device/google/felix/+/baca945">baca945</a> :  Update Felix SVN to 9<br />
+<a href="https://android.googlesource.com/device/google/felix/+/89a5906">89a5906</a> :  Update Felix SVN to 8<br />
+<a href="https://android.googlesource.com/device/google/felix/+/10edc27">10edc27</a> :  Update Felix SVN to 7<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d0d3317">d0d3317</a> :  thermal: Adjust CLOSE-SUB1 VSKIN equation<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5a88fc7">5a88fc7</a> :  thermal: Adjust CLOSE-SUB1 VSKIN equation<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f81706c">f81706c</a> :  Update Felix SVN to 6<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7a2c326">7a2c326</a> :  Update Felix SVN to 5<br />
+<a href="https://android.googlesource.com/device/google/felix/+/31ac618">31ac618</a> :  Update Felix SVN to 4<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c9b53a3">c9b53a3</a> :  Update Felix SVN to 3<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c2233c3">c2233c3</a> :  Update Felix SVN to 2<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7f24ff5">7f24ff5</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/950807c">950807c</a> :  uwb: update uwb calibration for F10 QPR build<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1871739">1871739</a> :  audio: QPR ver. tuning table release for Felix<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b939b77">b939b77</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b5a21ef">b5a21ef</a> :  Add regulation e-labels for F10.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dcbc483">dcbc483</a> :  Support specific stream aspect ratio<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b67a58e">b67a58e</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/41b0902">41b0902</a> :  update AIDL IGoogleBattery manifest version to 2<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a65b291">a65b291</a> :  audio: update spatial audio tuning<br />
+<a href="https://android.googlesource.com/device/google/felix/+/3fd0902">3fd0902</a> :  Disable transaural spatialization by default<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e6c84ed">e6c84ed</a> :  Camera: Add the property to raise the thermal severity to moderate for CPU throttling.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dabbb43">dabbb43</a> :  Camera: Lower CPU min frequency for GCA_CAMERA_SHOT_ALLCPU<br />
+<a href="https://android.googlesource.com/device/google/felix/+/200dfcc">200dfcc</a> :  Add UwbVendorService blobs to Felix<br />
+<a href="https://android.googlesource.com/device/google/felix/+/628167f">628167f</a> :  Increase keyguardDrawnTimeout to reduce fold-&gt;AOD flickers<br />
+<a href="https://android.googlesource.com/device/google/felix/+/0af8958">0af8958</a> :  Persist the nit brightness for the default display<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a0db6ce">a0db6ce</a> :  audio: support spatial audio for folded mode<br />
+<a href="https://android.googlesource.com/device/google/felix/+/afefe55">afefe55</a> :  audio: update playback tuning<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c809762">c809762</a> :  thermal: Increase "I" to have better control at target temperature<br />
+<a href="https://android.googlesource.com/device/google/felix/+/0277cb2">0277cb2</a> :  Do not use sensor output ratio in itp output<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ee538e6">ee538e6</a> :  powerhint: Boost GPU(302000) by 1st frame<br />
+<a href="https://android.googlesource.com/device/google/felix/+/2e9591f">2e9591f</a> :  extend lux/brightness mapping table<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d7ee05d">d7ee05d</a> :  Camera: Force front camera always binning for 720P or less<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e6898a2">e6898a2</a> :  thermal: register sensor for thermal diff between right and left inner display<br />
+<a href="https://android.googlesource.com/device/google/felix/+/4e454ff">4e454ff</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1dc9def">1dc9def</a> :  Reveal model/make name in camera EXIF<br />
+<a href="https://android.googlesource.com/device/google/felix/+/28b1520">28b1520</a> :  Revert "Revert "audio: enable speaker spatializer""<br />
+<a href="https://android.googlesource.com/device/google/felix/+/38f7179">38f7179</a> :  thermal: increase the throttling speed for BIG cluster<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b6f3abe">b6f3abe</a> :  disable dimming on display1<br />
+<a href="https://android.googlesource.com/device/google/felix/+/876c33f">876c33f</a> :  cs40l26: change property tag to vendor<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9fab91e">9fab91e</a> :  thermal: more aggresive dex2oat throttling<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dd8978f">dd8978f</a> :  Revert "audio: enable speaker spatializer"<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d81d912">d81d912</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/69df0c4">69df0c4</a> :  uwb: update uwb calibration for F10 RC build<br />
+<a href="https://android.googlesource.com/device/google/felix/+/db8e9c6">db8e9c6</a> :  audio: RC ver. tuning table release for Felix<br />
+<a href="https://android.googlesource.com/device/google/felix/+/52d2056">52d2056</a> :  audio: update playback tuing and volume curve<br />
+<a href="https://android.googlesource.com/device/google/felix/+/aaa5680">aaa5680</a> :  display: remove the blocking zone for HBM HDR in config<br />
+<a href="https://android.googlesource.com/device/google/felix/+/968c3d1">968c3d1</a> :  cs40l26: Fix the composed effect delay problem<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9ab7304">9ab7304</a> :  [DO NOT MERGE] fingerprint: Enable fingerprint status flag<br />
+<a href="https://android.googlesource.com/device/google/felix/+/09aafc6">09aafc6</a> :  Customize AuthCredentialPatternContainerStyle for F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b62161b">b62161b</a> :  Add template for generating felix vendor blobs<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7b4560d">7b4560d</a> :  thermal: more aggressive charging throttling<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e4e692f">e4e692f</a> :  cs40l26: Add a maximum scale protection for primitive effects<br />
+<a href="https://android.googlesource.com/device/google/felix/+/2771a88">2771a88</a> :  display: update golen profile<br />
+<a href="https://android.googlesource.com/device/google/felix/+/244881d">244881d</a> :  Revert "Obsecure camera EXIF information for AOSP camera."<br />
+<a href="https://android.googlesource.com/device/google/felix/+/70d72b1">70d72b1</a> :  Update speaker-mic-post setting for increasing gain<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a1c43db">a1c43db</a> :  thermal: align the gxp throttling policy with P22<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6eedadb">6eedadb</a> :  [DO NOT MERGE] thermal: correct the hyst value for VIRTUAL-SKIN-CHARGE<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d92f2ca">d92f2ca</a> :  Don't crash camera when received csis link error interrupt<br />
+<a href="https://android.googlesource.com/device/google/felix/+/99308c0">99308c0</a> :  Change CAMERA_CAPTURE_CPU_THROTTLE setting<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a976196">a976196</a> :  Update StatusBar height for portrait unfolded screeen<br />
+<a href="https://android.googlesource.com/device/google/felix/+/2724d61">2724d61</a> :  [DO NOT MERGE] vibrator/cs40l26: Fix unsupport primitive effects test<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ca78ce4">ca78ce4</a> :  Fix expanded Accessibility overlaps with Face Circle in Educational Screen<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cf83f6d">cf83f6d</a> :  (1/2) Fix settings face enrollment UI layout problem<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1006862">1006862</a> :  audio: Prepare the DVT cirrus tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/8a9597f">8a9597f</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/067fd6c">067fd6c</a> :  [DO NOT MERGE] thermal: update VSKIN equation V0.5<br />
+<a href="https://android.googlesource.com/device/google/felix/+/43de26e">43de26e</a> :  audio: Prepare the DVT cirrus tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9ff8a1a">9ff8a1a</a> :  add powerhint for fusion zoom<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e27ae74">e27ae74</a> :  Update ./DevInfo/Mod model name<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1ce504b">1ce504b</a> :  bcl: update temperature condition of BAACL<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7e5ff34">7e5ff34</a> :  (1/2) To config new UI for ToF Success Screen (Face Enroll Confirmation) page<br />
+<a href="https://android.googlesource.com/device/google/felix/+/900683d">900683d</a> :  audio: change the EP for spatial audio<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f19351f">f19351f</a> :  [DO NOT MERGE] cs40l26: Report the duration time when using DOUBLE_CLICK effect<br />
+<a href="https://android.googlesource.com/device/google/felix/+/64ba8ee">64ba8ee</a> :  thermal: refer inner display brightness for VSKIN equation<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9521803">9521803</a> :  gps: Enable Vzw SUPL OTDOA<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dfb4a78">dfb4a78</a> :  audio: update waves table with thermal throttle<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7551903">7551903</a> :  camera hfr: add 720 high speed profile for immersive crop<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f573970">f573970</a> :  audio: enable speaker spatializer<br />
+<a href="https://android.googlesource.com/device/google/felix/+/713f005">713f005</a> :  audio: enable spatial speaker<br />
+<a href="https://android.googlesource.com/device/google/felix/+/20fc19f">20fc19f</a> :  audio: enable playback thermal throttle<br />
+<a href="https://android.googlesource.com/device/google/felix/+/fd349fa">fd349fa</a> :  thermal: update experimental thermal config<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e5c9a0f">e5c9a0f</a> :  thermal: update SKIN shutdown threshold<br />
+<a href="https://android.googlesource.com/device/google/felix/+/4e71fdb">4e71fdb</a> :  4-2/ Config config_face_auth_supported_posture to listen for face on folded state<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6346fec">6346fec</a> :  [DO NOT MERGE] vibrator/cs40l26: Adding minimum scale for composition primitives<br />
+<a href="https://android.googlesource.com/device/google/felix/+/be89e88">be89e88</a> :  Update MIPI Coex table for foldable display<br />
+<a href="https://android.googlesource.com/device/google/felix/+/97a989b">97a989b</a> :  [DO NOT MERGE] cs40l26: Fix the temporary no function symptom<br />
+<a href="https://android.googlesource.com/device/google/felix/+/afef0c1">afef0c1</a> :  Spatializer: Add tuning to reduce glitches and power.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a526c9a">a526c9a</a> :  5/ Turn ON face auth dismisses keyguard by default on F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/14e2d00">14e2d00</a> :  thermal: optimize thermal config<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dffb53d">dffb53d</a> :  upadte felix_camera_front_inner_mipi_coex_table<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f1800f6">f1800f6</a> :  audio: remove speaker-safe<br />
+<a href="https://android.googlesource.com/device/google/felix/+/742b0ea">742b0ea</a> :  uwb: add country conf file for F10 qpr2<br />
+<a href="https://android.googlesource.com/device/google/felix/+/290d454">290d454</a> :  preload default smooth display regamma data<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e5761a2">e5761a2</a> :  fingerprint: Add DP count flag<br />
+<a href="https://android.googlesource.com/device/google/felix/+/07468b0">07468b0</a> :  [DO NOT MERGE] cs40l26: single HAL for dual haptics<br />
+<a href="https://android.googlesource.com/device/google/felix/+/aa946e4">aa946e4</a> :  audio: update Waves tuning<br />
+<a href="https://android.googlesource.com/device/google/felix/+/eaa6f9b">eaa6f9b</a> :  battery: disable wireless for pts battery test<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b825aa3">b825aa3</a> :  Rename frequency table for foldable camera<br />
+<a href="https://android.googlesource.com/device/google/felix/+/871c40a">871c40a</a> :  Add MIPI Coex tables for felix camera and display<br />
+<a href="https://android.googlesource.com/device/google/felix/+/bfaa6d8">bfaa6d8</a> :  [LSC] Add LOCAL_LICENSE_KINDS<br />
+<a href="https://android.googlesource.com/device/google/felix/+/83da95b">83da95b</a> :  Remove udfps-configs for device w/o udfps<br />
+<a href="https://android.googlesource.com/device/google/felix/+/610ae75">610ae75</a> :  Remove UClampThreshold hint<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c3a13c7">c3a13c7</a> :  display: add blocking zone for HBM HDR<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7e31fda">7e31fda</a> :  thermal: update thermal config<br />
+<a href="https://android.googlesource.com/device/google/felix/+/56e005a">56e005a</a> :  audio: add missed camcorder be_cfg in dsp latency<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1cc07ad">1cc07ad</a> :  DO NOT MERGE Set camera_landscape_to_portrait device property on Felix.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/383bee5">383bee5</a> :  Camera: Enable optimized TNR frequency and create TNR low power hint.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c735794">c735794</a> :  [DO NOT MERGE] vibrator/cs40l26: Synchronize base and flip actuator F0<br />
+<a href="https://android.googlesource.com/device/google/felix/+/eb318fa">eb318fa</a> :  gps: Disable SUPL OTDOA<br />
+<a href="https://android.googlesource.com/device/google/felix/+/40ccc74">40ccc74</a> :  display: update refresh rate regamma setting<br />
+<a href="https://android.googlesource.com/device/google/felix/+/8e7ca9a">8e7ca9a</a> :  Add initial MIC e-label for JP SKU of F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/3a3cdbd">3a3cdbd</a> :  Updated BT SAR table for EVT dogfood<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dd142c7">dd142c7</a> :  thermal: adjust CPU/GPU throttling policy<br />
+<a href="https://android.googlesource.com/device/google/felix/+/fd8a7bc">fd8a7bc</a> :  Init: Set property of GTI file nodes<br />
+<a href="https://android.googlesource.com/device/google/felix/+/2286593">2286593</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cfdd661">cfdd661</a> :  add DPE and GAPLESS_OFFLOAD and fix mmap-playback<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7a9cbcd">7a9cbcd</a> :  Change util threshold of camera streaming high<br />
+<a href="https://android.googlesource.com/device/google/felix/+/8d22072">8d22072</a> :  cs40l26: Add cancelSynced when prepare sync fail<br />
+<a href="https://android.googlesource.com/device/google/felix/+/4c1de06">4c1de06</a> :  Don't set the min CPU frequency to max frequency for CAMERA_SHOT<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5ad5691">5ad5691</a> :  Enable the flag to increase thread priority for nodes stop<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9f422bc">9f422bc</a> :  audio: waves: support speaker spatial in audio hal<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6af6b35">6af6b35</a> :  Change the default cpuset of camera daemon<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e17e675">e17e675</a> :  F10: Enable media performance class 13<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d5d92f2">d5d92f2</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dd5be27">dd5be27</a> :  [DO NOT MERGE] cs40l26: Remove compose PWLE feature<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ac42ae0">ac42ae0</a> :  powerhint: relax the cap when camera exit<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cda823a">cda823a</a> :  Add system property for transfer in non-QS flow<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5f2e89c">5f2e89c</a> :  gps: enable GNSS PPS feature<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a7e7cea">a7e7cea</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/4873272">4873272</a> :  audio: Mege media record tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/236bc9a">236bc9a</a> :  audio: update hidl to 4.0<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a5ab84b">a5ab84b</a> :  cs40l26: Improve the vibrator manager stability<br />
+<a href="https://android.googlesource.com/device/google/felix/+/be68b7e">be68b7e</a> :  audio: update waves preset 20221108<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d032821">d032821</a> :  add CCA tuning block ID and change deep buffer and mmap format<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c6d5bb3">c6d5bb3</a> :  Set dalvik.vm.dexopt.thermal-cutoff to 1<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f8626e8">f8626e8</a> :  audio: update Waves tuning<br />
+<a href="https://android.googlesource.com/device/google/felix/+/3c6c9d7">3c6c9d7</a> :  Import init.factory.rc<br />
+<a href="https://android.googlesource.com/device/google/felix/+/3f32520">3f32520</a> :  [DO NOT MERGE] cs40l26: Enable vibrator manager feature<br />
+<a href="https://android.googlesource.com/device/google/felix/+/56f695f">56f695f</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b4372c0">b4372c0</a> :  thermal: update shutdown threshold for Tj zones<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b916f9a">b916f9a</a> :  Revert "f10: bypass csi crc error"<br />
+<a href="https://android.googlesource.com/device/google/felix/+/3584a67">3584a67</a> :  cs40l26: Add vibrator manager support<br />
+<a href="https://android.googlesource.com/device/google/felix/+/fd52691">fd52691</a> :  [DO NOT MERGE] cs40l26: using the project folder mk<br />
+<a href="https://android.googlesource.com/device/google/felix/+/89fda9e">89fda9e</a> :  cs40l26: Move the latest vibrator HAL to device<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5f1601b">5f1601b</a> :  vibrator: Separate the audio coupled haptics setting<br />
+<a href="https://android.googlesource.com/device/google/felix/+/85b00d6">85b00d6</a> :  thermal: update thermal table v3<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c7cca3c">c7cca3c</a> :  BT: add sysprop to enable OPUS codec<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c6c0e46">c6c0e46</a> :  audio: enable telephony thermal throttle<br />
+<a href="https://android.googlesource.com/device/google/felix/+/15b844b">15b844b</a> :  audio: initial waves tuning<br />
+<a href="https://android.googlesource.com/device/google/felix/+/bb6b693">bb6b693</a> :  powerstats: update GPU DVFS for energy consumer<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d0fe411">d0fe411</a> :  Set audio.camerasound.force for JP devices<br />
+<a href="https://android.googlesource.com/device/google/felix/+/501618e">501618e</a> :  Sync powerhint to latest setting<br />
+<a href="https://android.googlesource.com/device/google/felix/+/31db954">31db954</a> :  init: Remove unused g7.app<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e79a753">e79a753</a> :  uwb: add country conf file for F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/458ead0">458ead0</a> :  audio: Merge telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/70fc2c8">70fc2c8</a> :  [DO NOT MERGE]Add ewp and ext hal<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1d4794d">1d4794d</a> :  Add hci_inject in userdebug build<br />
+<a href="https://android.googlesource.com/device/google/felix/+/df9fac5">df9fac5</a> :  BT SAR table for EVT dogfood<br />
+<a href="https://android.googlesource.com/device/google/felix/+/78be149">78be149</a> :  Update status bar height to center the hole punch cutout<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1e5ee80">1e5ee80</a> :  powerstats: update specific data provider configurations<br />
+<a href="https://android.googlesource.com/device/google/felix/+/8dc2cc6">8dc2cc6</a> :  Enable SAE upgrade offload<br />
+<a href="https://android.googlesource.com/device/google/felix/+/95a10f7">95a10f7</a> :  Enable the spatial audio function<br />
+<a href="https://android.googlesource.com/device/google/felix/+/70859eb">70859eb</a> :  audio: enable hinge angle control and BAACL<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ce6c56f">ce6c56f</a> :  fingerprint: Set power_key node<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a73876f">a73876f</a> :  Start twoshay service on boot.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d328c82">d328c82</a> :  Enabel smooth display<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5837e42">5837e42</a> :  f10: bypass csi crc error<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ae5960d">ae5960d</a> :  fingerprint: Enable clean ta flag<br />
+<a href="https://android.googlesource.com/device/google/felix/+/168baa2">168baa2</a> :  Add back carrier location app<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a238e8f">a238e8f</a> :  Update IDisplay to V7<br />
+<a href="https://android.googlesource.com/device/google/felix/+/4aabd30">4aabd30</a> :  MIF frequency optimization for 60fps video recording use-case<br />
+<a href="https://android.googlesource.com/device/google/felix/+/964f4b6">964f4b6</a> :  audio: Audio: Update F10 EVT model<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ecb1bd2">ecb1bd2</a> :  Relax CPU minimum frequency boost for LAUNCH_CAMERA<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c6c383d">c6c383d</a> :  Uwb: Enable Dck R3 flag<br />
+<a href="https://android.googlesource.com/device/google/felix/+/02aba71">02aba71</a> :  Add Ownership to powerhint files<br />
+<a href="https://android.googlesource.com/device/google/felix/+/fd45065">fd45065</a> :  Set Lyric camera_hardware variable.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6ddd559">6ddd559</a> :  thermal: update VIRTUAL-SKIN equation v1.1<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7f41302">7f41302</a> :  audio: update CCA default setting<br />
+<a href="https://android.googlesource.com/device/google/felix/+/51299b7">51299b7</a> :  audio: allow Fortemedia to notify setting to CCA<br />
+<a href="https://android.googlesource.com/device/google/felix/+/06f092a">06f092a</a> :  audio: Phase in related telephony tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1b50cba">1b50cba</a> :  Build F10 default CMF color wallpaper<br />
+<a href="https://android.googlesource.com/device/google/felix/+/fb71a1c">fb71a1c</a> :  thermal: more aggressive CPU throttling policy<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cad27fd">cad27fd</a> :  Update cutout &amp; rounded corner configs<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dce5621">dce5621</a> :  audio: extand the period number of hifi usecase<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9bda873">9bda873</a> :  powerhint: clean up unused hints in F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/eb0c0f8">eb0c0f8</a> :  powerstats: update display state residency and energy consumer<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f60da16">f60da16</a> :  Remove frequency boost of big cores for FACE_UNLOCK<br />
+<a href="https://android.googlesource.com/device/google/felix/+/8f47b09">8f47b09</a> :  thermal: add cellular-emergency policy<br />
+<a href="https://android.googlesource.com/device/google/felix/+/27929b9">27929b9</a> :  thermal: correct the typo for sensor equation of fold mode<br />
+<a href="https://android.googlesource.com/device/google/felix/+/18f271a">18f271a</a> :  Correct MMS UA, UAProf for F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ed53eed">ed53eed</a> :  audio: enable USB clock boost on SWB voice-call<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7a8d1b7">7a8d1b7</a> :  display: update AOD brightness setting<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e8adb84">e8adb84</a> :  Update RF path loss values<br />
+<a href="https://android.googlesource.com/device/google/felix/+/398e87d">398e87d</a> :  Replace GPUMinFreq 151000 with 202000<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1368c81">1368c81</a> :  Disable One-handed mode system property for F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cf1f36d">cf1f36d</a> :  Fix height of status bar<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d3901e4">d3901e4</a> :  Config dex2oat according to thermal status<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9ef3632">9ef3632</a> :  [F10] Camera: Enable the product properties.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ca25c24">ca25c24</a> :  Move lhd.conf, scd.conf to device folder<br />
+<a href="https://android.googlesource.com/device/google/felix/+/48629bb">48629bb</a> :  set swiotlb as noforce<br />
+<a href="https://android.googlesource.com/device/google/felix/+/3f58156">3f58156</a> :  Config: Update display config file<br />
+<a href="https://android.googlesource.com/device/google/felix/+/40fbaa1">40fbaa1</a> :  config: update autobrightness table<br />
+<a href="https://android.googlesource.com/device/google/felix/+/3da3205">3da3205</a> :  Remove RestrictedCpuset hint<br />
+<a href="https://android.googlesource.com/device/google/felix/+/0cfb27e">0cfb27e</a> :  Obsecure camera EXIF information for AOSP camera.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6a07310">6a07310</a> :  Enable ADPF CPU hints for SF<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cd3de18">cd3de18</a> :  thermal: bringup charging thermal throttling<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5d98978">5d98978</a> :  p2p: fix p2p configuration<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e2fcfb0">e2fcfb0</a> :  thermal: enable sendCallback for SKIN thermal sensor<br />
+<a href="https://android.googlesource.com/device/google/felix/+/24be6d7">24be6d7</a> :  Remove FPS boost<br />
+<a href="https://android.googlesource.com/device/google/felix/+/91f8937">91f8937</a> :  thermal: seperate thermal config for charging<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c51fbed">c51fbed</a> :  Support 4k60 for physical outer front camera<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f1af595">f1af595</a> :  F10: update default brightness<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b9d18c4">b9d18c4</a> :  update dimming usage property<br />
+<a href="https://android.googlesource.com/device/google/felix/+/4f358ef">4f358ef</a> :  add touch module in init.insmod.xxx.cfg for F10.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e9d5e01">e9d5e01</a> :  Bundle handheld_core_hardware.xml<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dd7d9b0">dd7d9b0</a> :  audio: Modify mixer_paths_factory.xml amp3 VMON enable<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9082916">9082916</a> :  Add early wake up node property for secondary display<br />
+<a href="https://android.googlesource.com/device/google/felix/+/047517a">047517a</a> :  display: Set ro.surface_flinger.ignore_hdr_camera_layers<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5671430">5671430</a> :  audio: change VOIP playback channel count to stereo<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a474241">a474241</a> :  Remove carrier location permission backdoor<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6d96a3b">6d96a3b</a> :  Handle the network selection restoring in modem side<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9787835">9787835</a> :  Add AIDL support on IBluetoothCcc<br />
+<a href="https://android.googlesource.com/device/google/felix/+/0ef45ff">0ef45ff</a> :  Remove NFC uicc card emulation mode support<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7a142f8">7a142f8</a> :  enable display-off asynchronously support<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a18f357">a18f357</a> :  Set audio haptic channel amplitude limit<br />
+<a href="https://android.googlesource.com/device/google/felix/+/2997f76">2997f76</a> :  thermal: bringup VIRTUAL-SKIN thermal policy<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a0dd02d">a0dd02d</a> :  Remove universal touch boost<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d37f021">d37f021</a> :  Add device-specific support for GoogleBattery AIDL V1<br />
+<a href="https://android.googlesource.com/device/google/felix/+/265c7eb">265c7eb</a> :  update display_colordata_cal1.pb<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ef05b5e">ef05b5e</a> :  Add sku info for enable nfc secure<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cbe8b25">cbe8b25</a> :  uwb: support per device calibration for F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cf5a6ad">cf5a6ad</a> :  gps: extend min GPS week number<br />
+<a href="https://android.googlesource.com/device/google/felix/+/8885534">8885534</a> :  init: set vendor.all.modules.ready and vendor.all.devices.ready<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5ab49fb">5ab49fb</a> :  powerhal: update powerhint<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d4b4bbc">d4b4bbc</a> :  thermal: bringup USBC throttling policy<br />
+<a href="https://android.googlesource.com/device/google/felix/+/719100d">719100d</a> :  Sync GPU Powerhint settings.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/41955b5">41955b5</a> :  audio: update mixer_paths_factory.xml to fix USB loopback issue<br />
+<a href="https://android.googlesource.com/device/google/felix/+/27eabda">27eabda</a> :  Camera: Update target load for high streaming case<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1a4b4c8">1a4b4c8</a> :  bcl: Initialize bcl config<br />
+<a href="https://android.googlesource.com/device/google/felix/+/50a3a7d">50a3a7d</a> :  Declare IDisplay aidl interface for secondary<br />
+<a href="https://android.googlesource.com/device/google/felix/+/666d405">666d405</a> :  audio: modify fortemedia and cirrus amp arguments<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1517856">1517856</a> :  thermal: bringup basic thermal config<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6c75444">6c75444</a> :  power_profile: update modem power numbers<br />
+<a href="https://android.googlesource.com/device/google/felix/+/831b1c2">831b1c2</a> :  audio: update cs35l41 tuning tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e51183b">e51183b</a> :  audio: update FM tables<br />
+<a href="https://android.googlesource.com/device/google/felix/+/14c52d6">14c52d6</a> :  gps: enable SUPL OTDOA capability for VzW<br />
+<a href="https://android.googlesource.com/device/google/felix/+/8b93bba">8b93bba</a> :  Enable read/write access to st33spi_state for euiccpixel_app<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f55e335">f55e335</a> :  add mic software gain initial value<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f18fb66">f18fb66</a> :  Remove Nfc hidl settings<br />
+<a href="https://android.googlesource.com/device/google/felix/+/73fc8f1">73fc8f1</a> :  Secondary display sysfs node permission<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9d54a63">9d54a63</a> :  Felix: add requirement for vendor_kernel_boot partition<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e2e4a77">e2e4a77</a> :  Switch NFC from HIDL to AIDL<br />
+<a href="https://android.googlesource.com/device/google/felix/+/0bb86b2">0bb86b2</a> :  Secondary brightness sysfs node permission<br />
+<a href="https://android.googlesource.com/device/google/felix/+/356019a">356019a</a> :  camera: Add camera FATP HAT tool for F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b8a69c0">b8a69c0</a> :  fingerprint: Include SW42<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c564cf7">c564cf7</a> :  update Cirrus tuning tables and sampling rate settings<br />
+<a href="https://android.googlesource.com/device/google/felix/+/4eb052b">4eb052b</a> :  Remove the voice packs of Text-To-Speech from the specific folder.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/34ec640">34ec640</a> :  F10: Disable twoshay as default.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6ab2705">6ab2705</a> :  audio: update Fortemedia VoIP condition to reserve2<br />
+<a href="https://android.googlesource.com/device/google/felix/+/661f4cc">661f4cc</a> :  audio: allow mmap-record to set dsp volume<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ea749a5">ea749a5</a> :  fingerprint: Build SW35 to do factory test<br />
+<a href="https://android.googlesource.com/device/google/felix/+/90bcb68">90bcb68</a> :  wifi: Add PixelWifiOverlay2023_midyear_F10 for F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e6ed255">e6ed255</a> :  change usb headset gain control to sw gain control<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e7f6374">e7f6374</a> :  wlan: configure channel 149/36 as p2p preferred channels.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/caf4102">caf4102</a> :  power_profile: Correct CPU topology and update power number<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a8e685c">a8e685c</a> :  conf: init fps driver no post-fs-data stage<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e0316f8">e0316f8</a> :  Switch BluetoothCcc to 1.1 version<br />
+<a href="https://android.googlesource.com/device/google/felix/+/43c64eb">43c64eb</a> :  Reduce FG prefer_idle when display is idle<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a1a6d28">a1a6d28</a> :  powerhint: Add Adpf Profiles for F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/2ed03b5">2ed03b5</a> :  Phase out config_roundedCornerMultipleRadius from overlay package [F10]<br />
+<a href="https://android.googlesource.com/device/google/felix/+/69049b6">69049b6</a> :  remove unused property<br />
+<a href="https://android.googlesource.com/device/google/felix/+/45a71e3">45a71e3</a> :  Add gps.xml for M23<br />
+<a href="https://android.googlesource.com/device/google/felix/+/bc33412">bc33412</a> :  wlan: initial function bring up<br />
+<a href="https://android.googlesource.com/device/google/felix/+/dab168d">dab168d</a> :  Update haptics kernel module<br />
+<a href="https://android.googlesource.com/device/google/felix/+/f73ecea">f73ecea</a> :  Disable hall sensor in factory mode.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ad9146f">ad9146f</a> :  Sensor: Add hinge angle sensor permission.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9d3f8fa">9d3f8fa</a> :  thermal: disable SKIN thermal throttling<br />
+<a href="https://android.googlesource.com/device/google/felix/+/277d3a9">277d3a9</a> :  audio: fix PDM mask in mixer_paths.xml<br />
+<a href="https://android.googlesource.com/device/google/felix/+/1603b85">1603b85</a> :  Revert "Add One Handed mode system property for F10"<br />
+<a href="https://android.googlesource.com/device/google/felix/+/0c58e7b">0c58e7b</a> :  Remove the incorrect thermal table to prevent crash<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d57360a">d57360a</a> :  disable powerhint for F2FS gc_urgent mode<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9f615fa">9f615fa</a> :  Remove the redundant Product FCM for wireless charger HAL<br />
+<a href="https://android.googlesource.com/device/google/felix/+/86c8c08">86c8c08</a> :  Temporarily disable GPU power hold during LAUNCH boost<br />
+<a href="https://android.googlesource.com/device/google/felix/+/687519c">687519c</a> :  update felix device<br />
+<a href="https://android.googlesource.com/device/google/felix/+/89e79a0">89e79a0</a> :  feli(uwb): update calibration file for uci uwb stack<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e0100f2">e0100f2</a> :  Correct DCK Eligibility<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6ea528f">6ea528f</a> :  Increase zram size to 3G<br />
+<a href="https://android.googlesource.com/device/google/felix/+/acda24a">acda24a</a> :  powerhint: fork powerhint from gs201<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a03a13c">a03a13c</a> :  Add One Handed mode system property for F10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b74ca40">b74ca40</a> :  Remove CS40L25 support<br />
+<a href="https://android.googlesource.com/device/google/felix/+/b6055f3">b6055f3</a> :  uwb: remove calibration script<br />
+<a href="https://android.googlesource.com/device/google/felix/+/0f5a142">0f5a142</a> :  uwb: use per device factory calibration<br />
+<a href="https://android.googlesource.com/device/google/felix/+/08fdad3">08fdad3</a> :  Migrate "rounded_corner_content_padding"<br />
+<a href="https://android.googlesource.com/device/google/felix/+/0af8306">0af8306</a> :  Add device-specific support for GoogleBattery HAL 1.2.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a425c46">a425c46</a> :  powerstats: use gs common library to get common data providers<br />
+<a href="https://android.googlesource.com/device/google/felix/+/45b021e">45b021e</a> :  Use soong_config_ macros to set Soong config variables.<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e7cfbb7">e7cfbb7</a> :  Initialize device felix<br />
+<a href="https://android.googlesource.com/device/google/felix/+/2ea4006">2ea4006</a> :  Initial empty repository<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_felix-sepolicy-show" class="showLink" onclick="show('device_google_felix-sepolicy');return false;">+</a><a href="#" id="device_google_felix-sepolicy-hide" class="hideLink" onclick="hide('device_google_felix-sepolicy');return false;">-</a>&nbsp;<a name="device_google_felix-sepolicy" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/felix-sepolicy">device/google/felix-sepolicy</a></h2>
+<div id="device_google_felix-sepolicy"><a href="https://android.googlesource.com/device/google/felix-sepolicy/+/663979a">663979a</a> :  Allow SystemUI to access fp hal.<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/49cdfcb">49cdfcb</a> :  sepolicy: add necessary sepolicy for dual battery<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/0e76ae1">0e76ae1</a> :  fingerprint: allow fps to access sysfs_leds<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/3a92d3d">3a92d3d</a> :  remove tracking denial of device chr_file<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/c024247">c024247</a> :  Remove sepolicy for vibrator manager service<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/3c82f57">3c82f57</a> :  Allow dumpstate to access touch vendor nodes[DO NOT MERGE]<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/d6fe8df">d6fe8df</a> :  Revert "Allow dumpstate to access touch vendor nodes"<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/f544a5a">f544a5a</a> :  sepolicy: Allow fingerprint to access fwk hwservice<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/6c42229">6c42229</a> :  add sepolicy for vibrator manager service<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/b1d4e8a">b1d4e8a</a> :  Allow dumpstate to access touch vendor nodes<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/577965e">577965e</a> :  sepolicy: remove tracking bugs for PowerStatsHAL and SystemSuspend<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/ef12403">ef12403</a> :  Fix FPS servicemanager sepolicy issue<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/99f9cd6">99f9cd6</a> :  sepolicy: add sysfs_wakeup labels for System Suspend<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/2fef9ef">2fef9ef</a> :  Remove fingerprint tracking bug<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/5126a01">5126a01</a> :  Remove bug mapping in the tracking denials<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/454e019">454e019</a> :  Update error on ROM 8979803<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/2dcb7cc">2dcb7cc</a> :  Add sepolicy for dual_batt_gauge power supply<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/baebf44">baebf44</a> :  Revert "Update SELinux error"<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/b1ce1cb">b1ce1cb</a> :  Remove bug mapping in the tracking denials<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/fd1cdb4">fd1cdb4</a> :  Sepolicy: fix the avc<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/342edcb">342edcb</a> :  Update SELinux error<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/9991478">9991478</a> :  Fix FPS hwservice sepolicy issue<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/44f363e">44f363e</a> :  Update SELinux error<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/f6c212c">f6c212c</a> :  Add rules to allow Sensor HAL write access to als_table<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/eb0d700">eb0d700</a> :  add sepolicy for both vibrator path<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/eece5dd">eece5dd</a> :  Update SELinux error<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/0ee97b9">0ee97b9</a> :  setup felix tracking folder<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/c16dc8d">c16dc8d</a> :  fingerprint: Add new lable for capacitance fingerprint<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/9d19bb9">9d19bb9</a> :  Add sepolicy for Blutooth<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/96d7d96">96d7d96</a> :  Add service context for IDisplay/secondary<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/bc7b3c6">bc7b3c6</a> :  Add file context for decon1 and dsim1<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/1b1d984">1b1d984</a> :  Add sepolicy for P9222 WLC power_supply<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/d4c74ff">d4c74ff</a> :  Add sepolicy for specific camera components<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/4f83b87">4f83b87</a> :  Add F10 specific camera component sepolicy settings<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/93f6220">93f6220</a> :  Include core policy OWNERS<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/a61abb8">a61abb8</a> :  Initial device felix sepolicy<br />
+<a href="https://android.googlesource.com/device/google/felix-sepolicy/+/7fe887b">7fe887b</a> :  Initial empty repository<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_lynx-show" class="showLink" onclick="show('device_google_lynx');return false;">+</a><a href="#" id="device_google_lynx-hide" class="hideLink" onclick="hide('device_google_lynx');return false;">-</a>&nbsp;<a name="device_google_lynx" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/lynx">device/google/lynx</a></h2>
+<div id="device_google_lynx"><a href="https://android.googlesource.com/device/google/lynx/+/f183c24">f183c24</a> :  [DO NOT MERGE] Update lynx SVN to 85<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_pantah-show" class="showLink" onclick="show('device_google_pantah');return false;">+</a><a href="#" id="device_google_pantah-hide" class="hideLink" onclick="hide('device_google_pantah');return false;">-</a>&nbsp;<a name="device_google_pantah" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/pantah">device/google/pantah</a></h2>
+<div id="device_google_pantah"><a href="https://android.googlesource.com/device/google/pantah/+/d29e1da">d29e1da</a> :  [DO NOT MERGE] Update pantah SVN to 85<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_raviole-show" class="showLink" onclick="show('device_google_raviole');return false;">+</a><a href="#" id="device_google_raviole-hide" class="hideLink" onclick="hide('device_google_raviole');return false;">-</a>&nbsp;<a name="device_google_raviole" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/raviole">device/google/raviole</a></h2>
+<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/5eede5c">5eede5c</a> :  [DO NOT MERGE] Update raviole SVN to 85<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_tangorpro-show" class="showLink" onclick="show('device_google_tangorpro');return false;">+</a><a href="#" id="device_google_tangorpro-hide" class="hideLink" onclick="hide('device_google_tangorpro');return false;">-</a>&nbsp;<a name="device_google_tangorpro" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/tangorpro">device/google/tangorpro</a></h2>
+<div id="device_google_tangorpro"><a href="https://android.googlesource.com/device/google/tangorpro/+/8133393">8133393</a> :  Update Limb SAR value in Regulatory Label<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/ab04cbb">ab04cbb</a> :  audio: disable raw for USB Dock<br />
+<a href="https://android.googlesource.com/device/google/tangorpro/+/db41914">db41914</a> :  audio: disable raw for USB Dock<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/deed239d112f">deed239d112f</a> :  Revert "Improve first opaque activity candidate detection"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5b4d8e9cdabf">5b4d8e9cdabf</a> :  Disable emoji compat initializer<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4d6c1e48a500">4d6c1e48a500</a> :  Disable emoji compat initializer<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f78576bb736d">f78576bb736d</a> :  Improve first opaque activity candidate detection<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0bf3a756fc90">0bf3a756fc90</a> :  Invalidate buffers on transform change<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9f802f15f73b">9f802f15f73b</a> :  Skip letterboxing if the activity below is embedded<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ad3fb95aa2fe">ad3fb95aa2fe</a> :  Invalidate buffers on transform change<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b6ea08ea6497">b6ea08ea6497</a> :  Improve first opaque activity candidate detection<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a810f4564c1e">a810f4564c1e</a> :  DO NOT MERGE Hide EmptyShadeView when on bouncer<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/61717c2e63f3">61717c2e63f3</a> :  DO NOT MERGE Adding tests for updated EmptyShadeView logic<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a01413ad3af9">a01413ad3af9</a> :  Prevent force showing system bars for TaskView<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e8e2f0b91345">e8e2f0b91345</a> :  Skip letterboxing if the activity below is embedded<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b917659324ae">b917659324ae</a> :  Unfreeze the surface when the transition is done<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f223bd540eab">f223bd540eab</a> :  Unfreeze the surface when the transition is done<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b7a1853ee59b">b7a1853ee59b</a> :  Make sure to reset isFoldHandled<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1f76f69fa8cf">1f76f69fa8cf</a> :  Set corner radius to 0 when casting<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/91649d0a7807">91649d0a7807</a> :  Refresh layout parameter for bounds change from relayout<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e2376d42e488">e2376d42e488</a> :  DO NOT SUBMIT: Don't ever show the build number. (cherry picked from https://googleplex-android-review.googlesource.com/q/commit:252407fd77fcb126834be02233b799b230ee2c6e) Merged-In: I28e35f8686a66b6eb76f3a09a163c6873ca23ba0 Change-Id: I28e35f8686a66b6eb76f3a09a163c6873ca23ba0<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0ce33f0c4445">0ce33f0c4445</a> :  Set corner radius to 0 when casting<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/95e0f247dd11">95e0f247dd11</a> :  Refresh layout parameter for bounds change from relayout<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/eb3937ef5867">eb3937ef5867</a> :  DO NOT SUBMIT: Don't ever show the build number. (cherry picked from https://googleplex-android-review.googlesource.com/q/commit:252407fd77fcb126834be02233b799b230ee2c6e) Merged-In: I28e35f8686a66b6eb76f3a09a163c6873ca23ba0 Change-Id: I28e35f8686a66b6eb76f3a09a163c6873ca23ba0<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1ce017c80c09">1ce017c80c09</a> :  Make sure to reset isFoldHandled<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8a49308e99ae">8a49308e99ae</a> :  Set corner radius to 0 when casting<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4ce967e649cf">4ce967e649cf</a> :  Refresh layout parameter for bounds change from relayout<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/95cf483d8708">95cf483d8708</a> :  [RESTRICT AUTOMERGE] Always set last report configuration for starting window.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/51747a5c3ca9">51747a5c3ca9</a> :  Fix deadlock in BaseDataProducer.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/80403bb68db0">80403bb68db0</a> :  Set corner radius to 0 when casting<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7a9303c18c45">7a9303c18c45</a> :  Refresh layout parameter for bounds change from relayout<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/301078629d95">301078629d95</a> :  DO NOT MERGE Hide EmptyShadeView when on bouncer<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6d7cf18bb935">6d7cf18bb935</a> :  DO NOT MERGE Adding tests for updated EmptyShadeView logic<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9ee1c6ba6f3c">9ee1c6ba6f3c</a> :  Prevent force showing system bars for TaskView<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/19ce8d14c4ca">19ce8d14c4ca</a> :  Fixes foldable autorotation setting being out of sync in QS and Settings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/01e8550450d1">01e8550450d1</a> :  Fix split cannot active if app trampoline launch new task<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1a2408080879">1a2408080879</a> :  Update the timing of clearing SplitRequest<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c71edbd8e02a">c71edbd8e02a</a> :  Prevents activity being stopped while folding/unfolding device<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6cfe32c58409">6cfe32c58409</a> :  Gates RotationResolverService with a config flag<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/09355a36307b">09355a36307b</a> :  Also reverse rotation for #freezeRotation path<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/59cb04c32141">59cb04c32141</a> :  Don't show home controls complication if not available.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1dd424018a2f">1dd424018a2f</a> :  Don't show home controls complication if not available.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6247e9a50ccd">6247e9a50ccd</a> :  Fixes foldable autorotation setting being out of sync in QS and Settings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/02bb0510f2bc">02bb0510f2bc</a> :  Fix split cannot active if app trampoline launch new task<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2bcbc30be352">2bcbc30be352</a> :  Update the timing of clearing SplitRequest<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f5c2c655ad3e">f5c2c655ad3e</a> :  Prevents activity being stopped while folding/unfolding device<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a1bf24ef5862">a1bf24ef5862</a> :  Gates RotationResolverService with a config flag<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/081664106ea6">081664106ea6</a> :  Also reverse rotation for #freezeRotation path<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2023ade1da2f">2023ade1da2f</a> :  Prevent force showing system bars for TaskView<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6be2b4787b30">6be2b4787b30</a> :  Adding tests for updated EmptyShadeView logic<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/aa95a9456581">aa95a9456581</a> :  Hide EmptyShadeView when on bouncer<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bca067f846d2">bca067f846d2</a> :  Update the disabled-opa navbar icon size to reflect icon change<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/281fba4038d1">281fba4038d1</a> :  Restrict maximum size of FontInterpolator font caches<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4d9220ba1110">4d9220ba1110</a> :  Fix KeyguardSecurityContainerControllerTest<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1f78af8e9646">1f78af8e9646</a> :  Prevent force showing system bars for TaskView<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e210bd3a3fcc">e210bd3a3fcc</a> :  Adding tests for updated EmptyShadeView logic<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8b6d722b7536">8b6d722b7536</a> :  Hide EmptyShadeView when on bouncer<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dfd75611b414">dfd75611b414</a> :  Update the disabled-opa navbar icon size to reflect icon change<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b5d889f5fd02">b5d889f5fd02</a> :  Restrict maximum size of FontInterpolator font caches<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6005e82bc73f">6005e82bc73f</a> :  Fix KeyguardSecurityContainerControllerTest<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b5c13afb2f3f">b5c13afb2f3f</a> :  Rename orientation request loop property<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/792142ef3276">792142ef3276</a> :  Fixes flicker of not applying initial transform to leash<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2640fca03bf8">2640fca03bf8</a> :  Reset NSSL translationY after a transision gets cancelled<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c6e4470de708">c6e4470de708</a> :  AudioService: fix volume group setting name<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e307c6b8ac50">e307c6b8ac50</a> :  Make sure to clear outdated screenshot of splitting tasks<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/39cd9be33d2d">39cd9be33d2d</a> :  Rename orientation request loop property<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d7c900f42799">d7c900f42799</a> :  Make sure to clear outdated screenshot of splitting tasks<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9ee3a318be9d">9ee3a318be9d</a> :  DO NOT MERGE Revert "Accept a Window as shown if it's in any transition"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6c52d0e7bbd3">6c52d0e7bbd3</a> :  Reset NSSL translationY after a transision gets cancelled<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/41b888f32c83">41b888f32c83</a> :  AudioService: fix volume group setting name<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c34ca49a06ce">c34ca49a06ce</a> :  Make sure to clear outdated screenshot of splitting tasks<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/272d3fb6e676">272d3fb6e676</a> :  DO NOT MERGE Revert "Accept a Window as shown if it's in any transition"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/43da8a4c8613">43da8a4c8613</a> :  Fix home controls showing on low light dream<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/38df2ea27a77">38df2ea27a77</a> :  DO NOT MERGE Fix crash related to getting the root of an unattached view<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f93c127cb27d">f93c127cb27d</a> :  Revert "Remove pip resize flicks" DO NOT MERGE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c4a202ae995d">c4a202ae995d</a> :  Fix home controls showing on low light dream<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/adb11edb1a2b">adb11edb1a2b</a> :  DO NOT MERGE Fix crash related to getting the root of an unattached view<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8c57a52b1ca5">8c57a52b1ca5</a> :  Revert "Remove pip resize flicks" DO NOT MERGE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b4e133fb0ec7">b4e133fb0ec7</a> :  Cancel current animation instead of candidate<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/477135156746">477135156746</a> :  Revert "Volume: Hide dialog when motion cancelled, as well as when finished."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ca0cecf9d6b8">ca0cecf9d6b8</a> :  Revert "Fix vulnerability in AttributionSource due to incorrect ..."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/654c5afb1324">654c5afb1324</a> :  Revert "Disallow interception of multitouch events"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1edefa04f97a">1edefa04f97a</a> :  Notify ScreenOffController of battery saver change<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/76f1203ae838">76f1203ae838</a> :  Explicitly re-show the keyguard if we were hiding.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1a93f0f8a06a">1a93f0f8a06a</a> :  Revert "[DO NOT MERGE] Transitions - Smooth out bouncer -&gt; gone"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c7e43e284b31">c7e43e284b31</a> :  Revert "[DO NOT MERGE] Transitions - Smooth out bouncer -&gt; gone"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8f3c4b2a9c8d">8f3c4b2a9c8d</a> :  Revert "AudioService: handle BT profile disconnections"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4accb472ce86">4accb472ce86</a> :  Revert "AudioService: handle BT profile disconnections"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f5fe080dfb52">f5fe080dfb52</a> :  Separates SFPS and UDFPS BP animation logic<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/de154915432d">de154915432d</a> :  Initialize Colors when regionSampling is disabled<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/675bd8b796">675bd8b796</a> :  DO NOT MERGE Reverts WindowInfosListenerInvoker throttling<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/4d0345c4e9">4d0345c4e9</a> :  Add pending command buffer reset<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/f7a481ffa0">f7a481ffa0</a> :  DO NOT MERGE Reverts WindowInfosListenerInvoker throttling<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/6061a3b8f5">6061a3b8f5</a> :  Add pending command buffer reset<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/5c50089378">5c50089378</a> :  Mitigate VoNR/EPSFB metrics issue in T QPR3<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/2749ecc852">2749ecc852</a> :  Mitigate VoNR/EPSFB metrics issue in T QPR3<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_google_camera-show" class="showLink" onclick="show('platform_hardware_google_camera');return false;">+</a><a href="#" id="platform_hardware_google_camera-hide" class="hideLink" onclick="hide('platform_hardware_google_camera');return false;">-</a>&nbsp;<a name="platform_hardware_google_camera" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/google/camera">platform/hardware/google/camera</a></h2>
+<div id="platform_hardware_google_camera"><a href="https://android.googlesource.com/platform/hardware/google/camera/+/8dd2650">8dd2650</a> :  Update camera QPR3 apex major number<br />
+<a href="https://android.googlesource.com/platform/hardware/google/camera/+/a46d63d">a46d63d</a> :  Update camera QPR3 apex major number<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Car_SystemUI-show" class="showLink" onclick="show('platform_packages_apps_Car_SystemUI');return false;">+</a><a href="#" id="platform_packages_apps_Car_SystemUI-hide" class="hideLink" onclick="hide('platform_packages_apps_Car_SystemUI');return false;">-</a>&nbsp;<a name="platform_packages_apps_Car_SystemUI" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Car/SystemUI">platform/packages/apps/Car/SystemUI</a></h2>
+<div id="platform_packages_apps_Car_SystemUI"><a href="https://android.googlesource.com/platform/packages/apps/Car/SystemUI/+/e0de7f8e">e0de7f8e</a> :  Revert "[DO NOT MERGE] Update constructor"<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Car/SystemUI/+/6f20de34">6f20de34</a> :  Revert "[DO NOT MERGE] Update constructor"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/683ec2d5a1">683ec2d5a1</a> :  Clear Accessibility Focus from icon after Shorcut Menu invoked<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/9b5d0fd7d3">9b5d0fd7d3</a> :  Clear Accessibility Focus from icon after Shorcut Menu invoked<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/ed4d64d589">ed4d64d589</a> :  Revert "Allow user gesture to take priority over taskbar translation reset animnatiuon."<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/77759e57ce">77759e57ce</a> :  Revert "Fix bug where taskbar is translated during hotseat handoff."<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/4e209c5231">4e209c5231</a> :  Revert "Allow user gesture to take priority over taskbar translation reset animnatiuon."<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/940f082825">940f082825</a> :  Revert "Fix bug where taskbar is translated during hotseat handoff."<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/836f4b8c8e">836f4b8c8e</a> :  Revert "Migrate IDP_GRID_NAME usage to LauncherPrefs"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/e226b8fb70">e226b8fb70</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/1d595f808a">1d595f808a</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/1a2e751c2d">1a2e751c2d</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/2e61e96e27">2e61e96e27</a> :  String change to highlight calculation stopped at last even hour<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/7a1b5bdda0">7a1b5bdda0</a> :  Replace the SlicePreference with Preference<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/d172c04cda">d172c04cda</a> :  Replace the SlicePreference with Preference<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_WallpaperPicker2-show" class="showLink" onclick="show('platform_packages_apps_WallpaperPicker2');return false;">+</a><a href="#" id="platform_packages_apps_WallpaperPicker2-hide" class="hideLink" onclick="hide('platform_packages_apps_WallpaperPicker2');return false;">-</a>&nbsp;<a name="platform_packages_apps_WallpaperPicker2" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/WallpaperPicker2">platform/packages/apps/WallpaperPicker2</a></h2>
+<div id="platform_packages_apps_WallpaperPicker2"><a href="https://android.googlesource.com/platform/packages/apps/WallpaperPicker2/+/ba7e28e0">ba7e28e0</a> :  Revert "Calculate LiveWallpaper thumbnail raw dimension"<br />
+<a href="https://android.googlesource.com/platform/packages/apps/WallpaperPicker2/+/317d2cfb">317d2cfb</a> :  Revert "Calculate LiveWallpaper thumbnail raw dimension"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/519c658499">519c658499</a> :  disable AT+ANDROID processing for wear<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_IntentResolver-show" class="showLink" onclick="show('platform_packages_modules_IntentResolver');return false;">+</a><a href="#" id="platform_packages_modules_IntentResolver-hide" class="hideLink" onclick="hide('platform_packages_modules_IntentResolver');return false;">-</a>&nbsp;<a name="platform_packages_modules_IntentResolver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/IntentResolver">platform/packages/modules/IntentResolver</a></h2>
+<div id="platform_packages_modules_IntentResolver"><a href="https://android.googlesource.com/platform/packages/modules/IntentResolver/+/887cec4">887cec4</a> :  Revert "Feature flags support in Chooser"<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
