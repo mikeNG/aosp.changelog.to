@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-13.0.0_r3 to android-security-13.0.0_r4 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-13.0.0_r3 to android-security-13.0.0_r4 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/0189b7c92f">0189b7c92f</a> :  Version bump to TSV1.220628.033 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f900d0e88f">f900d0e88f</a> :  Version bump to TSV1.220628.032 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a066c8ff74">a066c8ff74</a> :  Version bump to TSV1.220628.031 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_build_soong-show" class="showLink" onclick="show('platform_build_soong');return false;">+</a><a href="#" id="platform_build_soong-hide" class="hideLink" onclick="hide('platform_build_soong');return false;">-</a>&nbsp;<a name="platform_build_soong" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build/soong">platform/build/soong</a></h2>
+<div id="platform_build_soong"><a href="https://android.googlesource.com/platform/build/soong/+/0a52c614e">0a52c614e</a> :  Expose avb_hash_algorithm as a property.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_angle-show" class="showLink" onclick="show('platform_external_angle');return false;">+</a><a href="#" id="platform_external_angle-hide" class="hideLink" onclick="hide('platform_external_angle');return false;">-</a>&nbsp;<a name="platform_external_angle" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/angle">platform/external/angle</a></h2>
+<div id="platform_external_angle"><a href="https://android.googlesource.com/platform/external/angle/+/b652cb7b66">b652cb7b66</a> :  Fix a bug when getting a gzip header extra field with inflate().<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/770b45c3c1">770b45c3c1</a> :  Revert "audio policy: fix sensor privacy listener"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/fcced3719a3d">fcced3719a3d</a> :  [RESTRICT AUTOMERGE] Fix bypass BG-FGS and BAL via package manager APIs<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5b2886ff893c">5b2886ff893c</a> :  Fix bypass BAL via LocationManager.requestFlush<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4c2c02733467">4c2c02733467</a> :  Lower per-app NotificationChannelGroup limit.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/491eadf82ac4">491eadf82ac4</a> :  [RESTRICT AUTOMERGE] Limit length of the name in &lt;uses-permission&gt;<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d3a636a65f50">d3a636a65f50</a> :  DO NOT MERGE: Context#startInstrumentation could be started from SHELL only now.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/75147ee5c359">75147ee5c359</a> :  [RESTRICT AUTOMERGE] Strip part of the activity info of another uid if no privilege<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a55c2ce734d6">a55c2ce734d6</a> :  Encode Intent scheme when serializing to URI string RESTRICT AUTOMERGE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9b9e6fcefe45">9b9e6fcefe45</a> :  Fix checkKeyIntentParceledCorrectly's bypass<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/45d9e436bde5">45d9e436bde5</a> :  Checking if package belongs to UID before registering broadcast receiver<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0e368fa0cf27">0e368fa0cf27</a> :  Revert "Trim the activity info of another uid if no privilege"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6e0bdc08acff">6e0bdc08acff</a> :  Trim the activity info of another uid if no privilege<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/4420a3ad0e">4420a3ad0e</a> :  Mitigate the security vulnerability by sanitizing the transaction flags.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_nxp_nfc-show" class="showLink" onclick="show('platform_hardware_nxp_nfc');return false;">+</a><a href="#" id="platform_hardware_nxp_nfc-hide" class="hideLink" onclick="hide('platform_hardware_nxp_nfc');return false;">-</a>&nbsp;<a name="platform_hardware_nxp_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/nxp/nfc">platform/hardware/nxp/nfc</a></h2>
+<div id="platform_hardware_nxp_nfc"><a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/72cbba8">72cbba8</a> :  OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2<br />
+<a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/3fe994d">3fe994d</a> :  Revert "OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2"<br />
+<a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/d89e72c">d89e72c</a> :  OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/cb4c26c20e">cb4c26c20e</a> :  Prevent falling into OtherActivityInputConsumer when over lockscreen<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/997de10f3f">997de10f3f</a> :  Only primary user is allowed to control secure nfc<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/742b97187e">742b97187e</a> :  Fix the security vulnerability issue in AppLocalePickerActivity<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7e5f89199d">7e5f89199d</a> :  Fix an OOB bug in register_notification_rsp<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d44034fd1e">d44034fd1e</a> :  Add regression test for b/254774758<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d24a07f5d3">d24a07f5d3</a> :  Add mocking support for now function in AttributionProcessor<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/6a2e3c8557">6a2e3c8557</a> :  Fix a use-after-free bug in AttributionProcessor::OnWakelockReleased<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/75e6645d94">75e6645d94</a> :  Fix an OOB read in avdt_scb_hdl_pkt_no_frag<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Virtualization-show" class="showLink" onclick="show('platform_packages_modules_Virtualization');return false;">+</a><a href="#" id="platform_packages_modules_Virtualization-hide" class="hideLink" onclick="hide('platform_packages_modules_Virtualization');return false;">-</a>&nbsp;<a name="platform_packages_modules_Virtualization" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Virtualization">platform/packages/modules/Virtualization</a></h2>
+<div id="platform_packages_modules_Virtualization"><a href="https://android.googlesource.com/platform/packages/modules/Virtualization/+/f348cb9f">f348cb9f</a> :  Set avb_hash_algorithm=sha256 for system &amp; vendor img<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/f34b753d19">f34b753d19</a> :  Revert "Revert "[DO NOT MERGE] wifi: remove certificates for network factory reset""<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/dc9ecad5c">dc9ecad5c</a> :  Canonicalise path before extracting relative path<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/810757f06">810757f06</a> :  DO NOT MERGE do not process content uri in call Intents<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/a49777990">a49777990</a> :  Ensure service unbind when receiving a null call screening service in onBind.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/c6cc1068">c6cc1068</a> :  OOBW in nci_snd_set_routing_cmd()<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
