@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-13.0.0_r66 to android-13.0.0_r74 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-13.0.0_r66 to android-13.0.0_r74 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/28d6f1ae09">28d6f1ae09</a> :  Version bump to TQ3C.230805.001.B2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a6f0df7a00">a6f0df7a00</a> :  Version bump to TQ3C.230805.001.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/81d947ecc8">81d947ecc8</a> :  Update Security String to 2023-08-05<br />
+<a href="https://android.googlesource.com/platform/build/+/2089b78576">2089b78576</a> :  Version bump to TQ3C.230705.001.B2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/18ff61619b">18ff61619b</a> :  Version bump to TQ3C.230705.001.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/10b4033e38">10b4033e38</a> :  Version bump to TQ3C.230705.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/27669e1be8">27669e1be8</a> :  Version bump to TQ3C.230605.010.D1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/52725ea4a8">52725ea4a8</a> :  Version bump to TQ3C.230705.002.V1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/49238e0e8e">49238e0e8e</a> :  Version bump to TQ3C.230705.002.E2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/311840c739">311840c739</a> :  Version bump to TQ3C.230705.002.E1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d5d894d958">d5d894d958</a> :  Version bump to TQ3C.230705.002.D2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e6d038a967">e6d038a967</a> :  Version bump to TQ3C.230705.002.D1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/924d7ca3f3">924d7ca3f3</a> :  Version bump to TQ3C.230705.002.C2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/070503d71d">070503d71d</a> :  Version bump to TQ3C.230705.002.C1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/afb5dc842d">afb5dc842d</a> :  Version bump to TQ3C.230705.002.B2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a0bff255ff">a0bff255ff</a> :  Version bump to TQ3C.230705.002.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ef4e91c788">ef4e91c788</a> :  Version bump to TQ3C.230705.002.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4ae5af958a">4ae5af958a</a> :  Version bump to TQ3C.230705.002 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_felix-show" class="showLink" onclick="show('device_google_felix');return false;">+</a><a href="#" id="device_google_felix-hide" class="hideLink" onclick="hide('device_google_felix');return false;">-</a>&nbsp;<a name="device_google_felix" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/felix">device/google/felix</a></h2>
+<div id="device_google_felix"><a href="https://android.googlesource.com/device/google/felix/+/dfa45af">dfa45af</a> :  Update Felix SVN to 19<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5504ee7">5504ee7</a> :  Update Felix SVN to 18<br />
+<a href="https://android.googlesource.com/device/google/felix/+/3538f85">3538f85</a> :  Update Felix SVN to 17<br />
+<a href="https://android.googlesource.com/device/google/felix/+/d7c3b10">d7c3b10</a> :  Update Felix SVN to 16<br />
+<a href="https://android.googlesource.com/device/google/felix/+/fe2ba64">fe2ba64</a> :  Update Felix SVN to 15<br />
+<a href="https://android.googlesource.com/device/google/felix/+/fed73b0">fed73b0</a> :  Update Felix SVN to 14<br />
+<a href="https://android.googlesource.com/device/google/felix/+/a8539de">a8539de</a> :  Update Felix SVN to 13<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9ceebde">9ceebde</a> :  Update Felix SVN to 12<br />
+<a href="https://android.googlesource.com/device/google/felix/+/7f983a7">7f983a7</a> :  Update Felix SVN to 13<br />
+<a href="https://android.googlesource.com/device/google/felix/+/feea82f">feea82f</a> :  thermal: update the VSKIN equation V06<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c0ca055">c0ca055</a> :  Update Felix SVN to 12<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6ce43a5">6ce43a5</a> :  thermal: update the VSKIN equation V06<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cb12639">cb12639</a> :  Update Felix SVN to 12<br />
+<a href="https://android.googlesource.com/device/google/felix/+/ab97fa7">ab97fa7</a> :  thermal: update the VSKIN equation V06<br />
+<a href="https://android.googlesource.com/device/google/felix/+/fb6d707">fb6d707</a> :  Update Felix SVN to 11<br />
+<a href="https://android.googlesource.com/device/google/felix/+/fce17b8">fce17b8</a> :  Update Felix SVN to 10<br />
+<a href="https://android.googlesource.com/device/google/felix/+/de1208a">de1208a</a> :  Update Felix SVN to 9<br />
+<a href="https://android.googlesource.com/device/google/felix/+/c13f841">c13f841</a> :  Update Felix SVN to 8<br />
+<a href="https://android.googlesource.com/device/google/felix/+/eeadf34">eeadf34</a> :  Update Felix SVN to 7<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e9de8aa">e9de8aa</a> :  Update Felix SVN to 12<br />
+<a href="https://android.googlesource.com/device/google/felix/+/cee665e">cee665e</a> :  Update Felix SVN to 12<br />
+<a href="https://android.googlesource.com/device/google/felix/+/6ed882d">6ed882d</a> :  Update Felix SVN to 12<br />
+<a href="https://android.googlesource.com/device/google/felix/+/e146efb">e146efb</a> :  Update Felix SVN to 12<br />
+<a href="https://android.googlesource.com/device/google/felix/+/443073f">443073f</a> :  Update Felix SVN to 12<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5e5e21a">5e5e21a</a> :  thermal: update the VSKIN equation V06<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_aac-show" class="showLink" onclick="show('platform_external_aac');return false;">+</a><a href="#" id="platform_external_aac-hide" class="hideLink" onclick="hide('platform_external_aac');return false;">-</a>&nbsp;<a name="platform_external_aac" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/aac">platform/external/aac</a></h2>
+<div id="platform_external_aac"><a href="https://android.googlesource.com/platform/external/aac/+/936f5ed">936f5ed</a> :  Increase patchParam array size by one and fix out-of-bounce write in resetLppTransposer().<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_freetype-show" class="showLink" onclick="show('platform_external_freetype');return false;">+</a><a href="#" id="platform_external_freetype-hide" class="hideLink" onclick="hide('platform_external_freetype');return false;">-</a>&nbsp;<a name="platform_external_freetype" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/freetype">platform/external/freetype</a></h2>
+<div id="platform_external_freetype"><a href="https://android.googlesource.com/platform/external/freetype/+/e97f68d4f">e97f68d4f</a> :  Cherrypick following three changes<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/07f03d4dde9b">07f03d4dde9b</a> :  Keyguard: use transition state for syncing occlude [RESTRICT AUTOMERGE]<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9847fc78e623">9847fc78e623</a> :  Report folding features to letterboxed apps.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2f7eff7bb568">2f7eff7bb568</a> :  Send update config change when letterbox is moved<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3abe8ccf4f08">3abe8ccf4f08</a> :  Cancel current animation instead of candidate<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6025acf0e2b9">6025acf0e2b9</a> :  Merge "Resolve StatusHints image exploit across user." into sc-v2-dev am: e371b3018f<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/06c01a2f962a">06c01a2f962a</a> :  Remove unnecessary padding code<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c32d55eaafdb">c32d55eaafdb</a> :  Use Settings.System.getIntForUser instead of getInt to make sure user specific settings are used<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d611cddcf453">d611cddcf453</a> :  DO NOT MERGE Verify URI permissions in MediaMetadata<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c56c201385c3">c56c201385c3</a> :  Visit URIs in themed remoteviews icons.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1c29c5855907">1c29c5855907</a> :  Check URIs in sized remote views.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/87230cf932af">87230cf932af</a> :  Fix PrivacyChip not visible issue<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f376a7e31078">f376a7e31078</a> :  Update Pip launches to not enter pinned task if in background.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0cd003717465">0cd003717465</a> :  Validate ComponentName for MediaButtonBroadcastReceiver<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/27971d20c92c">27971d20c92c</a> :  Implement visitUris for RemoteViews ViewGroupActionAdd.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/675a5d7e25f0">675a5d7e25f0</a> :  Check URIs in notification public version.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2c4aadb1f7c0">2c4aadb1f7c0</a> :  Preserve flags for non-runtime permissions upon package update.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a4776915f8d1">a4776915f8d1</a> :  On device lockdown, always show the keyguard<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d6719e2813a2">d6719e2813a2</a> :  Ensure policy has no absurdly long strings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/43442f4eb22a">43442f4eb22a</a> :  Verify URI permissions for notification shortcutIcon.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fa99ffe83bd7">fa99ffe83bd7</a> :  Do not load drawable for wallet card if the card image icon iscreated with content URI.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fd30d021a48c">fd30d021a48c</a> :  ActivityManagerService: Allow openContentUri from vendor/system/product.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8dab57e920d4">8dab57e920d4</a> :  Cancel current animation instead of candidate<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c6b94774615c">c6b94774615c</a> :  Report folding features to letterboxed apps.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/549ad934d28c">549ad934d28c</a> :  Send update config change when letterbox is moved<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/81db3d75f8a7">81db3d75f8a7</a> :  Cancel current animation instead of candidate<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8a008f686ed0">8a008f686ed0</a> :  Cancel current animation instead of candidate<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ce055cb6a47d">ce055cb6a47d</a> :  Cancel current animation instead of candidate<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f852424efa06">f852424efa06</a> :  Cancel current animation instead of candidate<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/04e63a0fb4">04e63a0fb4</a> :  Revert "Grant Launcher permission to access AppSearch"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/2b380e15">2b380e15</a> :  Remove factory-reset logic from post-suw syncauth<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_NeuralNetworks-show" class="showLink" onclick="show('platform_packages_modules_NeuralNetworks');return false;">+</a><a href="#" id="platform_packages_modules_NeuralNetworks-hide" class="hideLink" onclick="hide('platform_packages_modules_NeuralNetworks');return false;">-</a>&nbsp;<a name="platform_packages_modules_NeuralNetworks" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks">platform/packages/modules/NeuralNetworks</a></h2>
+<div id="platform_packages_modules_NeuralNetworks"><a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/6eab9c49f">6eab9c49f</a> :  Fix OOB read in parseInputs in ShimPreparedModel.cpp<br />
+<a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/c24378a0b">c24378a0b</a> :  Fix OOB Read in setOperandValue<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_TelephonyProvider-show" class="showLink" onclick="show('platform_packages_providers_TelephonyProvider');return false;">+</a><a href="#" id="platform_packages_providers_TelephonyProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_TelephonyProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_TelephonyProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider">platform/packages/providers/TelephonyProvider</a></h2>
+<div id="platform_packages_providers_TelephonyProvider"><a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/8e6ed4ab">8e6ed4ab</a> :  Update file permissions using canonical path<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/f632661f0">f632661f0</a> :  [conflict] Resolve StatusHints image exploit across user. am: a853f6ba61<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_ca-certificates-show" class="showLink" onclick="show('platform_system_ca-certificates');return false;">+</a><a href="#" id="platform_system_ca-certificates-hide" class="hideLink" onclick="hide('platform_system_ca-certificates');return false;">-</a>&nbsp;<a name="platform_system_ca-certificates" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/ca-certificates">platform/system/ca-certificates</a></h2>
+<div id="platform_system_ca-certificates"><a href="https://android.googlesource.com/platform/system/ca-certificates/+/26c8531">26c8531</a> :  Drop TrustCor certificates<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
