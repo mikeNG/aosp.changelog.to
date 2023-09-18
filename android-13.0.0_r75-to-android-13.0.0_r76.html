@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-13.0.0_r75 to android-13.0.0_r76 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-13.0.0_r75 to android-13.0.0_r76 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/4b7a752640">4b7a752640</a> :  Version bump to TQ3A.230901.001.B1 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_tangorpro-show" class="showLink" onclick="show('device_google_tangorpro');return false;">+</a><a href="#" id="device_google_tangorpro-hide" class="hideLink" onclick="hide('device_google_tangorpro');return false;">-</a>&nbsp;<a name="device_google_tangorpro" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/tangorpro">device/google/tangorpro</a></h2>
+<div id="device_google_tangorpro"><a href="https://android.googlesource.com/device/google/tangorpro/+/2e2c9e3">2e2c9e3</a> :  Update Limb SAR value in Regulatory Label<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/79589458225b">79589458225b</a> :  Fix weather complication disappearing after timer pause<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f99891ab19ff">f99891ab19ff</a> :  DO NOT MERGE Hide EmptyShadeView when on bouncer<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ba16c9f5ea88">ba16c9f5ea88</a> :  DO NOT MERGE Adding tests for updated EmptyShadeView logic<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c92f1b5d636e">c92f1b5d636e</a> :  USB: update logic for reporting playback and capture capability of USB devices.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/41aac56986d9">41aac56986d9</a> :  Remove ControlsProviderSelectorActivity finish on ControlsFavoritingActivity start<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/73413a6a280b">73413a6a280b</a> :  Prevent force showing system bars for TaskView<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bd8f1ec45655">bd8f1ec45655</a> :  Improve first opaque activity candidate detection<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a5cb005304ee">a5cb005304ee</a> :  Invalidate buffers on transform change<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b7c7fa1bcd85">b7c7fa1bcd85</a> :  Skip letterboxing if the activity below is embedded<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ff0f3a67e041">ff0f3a67e041</a> :  Unfreeze the surface when the transition is done<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e170ba1948db">e170ba1948db</a> :  [RESTRICT AUTOMERGE] Always set last report configuration for starting window.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6753977b851c">6753977b851c</a> :  Fix split cannot active if app trampoline launch new task<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7d0ee5b68477">7d0ee5b68477</a> :  Update the timing of clearing SplitRequest<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4d87e0418879">4d87e0418879</a> :  Gates RotationResolverService with a config flag<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/194a5249a5">194a5249a5</a> :  Fixing syntax error due to java-version changes<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/917af63799">917af63799</a> :  Fixing icon cache thrashing due to an unsupported icon<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
