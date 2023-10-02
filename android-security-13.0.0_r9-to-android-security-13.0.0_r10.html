@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-13.0.0_r9 to android-security-13.0.0_r10 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-13.0.0_r9 to android-security-13.0.0_r10 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/26effd9d52">26effd9d52</a> :  Version bump to TSV1.220628.049 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/24dbf9a5c6">24dbf9a5c6</a> :  Version bump to TSV1.220628.048 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2c0ba8375f">2c0ba8375f</a> :  Version bump to TSV1.220628.047 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ad57dc6c09">ad57dc6c09</a> :  Version bump to TSV1.220628.046 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d5f26ef084">d5f26ef084</a> :  Version bump to TSV1.220628.045 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_libxml2-show" class="showLink" onclick="show('platform_external_libxml2');return false;">+</a><a href="#" id="platform_external_libxml2-hide" class="hideLink" onclick="hide('platform_external_libxml2');return false;">-</a>&nbsp;<a name="platform_external_libxml2" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/libxml2">platform/external/libxml2</a></h2>
+<div id="platform_external_libxml2"><a href="https://android.googlesource.com/platform/external/libxml2/+/1ccf89b8">1ccf89b8</a> :  malloc-fail: Fix OOB read after xmlRegGetCounter<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/3467e6cb598f">3467e6cb598f</a> :  Revert "Dismiss keyguard when simpin auth'd and..."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b72b66a9f7b2">b72b66a9f7b2</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ff86ff28cf82">ff86ff28cf82</a> :  RESTRICT AUTOMERGE: SettingsProvider: exclude secure_frp_mode from resets<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/86c8421c1181">86c8421c1181</a> :  Add userId check before loading icon in Device Controls<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3287ac2d2565">3287ac2d2565</a> :  Fixing DatabaseUtils to detect malformed UTF-16 strings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7212a4bec2d2">7212a4bec2d2</a> :  Disallow loading icon from content URI to PipMenu<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/08becc8c600f">08becc8c600f</a> :  [DO NOT MERGE] Verify URI Permissions in Autofill RemoteViews<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2d88a5c481df">2d88a5c481df</a> :  Do not share key mappings with JNI object<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5a3d0c131175">5a3d0c131175</a> :  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d26544e5a4fd">d26544e5a4fd</a> :  Add placeholder when media control title is blank<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/88cf23cfe50b">88cf23cfe50b</a> :  RingtoneManager: verify default ringtone is audio<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/0cda11569d">0cda11569d</a> :  Fix for heap-use-after-free in GPUService.cpp<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/11815817de">11815817de</a> :  RESTRICT AUTOMERGE: Catch exceptions from setLockCredential()<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/63d464c3fa">63d464c3fa</a> :  [RESTRICT AUTOMERGE] Restrict ApnEditor settings<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/c0151aa3ba">c0151aa3ba</a> :  Fix an integer underflow in build_read_multi_rsp<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/50b08ee30e">50b08ee30e</a> :  Update password check for WAPI<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/747431250">747431250</a> :  Fix path traversal vulnerabilities in MediaProvider<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/5b335401d">5b335401d</a> :  Fix vulnerability in CallRedirectionService.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_tools_apksig-show" class="showLink" onclick="show('platform_tools_apksig');return false;">+</a><a href="#" id="platform_tools_apksig-hide" class="hideLink" onclick="hide('platform_tools_apksig');return false;">-</a>&nbsp;<a name="platform_tools_apksig" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/tools/apksig">platform/tools/apksig</a></h2>
+<div id="platform_tools_apksig"><a href="https://android.googlesource.com/platform/tools/apksig/+/039f815">039f815</a> :  Add errors from signature verify result to returned result<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
