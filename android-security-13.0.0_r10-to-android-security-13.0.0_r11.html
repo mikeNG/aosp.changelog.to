@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-13.0.0_r10 to android-security-13.0.0_r11 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-13.0.0_r10 to android-security-13.0.0_r11 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/4b6d888a43">4b6d888a43</a> :  Version bump to TSV1.220628.051 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/72be34b884">72be34b884</a> :  Version bump to TSV1.220628.050 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_webp-show" class="showLink" onclick="show('platform_external_webp');return false;">+</a><a href="#" id="platform_external_webp-hide" class="hideLink" onclick="hide('platform_external_webp');return false;">-</a>&nbsp;<a name="platform_external_webp" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/webp">platform/external/webp</a></h2>
+<div id="platform_external_webp"><a href="https://android.googlesource.com/platform/external/webp/+/aeaf7afb">aeaf7afb</a> :  Fix OOB write in BuildHuffmanTable.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/acb81624b4">acb81624b4</a> :  Initialise VPS buffer to NULL in constructor<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/2fdf54b050">2fdf54b050</a> :  Fix heap-use-after-free issue flagged by fuzzer test.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/53243faf69">53243faf69</a> :  Fix for heap buffer overflow issue flagged by fuzzer test.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/35ebd43b2d3c">35ebd43b2d3c</a> :  RESTRICT AUTOMERGE Unset StrongAuthFlags when unlocking a user profile<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4895c856ed7d">4895c856ed7d</a> :  [SettingsProvider] verify ringtone URI before setting<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/442b4390c1f0">442b4390c1f0</a> :  DO NOT MERGE Fix BAL via notification.publicVersion<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/387d258cf10a">387d258cf10a</a> :  Use type safe API of readParcelableArray<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/935eb5ed6be3">935eb5ed6be3</a> :  [DO NOT MERGE] Check caller's uid in backupAgentCreated callback<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_DnsResolver-show" class="showLink" onclick="show('platform_packages_modules_DnsResolver');return false;">+</a><a href="#" id="platform_packages_modules_DnsResolver-hide" class="hideLink" onclick="hide('platform_packages_modules_DnsResolver');return false;">-</a>&nbsp;<a name="platform_packages_modules_DnsResolver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/DnsResolver">platform/packages/modules/DnsResolver</a></h2>
+<div id="platform_packages_modules_DnsResolver"><a href="https://android.googlesource.com/platform/packages/modules/DnsResolver/+/8e1561fb">8e1561fb</a> :  Fix use-after-free in DNS64 discovery thread<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_StatsD-show" class="showLink" onclick="show('platform_packages_modules_StatsD');return false;">+</a><a href="#" id="platform_packages_modules_StatsD-hide" class="hideLink" onclick="hide('platform_packages_modules_StatsD');return false;">-</a>&nbsp;<a name="platform_packages_modules_StatsD" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/StatsD">platform/packages/modules/StatsD</a></h2>
+<div id="platform_packages_modules_StatsD"><a href="https://android.googlesource.com/platform/packages/modules/StatsD/+/e4cd2d8f">e4cd2d8f</a> :  Make log reader thread a class member<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_TelephonyProvider-show" class="showLink" onclick="show('platform_packages_providers_TelephonyProvider');return false;">+</a><a href="#" id="platform_packages_providers_TelephonyProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_TelephonyProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_TelephonyProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider">platform/packages/providers/TelephonyProvider</a></h2>
+<div id="platform_packages_providers_TelephonyProvider"><a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/64ca6ba9">64ca6ba9</a> :  DO NOT MERGE Block access to sms/mms db from work profile.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_ca-certificates-show" class="showLink" onclick="show('platform_system_ca-certificates');return false;">+</a><a href="#" id="platform_system_ca-certificates-hide" class="hideLink" onclick="hide('platform_system_ca-certificates');return false;">-</a>&nbsp;<a name="platform_system_ca-certificates" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/ca-certificates">platform/system/ca-certificates</a></h2>
+<div id="platform_system_ca-certificates"><a href="https://android.googlesource.com/platform/system/ca-certificates/+/ede0659">ede0659</a> :  Remove E-Tugra certificates.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_tools_repohooks-show" class="showLink" onclick="show('platform_tools_repohooks');return false;">+</a><a href="#" id="platform_tools_repohooks-hide" class="hideLink" onclick="hide('platform_tools_repohooks');return false;">-</a>&nbsp;<a name="platform_tools_repohooks" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/tools/repohooks">platform/tools/repohooks</a></h2>
+<div id="platform_tools_repohooks"><a href="https://android.googlesource.com/platform/tools/repohooks/+/e0447aa">e0447aa</a> :  clang-format: handle exit(0) w/no output from git-clang-format<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/5722c92">5722c92</a> :  shell: handle Path objects<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/4be0279">4be0279</a> :  Remove usage of removeprefix<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/9b9f576">9b9f576</a> :  rh: set REPO_ROOT to the submanifest root, if present.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/aa268a7">aa268a7</a> :  clang-format: handle exit(1) from git-clang-format<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/90280f4">90280f4</a> :  Add support for calling directly from git, without using repo.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/1bada39">1bada39</a> :  Add some missing `f` prefix to f-strings<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/df057d3">df057d3</a> :  Add ktfmt hook.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/23372d0">23372d0</a> :  hooks: require that hooks &amp; tools dicts are sorted<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/0522922">0522922</a> :  lint: clean up newer warnings<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/cb3d9c5">cb3d9c5</a> :  utils: delete ad-hoc Python 2 compat init code<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/d9aa634">d9aa634</a> :  checkpatch: update to 5.17<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/b0a69d5">b0a69d5</a> :  android_test_mapping_format: cleanup - "void" funcs don't need explicit -&gt;None.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/20ff946">20ff946</a> :  android_test_mapping_format: updated the code to match the internal version.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/109ae1a">109ae1a</a> :  cpplint: switch to open source community fork<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/2163340">2163340</a> :  utils: run: fix crash with failing tools &amp; combined stderr<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/95795d8">95795d8</a> :  lint: clean up newer pylint warnings<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/bfa656d">bfa656d</a> :  utils: run: fix file leakage with bad execs<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/a89a138">a89a138</a> :  utils: run: make sure exceptions always use strings for output<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/f1e0b3b">f1e0b3b</a> :  android_test_mapping_format: drop Python 2 support<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/42e4aa4">42e4aa4</a> :  config: switch to stdlib get() fallback logic<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/d57f9c5">d57f9c5</a> :  utils: drop Python 2 support<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/8349d89">8349d89</a> :  config: drop Python 2 support<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/147b6c3">147b6c3</a> :  Add aidl-format as a new builtin hook<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/2729e11">2729e11</a> :  pre-upload/pylint: drop support for Python 3.5<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/8f1ceeb">8f1ceeb</a> :  pre-upload: warn whenever a hook is too slow<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/6c6f9ee">6c6f9ee</a> :  drop file coding &amp; print_function import<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/fc3ee95">fc3ee95</a> :  Fix issue with triple quoted relnotes<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/2f5ba44">2f5ba44</a> :  Add checking for unescaped quotes in a Relnote tag<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/737bf27">737bf27</a> :  sixish: delete Python 2/3 compat module<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/239625c">239625c</a> :  Add support for automatic fixups to gofmt.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/573d316">573d316</a> :  hooks: support Python 3.6 for ExclusionScope<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/5be91ca">5be91ca</a> :  tools: switch all our tools to python3 shebang<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ea52820">ea52820</a> :  Add [Builtin Hooks Exclude Paths] section<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ec4cdcb">ec4cdcb</a> :  drop python2 testing entirely<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/324296b">324296b</a> :  config: refactor PreUploadSettingsTests<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/c9ba009">c9ba009</a> :  config: add {Local,Global}PreUploadFile classes<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/7698778">7698778</a> :  pre-upload: drop support for Python 2<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/1baec12">1baec12</a> :  config: refactor file management<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/41a1fd1">41a1fd1</a> :  config: add Python 3 compat APIs<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/0d0796a">0d0796a</a> :  config: fix handling of optional args<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/3798d7e">3798d7e</a> :  config: pull valid sections into a class constant<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/f773756">f773756</a> :  hooks: rustfmt: handle multiple commits<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/8ee0f2a">8ee0f2a</a> :  hooks: use dedicated None asserts<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/7e07d8f">7e07d8f</a> :  git: simplify commit message extraction command<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ce8e838">ce8e838</a> :  pre-upload: use first-parent diff for list of affected files<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/2e1406d">2e1406d</a> :  git: use "git rev-list" to get a revision listing<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/7a814a1">7a814a1</a> :  Pull upstream cpplint.py from github.com/google/styleguide<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/07107e6">07107e6</a> :  pre-upload: drop support for Python 3.4<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/e67d480">e67d480</a> :  pre-upload: enable Python 2 deprecation warning<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/a835e6d">a835e6d</a> :  pylint: always run python3 check with --py3<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/d7363ec">d7363ec</a> :  Fix regex in commit_msg_relnote_for_current_txt repo hook<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/bf70aed">bf70aed</a> :  hooks: require a Relnote field when changing current.txt<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/5664c11">5664c11</a> :  utils: run: fix stderr set as str instead of bytes<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ed81c35">ed81c35</a> :  hooks: rustfmt: fix pylint warning<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/da09d40">da09d40</a> :  pylint: find Python 3 version better<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/e79b144">e79b144</a> :  Add rustfmt checks<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/9522219">9522219</a> :  utils: sudo_run: delete<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/2bbd47c">2bbd47c</a> :  utils: run: rename internal stdout/stderr vars<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/7bd2a9a">7bd2a9a</a> :  utils: run: remove redundant redirect settings<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/9ccb9ce">9ccb9ce</a> :  hooks: bind stdin all the time<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/0e8d3a7">0e8d3a7</a> :  Added keyword ${PREUPLOAD_FILES_PREFIXED}.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/e5ad9af">e5ad9af</a> :  pre-upload: fix handling of silent tools<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/7331659">7331659</a> :  Add repo hook that checks formatting of Relnote: field<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/4160208">4160208</a> :  hooks: make unittest match real code<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/0fd7340">0fd7340</a> :  utils: _Popen: workaround Python 3.4.1+ subprocess locking bug<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/0f5c4fe">0f5c4fe</a> :  README: fix up a few header levels<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/d89347c">d89347c</a> :  pre-upload: start warning about older Python 3 versions<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/36d2ce6">36d2ce6</a> :  utils: rename RunCommandError to CalledProcessError<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/f482d76">f482d76</a> :  utils: RunCommandError: drop eq/ne support<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/9b5eceb">9b5eceb</a> :  utils: run: rename error_code_ok to check<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/34b29cc">34b29cc</a> :  utils: run: delete unused options<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/70b78f0">70b78f0</a> :  utils: rename run_command to run<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/579111e">579111e</a> :  pre-upload: display overall hook runtime<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/6d340a1">6d340a1</a> :  hooks: add more bad Bug: test cases<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ca479fc">ca479fc</a> :  signals: drop old signal workaround<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/7b30f4d">7b30f4d</a> :  pre-upload: require Python 2.7.5+ and 3.4+<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/b3b40b5">b3b40b5</a> :  pre-upload: drop old repo __file__ workaround<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/cfedbd7">cfedbd7</a> :  pylintrc: enable more python3 checks<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/481b878">481b878</a> :  clang-format: tighten up user facing error messages<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/30717c5">30717c5</a> :  utils: fix UTF-8 handling with stdin<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/04f5038">04f5038</a> :  lint: clean up output from pylint3-2.2.2<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/506c970">506c970</a> :  pylintrc: disable score reports<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ce3ab29">ce3ab29</a> :  sixish: handle Unicode strings in the environment<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/fdd1a84">fdd1a84</a> :  config: add an integration test<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/54e517c">54e517c</a> :  hooks: handle str &amp; unicode types in Python 2<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/99cb5dc">99cb5dc</a> :  utils: add unittest coverage<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/6078fd9">6078fd9</a> :  README: improve config file docs<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/828a0ee">828a0ee</a> :  cleanup "presubmit"-&gt;"preupload" references<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/558eade">558eade</a> :  Fix bug reading the TEST MAPPING from disk.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/8eb7cd7">8eb7cd7</a> :  android_test_mapping_format: Support comment in TEST_MAPPING file.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/d218ee0">d218ee0</a> :  pylintrc: enable (most) python3 checks<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/9fbf38b">9fbf38b</a> :  Add bpfmt builtin hook<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/5ac2086">5ac2086</a> :  lint: fix up warnings from pylint-1.8 series<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/fdb98df">fdb98df</a> :  sixish: skip mock if unavailable<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ea449c7">ea449c7</a> :  split pylint hook into pylint2 &amp; pylint3<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/0ac3ce4">0ac3ce4</a> :  support py2 &amp; py3<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/076eb8f">076eb8f</a> :  pylint: set default jobs limit to use all available cpus<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/a18d5f1">a18d5f1</a> :  pre-upload: use output helper for more failures<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/42234b7">42234b7</a> :  pre-upload: fix chdir/output finishing when running hooks<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/a65ecb9">a65ecb9</a> :  pre-upload: bubble up internal errors instead of exiting<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ca7136c">ca7136c</a> :  android_test_mapping_format: Allow test config to have a `file_patterns` attribute<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/6dccf74">6dccf74</a> :  android_test_mapping_format: Allow test config to have a `preferred_targets` attribute<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ea3ae03">ea3ae03</a> :  android_test_mapping_format: Allow test config to have a `host` attribute<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/45c9c68">45c9c68</a> :  Add a repo hook to validate TEST_MAPPING file.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/a863ff2">a863ff2</a> :  Add prebuilt apk builtin hook<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/bbc97c1">bbc97c1</a> :  checkpatch: update to linux-4.17<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/4439d86">4439d86</a> :  hooks: Explain the case-sensitivity of the regexps<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/831d337">831d337</a> :  pylint: say what you're missing.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/8ac865f">8ac865f</a> :  git: Properly handle gitfiles<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/cc9b46c">cc9b46c</a> :  Allow users to specify list of files/path to google-java-format<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/9e01ab1">9e01ab1</a> :  Disallow external diff drivers in rh/git.py and google-java-format.py<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/0886c91">0886c91</a> :  Add support for warning command<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/f43a5e4">f43a5e4</a> :  cpplint: sync with latest Google version<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/b9006f9">b9006f9</a> :  pylint: handle missing pylint better<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/2ef213c">2ef213c</a> :  address lint warnings after pylint upgrade<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/f363ab9">f363ab9</a> :  clang-format: fail gracefully when clang-format itself aborts<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/6d58a81">6d58a81</a> :  pylint: support per-repo pylintrc files.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/e6f9679">e6f9679</a> :  drop "Android" from the Test error message<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/d1fd88b">d1fd88b</a> :  Add support for automatic fixups to google-java-format<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/dab680c">dab680c</a> :  Add support for automatically applying fixes<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/0abeb42">0abeb42</a> :  Pass --skip-sorting-imports to google-java-format.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/1b16930">1b16930</a> :  Pass --skip-sorting-imports to google-java-format.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/0f9d9f8">0f9d9f8</a> :  Add a builtin repo hook to run google-java-format.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/e9db4eb">e9db4eb</a> :  Add more environment variables<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ec044d3">ec044d3</a> :  hooks: update clang-format tool documentation<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/b960818">b960818</a> :  unify helper vars across all sections<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/2bd1b8c">2bd1b8c</a> :  Add Tool Path for gofmt<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/4913e57">4913e57</a> :  hooks: Improve the clang-format wrapper script<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/5c4c293">5c4c293</a> :  Add an option to ignore merged commits<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/25abf4b">25abf4b</a> :  Print status of hooks as they're being run.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/54a754b">54a754b</a> :  Fix typo in docstring.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/409f5cd">409f5cd</a> :  hooks: use the provided name for custom hooks.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/23461b6">23461b6</a> :  README: rework config file headers<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ddb342b">ddb342b</a> :  Add a better description of why users should include Test in messages.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/f6ea937">f6ea937</a> :  Handle empty commits in repohooks.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/d8f3675">d8f3675</a> :  hooks: Make the error when upstream not found more actionable<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/b730bab">b730bab</a> :  pylint: add a tools path config for it<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/a49a374">a49a374</a> :  Add cpplint.py to be used in preupload repo hooks<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/adc235b">adc235b</a> :  hooks: Add a first-approximation clang-format hook<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/ca79770">ca79770</a> :  config: enable loading of project wide defaults<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/dd7d4e3">dd7d4e3</a> :  hooks: bug: allow None<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/94eada4">94eada4</a> :  PREUPLOAD.cfg: enable unittests &amp; Test field in commit messages<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/31a817c">31a817c</a> :  hooks: Add PRESUBMIT_COMMIT to the custom hook options<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/3572e0a">3572e0a</a> :  Enable repo upload pylint wrapper to work with gpylint.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/6f79886">6f79886</a> :  Add PRESUBMIT_COMMIT_MESSAGE to the env.<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/8ec324d">8ec324d</a> :  hooks: xmllint: check rng files<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/5430605">5430605</a> :  hooks: add a 'Test: ' commit message hook<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/34ee9be">34ee9be</a> :  hooks: add a checkpatch.pl hook<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/76b1bc7">76b1bc7</a> :  hooks: add some commit message hooks<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/4953eba">4953eba</a> :  tools: start a directory to hold various tools/wrappers<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/e2a8046">e2a8046</a> :  Add --init-hook option to pylint<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/05c689e">05c689e</a> :  git: make remote parsing a bit more robust<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/558aff4">558aff4</a> :  pre-upload: exit quickly when there are no hooks registered<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/dc25362">dc25362</a> :  rename config file to PREUPLOAD.cfg<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/2e65c54">2e65c54</a> :  initial import<br />
+<a href="https://android.googlesource.com/platform/tools/repohooks/+/c9652f0">c9652f0</a> :  Initial empty repository<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
