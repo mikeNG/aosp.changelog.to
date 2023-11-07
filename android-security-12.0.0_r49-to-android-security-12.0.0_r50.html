@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-12.0.0_r49 to android-security-12.0.0_r50 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-12.0.0_r49 to android-security-12.0.0_r50 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/12aa0f0bd1">12aa0f0bd1</a> :  Version bump to SSV1.210916.070 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_aac-show" class="showLink" onclick="show('platform_external_aac');return false;">+</a><a href="#" id="platform_external_aac-hide" class="hideLink" onclick="hide('platform_external_aac');return false;">-</a>&nbsp;<a name="platform_external_aac" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/aac">platform/external/aac</a></h2>
+<div id="platform_external_aac"><a href="https://android.googlesource.com/platform/external/aac/+/4c0620c">4c0620c</a> :  Increase patchParam array size by one and fix out-of-bounce write in resetLppTransposer().<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_freetype-show" class="showLink" onclick="show('platform_external_freetype');return false;">+</a><a href="#" id="platform_external_freetype-hide" class="hideLink" onclick="hide('platform_external_freetype');return false;">-</a>&nbsp;<a name="platform_external_freetype" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/freetype">platform/external/freetype</a></h2>
+<div id="platform_external_freetype"><a href="https://android.googlesource.com/platform/external/freetype/+/597c3f6c8">597c3f6c8</a> :  Cherrypick following three changes<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/44004ea2218a">44004ea2218a</a> :  Merge "Resolve StatusHints image exploit across user." into rvc-dev am: 543e6febbf am: 8c3d465b5e<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b639bf98be9e">b639bf98be9e</a> :  Verify URI permissions in MediaMetadata<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8208665ee84a">8208665ee84a</a> :  Remove unnecessary padding code<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ec2c95628742">ec2c95628742</a> :  Merge "Use Settings.System.getIntForUser instead of getInt to make sure user specific settings are used" into rvc-dev am: d198f5165c am: 886d492c8c<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a458349ccaa8">a458349ccaa8</a> :  Visit URIs in themed remoteviews icons.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f2dcaa728393">f2dcaa728393</a> :  Fix PrivacyChip not visible issue<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/db5bc7bb0517">db5bc7bb0517</a> :  Check URIs in sized remote views.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/662c5030423d">662c5030423d</a> :  Validate ComponentName for MediaButtonBroadcastReceiver<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c452644f56da">c452644f56da</a> :  Implement visitUris for RemoteViews ViewGroupActionAdd.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8b8f85c9d8dd">8b8f85c9d8dd</a> :  Check URIs in notification public version.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8ae9d480193f">8ae9d480193f</a> :  Preserve flags for non-runtime permissions upon package update.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f88afd13d35e">f88afd13d35e</a> :  On device lockdown, always show the keyguard<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b3b9f6d9e5fe">b3b9f6d9e5fe</a> :  Ensure policy has no absurdly long strings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/350b8400a94e">350b8400a94e</a> :  Verify URI permissions for notification shortcutIcon.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ec3547b15e7a">ec3547b15e7a</a> :  Do not load drawable for wallet card if the card image icon iscreated with content URI.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b7886f31bf10">b7886f31bf10</a> :  ActivityManagerService: Allow openContentUri from vendor/system/product.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5f446d2ce101">5f446d2ce101</a> :  DO NOT MERGE: ActivityManager#killBackgroundProcesses can kill caller's own app only<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/f6e13256">f6e13256</a> :  Remove factory-reset logic from post-suw syncauth<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_NeuralNetworks-show" class="showLink" onclick="show('platform_packages_modules_NeuralNetworks');return false;">+</a><a href="#" id="platform_packages_modules_NeuralNetworks-hide" class="hideLink" onclick="hide('platform_packages_modules_NeuralNetworks');return false;">-</a>&nbsp;<a name="platform_packages_modules_NeuralNetworks" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks">platform/packages/modules/NeuralNetworks</a></h2>
+<div id="platform_packages_modules_NeuralNetworks"><a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/12f3eaefb">12f3eaefb</a> :  Fix OOB read in parseInputs in ShimPreparedModel.cpp<br />
+<a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/522f457c9">522f457c9</a> :  Fix OOB Read in setOperandValue<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/c20027257">c20027257</a> :  RESTRICT AUTOMERGE Finish ManagePermissionsActivity if device is not provisioned<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_TelephonyProvider-show" class="showLink" onclick="show('platform_packages_providers_TelephonyProvider');return false;">+</a><a href="#" id="platform_packages_providers_TelephonyProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_TelephonyProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_TelephonyProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider">platform/packages/providers/TelephonyProvider</a></h2>
+<div id="platform_packages_providers_TelephonyProvider"><a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/018b9649">018b9649</a> :  Update file permissions using canonical path<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/92f4cd34f">92f4cd34f</a> :  [conflict] Resolve StatusHints image exploit across user. am: 49d19dd265 am: 2a10deb1a0<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_ca-certificates-show" class="showLink" onclick="show('platform_system_ca-certificates');return false;">+</a><a href="#" id="platform_system_ca-certificates-hide" class="hideLink" onclick="hide('platform_system_ca-certificates');return false;">-</a>&nbsp;<a name="platform_system_ca-certificates" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/ca-certificates">platform/system/ca-certificates</a></h2>
+<div id="platform_system_ca-certificates"><a href="https://android.googlesource.com/platform/system/ca-certificates/+/b3632bf">b3632bf</a> :  Drop TrustCor certificates<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

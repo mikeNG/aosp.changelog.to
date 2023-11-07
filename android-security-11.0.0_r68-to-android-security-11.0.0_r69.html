@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-11.0.0_r68 to android-security-11.0.0_r69 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-11.0.0_r68 to android-security-11.0.0_r69 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/4fdba0ae01">4fdba0ae01</a> :  Version bump to RSV1.210329.091 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_freetype-show" class="showLink" onclick="show('platform_external_freetype');return false;">+</a><a href="#" id="platform_external_freetype-hide" class="hideLink" onclick="hide('platform_external_freetype');return false;">-</a>&nbsp;<a name="platform_external_freetype" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/freetype">platform/external/freetype</a></h2>
+<div id="platform_external_freetype"><a href="https://android.googlesource.com/platform/external/freetype/+/9fc472812">9fc472812</a> :  DO NOT MERGE - Cherry-pick two upstream changes<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/2f479699c9f3">2f479699c9f3</a> :  Visit URIs in landscape/portrait custom remote views.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4ef312e1af22">4ef312e1af22</a> :  Truncate ShortcutInfo Id<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ec78a98dec09">ec78a98dec09</a> :  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/035b355a7329">035b355a7329</a> :  DO NOT MERGE Increase notification channel limit.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3984db4497cd">3984db4497cd</a> :  DO NOT MERGE Dismiss keyguard when simpin auth'd and...<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e53984d4e781">e53984d4e781</a> :  Only allow NEW_TASK flag when adjusting pending intents<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a641d23b4eb1">a641d23b4eb1</a> :  DO NOT MERGE: Limit the ServiceFriendlyNames<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e14133334c76">e14133334c76</a> :  DO NOT MERGE: Add size check on PPS#policy<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/684c05709277">684c05709277</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7956aa5877ec">7956aa5877ec</a> :  Limit the number of supported v1 and v2 signers<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/18818ec35ee5">18818ec35ee5</a> :  Sanitize VPN label to prevent HTML injection<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c2b24f06013e">c2b24f06013e</a> :  Revert "Ensure that only SysUI can override pending intent launch flags"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9d42a8afc8a2">9d42a8afc8a2</a> :  Ensure that only SysUI can override pending intent launch flags<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e3cab65593b1">e3cab65593b1</a> :  [RESTRICT AUTOMERGE] Passpoint Add more check to limit the config size<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_net_wifi-show" class="showLink" onclick="show('platform_frameworks_opt_net_wifi');return false;">+</a><a href="#" id="platform_frameworks_opt_net_wifi-hide" class="hideLink" onclick="hide('platform_frameworks_opt_net_wifi');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_net_wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi">platform/frameworks/opt/net/wifi</a></h2>
+<div id="platform_frameworks_opt_net_wifi"><a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/9a7c6b318">9a7c6b318</a> :  DO NOT MERGE: Limit the number of Passpoint per App<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/e53a87ae7">e53a87ae7</a> :  DO NOT MERGE: Add pre-share key check for wapi<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/203fd5c7">203fd5c7</a> :  OOBW in rw_i93_send_to_upper()<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_tools_apksig-show" class="showLink" onclick="show('platform_tools_apksig');return false;">+</a><a href="#" id="platform_tools_apksig-hide" class="hideLink" onclick="hide('platform_tools_apksig');return false;">-</a>&nbsp;<a name="platform_tools_apksig" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/tools/apksig">platform/tools/apksig</a></h2>
+<div id="platform_tools_apksig"><a href="https://android.googlesource.com/platform/tools/apksig/+/c6e04b0">c6e04b0</a> :  Limit the number of supported v1 and v2 signers<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

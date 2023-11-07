@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-11.0.0_r64 to android-security-11.0.0_r65 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-11.0.0_r64 to android-security-11.0.0_r65 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/db5428e1a9">db5428e1a9</a> :  Version bump to RSV1.210329.084 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/53d99ad73d">53d99ad73d</a> :  Version bump to RSV1.210329.083 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0834d67473">0834d67473</a> :  Version bump to RSV1.210329.082 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a2c4922831">a2c4922831</a> :  Version bump to RSV1.210329.081 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5e44c6a7ed">5e44c6a7ed</a> :  Version bump to RSV1.210329.080 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7ba232a50c">7ba232a50c</a> :  Version bump to RSV1.210329.079 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/454a68278b">454a68278b</a> :  Version bump to RSV1.210329.078 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ecf239ca2b">ecf239ca2b</a> :  Version bump to RSV1.210329.077 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/63e696474e">63e696474e</a> :  Version bump to RSV1.210329.076 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_zlib-show" class="showLink" onclick="show('platform_external_zlib');return false;">+</a><a href="#" id="platform_external_zlib-hide" class="hideLink" onclick="hide('platform_external_zlib');return false;">-</a>&nbsp;<a name="platform_external_zlib" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/zlib">platform/external/zlib</a></h2>
+<div id="platform_external_zlib"><a href="https://android.googlesource.com/platform/external/zlib/+/0aceea6">0aceea6</a> :  Fix a bug when getting a gzip header extra field with inflate().<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/3cb9f3175419">3cb9f3175419</a> :  Revert "Ensure that only SysUI can override pending intent launch flags"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ad9445aef89f">ad9445aef89f</a> :  Reconcile WorkSource parcel and unparcel code.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/089ac9d53d45">089ac9d53d45</a> :  RESTRICT AUTOMERGE Revoke dev perm if app is upgrading to post 23 and perm has pre23 flag<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/523926b137a6">523926b137a6</a> :  Enable user graularity for lockdown mode<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0b486e312fd0">0b486e312fd0</a> :  Stop managed profile owner granting READ_SMS<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0340c219c094">0340c219c094</a> :  Move service initialization<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/27baffc4dd00">27baffc4dd00</a> :  Revert "[RESTRICT AUTOMERGE] Trim the activity info of another uid if no privilege"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8a04e7a8b565">8a04e7a8b565</a> :  DO NOT MERGE Move accountname and typeName length check from Account.java to AccountManagerService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1189db7ab87f">1189db7ab87f</a> :  Prevent apps from spamming addAccountExplicitly. See comment here for the discussion on solution https://b.corp.google.com/issues/169762606#comment14<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bc9579357ea9">bc9579357ea9</a> :  Revert "Prevent apps from spamming addAccountExplicitly."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/462de7cd78df">462de7cd78df</a> :  Revert "DO NOT MERGE"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_net_wifi-show" class="showLink" onclick="show('platform_frameworks_opt_net_wifi');return false;">+</a><a href="#" id="platform_frameworks_opt_net_wifi-hide" class="hideLink" onclick="hide('platform_frameworks_opt_net_wifi');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_net_wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi">platform/frameworks/opt/net/wifi</a></h2>
+<div id="platform_frameworks_opt_net_wifi"><a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/2b280abd3">2b280abd3</a> :  Revert "[DO NOT MERGE] wifi: remove certificates for network factory reset"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_nxp_nfc-show" class="showLink" onclick="show('platform_hardware_nxp_nfc');return false;">+</a><a href="#" id="platform_hardware_nxp_nfc-hide" class="hideLink" onclick="hide('platform_hardware_nxp_nfc');return false;">-</a>&nbsp;<a name="platform_hardware_nxp_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/nxp/nfc">platform/hardware/nxp/nfc</a></h2>
+<div id="platform_hardware_nxp_nfc"><a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/791d71f">791d71f</a> :  Revert "OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/5ecf4ef2d6">5ecf4ef2d6</a> :  Add DISALLOW_APPS_CONTROL check into uninstall app for all users<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/db1a54dd7d">db1a54dd7d</a> :  [DO NOT MERGE] FRP bypass defense in the settings app<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

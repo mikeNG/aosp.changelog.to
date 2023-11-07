@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-12.0.0_r39 to android-security-12.0.0_r40 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-12.0.0_r39 to android-security-12.0.0_r40 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/0eed992f12">0eed992f12</a> :  Version bump to SSV1.210916.043 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/78b0efb91d">78b0efb91d</a> :  Version bump to SSV1.210916.042 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7d2d11be7e">7d2d11be7e</a> :  Version bump to SSV1.210916.041 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a95a5c2804">a95a5c2804</a> :  Version bump to SSV1.210916.040 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_dtc-show" class="showLink" onclick="show('platform_external_dtc');return false;">+</a><a href="#" id="platform_external_dtc-hide" class="hideLink" onclick="hide('platform_external_dtc');return false;">-</a>&nbsp;<a name="platform_external_dtc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/dtc">platform/external/dtc</a></h2>
+<div id="platform_external_dtc"><a href="https://android.googlesource.com/platform/external/dtc/+/82a1119">82a1119</a> :  FROMGIT: libfdt: fdt_offset_ptr(): Fix comparison warnings<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/e194faf030">e194faf030</a> :  Add missing bounds checks<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/21b89e6f71">21b89e6f71</a> :  Cache MMAP client silenced state.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/7fa32b4da4a1">7fa32b4da4a1</a> :  Enforce zen rule limit on a package level.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3387b58a4cee">3387b58a4cee</a> :  DO NOT MERGE - Exclude TYPE_PRIVATE_PRESENTATION app visiblity<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a1baa08b7660">a1baa08b7660</a> :  Fix Notification redaction when power cycling a non-dozing device while occluded.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4c3f9e0e37b3">4c3f9e0e37b3</a> :  Remove package name from SafetyNet logs<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7e4ff66597eb">7e4ff66597eb</a> :  Block FullScreenIntent while device is in use if notification has a silencing GroupAlertBehavior.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3b46cef1534b">3b46cef1534b</a> :  Parcel: recycle recycles<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/57a8e0a0e674">57a8e0a0e674</a> :  Stop crashing the system on hitting the alarm limit<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/75de5a1f802b">75de5a1f802b</a> :  Fix duplicate permission privilege escalation<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a1419335dd86">a1419335dd86</a> :  Restrict getInputMethodWindowVisibleHeight<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dae26dc8d76c">dae26dc8d76c</a> :  Only allow the system server to connect to sync adapters<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/470adfc31db4">470adfc31db4</a> :  Stop using invalid URL to prevent unexpected crash<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/949573ea9a6a">949573ea9a6a</a> :  Remove package title from notification access confirmation intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e1f3cb213291">e1f3cb213291</a> :  Make CheckOp return allowed if any attr tag for a package is excluded<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6830e754640c">6830e754640c</a> :  Allow system server uid to bypass location restriction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b8c108aeca38">b8c108aeca38</a> :  Disallow privileged apps to bypass location restriction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/52756d57d5f4">52756d57d5f4</a> :  DO NOT MERGE. Add a permissions check to LocationManagerService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/18ade10fb8ca">18ade10fb8ca</a> :  Clear mInterface before calling resetIkeState()<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5dd54b0d8492">5dd54b0d8492</a> :  Make sure callingPackage belongs to callingUid when checking BG-FGS restrictions.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/43f588e6f6af">43f588e6f6af</a> :  DO NOT MERGE Suppress notifications when device enter lockdown<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/caa025154e78">caa025154e78</a> :  [RESTRICT AUTOMERGE]Only allow system and same app to apply relinquishTaskIdentity<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6a7ce3a5178d">6a7ce3a5178d</a> :  DO NOT MERGE: WM: Call Transaction#sanitize<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9c1af7826df2">9c1af7826df2</a> :  Remove package name from SafetyNet logs<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/937c44ec16bc">937c44ec16bc</a> :  Parcel: recycle recycles<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8538f06f29d3">8538f06f29d3</a> :  Fix duplicate permission privilege escalation<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e86156084bcf">e86156084bcf</a> :  Only allow the system server to connect to sync adapters<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d8f82ebc74c7">d8f82ebc74c7</a> :  Stop using invalid URL to prevent unexpected crash<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/acc83ab08d46">acc83ab08d46</a> :  Remove package title from notification access confirmation intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4648456345b6">4648456345b6</a> :  Make CheckOp return allowed if any attr tag for a package is excluded<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9f5ca339b0f3">9f5ca339b0f3</a> :  Allow system server uid to bypass location restriction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/14b0649e2656">14b0649e2656</a> :  Disallow privileged apps to bypass location restriction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f796ac71c3c5">f796ac71c3c5</a> :  DO NOT MERGE. Add a permissions check to LocationManagerService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/90fece0bec5e">90fece0bec5e</a> :  Clear mInterface before calling resetIkeState()<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/05cd832c241a">05cd832c241a</a> :  Make sure callingPackage belongs to callingUid when checking BG-FGS restrictions.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/627dcb8bdbff">627dcb8bdbff</a> :  DO NOT MERGE Suppress notifications when device enter lockdown<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6ae9525c7fd6">6ae9525c7fd6</a> :  [RESTRICT AUTOMERGE]Only allow system and same app to apply relinquishTaskIdentity<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/621168ea0711">621168ea0711</a> :  DO NOT MERGE: WM: Call Transaction#sanitize<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0cdf822948bc">0cdf822948bc</a> :  Update ServiceState broadcast for location permissions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/750bcc99f65b">750bcc99f65b</a> :  Add excludedPackages parameter to broadcast<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_interfaces-show" class="showLink" onclick="show('platform_hardware_interfaces');return false;">+</a><a href="#" id="platform_hardware_interfaces-hide" class="hideLink" onclick="hide('platform_hardware_interfaces');return false;">-</a>&nbsp;<a name="platform_hardware_interfaces" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/interfaces">platform/hardware/interfaces</a></h2>
+<div id="platform_hardware_interfaces"><a href="https://android.googlesource.com/platform/hardware/interfaces/+/ed6faa58f">ed6faa58f</a> :  Fix array out of bound in audioTransportToHal.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/8d5cc67ac">8d5cc67ac</a> :  isDataOrObbPath blocks access to Android/[data|obb] dirs only<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/0cd2b0c0">0cd2b0c0</a> :  The length of a packet should be non-zero<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

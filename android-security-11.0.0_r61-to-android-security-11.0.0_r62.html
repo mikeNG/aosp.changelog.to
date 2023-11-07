@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-11.0.0_r61 to android-security-11.0.0_r62 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-11.0.0_r61 to android-security-11.0.0_r62 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/fbe25432ad">fbe25432ad</a> :  Version bump to RSV1.210329.071 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/84067eb181">84067eb181</a> :  Version bump to RSV1.210329.070 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/534506c216">534506c216</a> :  Version bump to RSV1.210329.069 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1176bd7b20">1176bd7b20</a> :  Version bump to RSV1.210329.068 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/48329afae8">48329afae8</a> :  Version bump to RSV1.210329.067 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3bc4cc0ce8">3bc4cc0ce8</a> :  Version bump to RSV1.210329.066 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_dtc-show" class="showLink" onclick="show('platform_external_dtc');return false;">+</a><a href="#" id="platform_external_dtc-hide" class="hideLink" onclick="hide('platform_external_dtc');return false;">-</a>&nbsp;<a name="platform_external_dtc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/dtc">platform/external/dtc</a></h2>
+<div id="platform_external_dtc"><a href="https://android.googlesource.com/platform/external/dtc/+/3b55d69">3b55d69</a> :  libfdt: fdt_path_offset_namelen: Reject empty paths am: d10c84c4bc am: 9f4834b735<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/919023c98e2d">919023c98e2d</a> :  [DO NOT MERGE] Revert "Fix system zen rules by using owner package name if caller is system"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/251f7066d6d2">251f7066d6d2</a> :  [DO NOT MERGE] Revert "Check rule package name in ZenModeHelper.addAutomaticRule"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/abcf4d335597">abcf4d335597</a> :  Validate package name passed to setApplicationRestrictions.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f65eb3bafc0b">f65eb3bafc0b</a> :  Add safety checks on KEY_INTENT mismatch.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/658d63763f39">658d63763f39</a> :  [DO NOT MERGE] Fix permanent denial of service via setComponentEnabledSetting<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/130662f0dd63">130662f0dd63</a> :  [Do Not Merge] Ignore malformed shortcuts<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4abf5fc69e5c">4abf5fc69e5c</a> :  [DO NOT MERGE] Update window with FLAG_SECURE when bouncer is showing<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fd7ba743b305">fd7ba743b305</a> :  [RESTRICT AUTOMERGE] Allow activity to be reparent while allowTaskReparenting is applied<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5f66272f9609">5f66272f9609</a> :  Fix a security issue in app widget service.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/62380ba9be4b">62380ba9be4b</a> :  Fix NPE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/91a5d2df69a7">91a5d2df69a7</a> :  [pm] forbid deletion of protected packages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9b42ce714f4c">9b42ce714f4c</a> :  Include all enabled services when FEEDBACK_ALL_MASK.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/02c05f689349">02c05f689349</a> :  Prevent non-admin users from deleting system apps.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f6395b1b40ce">f6395b1b40ce</a> :  Limit the size of NotificationChannel and NotificationChannelGroup<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a1358b464953">a1358b464953</a> :  Revert "Prevent non-admin users from deleting system apps."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b272d38e3725">b272d38e3725</a> :  Drop input for toast and child surfaces<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d50b2c375351">d50b2c375351</a> :  SurfaceControl: Add setDropInputMode api<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/14f4eb6fb499">14f4eb6fb499</a> :  DO NOT MERGE: Revert "Map TYPE_TRUSTED_APPLICATION_OVERLAY to system window type for A11y"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a8541d6dc2b1">a8541d6dc2b1</a> :  Add mechanism for a task's windows to be trusted overlays<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/453cc8d78c43">453cc8d78c43</a> :  Change InputWindowInfo::isTrustedOverlay() to be permission and flag based<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_minikin-show" class="showLink" onclick="show('platform_frameworks_minikin');return false;">+</a><a href="#" id="platform_frameworks_minikin-hide" class="hideLink" onclick="hide('platform_frameworks_minikin');return false;">-</a>&nbsp;<a name="platform_frameworks_minikin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/minikin">platform/frameworks/minikin</a></h2>
+<div id="platform_frameworks_minikin"><a href="https://android.googlesource.com/platform/frameworks/minikin/+/fcb7507">fcb7507</a> :  Fix OOB crash for registerLocaleList<br />
+<a href="https://android.googlesource.com/platform/frameworks/minikin/+/424f854">424f854</a> :  Fix OOB read for registerLocaleList<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/f947be7fa0">f947be7fa0</a> :  SurfaceFlinger: Implement drop input modes<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/b8c1281e7f">b8c1281e7f</a> :  InputFlinger: Add DROP_INPUT feature flags<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/5be28bb5a7">5be28bb5a7</a> :  SurfaceControl: Add setDropInputMode api<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/ed9f09b785">ed9f09b785</a> :  DO NOT MERGE Initialize DrawingState::trustedOverlay to false in constructor<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/2495fc8c2e">2495fc8c2e</a> :  Add mechanism for a task's windows to be trusted overlays (SF)<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/3a3c097fb7">3a3c097fb7</a> :  Change InputWindowInfo::isTrustedOverlay() to be permission and flag based.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_nxp_nfc-show" class="showLink" onclick="show('platform_hardware_nxp_nfc');return false;">+</a><a href="#" id="platform_hardware_nxp_nfc-hide" class="hideLink" onclick="hide('platform_hardware_nxp_nfc');return false;">-</a>&nbsp;<a name="platform_hardware_nxp_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/nxp/nfc">platform/hardware/nxp/nfc</a></h2>
+<div id="platform_hardware_nxp_nfc"><a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/906d22c">906d22c</a> :  OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_EmergencyInfo-show" class="showLink" onclick="show('platform_packages_apps_EmergencyInfo');return false;">+</a><a href="#" id="platform_packages_apps_EmergencyInfo-hide" class="hideLink" onclick="hide('platform_packages_apps_EmergencyInfo');return false;">-</a>&nbsp;<a name="platform_packages_apps_EmergencyInfo" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo">platform/packages/apps/EmergencyInfo</a></h2>
+<div id="platform_packages_apps_EmergencyInfo"><a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/5a0a1325">5a0a1325</a> :  Prevent exfiltration of system files via avatar picker.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/f96c4758">f96c4758</a> :  Revert "Prevent exfiltration of system files via user image settings."<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/a28eabcbd5">a28eabcbd5</a> :  Prevent exfiltration of system files via avatar picker.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/03e65dc06e">03e65dc06e</a> :  Revert "Prevent exfiltration of system files via user image settings."<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/71516aabf">71516aabf</a> :  Hide overlay windows when showing phone account enable/disable screen.<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

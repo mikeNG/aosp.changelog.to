@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-11.0.0_r52 to android-security-11.0.0_r53 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-11.0.0_r52 to android-security-11.0.0_r53 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/b38320ccfc">b38320ccfc</a> :  Version bump to RSV1.210329.039 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d261a82d19">d261a82d19</a> :  Version bump to RSV1.210329.038 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c146211807">c146211807</a> :  Version bump to RSV1.210329.037 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/ec8026367327">ec8026367327</a> :  Add ALLOW_SLIPPERY_TOUCHES permission<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/58320b16ea80">58320b16ea80</a> :  Handle onNullBinding<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1542cbaeca6f">1542cbaeca6f</a> :  Only allow trusted overlays to specify FLAG_SLIPPERY<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5937606ec124">5937606ec124</a> :  Check group channels for FGSes<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5b49ca2bd4d5">5b49ca2bd4d5</a> :  [RESTRICT AUTOMERGE] Fix the inconsistency of protection level<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/450c86628533">450c86628533</a> :  Don't abandon child sessions (1/n)<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/53414caeb6">53414caeb6</a> :  Check if the window is partially obscured for slippery enters<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Car_Settings-show" class="showLink" onclick="show('platform_packages_apps_Car_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Car_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Car_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Car_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Car/Settings">platform/packages/apps/Car/Settings</a></h2>
+<div id="platform_packages_apps_Car_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Car/Settings/+/118ec7d79">118ec7d79</a> :  Add caller check to com.android.credentials.RESET<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Dialer-show" class="showLink" onclick="show('platform_packages_apps_Dialer');return false;">+</a><a href="#" id="platform_packages_apps_Dialer-hide" class="hideLink" onclick="hide('platform_packages_apps_Dialer');return false;">-</a>&nbsp;<a name="platform_packages_apps_Dialer" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Dialer">platform/packages/apps/Dialer</a></h2>
+<div id="platform_packages_apps_Dialer"><a href="https://android.googlesource.com/platform/packages/apps/Dialer/+/ddd69f127">ddd69f127</a> :  Remove PhoneAccountHandle when building the intent to call Voicemail.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Dialer/+/67098db84">67098db84</a> :  Add a permission to guard receiving intents in StatusSmsFetcher.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Dialer/+/e266784d3">e266784d3</a> :  Use an explicit intent to start VoicemailChangePinActivityPeer.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Dialer/+/24527c832">24527c832</a> :  Hash ICC ID used in the notification tag for voicemail notifications.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/1845e6f98a">1845e6f98a</a> :  Add ALLOW_SLIPPERY_TOUCHES to make StatusBarTouchController slippery<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/d6c7e29f">d6c7e29f</a> :  Make ManagedProvisioning hide non-system overlays<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9e1d591658">9e1d591658</a> :  Add caller check to com.android.credentials.RESET<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/10f2b72c10">10f2b72c10</a> :  Fix bypass CALL_PRIVILEGED permission in AppRestrictionsFragment<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_DownloadProvider-show" class="showLink" onclick="show('platform_packages_providers_DownloadProvider');return false;">+</a><a href="#" id="platform_packages_providers_DownloadProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_DownloadProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_DownloadProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/DownloadProvider">platform/packages/providers/DownloadProvider</a></h2>
+<div id="platform_packages_providers_DownloadProvider"><a href="https://android.googlesource.com/platform/packages/providers/DownloadProvider/+/4ab8736a">4ab8736a</a> :  Mock context for permission less app's context<br />
+<a href="https://android.googlesource.com/platform/packages/providers/DownloadProvider/+/efa83793">efa83793</a> :  Restrict legacy apps to download files in private app dirs<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_sepolicy-show" class="showLink" onclick="show('platform_system_sepolicy');return false;">+</a><a href="#" id="platform_system_sepolicy-hide" class="hideLink" onclick="hide('platform_system_sepolicy');return false;">-</a>&nbsp;<a name="platform_system_sepolicy" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/sepolicy">platform/system/sepolicy</a></h2>
+<div id="platform_system_sepolicy"><a href="https://android.googlesource.com/platform/system/sepolicy/+/5d4e4deb4">5d4e4deb4</a> :  Allow adbd to access /proc/net/{tcp,tcp6,udp,udp6}<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

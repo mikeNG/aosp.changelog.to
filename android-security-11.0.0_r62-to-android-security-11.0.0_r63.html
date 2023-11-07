@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-11.0.0_r62 to android-security-11.0.0_r63 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-11.0.0_r62 to android-security-11.0.0_r63 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/564caf5277">564caf5277</a> :  Version bump to RSV1.210329.074 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6877d24838">6877d24838</a> :  Version bump to RSV1.210329.073 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/02611a4d96">02611a4d96</a> :  Version bump to RSV1.210329.072 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/44251c9573ba">44251c9573ba</a> :  Ensure that only SysUI can override pending intent launch flags<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0b4cfaca78df">0b4cfaca78df</a> :  Fix sharing to another profile where an app has multiple targets<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c7448431320e">c7448431320e</a> :  Add protections against queueing a UsbRequest when the underlying UsbDeviceConnection is closed.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fa2f239962f4">fa2f239962f4</a> :  RESTRICT AUTOMERGE Revoke SYSTEM_ALERT_WINDOW on upgrade past api 23<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4565e99d60f6">4565e99d60f6</a> :  [RESTRICT AUTOMERGE] Trim the activity info of another uid if no privilege<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9241dff5aa87">9241dff5aa87</a> :  [RESTRICT AUTOMERGE][SettingsProvider] key size limit for mutating settings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/84d5d81a3ae7">84d5d81a3ae7</a> :  RESTRICT AUTOMERGE Validate permission tree size on permission update<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c7b91052a00e">c7b91052a00e</a> :  [RESTRICT AUTOMERGE] [SettingsProvider] mem limit should be checked before settings are updated<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3c4bf2609ee8">3c4bf2609ee8</a> :  [DO NOT MERGE] Fix conditionId string trimming in AutomaticZenRule<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2bec3dee6fcf">2bec3dee6fcf</a> :  Disable all A11yServices from an uninstalled package.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5e64221f2bbd">5e64221f2bbd</a> :  Limit length and number of MIME types you can set<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b5f3ac735cd3">b5f3ac735cd3</a> :  Limit lengths of fields in Condition to a max length.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_net_wifi-show" class="showLink" onclick="show('platform_frameworks_opt_net_wifi');return false;">+</a><a href="#" id="platform_frameworks_opt_net_wifi-hide" class="hideLink" onclick="hide('platform_frameworks_opt_net_wifi');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_net_wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi">platform/frameworks/opt/net/wifi</a></h2>
+<div id="platform_frameworks_opt_net_wifi"><a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/e0a036b3f">e0a036b3f</a> :  [RESTRICT AUTOMERGE] Only handle saveToStore from the WifiNetworkSuggestionsManager<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/b0800084a">b0800084a</a> :  Fix security vulnerability when register phone accounts.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/fa8a19314">fa8a19314</a> :  prevent overlays on the phone settings<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

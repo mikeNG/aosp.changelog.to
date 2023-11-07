@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-11.0.0_r55 to android-security-11.0.0_r56 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-11.0.0_r55 to android-security-11.0.0_r56 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/1c17a13d97">1c17a13d97</a> :  Version bump to RSV1.210329.046 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1acd93f0d2">1acd93f0d2</a> :  Version bump to RSV1.210329.045 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_aac-show" class="showLink" onclick="show('platform_external_aac');return false;">+</a><a href="#" id="platform_external_aac-hide" class="hideLink" onclick="hide('platform_external_aac');return false;">-</a>&nbsp;<a name="platform_external_aac" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/aac">platform/external/aac</a></h2>
+<div id="platform_external_aac"><a href="https://android.googlesource.com/platform/external/aac/+/fecf470">fecf470</a> :  Reject invalid out of band config in transportDec_OutOfBandConfig() and skip re-allocation.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/392c061ae439">392c061ae439</a> :  Disallow PAP authentication when MPPE is requested<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ddc1b5ad24f5">ddc1b5ad24f5</a> :  limit TelecomManager#registerPhoneAccount to 10; api doc update<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/84c3e3208226">84c3e3208226</a> :  [rvc] RESTRICT AUTOMERGE Add finalizeWorkProfileProvisioning.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6c65bf119c8f">6c65bf119c8f</a> :  Fix NPE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9f80a96941de">9f80a96941de</a> :  Prevent non-admin users from deleting system apps.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3ba41b36f2f8">3ba41b36f2f8</a> :  Fix security hole in GateKeeperResponse<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/99c7c0687b61">99c7c0687b61</a> :  DO NOT MERGE Add an OEM configurable limit for zen rules<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3593792f58e3">3593792f58e3</a> :  Update GeofenceHardwareRequestParcelable to match parcel/unparcel format.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Contacts-show" class="showLink" onclick="show('platform_packages_apps_Contacts');return false;">+</a><a href="#" id="platform_packages_apps_Contacts-hide" class="hideLink" onclick="hide('platform_packages_apps_Contacts');return false;">-</a>&nbsp;<a name="platform_packages_apps_Contacts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Contacts">platform/packages/apps/Contacts</a></h2>
+<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/a0e643589">a0e643589</a> :  No longer export CallSubjectDialog<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Dialer-show" class="showLink" onclick="show('platform_packages_apps_Dialer');return false;">+</a><a href="#" id="platform_packages_apps_Dialer-hide" class="hideLink" onclick="hide('platform_packages_apps_Dialer');return false;">-</a>&nbsp;<a name="platform_packages_apps_Dialer" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Dialer">platform/packages/apps/Dialer</a></h2>
+<div id="platform_packages_apps_Dialer"><a href="https://android.googlesource.com/platform/packages/apps/Dialer/+/5427e5274">5427e5274</a> :  No longer export CallSubjectDialog<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_EmergencyInfo-show" class="showLink" onclick="show('platform_packages_apps_EmergencyInfo');return false;">+</a><a href="#" id="platform_packages_apps_EmergencyInfo-hide" class="hideLink" onclick="hide('platform_packages_apps_EmergencyInfo');return false;">-</a>&nbsp;<a name="platform_packages_apps_EmergencyInfo" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo">platform/packages/apps/EmergencyInfo</a></h2>
+<div id="platform_packages_apps_EmergencyInfo"><a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/db20ac87">db20ac87</a> :  Prevent exfiltration of system files via user image settings.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/176713d9">176713d9</a> :  [rvc] RESTRICT AUTOMERGE Use finalizeWorkProfileProvisioning.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Nfc-show" class="showLink" onclick="show('platform_packages_apps_Nfc');return false;">+</a><a href="#" id="platform_packages_apps_Nfc-hide" class="hideLink" onclick="hide('platform_packages_apps_Nfc');return false;">-</a>&nbsp;<a name="platform_packages_apps_Nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Nfc">platform/packages/apps/Nfc</a></h2>
+<div id="platform_packages_apps_Nfc"><a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/2a58d092">2a58d092</a> :  OOB read in phNciNfc_RecvMfResp()<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/d1a55f0575">d1a55f0575</a> :  Prevent exfiltration of system files via user image settings.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/81776a147">81776a147</a> :  limit TelecomManager#registerPhoneAccount to 10<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_core-show" class="showLink" onclick="show('platform_system_core');return false;">+</a><a href="#" id="platform_system_core-hide" class="hideLink" onclick="hide('platform_system_core');return false;">-</a>&nbsp;<a name="platform_system_core" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/core">platform/system/core</a></h2>
+<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/c8159ac52">c8159ac52</a> :  Backport of Win-specific suppression of potentially rogue construct that can engage in directory traversal on the host.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/c3ea5561">c3ea5561</a> :  OOBR in nfc_ncif_proc_ee_discover_req()<br />
+<a href="https://android.googlesource.com/platform/system/nfc/+/889cd417">889cd417</a> :  Double Free in ce_t4t_data_cback<br />
+<a href="https://android.googlesource.com/platform/system/nfc/+/6fbc75f8">6fbc75f8</a> :  Out of Bounds Read in nfa_dm_check_set_config<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_tools_aidl-show" class="showLink" onclick="show('platform_system_tools_aidl');return false;">+</a><a href="#" id="platform_system_tools_aidl-hide" class="hideLink" onclick="hide('platform_system_tools_aidl');return false;">-</a>&nbsp;<a name="platform_system_tools_aidl" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/tools/aidl">platform/system/tools/aidl</a></h2>
+<div id="platform_system_tools_aidl"><a href="https://android.googlesource.com/platform/system/tools/aidl/+/a2dafff4">a2dafff4</a> :  Add automatic default value for primitive type fields<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

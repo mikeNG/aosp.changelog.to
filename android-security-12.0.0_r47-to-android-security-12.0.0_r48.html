@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-12.0.0_r47 to android-security-12.0.0_r48 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-12.0.0_r47 to android-security-12.0.0_r48 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/6c8bcbe1dc">6c8bcbe1dc</a> :  Version bump to SSV1.210916.067 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2332e70e51">2332e70e51</a> :  Version bump to SSV1.210916.066 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/31959cf87b">31959cf87b</a> :  Fix NuMediaExtractor::readSampleData buffer Handling<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/4ea4790236f6">4ea4790236f6</a> :  Prevent sharesheet from previewing unowned URIs<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ab5a0f9b547d">ab5a0f9b547d</a> :  [RESTRICT AUTOMERGE] Add BubbleMetadata detection to block FSI<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a3dbe8ebbfd3">a3dbe8ebbfd3</a> :  Enforce DevicePolicyManager.setUserControlDisabledPackages in AppStandbyController<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/65d8563b393b">65d8563b393b</a> :  Allow filtering of services<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5bf78f58defd">5bf78f58defd</a> :  Handle invalid data during job loading.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d419c582ef4c">d419c582ef4c</a> :  Check key intent for selectors and prohibited flags<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ac8b5090a4d3">ac8b5090a4d3</a> :  Grant MANAGE_USERS access to Traceur<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/da0a3a640d3c">da0a3a640d3c</a> :  [DO NOT MERGE] Prevent RemoteViews crashing SystemUi<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ff87492900bc">ff87492900bc</a> :  [DO NOT MERGE] Wait for preloading images to complete before inflating notifications<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/98be18da4bc7">98be18da4bc7</a> :  Remove Activity if it enters PiP without window<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Car_Settings-show" class="showLink" onclick="show('platform_packages_apps_Car_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Car_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Car_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Car_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Car/Settings">platform/packages/apps/Car/Settings</a></h2>
+<div id="platform_packages_apps_Car_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Car/Settings/+/7c4b256b2">7c4b256b2</a> :  Convert argument to Intent in car settings AddAccountActivity.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Car/Settings/+/b30b17851">b30b17851</a> :  Convert argument to Intent in car settings account removal.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9e07831ffb">9e07831ffb</a> :  Don't show NLSes with excessively long component names<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/18693c78de">18693c78de</a> :  Convert argument to intent in AddAccountSettings.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/88be75b765">88be75b765</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/6831b8e4c4">6831b8e4c4</a> :  [Settings] Move display of VPN version into summary text<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Traceur-show" class="showLink" onclick="show('platform_packages_apps_Traceur');return false;">+</a><a href="#" id="platform_packages_apps_Traceur-hide" class="hideLink" onclick="hide('platform_packages_apps_Traceur');return false;">-</a>&nbsp;<a name="platform_packages_apps_Traceur" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Traceur">platform/packages/apps/Traceur</a></h2>
+<div id="platform_packages_apps_Traceur"><a href="https://android.googlesource.com/platform/packages/apps/Traceur/+/96dce7a">96dce7a</a> :  Add DISALLOW_DEBUGGING_FEATURES check<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Traceur/+/e3a58e6">e3a58e6</a> :  Update Traceur to check admin user status<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_TvSettings-show" class="showLink" onclick="show('platform_packages_apps_TvSettings');return false;">+</a><a href="#" id="platform_packages_apps_TvSettings-hide" class="hideLink" onclick="hide('platform_packages_apps_TvSettings');return false;">-</a>&nbsp;<a name="platform_packages_apps_TvSettings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/TvSettings">platform/packages/apps/TvSettings</a></h2>
+<div id="platform_packages_apps_TvSettings"><a href="https://android.googlesource.com/platform/packages/apps/TvSettings/+/a6eeaa868">a6eeaa868</a> :  Convert argument to intent in addAccount TvSettings.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/52bc5e82c">52bc5e82c</a> :  Call Redirection: unbind service when onBind returns null<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
