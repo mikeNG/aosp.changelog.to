@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-14.0.0_r11 to android-14.0.0_r12 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-14.0.0_r11 to android-14.0.0_r12 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/a9d9801c94">a9d9801c94</a> :  Version bump to UD1A.231105.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/24923a5d46">24923a5d46</a> :  Version bump to UD1A.231105.003.X2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bdb9eede58">bdb9eede58</a> :  Version bump to UD1A.231105.003.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3db386f887">3db386f887</a> :  Version bump to UD1A.231105.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e4e6973b4f">e4e6973b4f</a> :  Version bump to UD1A.231105.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1dc31811d3">1dc31811d3</a> :  Version bump to UD1A.230803.022.V1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/34153bc347">34153bc347</a> :  Version bump to UD1A.230803.022.W1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/60d86fed7c">60d86fed7c</a> :  Update Security String to 2023-11-05<br />
+<a href="https://android.googlesource.com/platform/build/+/fa6d2e180f">fa6d2e180f</a> :  Version bump to UD1A.230803.022.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9fd0612702">9fd0612702</a> :  Version bump to UD1A.230803.022.Y2 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/169a6e30495">169a6e30495</a> :  Add TTS test for null engine string<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_f2fs-tools-show" class="showLink" onclick="show('platform_external_f2fs-tools');return false;">+</a><a href="#" id="platform_external_f2fs-tools-hide" class="hideLink" onclick="hide('platform_external_f2fs-tools');return false;">-</a>&nbsp;<a name="platform_external_f2fs-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/f2fs-tools">platform/external/f2fs-tools</a></h2>
+<div id="platform_external_f2fs-tools"><a href="https://android.googlesource.com/platform/external/f2fs-tools/+/d82e3b1">d82e3b1</a> :  DO NOT MERGE - f2fs-tools: ensure that unused xattr space is zeroized<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/3ee4d37">3ee4d37</a> :  DO NOT MERGE - f2fs-tools: fix corrupted xattr entry<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/d876fd4">d876fd4</a> :  DO NOT MERGE - f2fs-tools: do sanity check on xattr entry<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/983eb6e">983eb6e</a> :  DO NOT MERGE - f2fs-tools: ensure that unused xattr space is zeroized<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/ad0b608">ad0b608</a> :  DO NOT MERGE - f2fs-tools: fix corrupted xattr entry<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/60538b9">60538b9</a> :  DO NOT MERGE - f2fs-tools: do sanity check on xattr entry<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_webp-show" class="showLink" onclick="show('platform_external_webp');return false;">+</a><a href="#" id="platform_external_webp-hide" class="hideLink" onclick="hide('platform_external_webp');return false;">-</a>&nbsp;<a name="platform_external_webp" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/webp">platform/external/webp</a></h2>
+<div id="platform_external_webp"><a href="https://android.googlesource.com/platform/external/webp/+/39329b6f">39329b6f</a> :  Fix OOB write in BuildHuffmanTable.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/82fb42ef1b">82fb42ef1b</a> :  Initialise VPS buffer to NULL in constructor<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/4dd530da01">4dd530da01</a> :  Fix heap-use-after-free issue flagged by fuzzer test.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/a4868a1d8b">a4868a1d8b</a> :  Fix for heap buffer overflow issue flagged by fuzzer test.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/ade73616d518">ade73616d518</a> :  Fix NPE in TTS service if no engine string<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/97602ee93218">97602ee93218</a> :  Store trusted AttributionSources without token<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e3c429351852">e3c429351852</a> :  Do not register OnBackInvokedCallback for SoftInputWindow.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2e4146caf5ef">2e4146caf5ef</a> :  Restore trimMemory behaviour from T<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3a522da7878d">3a522da7878d</a> :  Unregister mShowWeatherObserver when KeyguardClockSwitchController is detached<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/48260975eaa9">48260975eaa9</a> :  AudioDeviceBroker: restore use of hearing aids by default for VoIP calls<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/49043c039da7">49043c039da7</a> :  Fix back gesture / keycode for the PlatLogoActivity<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3e051e3ed2a8">3e051e3ed2a8</a> :  Limit ordering unlock and wake by configuration.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c0aa5517ea1c">c0aa5517ea1c</a> :  Fallback to default display if initial one is detached<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4d2203650e0e">4d2203650e0e</a> :  Fix NPE when fetch shortcut icon uri<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/39dc6816aa9d">39dc6816aa9d</a> :  Select the default clock if current clock id was not found<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/05f08bacfead">05f08bacfead</a> :  Update autoHandwritingEnabled documentation<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/091d34bbf187">091d34bbf187</a> :  Fixes update ownership preapproval flow<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ad1f0844aaac">ad1f0844aaac</a> :  [SettingsProvider] verify ringtone URI before setting<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2eb4e10271d2">2eb4e10271d2</a> :  Prevent media button receivers targeting activities<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a7b45f06def5">a7b45f06def5</a> :  Fix BAL via notification.publicVersion<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2bbefc7a1586">2bbefc7a1586</a> :  Use type safe API of readParcelableArray<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/64dd93a165e1">64dd93a165e1</a> :  [DO NOT MERGE] Check caller's uid in backupAgentCreated callback<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/a24bf67114">a24bf67114</a> :  Revert "Handle runtime sensor events even if there are no real ones."<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/eebb943868">eebb943868</a> :  Don't look through the buffer cache in protected contexts<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_ThemePicker-show" class="showLink" onclick="show('platform_packages_apps_ThemePicker');return false;">+</a><a href="#" id="platform_packages_apps_ThemePicker-hide" class="hideLink" onclick="hide('platform_packages_apps_ThemePicker');return false;">-</a>&nbsp;<a name="platform_packages_apps_ThemePicker" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ThemePicker">platform/packages/apps/ThemePicker</a></h2>
+<div id="platform_packages_apps_ThemePicker"><a href="https://android.googlesource.com/platform/packages/apps/ThemePicker/+/3307d4fb">3307d4fb</a> :  Select the default clock if current clock id was not found<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_DnsResolver-show" class="showLink" onclick="show('platform_packages_modules_DnsResolver');return false;">+</a><a href="#" id="platform_packages_modules_DnsResolver-hide" class="hideLink" onclick="hide('platform_packages_modules_DnsResolver');return false;">-</a>&nbsp;<a name="platform_packages_modules_DnsResolver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/DnsResolver">platform/packages/modules/DnsResolver</a></h2>
+<div id="platform_packages_modules_DnsResolver"><a href="https://android.googlesource.com/platform/packages/modules/DnsResolver/+/baef1150">baef1150</a> :  Fix use-after-free in DNS64 discovery thread<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_StatsD-show" class="showLink" onclick="show('platform_packages_modules_StatsD');return false;">+</a><a href="#" id="platform_packages_modules_StatsD-hide" class="hideLink" onclick="hide('platform_packages_modules_StatsD');return false;">-</a>&nbsp;<a name="platform_packages_modules_StatsD" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/StatsD">platform/packages/modules/StatsD</a></h2>
+<div id="platform_packages_modules_StatsD"><a href="https://android.googlesource.com/platform/packages/modules/StatsD/+/f18bda35">f18bda35</a> :  Make log reader thread a class member<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_core-show" class="showLink" onclick="show('platform_system_core');return false;">+</a><a href="#" id="platform_system_core-hide" class="hideLink" onclick="hide('platform_system_core');return false;">-</a>&nbsp;<a name="platform_system_core" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/core">platform/system/core</a></h2>
+<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/67af7c688">67af7c688</a> :  Run fsck to resolve possible data corruption<br />
+<a href="https://android.googlesource.com/platform/system/core/+/810ccd78b">810ccd78b</a> :  Run fsck to resolve possible data corruption<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

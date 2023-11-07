@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-14.0.0_r13 to android-14.0.0_r14 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-14.0.0_r13 to android-14.0.0_r14 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/b35e3ff0c8">b35e3ff0c8</a> :  Version bump to UP1A.231105.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f947d2b29b">f947d2b29b</a> :  Version bump to UP1A.231105.002.X2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f46e22e1ec">f46e22e1ec</a> :  Version bump to UP1A.231105.002.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/78be917bc1">78be917bc1</a> :  Version bump to UP1A.231105.002.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3482425010">3482425010</a> :  Update Security String to 2023-11-01<br />
+<a href="https://android.googlesource.com/platform/build/+/a8116fa84c">a8116fa84c</a> :  Version bump to UP1A.231105.001.A1 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bluejay-show" class="showLink" onclick="show('device_google_bluejay');return false;">+</a><a href="#" id="device_google_bluejay-hide" class="hideLink" onclick="hide('device_google_bluejay');return false;">-</a>&nbsp;<a name="device_google_bluejay" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay">device/google/bluejay</a></h2>
+<div id="device_google_bluejay"><a href="https://android.googlesource.com/device/google/bluejay/+/aaf0f10">aaf0f10</a> :  Update bluejay SVN to  50<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/b8c4aa1">b8c4aa1</a> :  Update bluejay SVN to 49<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/ce18061">ce18061</a> :  Update bluejay SVN to 49<br />
+<a href="https://android.googlesource.com/device/google/bluejay/+/986e11f">986e11f</a> :  Update bluejay SVN to 49<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_felix-show" class="showLink" onclick="show('device_google_felix');return false;">+</a><a href="#" id="device_google_felix-hide" class="hideLink" onclick="hide('device_google_felix');return false;">-</a>&nbsp;<a name="device_google_felix" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/felix">device/google/felix</a></h2>
+<div id="device_google_felix"><a href="https://android.googlesource.com/device/google/felix/+/3b8ea28">3b8ea28</a> :  Update felix SVN to  28<br />
+<a href="https://android.googlesource.com/device/google/felix/+/4004106">4004106</a> :  Update felix SVN to 27<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9393903">9393903</a> :  Update felix SVN to 27<br />
+<a href="https://android.googlesource.com/device/google/felix/+/311b277">311b277</a> :  Update felix SVN to 27<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_gs101-show" class="showLink" onclick="show('device_google_gs101');return false;">+</a><a href="#" id="device_google_gs101-hide" class="hideLink" onclick="hide('device_google_gs101');return false;">-</a>&nbsp;<a name="device_google_gs101" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/gs101">device/google/gs101</a></h2>
+<div id="device_google_gs101"><a href="https://android.googlesource.com/device/google/gs101/+/71617479">71617479</a> :  Run fsck to resolve possible data corruption<br />
+<a href="https://android.googlesource.com/device/google/gs101/+/a80be5f7">a80be5f7</a> :  Run fsck to resolve possible data corruption<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_gs201-show" class="showLink" onclick="show('device_google_gs201');return false;">+</a><a href="#" id="device_google_gs201-hide" class="hideLink" onclick="hide('device_google_gs201');return false;">-</a>&nbsp;<a name="device_google_gs201" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/gs201">device/google/gs201</a></h2>
+<div id="device_google_gs201"><a href="https://android.googlesource.com/device/google/gs201/+/cd377bf">cd377bf</a> :  Run fsck to resolve possible data corruption<br />
+<a href="https://android.googlesource.com/device/google/gs201/+/daff6b1">daff6b1</a> :  Run fsck to resolve possible data corruption<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_lynx-show" class="showLink" onclick="show('device_google_lynx');return false;">+</a><a href="#" id="device_google_lynx-hide" class="hideLink" onclick="hide('device_google_lynx');return false;">-</a>&nbsp;<a name="device_google_lynx" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/lynx">device/google/lynx</a></h2>
+<div id="device_google_lynx"><a href="https://android.googlesource.com/device/google/lynx/+/c6d9250">c6d9250</a> :  Update lynx SVN to  20<br />
+<a href="https://android.googlesource.com/device/google/lynx/+/e2f4ec4">e2f4ec4</a> :  Update lynx SVN to 19<br />
+<a href="https://android.googlesource.com/device/google/lynx/+/158be3e">158be3e</a> :  Update lynx SVN to 19<br />
+<a href="https://android.googlesource.com/device/google/lynx/+/6dc7882">6dc7882</a> :  Update lynx SVN to 19<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_pantah-show" class="showLink" onclick="show('device_google_pantah');return false;">+</a><a href="#" id="device_google_pantah-hide" class="hideLink" onclick="hide('device_google_pantah');return false;">-</a>&nbsp;<a name="device_google_pantah" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/pantah">device/google/pantah</a></h2>
+<div id="device_google_pantah"><a href="https://android.googlesource.com/device/google/pantah/+/d969717">d969717</a> :  Update cheetah SVN to  35<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/ef450f8">ef450f8</a> :  Update panther SVN to  35<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/45c48f1">45c48f1</a> :  Update cheetah SVN to 34<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/9a67778">9a67778</a> :  Update panther SVN to 34<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/eb470aa">eb470aa</a> :  Update cheetah SVN to 34<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/8903f68">8903f68</a> :  Update panther SVN to 34<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/8705366">8705366</a> :  Update cheetah SVN to 34<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/3e21606">3e21606</a> :  Update panther SVN to 34<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_raviole-show" class="showLink" onclick="show('device_google_raviole');return false;">+</a><a href="#" id="device_google_raviole-hide" class="hideLink" onclick="hide('device_google_raviole');return false;">-</a>&nbsp;<a name="device_google_raviole" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/raviole">device/google/raviole</a></h2>
+<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/36d63f0">36d63f0</a> :  Update raven SVN to  71<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/66c4c4f">66c4c4f</a> :  Update oriole SVN to  71<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/f554672">f554672</a> :  Update raven SVN to 70<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/e522aaf">e522aaf</a> :  Update oriole SVN to 70<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/32ccb66">32ccb66</a> :  Update raven SVN to 70<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/2e7e241">2e7e241</a> :  Update oriole SVN to 70<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/961d1d8">961d1d8</a> :  Update raven SVN to 70<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/18fa502">18fa502</a> :  Update oriole SVN to 70<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_f2fs-tools-show" class="showLink" onclick="show('platform_external_f2fs-tools');return false;">+</a><a href="#" id="platform_external_f2fs-tools-hide" class="hideLink" onclick="hide('platform_external_f2fs-tools');return false;">-</a>&nbsp;<a name="platform_external_f2fs-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/f2fs-tools">platform/external/f2fs-tools</a></h2>
+<div id="platform_external_f2fs-tools"><a href="https://android.googlesource.com/platform/external/f2fs-tools/+/95ef2b7">95ef2b7</a> :  DO NOT MERGE - f2fs-tools: ensure that unused xattr space is zeroized<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/f4dc23c">f4dc23c</a> :  DO NOT MERGE - f2fs-tools: fix corrupted xattr entry<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/fc62f3b">fc62f3b</a> :  DO NOT MERGE - f2fs-tools: do sanity check on xattr entry<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/2b7a878">2b7a878</a> :  DO NOT MERGE - f2fs-tools: ensure that unused xattr space is zeroized<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/aed70ef">aed70ef</a> :  DO NOT MERGE - f2fs-tools: fix corrupted xattr entry<br />
+<a href="https://android.googlesource.com/platform/external/f2fs-tools/+/5b9cba3">5b9cba3</a> :  DO NOT MERGE - f2fs-tools: do sanity check on xattr entry<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_core-show" class="showLink" onclick="show('platform_system_core');return false;">+</a><a href="#" id="platform_system_core-hide" class="hideLink" onclick="hide('platform_system_core');return false;">-</a>&nbsp;<a name="platform_system_core" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/core">platform/system/core</a></h2>
+<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/fda726e9a">fda726e9a</a> :  Run fsck to resolve possible data corruption<br />
+<a href="https://android.googlesource.com/platform/system/core/+/5b9889659">5b9889659</a> :  Run fsck to resolve possible data corruption<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
