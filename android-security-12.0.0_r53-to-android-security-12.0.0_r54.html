@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-12.0.0_r53 to android-security-12.0.0_r54 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-12.0.0_r53 to android-security-12.0.0_r54 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/aace6fb110">aace6fb110</a> :  Version bump to SSV1.210916.082 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8a43d01566">8a43d01566</a> :  Version bump to SSV1.210916.081 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/439eeb3b872">439eeb3b872</a> :  Change open jpeg folder name<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_pdfium-show" class="showLink" onclick="show('platform_external_pdfium');return false;">+</a><a href="#" id="platform_external_pdfium-hide" class="hideLink" onclick="hide('platform_external_pdfium');return false;">-</a>&nbsp;<a name="platform_external_pdfium" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/pdfium">platform/external/pdfium</a></h2>
+<div id="platform_external_pdfium"><a href="https://android.googlesource.com/platform/external/pdfium/+/72f2f60e3">72f2f60e3</a> :  Update pdfium to Chrome 114.0.5735.130 pdfium<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/6bde746cad">6bde746cad</a> :  Revert "NdkMedia: fix android.mediav2.cts.CodecEncoderSurfaceTest failed."<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/4c4e383a16">4c4e383a16</a> :  NdkMedia: fix android.mediav2.cts.CodecEncoderSurfaceTest failed.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/302959a3f6">302959a3f6</a> :  Condition background record restriction on Sdk<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/b4910062d5">b4910062d5</a> :  Correct attribution source for MMAP thread<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/cfd4960f97">cfd4960f97</a> :  httplive: fix use-after-free<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/6fab80f14116">6fab80f14116</a> :  RESTRICT AUTOMERGE: Check URI permissions for resumable media artwork<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1857ee3fd7e7">1857ee3fd7e7</a> :  Move startWatchingModeWithFlags to the native supported binder calls<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a6bf6bdef507">a6bf6bdef507</a> :  Updated: always show the keyguard on device lockdown<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/912f0f66f308">912f0f66f308</a> :  Adding in verification of calling UID in onShellCommand<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/25240a9c6473">25240a9c6473</a> :  Revert "On device lockdown, always show the keyguard"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3e64d4d94100">3e64d4d94100</a> :  Validate userId when publishing shortcuts<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/81496664cfc3">81496664cfc3</a> :  Use readUniqueFileDescriptor in incidentd service<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d85791da431f">d85791da431f</a> :  Restrict number of shortcuts can be added through addDynamicShortcuts<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2b36798cc5c9">2b36798cc5c9</a> :  Require permission to unlock keyguard<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d76c64bca7c0">d76c64bca7c0</a> :  Disable priority conversation widget for secondary users<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/70cd64efdb57">70cd64efdb57</a> :  Validate URI-based shortcut icon at creation time.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ae1a63390d4b">ae1a63390d4b</a> :  RESTRICT AUTOMERGE: Drop invalid data.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/92d2e8793938">92d2e8793938</a> :  Visit Uris related to Notification style extras<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6726ac559618">6726ac559618</a> :  Fix bypass BAL via `requestGeofence`<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/84221f9a1387">84221f9a1387</a> :  Visit Uris added by WearableExtender<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/a59266f3ee">a59266f3ee</a> :  Add AppOps overload to be able to watch foreground changes.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/8a0d866766">8a0d866766</a> :  Fix permission bypass in legacy shortcut<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_NeuralNetworks-show" class="showLink" onclick="show('platform_packages_modules_NeuralNetworks');return false;">+</a><a href="#" id="platform_packages_modules_NeuralNetworks-hide" class="hideLink" onclick="hide('platform_packages_modules_NeuralNetworks');return false;">-</a>&nbsp;<a name="platform_packages_modules_NeuralNetworks" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks">platform/packages/modules/NeuralNetworks</a></h2>
+<div id="platform_packages_modules_NeuralNetworks"><a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/7ed0a8b7b">7ed0a8b7b</a> :  Fix OOB Read in convertSubgraphFromHAL<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/aea8bc8cf">aea8bc8cf</a> :  Resolve account image icon profile boundary exploit.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_netd-show" class="showLink" onclick="show('platform_system_netd');return false;">+</a><a href="#" id="platform_system_netd-hide" class="hideLink" onclick="hide('platform_system_netd');return false;">-</a>&nbsp;<a name="platform_system_netd" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/netd">platform/system/netd</a></h2>
+<div id="platform_system_netd"><a href="https://android.googlesource.com/platform/system/netd/+/b3407e31">b3407e31</a> :  Fix Heap-use-after-free in MDnsSdListener::Monitor::run<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
