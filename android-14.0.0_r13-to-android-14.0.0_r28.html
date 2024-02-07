@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-14.0.0_r13 to android-14.0.0_r28 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-14.0.0_r13 to android-14.0.0_r28 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/36fee99def">36fee99def</a> :  Version bump to UP1A.231105.001.B2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2e953c9b2b">2e953c9b2b</a> :  Version bump to UP1A.231105.001.B1 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bramble-show" class="showLink" onclick="show('device_google_bramble');return false;">+</a><a href="#" id="device_google_bramble-hide" class="hideLink" onclick="hide('device_google_bramble');return false;">-</a>&nbsp;<a name="device_google_bramble" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bramble">device/google/bramble</a></h2>
+<div id="device_google_bramble"><a href="https://android.googlesource.com/device/google/bramble/+/c234664">c234664</a> :  Usb.cpp: Fix typos when unable to disable USB data<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redbull-show" class="showLink" onclick="show('device_google_redbull');return false;">+</a><a href="#" id="device_google_redbull-hide" class="hideLink" onclick="hide('device_google_redbull');return false;">-</a>&nbsp;<a name="device_google_redbull" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redbull">device/google/redbull</a></h2>
+<div id="device_google_redbull"><a href="https://android.googlesource.com/device/google/redbull/+/76d5e55">76d5e55</a> :  Update redbull SVN to 76<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_redfin-show" class="showLink" onclick="show('device_google_redfin');return false;">+</a><a href="#" id="device_google_redfin-hide" class="hideLink" onclick="hide('device_google_redfin');return false;">-</a>&nbsp;<a name="device_google_redfin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redfin">device/google/redfin</a></h2>
+<div id="device_google_redfin"><a href="https://android.googlesource.com/device/google/redfin/+/2c5930b">2c5930b</a> :  Usb.cpp: Fix typos when unable to disable USB data<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/3a7eff0c93c0">3a7eff0c93c0</a> :  Add a failsafe check to prevent display surfaces from remaining hidden<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/58691814d2ab">58691814d2ab</a> :  Only match identical userIDs for autogroup summaries<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3d3ca8ba33db">3d3ca8ba33db</a> :  DO NOT MERGE Ensure swipe down works for bouncer to dismiss<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/40cb29704578">40cb29704578</a> :  fix(magnifier): avoid crash when smashing magnifier shortcut button repeatedly<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2078dd837f00">2078dd837f00</a> :  Finish rotation controller if the pending change is gone<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b2ab0c242907">b2ab0c242907</a> :  Skip sync invisible &amp; lifecycle-unlreated window for an Activity.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ff90f332f65d">ff90f332f65d</a> :  Perform magnification viewport drawing outside of WM global lock.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_IntentResolver-show" class="showLink" onclick="show('platform_packages_modules_IntentResolver');return false;">+</a><a href="#" id="platform_packages_modules_IntentResolver-hide" class="hideLink" onclick="hide('platform_packages_modules_IntentResolver');return false;">-</a>&nbsp;<a name="platform_packages_modules_IntentResolver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/IntentResolver">platform/packages/modules/IntentResolver</a></h2>
+<div id="platform_packages_modules_IntentResolver"><a href="https://android.googlesource.com/platform/packages/modules/IntentResolver/+/a77165d">a77165d</a> :  Creates ChooserActivity alias<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
