@@ -13,7 +13,7 @@
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
-<title>android-security-13.0.0_r14 to android-security-13.0.0_r15 AOSP changelog</title>
+<title>android-security-13.0.0_r15 to android-security-13.0.0_r16 AOSP changelog</title>
 
 <script>
 function show(sectionId) {
@@ -53,7 +53,7 @@ function hide(sectionId) {
 <div class="container card">
 <div class="row">
     <div class="col-md-12">
-        <h1>android-security-13.0.0_r14 to android-security-13.0.0_r15 AOSP changelog</h1>
+        <h1>android-security-13.0.0_r15 to android-security-13.0.0_r16 AOSP changelog</h1>
     </div>
 </div>
 
@@ -70,28 +70,19 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="col-md-12">
         <div id="changes">
 <p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
-<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/5944e88294">5944e88294</a> :  Version bump to TSV1.220628.058 [core/build_id.mk]<br />
-</div></p>
-
-<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
-<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/709f0f0350">709f0f0350</a> :  Fix out of bounds read and write in onQueueFilled in outQueue<br />
-<a href="https://android.googlesource.com/platform/frameworks/av/+/ff558ab2ab">ff558ab2ab</a> :  SoftVideoDecodeOMXComponent: validate OMX params for dynamic HDR<br />
-<a href="https://android.googlesource.com/platform/frameworks/av/+/df824fdf0b">df824fdf0b</a> :  Validate OMX Params for VPx encoders<br />
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/5743d01361">5743d01361</a> :  Version bump to TSV1.220628.059 [core/build_id.mk]<br />
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
-<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/95a92dc20b11">95a92dc20b11</a> :  Close AccountManagerService.session after timeout.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/8e2d1dc1b3ab">8e2d1dc1b3ab</a> :  Disallow system apps to be installed/updated as instant.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/03b73861bda8">03b73861bda8</a> :  Validate package names passed to the installer.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/eccd83cf147f">eccd83cf147f</a> :  Resolve custom printer icon boundary exploit.<br />
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/b23716810173">b23716810173</a> :  Fix security vulnerability that creates user with no restrictions when accountOptions are too long.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a6e78a34bfac">a6e78a34bfac</a> :  Stop marking apps as privileged if they are not signed properly.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4cefba2304db">4cefba2304db</a> :  isUserInLockDown can be true when there are other strong auth requirements<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6806ba4ea214">6806ba4ea214</a> :  Don't store invalid pkgs when migrating filters<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/00032f40eb1f">00032f40eb1f</a> :  RESTRICT AUTOMERGE Added limitations for attributions to handle invalid cases<br />
 </div></p>
 
-<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
-<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/c5c528beb6">c5c528beb6</a> :  Fix a security bypass issue in access_secure_service_from_temp_bond<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/015c618a04">015c618a04</a> :  Reland: Fix an OOB write bug in attp_build_value_cmd<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8d1f02addc">8d1f02addc</a> :  Revert "Fix an OOB write bug in attp_build_value_cmd"<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/f24536f50a">f24536f50a</a> :  Fix an OOB write bug in attp_build_value_cmd<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7d0f696f45">7d0f696f45</a> :  Fix an OOB bug in smp_proc_sec_req<br />
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/b5fcfda1f5f">b5fcfda1f5f</a> :  [RESTRICT AUTOMERGE] Restrict WifiDialogActivity<br />
 </div></p>
 
 
