@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-14.0.0_r34 to android-14.0.0_r35 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-14.0.0_r34 to android-14.0.0_r35 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/9d81485268">9d81485268</a> :  Version bump to AP1A.240505.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/05b6a16db8">05b6a16db8</a> :  Version bump to AP1A.240405.002.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/050089c709">050089c709</a> :  Version bump to AP1A.240405.002.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c7b18aaa22">c7b18aaa22</a> :  Version bump to AP1A.240505.004.Y2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5fdee1da93">5fdee1da93</a> :  Version bump to AP1A.240505.004.Y1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d13e343cd8">d13e343cd8</a> :  Version bump to AP1A.240505.004.X2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a25c525907">a25c525907</a> :  Version bump to AP1A.240505.004.X1 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_felix-show" class="showLink" onclick="show('device_google_felix');return false;">+</a><a href="#" id="device_google_felix-hide" class="hideLink" onclick="hide('device_google_felix');return false;">-</a>&nbsp;<a name="device_google_felix" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/felix">device/google/felix</a></h2>
+<div id="device_google_felix"><a href="https://android.googlesource.com/device/google/felix/+/34f5259">34f5259</a> :  Update felix SVN to 48<br />
+<a href="https://android.googlesource.com/device/google/felix/+/9180346">9180346</a> :  Update felix SVN to 47<br />
+<a href="https://android.googlesource.com/device/google/felix/+/85a0932">85a0932</a> :  Update felix SVN to 47<br />
+<a href="https://android.googlesource.com/device/google/felix/+/5727ac9">5727ac9</a> :  Update felix SVN to 46<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_lynx-show" class="showLink" onclick="show('device_google_lynx');return false;">+</a><a href="#" id="device_google_lynx-hide" class="hideLink" onclick="hide('device_google_lynx');return false;">-</a>&nbsp;<a name="device_google_lynx" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/lynx">device/google/lynx</a></h2>
+<div id="device_google_lynx"><a href="https://android.googlesource.com/device/google/lynx/+/eea3860">eea3860</a> :  Update lynx SVN to 39<br />
+<a href="https://android.googlesource.com/device/google/lynx/+/ae8a8ba">ae8a8ba</a> :  Update lynx SVN to 38<br />
+<a href="https://android.googlesource.com/device/google/lynx/+/dfa918d">dfa918d</a> :  Update lynx SVN to 38<br />
+<a href="https://android.googlesource.com/device/google/lynx/+/bbb6acf">bbb6acf</a> :  Update lynx SVN to 37<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_pantah-show" class="showLink" onclick="show('device_google_pantah');return false;">+</a><a href="#" id="device_google_pantah-hide" class="hideLink" onclick="hide('device_google_pantah');return false;">-</a>&nbsp;<a name="device_google_pantah" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/pantah">device/google/pantah</a></h2>
+<div id="device_google_pantah"><a href="https://android.googlesource.com/device/google/pantah/+/41e91f0">41e91f0</a> :  Update cheetah SVN to 54<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/556ae54">556ae54</a> :  Update panther SVN to 54<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/2d1b17d">2d1b17d</a> :  Update panther SVN to 53<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/a1e2924">a1e2924</a> :  Update cheetah SVN to 53<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/764fd9a">764fd9a</a> :  Update panther SVN to 53<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/ccdd2b1">ccdd2b1</a> :  Update cheetah SVN to 53<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/9336c34">9336c34</a> :  Update panther SVN to 52<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/8be2641">8be2641</a> :  Update cheetah SVN to 52<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_shusky-show" class="showLink" onclick="show('device_google_shusky');return false;">+</a><a href="#" id="device_google_shusky-hide" class="hideLink" onclick="hide('device_google_shusky');return false;">-</a>&nbsp;<a name="device_google_shusky" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/shusky">device/google/shusky</a></h2>
+<div id="device_google_shusky"><a href="https://android.googlesource.com/device/google/shusky/+/8e550b5">8e550b5</a> :  Update husky SVN to 23<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/478e454">478e454</a> :  Update shiba SVN to 23<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/8ef171a">8ef171a</a> :  Update husky SVN to 22<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/456dd9b">456dd9b</a> :  Update shiba SVN to 22<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/771e006">771e006</a> :  Update husky SVN to 22<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/abe5eee">abe5eee</a> :  Update shiba SVN to 22<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/18596d4">18596d4</a> :  Update husky SVN to 21<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/64d34a9">64d34a9</a> :  Update shiba SVN to 21<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-14.0.0_r31 to android-14.0.0_r34 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-14.0.0_r31 to android-14.0.0_r34 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/897f9adc60">897f9adc60</a> :  Version bump to AP1A.240505.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/caf9a7416a">caf9a7416a</a> :  Version bump to AP1A.240505.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/608ee39699">608ee39699</a> :  Version bump to AP1A.240505.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d4b651b13a">d4b651b13a</a> :  Version bump to AP1A.240505.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c657fd3551">c657fd3551</a> :  Version bump to AP1A.240405.002.Z1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1f09316dbb">1f09316dbb</a> :  Enable PLATFORM_BASE_OS overrides<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_build_release-show" class="showLink" onclick="show('platform_build_release');return false;">+</a><a href="#" id="platform_build_release-hide" class="hideLink" onclick="hide('platform_build_release');return false;">-</a>&nbsp;<a name="platform_build_release" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build/release">platform/build/release</a></h2>
+<div id="platform_build_release"><a href="https://android.googlesource.com/platform/build/release/+/06564df">06564df</a> :  Update Security String to 2024-05-05<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_barbet-show" class="showLink" onclick="show('device_google_barbet');return false;">+</a><a href="#" id="device_google_barbet-hide" class="hideLink" onclick="hide('device_google_barbet');return false;">-</a>&nbsp;<a name="device_google_barbet" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/barbet">device/google/barbet</a></h2>
+<div id="device_google_barbet"><a href="https://android.googlesource.com/device/google/barbet/+/7a5f6f5">7a5f6f5</a> :  Update barbet SVN to 58<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_bluejay-show" class="showLink" onclick="show('device_google_bluejay');return false;">+</a><a href="#" id="device_google_bluejay-hide" class="hideLink" onclick="hide('device_google_bluejay');return false;">-</a>&nbsp;<a name="device_google_bluejay" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay">device/google/bluejay</a></h2>
+<div id="device_google_bluejay"><a href="https://android.googlesource.com/device/google/bluejay/+/283ac57">283ac57</a> :  Update bluejay SVN to 59<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_felix-show" class="showLink" onclick="show('device_google_felix');return false;">+</a><a href="#" id="device_google_felix-hide" class="hideLink" onclick="hide('device_google_felix');return false;">-</a>&nbsp;<a name="device_google_felix" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/felix">device/google/felix</a></h2>
+<div id="device_google_felix"><a href="https://android.googlesource.com/device/google/felix/+/54fa23d">54fa23d</a> :  Update felix SVN to 46<br />
+<a href="https://android.googlesource.com/device/google/felix/+/06615db">06615db</a> :  Update felix SVN to 45<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_lynx-show" class="showLink" onclick="show('device_google_lynx');return false;">+</a><a href="#" id="device_google_lynx-hide" class="hideLink" onclick="hide('device_google_lynx');return false;">-</a>&nbsp;<a name="device_google_lynx" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/lynx">device/google/lynx</a></h2>
+<div id="device_google_lynx"><a href="https://android.googlesource.com/device/google/lynx/+/ea1f72b">ea1f72b</a> :  Update lynx SVN to 37<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_pantah-show" class="showLink" onclick="show('device_google_pantah');return false;">+</a><a href="#" id="device_google_pantah-hide" class="hideLink" onclick="hide('device_google_pantah');return false;">-</a>&nbsp;<a name="device_google_pantah" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/pantah">device/google/pantah</a></h2>
+<div id="device_google_pantah"><a href="https://android.googlesource.com/device/google/pantah/+/303cd4a">303cd4a</a> :  Update cheetah SVN to 52<br />
+<a href="https://android.googlesource.com/device/google/pantah/+/a7821df">a7821df</a> :  Update panther SVN to 52<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_raviole-show" class="showLink" onclick="show('device_google_raviole');return false;">+</a><a href="#" id="device_google_raviole-hide" class="hideLink" onclick="hide('device_google_raviole');return false;">-</a>&nbsp;<a name="device_google_raviole" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/raviole">device/google/raviole</a></h2>
+<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/49f2f286">49f2f286</a> :  Update oriole SVN to 80<br />
+<a href="https://android.googlesource.com/device/google/raviole/+/5fed1b3b">5fed1b3b</a> :  Update raven SVN to 80<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_shusky-show" class="showLink" onclick="show('device_google_shusky');return false;">+</a><a href="#" id="device_google_shusky-hide" class="hideLink" onclick="hide('device_google_shusky');return false;">-</a>&nbsp;<a name="device_google_shusky" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/shusky">device/google/shusky</a></h2>
+<div id="device_google_shusky"><a href="https://android.googlesource.com/device/google/shusky/+/1096eb8">1096eb8</a> :  Update husky SVN to 21<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/7c02003">7c02003</a> :  Update shiba SVN to 21<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/7708918">7708918</a> :  Test for SVN<br />
+<a href="https://android.googlesource.com/device/google/shusky/+/118ce22">118ce22</a> :  Set ro.build.version.base_os value<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_sonivox-show" class="showLink" onclick="show('platform_external_sonivox');return false;">+</a><a href="#" id="platform_external_sonivox-hide" class="hideLink" onclick="hide('platform_external_sonivox');return false;">-</a>&nbsp;<a name="platform_external_sonivox" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/sonivox">platform/external/sonivox</a></h2>
+<div id="platform_external_sonivox"><a href="https://android.googlesource.com/platform/external/sonivox/+/7f523cb">7f523cb</a> :  WIP fix buffer overrun in eas_wtengine<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/438d11d839">438d11d839</a> :  Allow stashed taskbar to be long pressed.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/29d320b4b5f">29d320b4b5f</a> :  Replace getCallingActivity() with getLaunchedFromPackage()<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/e649021c71">e649021c71</a> :  leaudio: Fix crash on metadata update<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_HealthFitness-show" class="showLink" onclick="show('platform_packages_modules_HealthFitness');return false;">+</a><a href="#" id="platform_packages_modules_HealthFitness-hide" class="hideLink" onclick="hide('platform_packages_modules_HealthFitness');return false;">-</a>&nbsp;<a name="platform_packages_modules_HealthFitness" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/HealthFitness">platform/packages/modules/HealthFitness</a></h2>
+<div id="platform_packages_modules_HealthFitness"><a href="https://android.googlesource.com/platform/packages/modules/HealthFitness/+/ca830487">ca830487</a> :  Throw exception when trying to instantiate a change log token with no record types.<br />
+<a href="https://android.googlesource.com/platform/packages/modules/HealthFitness/+/6bcb6acf">6bcb6acf</a> :  Throw exception when trying to instantiate a change log token with no record types.<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 2015 - 2017 Novoda Ltd., All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
