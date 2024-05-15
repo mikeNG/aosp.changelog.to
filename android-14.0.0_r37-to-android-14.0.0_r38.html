@@ -1,0 +1,512 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-14.0.0_r37 to android-14.0.0_r38 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-14.0.0_r37 to android-14.0.0_r38 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/9ffdfa8594">9ffdfa8594</a> :  Version bump to UD2A.231203.054 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9ebd9ea9eb">9ebd9ea9eb</a> :  Version bump to UD2A.231203.052.Z1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/780acf78cf">780acf78cf</a> :  Version bump to UD2A.231203.053.S1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d5455acbf2">d5455acbf2</a> :  Version bump to UD2A.231203.053 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/71f5e82441">71f5e82441</a> :  Version bump to UD2A.231203.052.Y1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/56e1c866b2">56e1c866b2</a> :  Version bump to UD2A.231203.052.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6d31b1cf1a">6d31b1cf1a</a> :  Version bump to UD2A.231203.052.S1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a30b4fd262">a30b4fd262</a> :  Version bump to UD2A.231203.052.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a625613482">a625613482</a> :  Version bump to UD2A.231203.052 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1a8f758ec0">1a8f758ec0</a> :  Version bump to UD2A.231203.051 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b99fb0a0e3">b99fb0a0e3</a> :  Version bump to UD2A.231203.049.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/67b084bab5">67b084bab5</a> :  RESTRICT AUTOMERGE Update Security String to 2024-03-05<br />
+<a href="https://android.googlesource.com/platform/build/+/068293f52c">068293f52c</a> :  RESTRICT AUTOMERGE Update Security String to 2024-03-05<br />
+<a href="https://android.googlesource.com/platform/build/+/c61f229107">c61f229107</a> :  Version bump to UD2A.231203.048.U1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bc7837b70b">bc7837b70b</a> :  Version bump to UD2A.231203.049 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3514616468">3514616468</a> :  Version bump to UD2A.231203.048 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/350589cf02">350589cf02</a> :  Version bump to UD2A.231203.047 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9082c96a7d">9082c96a7d</a> :  Version bump to UD2A.231203.046 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e7bea8ab9a">e7bea8ab9a</a> :  Version bump to UD2A.231203.045 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ff09e535be">ff09e535be</a> :  Version bump to UD2A.231203.044 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bc145db485">bc145db485</a> :  Version bump to UD2A.231203.042.S2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1357efb5e1">1357efb5e1</a> :  Version bump to UD2A.231203.042.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/55dfc2adb3">55dfc2adb3</a> :  Version bump to UD2A.231203.043 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/743472af09">743472af09</a> :  Version bump to UD2A.231203.042.S1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6d1ee75b07">6d1ee75b07</a> :  Version bump to UD2A.231203.042 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a56c5b0488">a56c5b0488</a> :  Version bump to UD2A.231203.041.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/48aba4ebbb">48aba4ebbb</a> :  Version bump to UD2A.231203.040.S1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/56842f4fc6">56842f4fc6</a> :  Version bump to UD2A.231203.041 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e055f41e23">e055f41e23</a> :  Version bump to UD2A.231203.040.X2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/035b358eb0">035b358eb0</a> :  Version bump to UD2A.231203.040.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/24e7925cd3">24e7925cd3</a> :  Version bump to UD2A.231203.040 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d40b1d08c9">d40b1d08c9</a> :  Version bump to UD2A.231203.039 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/150c475dad">150c475dad</a> :  Version bump to UD2A.231203.034.U1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/75f8503b68">75f8503b68</a> :  Version bump to UD2A.231203.035.U3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5ad84451f2">5ad84451f2</a> :  Version bump to UD2A.231203.034.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a1730108a6">a1730108a6</a> :  Version bump to UD2A.231203.035.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9fad39ab1e">9fad39ab1e</a> :  Version bump to UD2A.231203.038 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0354ead06c">0354ead06c</a> :  Version bump to UD2A.240205.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b8a7edc272">b8a7edc272</a> :  Version bump to UD2A.231203.035.U2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2bcaa93d00">2bcaa93d00</a> :  Version bump to UD2A.231203.036 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/dcb112868a">dcb112868a</a> :  Version bump to UD2A.231203.035.Y1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f418aae56d">f418aae56d</a> :  Version bump to UD2A.231203.035.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2435ec09b0">2435ec09b0</a> :  Version bump to UD2A.231203.035.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ec5788dd1d">ec5788dd1d</a> :  Version bump to UD2A.231203.035.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c10444c344">c10444c344</a> :  Version bump to UD2A.231203.035 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2891e932d3">2891e932d3</a> :  Version bump to UD2A.231203.034.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2577c7fb2b">2577c7fb2b</a> :  Version bump to UD2A.231203.034 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0518e3422c">0518e3422c</a> :  Version bump to UD2A.231203.033 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d39d4568ec">d39d4568ec</a> :  Version bump to UD2A.231203.032 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/59f9b49c93">59f9b49c93</a> :  Version bump to UD2A.231203.031.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/090034b32b">090034b32b</a> :  Version bump to UD2A.231203.031 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8b4f45351f">8b4f45351f</a> :  Version bump to UD2A.231203.026.Y3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0ef108c333">0ef108c333</a> :  Version bump to UD2A.231203.030 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8d8f14ffd2">8d8f14ffd2</a> :  Version bump to UD2A.231203.029 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1aed55bf71">1aed55bf71</a> :  RESTRICT AUTOMERGE Update Security String to 2024-02-05<br />
+<a href="https://android.googlesource.com/platform/build/+/1e3b9c6757">1e3b9c6757</a> :  Version bump to UD2A.231203.026.U1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/623d2478df">623d2478df</a> :  Version bump to UD2A.231203.026.Y1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f727422de7">f727422de7</a> :  Version bump to UD2A.231203.026.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0266574fef">0266574fef</a> :  Version bump to UD2A.231203.028 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a1eac791bd">a1eac791bd</a> :  RESTRICT AUTOMERGE Update Security String to 2024-02-05<br />
+<a href="https://android.googlesource.com/platform/build/+/c0c1628ea6">c0c1628ea6</a> :  Version bump to UD2A.231203.026.X2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/89265375d0">89265375d0</a> :  RESTRICT AUTOMERGE Update Security String to 2024-02-05<br />
+<a href="https://android.googlesource.com/platform/build/+/1af6fdc0a6">1af6fdc0a6</a> :  RESTRICT AUTOMERGE Update Security String to 2024-02-05<br />
+<a href="https://android.googlesource.com/platform/build/+/9a7a904933">9a7a904933</a> :  Version bump to UD2A.231203.026 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/848c450994">848c450994</a> :  Version bump to UD2A.231203.025.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d583559389">d583559389</a> :  Version bump to UD2A.231203.025 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/271b8fea91">271b8fea91</a> :  Version bump to UD2A.231203.024.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/03df21a22c">03df21a22c</a> :  Version bump to UD2A.231203.024 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3259f80a8d">3259f80a8d</a> :  Version bump to UD2A.231203.023 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e31776f0f2">e31776f0f2</a> :  Version bump to UD2A.231203.022.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0df412e60a">0df412e60a</a> :  Version bump to UD2A.231203.022 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/457a749dde">457a749dde</a> :  Version bump to UD2A.231203.020.U1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/113a2ca2ad">113a2ca2ad</a> :  Version bump to UD2A.231203.021 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/713bde9e00">713bde9e00</a> :  Version bump to UD2A.231203.020.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ff400ff8bd">ff400ff8bd</a> :  Version bump to UD2A.231203.020 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/22049bc7a9">22049bc7a9</a> :  Version bump to UD2A.231203.019 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2ed713d47b">2ed713d47b</a> :  Version bump to UD2A.231203.018 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3312befaee">3312befaee</a> :  Version bump to UD2A.231203.017 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d179b349cc">d179b349cc</a> :  Version bump to UD2A.231203.016.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/cb50c3e0e6">cb50c3e0e6</a> :  Version bump to UD2A.231203.016 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/085ba41f63">085ba41f63</a> :  Version bump to UD2A.231203.015 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6f74ab8675">6f74ab8675</a> :  Version bump to UD2A.231203.014.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/633ffd9062">633ffd9062</a> :  Version bump to UD2A.231203.014 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/37fa59afc2">37fa59afc2</a> :  Version bump to UD2A.231203.013 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/56f464bb5f">56f464bb5f</a> :  Version bump to UD2A.231203.012 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0cdbd07df8">0cdbd07df8</a> :  Version bump to UD2A.231203.011.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5089f97e5d">5089f97e5d</a> :  Version bump to UD2A.231203.011 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/628ef4871a">628ef4871a</a> :  Version bump to UD2A.231203.010.U1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/112df743c0">112df743c0</a> :  Version bump to UD2A.231203.010.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9a0fe6ca1d">9a0fe6ca1d</a> :  Version bump to UD2A.231203.010.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ad7b6f311e">ad7b6f311e</a> :  Version bump to UD2A.231203.010.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/73703cf120">73703cf120</a> :  Version bump to UD2A.231203.010 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6f7247da2f">6f7247da2f</a> :  Version bump to UD2A.231203.009.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/21adb8c8b9">21adb8c8b9</a> :  Version bump to UD2A.231203.009 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ba6b579627">ba6b579627</a> :  Version bump to UD2A.231203.008.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c2d9bf0685">c2d9bf0685</a> :  Version bump to UD2A.231203.008 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/aabb39838c">aabb39838c</a> :  Version bump to UD2A.231203.004.Y1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/42fc8f99c9">42fc8f99c9</a> :  Version bump to UD2A.231203.004.X3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/db102803ac">db102803ac</a> :  Version bump to UD2A.231203.004.X2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/075154dd72">075154dd72</a> :  Version bump to UD2A.231203.004.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3b6bba80c7">3b6bba80c7</a> :  Version bump to UD2A.231203.007 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8fcec747f5">8fcec747f5</a> :  Version bump to UD2A.231203.006 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/eef5307963">eef5307963</a> :  Version bump to UD2A.231203.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d2a0465175">d2a0465175</a> :  Version bump to UD2A.231203.004.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b96cb17045">b96cb17045</a> :  Version bump to UD2A.231203.004.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b62dd14c85">b62dd14c85</a> :  Version bump to UD2A.231203.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2407e03aa1">2407e03aa1</a> :  Version bump to UD2A.231203.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f144ac75e4">f144ac75e4</a> :  Version bump to UD2A.231203.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/456b48ba33">456b48ba33</a> :  Version bump to UD2A.231130.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8935f25326">8935f25326</a> :  Version bump to UD2A.231130.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/98be6a8c64">98be6a8c64</a> :  Version bump to UD2A.231128.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/55d5ca75c5">55d5ca75c5</a> :  Version bump to UD2A.231123.001.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/074f45aa62">074f45aa62</a> :  Version bump to UD2A.231123.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0456239758">0456239758</a> :  Version bump to UD2A.231123.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/dc7f73063c">dc7f73063c</a> :  Version bump to UD2A.231116.001.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0e36763a7f">0e36763a7f</a> :  Version bump to UD2A.231116.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/57089082a9">57089082a9</a> :  Version bump to UD2A.231116.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/85cc38a907">85cc38a907</a> :  Version bump to UD2A.231113.001.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/86e8e96806">86e8e96806</a> :  Version bump to UD2A.231109.001.A5 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/084cce4e60">084cce4e60</a> :  Version bump to UD2A.231110.001.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a771046397">a771046397</a> :  Version bump to UD2A.231109.001.A4 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bde80d059a">bde80d059a</a> :  Version bump to UD2A.231109.001.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/37db29dcef">37db29dcef</a> :  Version bump to UD2A.231109.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/df71da91cf">df71da91cf</a> :  Version bump to UD2A.231109.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/06b13a238d">06b13a238d</a> :  Version bump to UD2A.231108.001.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b6ef83ff6f">b6ef83ff6f</a> :  Version bump to UD2A.231102.001.C1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ac0a07c577">ac0a07c577</a> :  Version bump to UD2A.231107.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6b56aa8afb">6b56aa8afb</a> :  Version bump to UD2A.231026.001.A5 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e59daba8fe">e59daba8fe</a> :  Version bump to UD2A.231102.001.B2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/384fb5432b">384fb5432b</a> :  Version bump to UD2A.231102.001.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/55203aa580">55203aa580</a> :  Version bump to UD2A.231102.001.A5 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b81bb38ddc">b81bb38ddc</a> :  Version bump to UD2A.231102.001.A4 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c440b38c17">c440b38c17</a> :  Version bump to UD2A.231102.001.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d6219e372d">d6219e372d</a> :  Version bump to UD2A.231102.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4e4f928ffb">4e4f928ffb</a> :  Version bump to UD2A.231102.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bbdae8f682">bbdae8f682</a> :  Version bump to UD2A.231031.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/93849a99d6">93849a99d6</a> :  Version bump to UD2A.231026.001.A4 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ffb2e2029c">ffb2e2029c</a> :  Version bump to UD2A.231026.001.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0b200e2acd">0b200e2acd</a> :  Version bump to UD2A.231026.001.T1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/51c8a768d6">51c8a768d6</a> :  Version bump to UD2A.231026.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d722ec52f9">d722ec52f9</a> :  Version bump to UD2A.231026.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7183a3d8bb">7183a3d8bb</a> :  Version bump to UD2A.231024.001.R1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/cfc034fb7c">cfc034fb7c</a> :  Version bump to UD2A.231019.001.S2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5bcf7e4339">5bcf7e4339</a> :  Version bump to UD2A.231019.001.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ed30b199e4">ed30b199e4</a> :  Version bump to UD2A.231019.001.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0b2eaf9e8f">0b2eaf9e8f</a> :  Version bump to UD2A.231019.001.S1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e8ce8694a3">e8ce8694a3</a> :  Version bump to UD2A.231019.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/85c4bf4656">85c4bf4656</a> :  Version bump to UD2A.231019.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/73da4f5cb1">73da4f5cb1</a> :  Version bump to UD2A.231018.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9238cdcddb">9238cdcddb</a> :  Version bump to UD2A.231012.001.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d91a165f9f">d91a165f9f</a> :  Version bump to UD2A.231012.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2ea1f884e7">2ea1f884e7</a> :  Version bump to UD2A.231012.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bba7091215">bba7091215</a> :  Version bump to UD2A.231005.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a0808c2d0f">a0808c2d0f</a> :  Version bump to UD2A.231002.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c8949e1b32">c8949e1b32</a> :  Version bump to UD2A.231004.001.W1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5ddf7e4591">5ddf7e4591</a> :  Version bump to UD2A.231002.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6bb54eac70">6bb54eac70</a> :  Version bump to UD2A.231002.001.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/fdaa4f5da6">fdaa4f5da6</a> :  Version bump to UD2A.230927.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8a9f3347b4">8a9f3347b4</a> :  Version bump to UD2A.230921.002.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b5fffb19a5">b5fffb19a5</a> :  Version bump to UD2A.230921.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a4364ac766">a4364ac766</a> :  Version bump to UD2A.230919.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/45a783bbbd">45a783bbbd</a> :  Version bump to UD2A.230918.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3a65224d31">3a65224d31</a> :  Version bump to UD2A.230914.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/25039d8d6c">25039d8d6c</a> :  Version bump to UD2A.230915.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3b5aa06630">3b5aa06630</a> :  Version bump to UD2A.230914.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9e9df87d86">9e9df87d86</a> :  Version bump to UD2A.230912.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/72233c44bc">72233c44bc</a> :  Version bump to UD2A.230911.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c3f07b4fd2">c3f07b4fd2</a> :  Version bump to UD2A.230907.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/901a69f78d">901a69f78d</a> :  Version bump to UD2A.230907.001.D1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2dce56d28c">2dce56d28c</a> :  Version bump to UD2A.230907.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2850d50d88">2850d50d88</a> :  Version bump to UD2A.230906.001.D1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/12cc041141">12cc041141</a> :  Version bump to UD2A.230905.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/792cb315c0">792cb315c0</a> :  Version bump to UD2A.230831.002.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f86c0e2b6b">f86c0e2b6b</a> :  Version bump to UD2A.230831.002.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c7e3512f47">c7e3512f47</a> :  Version bump to UD2A.230831.002.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8e592a1e96">8e592a1e96</a> :  Version bump to UD2A.230831.002.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/06aab5d418">06aab5d418</a> :  Version bump to UD2A.230824.001.A4 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f778aca6ab">f778aca6ab</a> :  Version bump to UD2A.230824.001.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6c06fabf71">6c06fabf71</a> :  Version bump to UD2A.230824.001.C1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9087cde697">9087cde697</a> :  Version bump to UD2A.230824.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/797defe9a7">797defe9a7</a> :  Version bump to UD2A.230824.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5fb35ff4ca">5fb35ff4ca</a> :  Version bump to UD2A.230823.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/84c820ce7d">84c820ce7d</a> :  Version bump to UD2A.230817.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d51c457239">d51c457239</a> :  Version bump to UD2A.230817.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bd0b9bf6ea">bd0b9bf6ea</a> :  Version bump to UD2A.230810.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/997e931685">997e931685</a> :  Version bump to UD2A.230810.001.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b70e38fc9e">b70e38fc9e</a> :  Version bump to UD2A.230802.001.B2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d40c8659b4">d40c8659b4</a> :  Version bump to UD2A.230810.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5d4bf4e531">5d4bf4e531</a> :  Version bump to UD2A.230802.001.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/44fd7d0cb4">44fd7d0cb4</a> :  Version bump to UD2A.230802.001.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bc2a38596c">bc2a38596c</a> :  Version bump to UD2A.230802.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f768e66c7f">f768e66c7f</a> :  Version bump to UD2A.230802.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0cda2ac8c0">0cda2ac8c0</a> :  Version bump to UD2A.230728.002.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ecd4aefed1">ecd4aefed1</a> :  Version bump to UD2A.230728.002.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d53f6be3db">d53f6be3db</a> :  Version bump to UD2A.230728.002.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/adef7d6d3a">adef7d6d3a</a> :  Version bump to UD2A.230728.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3bd44ae20a">3bd44ae20a</a> :  Version bump to UD2A.230726.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6e577641e3">6e577641e3</a> :  Version bump to UD2A.230726.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a9d914e117">a9d914e117</a> :  Version bump to UD2A.230725.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1e66217a62">1e66217a62</a> :  Version bump to UD2A.230724.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/34d0d98b97">34d0d98b97</a> :  Version bump to UD2A.230724.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1ba55c7de1">1ba55c7de1</a> :  Version bump to UD2A.230724.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/36a377db2d">36a377db2d</a> :  Version bump to UD2A.230720.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/57bb69b09d">57bb69b09d</a> :  Version bump to UD2A.230718.001.A2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5b5a0d0665">5b5a0d0665</a> :  Version bump to UD2A.230718.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4a08b18177">4a08b18177</a> :  Version bump to UD2A.230717.001.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f1afa85be8">f1afa85be8</a> :  Version bump to UD2A.230717.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4f8c5fbef0">4f8c5fbef0</a> :  Version bump to UD2A.230713.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/92942402da">92942402da</a> :  Version bump to UD2A.230713.001.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f87d8daa64">f87d8daa64</a> :  Version bump to UD2A.230712.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/201c1668ae">201c1668ae</a> :  Version bump to UD2A.230711.001.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f0685a84b1">f0685a84b1</a> :  Version bump to UD2A.230710.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bfa421ee6b">bfa421ee6b</a> :  Version bump to UD2A.230707.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b0143d5160">b0143d5160</a> :  Version bump to UD2A.230706.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7304af16ed">7304af16ed</a> :  Version bump to UD2A.230705.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b225332172">b225332172</a> :  Version bump to UD2A.230628.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c504b6c70e">c504b6c70e</a> :  Version bump to UD2A.230616.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0d28017dd5">0d28017dd5</a> :  Version bump to UD2A.230615.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6d29a3af6b">6d29a3af6b</a> :  Version bump to UD2A.230614.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d4efa8235c">d4efa8235c</a> :  Version bump to UD2A.230614.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/02f2cd34c4">02f2cd34c4</a> :  Version bump to UD2A.230608.001 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/2d224294f64">2d224294f64</a> :  [DO NOT MERGE] Expose RRO completion signal<br />
+<a href="https://android.googlesource.com/platform/cts/+/5ff9acfa8af">5ff9acfa8af</a> :  Merge "Add device side metric collector to camera instrumentation tests. This enable users to specify the instrumentation test plugin in ATP config. Please check cl/582196466 to see how the device collectors been used in ATP config." into android14-tests-dev am: 7ab76f400c am: 3070add24a am: a76809095b<br />
+<a href="https://android.googlesource.com/platform/cts/+/f178b06b915">f178b06b915</a> :  Conditionalize the ANR at app startup CTS<br />
+<a href="https://android.googlesource.com/platform/cts/+/7b60655c5ab">7b60655c5ab</a> :  Conditionalize the ANR at app startup CTS<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_shusky-show" class="showLink" onclick="show('device_google_shusky');return false;">+</a><a href="#" id="device_google_shusky-hide" class="hideLink" onclick="hide('device_google_shusky');return false;">-</a>&nbsp;<a name="device_google_shusky" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/shusky">device/google/shusky</a></h2>
+<div id="device_google_shusky"><a href="https://android.googlesource.com/device/google/shusky/+/6d09321">6d09321</a> :  DO NOT MERGE displayport: Move displayport configuration to device.<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_zuma-show" class="showLink" onclick="show('device_google_zuma');return false;">+</a><a href="#" id="device_google_zuma-hide" class="hideLink" onclick="hide('device_google_zuma');return false;">-</a>&nbsp;<a name="device_google_zuma" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/zuma">device/google/zuma</a></h2>
+<div id="device_google_zuma"><a href="https://android.googlesource.com/device/google/zuma/+/d3ff229">d3ff229</a> :  config: Use carrier config in ROM by default<br />
+<a href="https://android.googlesource.com/device/google/zuma/+/630388c">630388c</a> :  Fine tune media_codecs_performance_c2.xml<br />
+<a href="https://android.googlesource.com/device/google/zuma/+/4e43941">4e43941</a> :  Update media_codecs_performance_c2.xml for meet device performance<br />
+<a href="https://android.googlesource.com/device/google/zuma/+/9d034a1">9d034a1</a> :  Update media_codecs_performance_c2.xml for meet device performance<br />
+<a href="https://android.googlesource.com/device/google/zuma/+/728e04d">728e04d</a> :  Update media_codecs_performance_c2.xml for meet device performance<br />
+<a href="https://android.googlesource.com/device/google/zuma/+/dee437f">dee437f</a> :  Update default color temperature for night light<br />
+<a href="https://android.googlesource.com/device/google/zuma/+/3a8b823">3a8b823</a> :  zuma: change swap_free_low_percentage to 10<br />
+<a href="https://android.googlesource.com/device/google/zuma/+/c6923b1">c6923b1</a> :  Revert "Sched lib affinity and freq settings"<br />
+<a href="https://android.googlesource.com/device/google/zuma/+/1f71921">1f71921</a> :  DO NOT MERGE displayport: Move sysprop for enabling DP to device level<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_zuma-sepolicy-show" class="showLink" onclick="show('device_google_zuma-sepolicy');return false;">+</a><a href="#" id="device_google_zuma-sepolicy-hide" class="hideLink" onclick="hide('device_google_zuma-sepolicy');return false;">-</a>&nbsp;<a name="device_google_zuma-sepolicy" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/zuma-sepolicy">device/google/zuma-sepolicy</a></h2>
+<div id="device_google_zuma-sepolicy"><a href="https://android.googlesource.com/device/google/zuma-sepolicy/+/7a13e38">7a13e38</a> :  Change the type of hw_jpg_device for selinux policy so that the GCA release flavor could access hw_jpg_device<br />
+<a href="https://android.googlesource.com/device/google/zuma-sepolicy/+/a5cdcb8">a5cdcb8</a> :  Change the type of hw_jpg_device for selinux policy so that the GCA release flavor could access hw_jpg_device<br />
+<a href="https://android.googlesource.com/device/google/zuma-sepolicy/+/b5c5724">b5c5724</a> :  Change the type of hw_jpg_device for selinux policy so that the GCA release flavor could access hw_jpg_device<br />
+<a href="https://android.googlesource.com/device/google/zuma-sepolicy/+/d55150b">d55150b</a> :  Allows modem_svc to read the logging related properties<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_perfetto-show" class="showLink" onclick="show('platform_external_perfetto');return false;">+</a><a href="#" id="platform_external_perfetto-hide" class="hideLink" onclick="hide('platform_external_perfetto');return false;">-</a>&nbsp;<a name="platform_external_perfetto" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/perfetto">platform/external/perfetto</a></h2>
+<div id="platform_external_perfetto"><a href="https://android.googlesource.com/platform/external/perfetto/+/fe2bd961bd">fe2bd961bd</a> :  traced: make CloneReadOnly() copy only used portion of the buffer<br />
+<a href="https://android.googlesource.com/platform/external/perfetto/+/3c9f739daa">3c9f739daa</a> :  traced: make CloneReadOnly() copy only used portion of the buffer<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_scudo-show" class="showLink" onclick="show('platform_external_scudo');return false;">+</a><a href="#" id="platform_external_scudo-hide" class="hideLink" onclick="hide('platform_external_scudo');return false;">-</a>&nbsp;<a name="platform_external_scudo" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/scudo">platform/external/scudo</a></h2>
+<div id="platform_external_scudo"><a href="https://android.googlesource.com/platform/external/scudo/+/f7b5b51573c">f7b5b51573c</a> :  [scudo] Add StackDepot lock to enable/disable. (#79670)<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_sqlite-show" class="showLink" onclick="show('platform_external_sqlite');return false;">+</a><a href="#" id="platform_external_sqlite-hide" class="hideLink" onclick="hide('platform_external_sqlite');return false;">-</a>&nbsp;<a name="platform_external_sqlite" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/sqlite">platform/external/sqlite</a></h2>
+<div id="platform_external_sqlite"><a href="https://android.googlesource.com/platform/external/sqlite/+/7e5abda">7e5abda</a> :  Upgrade SQLite to version 3.42.0<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_wpa_supplicant_8-show" class="showLink" onclick="show('platform_external_wpa_supplicant_8');return false;">+</a><a href="#" id="platform_external_wpa_supplicant_8-hide" class="hideLink" onclick="hide('platform_external_wpa_supplicant_8');return false;">-</a>&nbsp;<a name="platform_external_wpa_supplicant_8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/wpa_supplicant_8">platform/external/wpa_supplicant_8</a></h2>
+<div id="platform_external_wpa_supplicant_8"><a href="https://android.googlesource.com/platform/external/wpa_supplicant_8/+/473cde65">473cde65</a> :  Handling pmk addition in supplicant cache for 80211x connections<br />
+<a href="https://android.googlesource.com/platform/external/wpa_supplicant_8/+/36a76d9d">36a76d9d</a> :  Handling pmk addition in supplicant cache for 80211x connections<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/d75395e555">d75395e555</a> :  Fix out of bounds read and write in onQueueFilled in outQueue<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/9162099002">9162099002</a> :  SoftVideoDecodeOMXComponent: validate OMX params for dynamic HDR<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/b56955b398">b56955b398</a> :  Fix out of bounds read and write in onQueueFilled in outQueue<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/15f02d68b6">15f02d68b6</a> :  SoftVideoDecodeOMXComponent: validate OMX params for dynamic HDR<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/f4b721eae8">f4b721eae8</a> :  Add RWLock when accessing tee patches.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/d8072bcb9dd1">d8072bcb9dd1</a> :  Add sim io error to absent list<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/346aa84a7ce5">346aa84a7ce5</a> :  Prevent Sysui crash when user is deleted.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4e595b2863af">4e595b2863af</a> :  Honor retry timer from setup data call response for emergency request<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bd898a22ddfe">bd898a22ddfe</a> :  Prevent Sysui crash when user is deleted.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/659b7b11455d">659b7b11455d</a> :  Honor retry timer from setup data call response for emergency request<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/57b6233a6b16">57b6233a6b16</a> :  Disallow system apps to be installed/updated as instant.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bef1450874ac">bef1450874ac</a> :  Validate package names passed to the installer.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6445db8de713">6445db8de713</a> :  Disallow system apps to be installed/updated as instant.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1710b130a8ca">1710b130a8ca</a> :  Show floating rotation button regardless of ime status<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/19544736ec33">19544736ec33</a> :  Expose RRO completion signal<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9981659a9598">9981659a9598</a> :  Clearing PRIORITY_FLICKER_RR votes on low power mode on<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4a4b419a094c">4a4b419a094c</a> :  Close AccountManagerService.session after timeout.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9955020e0579">9955020e0579</a> :  Always sync user restriction state to UserManager<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/28d65f10eeed">28d65f10eeed</a> :  Close AccountManagerService.session after timeout.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4ea0c7a9b753">4ea0c7a9b753</a> :  Always sync user restriction state to UserManager<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a0ad7d056665">a0ad7d056665</a> :  Update surface visibility state when forcing visible<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/18387ec924d6">18387ec924d6</a> :  [speech] unbind from recognition service<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/abd4c888bffe">abd4c888bffe</a> :  Disallow startAssist while lock task mode (kiosk) is active.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/435228ad01fc">435228ad01fc</a> :  Fix method not found for NotProvisionedException hidden api<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4bd2f7a98888">4bd2f7a98888</a> :  Improve QrCodeGenerator.encodeQrCode performance<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d2ce7bcd0bca">d2ce7bcd0bca</a> :  Fix issue where location_hardware_provider is delivered through the passive provider<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/da4ac27be259">da4ac27be259</a> :  Fix issue where location_hardware_provider is delivered through the passive provider<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9935822f3991">9935822f3991</a> :  Fix issue where location_hardware_provider is delivered through the passive provider<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5d53bc1a6ca8">5d53bc1a6ca8</a> :  Revert "[CDM] Support Perm Sync toggle setting"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e35846580f7c">e35846580f7c</a> :  Revert "Enable wait for finish attach application"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/754408d46376">754408d46376</a> :  Revert "Enable wait for finish attach application"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a6dcf5bcacd9">a6dcf5bcacd9</a> :  Set transient launch after collecting for recent at keyguard<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/14de92b47c32">14de92b47c32</a> :  Revert "Set transientlaunch before starting transient activity"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a26343fecc9b">a26343fecc9b</a> :  Revert "Dialog color tokens"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/881a1aeb0610">881a1aeb0610</a> :  Revert "Migrate to new color tokens"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/72a5e38179c7">72a5e38179c7</a> :  Revert "Dialog color tokens"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d2e29ec70730">d2e29ec70730</a> :  Revert "Migrate to new color tokens"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/27d7cef49cdc">27d7cef49cdc</a> :  Revert "[CS] Make NPVC and QuickSettingsController singletons."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/167969df2516">167969df2516</a> :  Revert "No sensors support in DDC rework"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/d54277e589">d54277e589</a> :  Sync MT slots on reset and buffer overflow<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/b56cd8a0c3">b56cd8a0c3</a> :  Skip get target SDK for VNDK client on aidl<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/b79e751bef">b79e751bef</a> :  SF: make RenderEngineThreaded::waitUntilInitialized more efficient<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/4b28d6e435">4b28d6e435</a> :  SF: fix binder thread priority<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/b0b75ad884">b0b75ad884</a> :  Fix green line issue when playing 1080p HDR video on Youtube.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/8420770cbf">8420770cbf</a> :  [DO NOT MERGE] Support TUW_DRAG on PCI change for NR NSA<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/d331ebeb37">d331ebeb37</a> :  Honor retry timer from setup data call response for emergency request<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/9e0b437f3a">9e0b437f3a</a> :  [DO NOT MERGE] Support TUW_DRAG on PCI change for NR NSA<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/d73db3f036">d73db3f036</a> :  Honor retry timer from setup data call response for emergency request<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/9eca5f272b">9eca5f272b</a> :  Change updateVoNrSettings() to check the state of of the IccCard instead of mSimState<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/956e7d3cc4">956e7d3cc4</a> :  Change updateVoNrSettings() to check the state of of the IccCard instead of mSimState<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/a8f7012720">a8f7012720</a> :  Change updateVoNrSettings() to check the state of of the IccCard instead of mSimState<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/7598a58064">7598a58064</a> :  Check transport when unthrottle<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/6476f85e75">6476f85e75</a> :  Revert "DataCallSessionStats captures Cross-SIM calling"<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/31c6e2ec90">31c6e2ec90</a> :  Revert "DataCallSessionStats captures Cross-SIM calling"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_google_graphics_common-show" class="showLink" onclick="show('platform_hardware_google_graphics_common');return false;">+</a><a href="#" id="platform_hardware_google_graphics_common-hide" class="hideLink" onclick="hide('platform_hardware_google_graphics_common');return false;">-</a>&nbsp;<a name="platform_hardware_google_graphics_common" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/google/graphics/common">platform/hardware/google/graphics/common</a></h2>
+<div id="platform_hardware_google_graphics_common"><a href="https://android.googlesource.com/platform/hardware/google/graphics/common/+/545857ad">545857ad</a> :  libhwc2.1: skip applying pending config only in power on mode<br />
+<a href="https://android.googlesource.com/platform/hardware/google/graphics/common/+/9c782317">9c782317</a> :  libhwc2.1: Add debug log for applyPendingConfig()<br />
+<a href="https://android.googlesource.com/platform/hardware/google/graphics/common/+/a46b8a8b">a46b8a8b</a> :  libhwc2.1: Fix incorrect DRM_FORMAT for RGBA_FP16<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_st_nfc-show" class="showLink" onclick="show('platform_hardware_st_nfc');return false;">+</a><a href="#" id="platform_hardware_st_nfc-hide" class="hideLink" onclick="hide('platform_hardware_st_nfc');return false;">-</a>&nbsp;<a name="platform_hardware_st_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/st/nfc">platform/hardware/st/nfc</a></h2>
+<div id="platform_hardware_st_nfc"><a href="https://android.googlesource.com/platform/hardware/st/nfc/+/61cec3d">61cec3d</a> :  Update mHalWrapperState mReadFwConfigDone before send<br />
+<a href="https://android.googlesource.com/platform/hardware/st/nfc/+/38b80a5">38b80a5</a> :  Set 1000 ms timeout for HAL_WRAPPER_STATE_PROP_CONFIG<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/cfb780d7ea">cfb780d7ea</a> :  Add flag guard to hover actions in TouchInteractionService.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/75d40159fd">75d40159fd</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/a1370c4929">a1370c4929</a> :  Fixing crash when using multi-window<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/d844c5409b">d844c5409b</a> :  Revert "Put the "floating" in ENABLE_FLOATING_SEARCH_BAR."<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/4e3b86f2fe">4e3b86f2fe</a> :  Revert "Allow LauncherState to define floating search side margins."<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/2a13e296eb">2a13e296eb</a> :  Revert "Put the "floating" in ENABLE_FLOATING_SEARCH_BAR."<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/0248156e4c">0248156e4c</a> :  Revert "Allow LauncherState to define floating search side margins."<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/c22ac4300">c22ac4300</a> :  Handle CloudDPC Cancel_setup gracefully.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/4db2a1c9d">4db2a1c9d</a> :  FinalizationActivity executed without work profile<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/33a2dbcb019">33a2dbcb019</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/2bc5a45c8f4">2bc5a45c8f4</a> :  Using ACTION_SIM_CARD_STATE_CHANGED to detect simSlotMapping is complete<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/b2b6ebb88d8">b2b6ebb88d8</a> :  Check isSimHardwareVisible earlier<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/bfd9424407e">bfd9424407e</a> :  Async load eid in SimEidPreferenceController<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/5cd5654dcf6">5cd5654dcf6</a> :  Add pace for UdfpsEnrollHelper<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/da90003e8ec">da90003e8ec</a> :  Add pace for UdfpsEnrollHelper<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/217fcbbb677">217fcbbb677</a> :  [CDM Perm Sync] Fix a NPE for Perm Sync toggle<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/04ec6a89537">04ec6a89537</a> :  Revert "[CDM] Add Permissions Sync toggle"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_ThemePicker-show" class="showLink" onclick="show('platform_packages_apps_ThemePicker');return false;">+</a><a href="#" id="platform_packages_apps_ThemePicker-hide" class="hideLink" onclick="hide('platform_packages_apps_ThemePicker');return false;">-</a>&nbsp;<a name="platform_packages_apps_ThemePicker" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ThemePicker">platform/packages/apps/ThemePicker</a></h2>
+<div id="platform_packages_apps_ThemePicker"><a href="https://android.googlesource.com/platform/packages/apps/ThemePicker/+/4700dd49">4700dd49</a> :  Set initial state of themed icon repository<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_WallpaperPicker2-show" class="showLink" onclick="show('platform_packages_apps_WallpaperPicker2');return false;">+</a><a href="#" id="platform_packages_apps_WallpaperPicker2-hide" class="hideLink" onclick="hide('platform_packages_apps_WallpaperPicker2');return false;">-</a>&nbsp;<a name="platform_packages_apps_WallpaperPicker2" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/WallpaperPicker2">platform/packages/apps/WallpaperPicker2</a></h2>
+<div id="platform_packages_apps_WallpaperPicker2"><a href="https://android.googlesource.com/platform/packages/apps/WallpaperPicker2/+/31682c39">31682c39</a> :  Revert^2 "Remove preview refresh on themed icon update"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_HealthFitness-show" class="showLink" onclick="show('platform_packages_modules_HealthFitness');return false;">+</a><a href="#" id="platform_packages_modules_HealthFitness-hide" class="hideLink" onclick="hide('platform_packages_modules_HealthFitness');return false;">-</a>&nbsp;<a name="platform_packages_modules_HealthFitness" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/HealthFitness">platform/packages/modules/HealthFitness</a></h2>
+<div id="platform_packages_modules_HealthFitness"><a href="https://android.googlesource.com/platform/packages/modules/HealthFitness/+/2e6baca0">2e6baca0</a> :  Exclude exercise routes from ExerciseSessionRecord changelogs.<br />
+<a href="https://android.googlesource.com/platform/packages/modules/HealthFitness/+/cd374e45">cd374e45</a> :  Exclude exercise routes from ExerciseSessionRecord changelogs.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_ImsMedia-show" class="showLink" onclick="show('platform_packages_modules_ImsMedia');return false;">+</a><a href="#" id="platform_packages_modules_ImsMedia-hide" class="hideLink" onclick="hide('platform_packages_modules_ImsMedia');return false;">-</a>&nbsp;<a name="platform_packages_modules_ImsMedia" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/ImsMedia">platform/packages/modules/ImsMedia</a></h2>
+<div id="platform_packages_modules_ImsMedia"><a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/172b1306">172b1306</a> :  Added changes to handle negotiated cmr value in PayloadEncoder side as well as identifying the frame type.<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/5fb3993c">5fb3993c</a> :  Hide Configuration Menu for production builds<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/94215384">94215384</a> :  Add unit test cases for WakeLockManager<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/96750f5f">96750f5f</a> :  Add wakelock management to avoid process suspend in Doze mode.<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/82c631ea">82c631ea</a> :  Change the logic to detect duplicated packet<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/84ddf14c">84ddf14c</a> :  Fix JBM to start as initial state when the ssrc changing called<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/d87758e1">d87758e1</a> :  Added log for wifi burst case.<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/9709a6f3">9709a6f3</a> :  Do not report call quality in NO_FLOW state<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/cff933ec">cff933ec</a> :  Revert "Do not report call quality in NO_FLOW state"<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/98dcd41b">98dcd41b</a> :  Do not report call quality in NO_FLOW state<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ImsMedia/+/186f0aab">186f0aab</a> :  Update Call Quality calculations and message freq<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Iwlan-show" class="showLink" onclick="show('platform_packages_services_Iwlan');return false;">+</a><a href="#" id="platform_packages_services_Iwlan-hide" class="hideLink" onclick="hide('platform_packages_services_Iwlan');return false;">-</a>&nbsp;<a name="platform_packages_services_Iwlan" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Iwlan">platform/packages/services/Iwlan</a></h2>
+<div id="platform_packages_services_Iwlan"><a href="https://android.googlesource.com/platform/packages/services/Iwlan/+/8dd03ee">8dd03ee</a> :  ePDG Server address decoding from PCO data<br />
+<a href="https://android.googlesource.com/platform/packages/services/Iwlan/+/0a19e9f">0a19e9f</a> :  Add a delay in deactivateDataCall for handovers<br />
+<a href="https://android.googlesource.com/platform/packages/services/Iwlan/+/b95db5c">b95db5c</a> :  Add IwlanCarrierConfig for Default Non-AOSP Carrier Configurations<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/3222d1038">3222d1038</a> :  Prevent auto-routing to wearable devices.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/b8c498d0d">b8c498d0d</a> :  DO NOT MERGE Ensure the associated call count is accurately tracked for RCS.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/d747075df">d747075df</a> :  DO NOT MERGE: Add 028, 116000 normal routed emergency numbers for "ES".<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telephony/+/bba337f80">bba337f80</a> :  Remove PL emergency numbers.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telephony/+/337b671e2">337b671e2</a> :  DO NOT MERGE DSDA: Set call EXTRA if either sub doesn't allow hold<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telephony/+/846970af6">846970af6</a> :  Load default data subid on create<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_memory_lmkd-show" class="showLink" onclick="show('platform_system_memory_lmkd');return false;">+</a><a href="#" id="platform_system_memory_lmkd-hide" class="hideLink" onclick="hide('platform_system_memory_lmkd');return false;">-</a>&nbsp;<a name="platform_system_memory_lmkd" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/memory/lmkd">platform/system/memory/lmkd</a></h2>
+<div id="platform_system_memory_lmkd"><a href="https://android.googlesource.com/platform/system/memory/lmkd/+/6a5846e">6a5846e</a> :  lmkd: Kill cached apps when thrashing or below low watermark<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
