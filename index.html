@@ -4,11 +4,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" >
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./assets/style.css" >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -18,20 +18,19 @@
 </head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav"></ul>
+        </div>
     </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      </ul>
-    </div>
-  </div>
 </div>
 
 <div class="container">
@@ -43,11 +42,11 @@
     <div class="row">
         <div class="col-md-12">
             <ul class="nav nav-tabs" id="navTabs">
-              <li class="active"><a href="#14" data-toggle="tab">14</a></li>
-              <li><a href="#13" data-toggle="tab">13</a></li>
-              <li><a href="#12L" data-toggle="tab">12L</a></li>
-              <li><a href="#12" data-toggle="tab">12</a></li>
-              <li><a href="#11" data-toggle="tab">11</a></li>
+                <li class="active"><a href="#14" data-toggle="tab">14</a></li>
+                <li><a href="#13" data-toggle="tab">13</a></li>
+                <li><a href="#12L" data-toggle="tab">12L</a></li>
+                <li><a href="#12" data-toggle="tab">12</a></li>
+                <li><a href="#11" data-toggle="tab">11</a></li>
             </ul>
 
             <div id="navTabsContent" class="tab-content">
@@ -96,7 +95,7 @@
                       <li><a href="android-14.0.0_r38-to-android-14.0.0_r39.html">android-14.0.0_r39 from android-14.0.0_r38</a></li>
                       <li><a href="android-14.0.0_r39-to-android-14.0.0_r40.html">android-14.0.0_r40 from android-14.0.0_r39</a></li>
                       <li><a href="android-14.0.0_r38-to-android-14.0.0_r41.html">android-14.0.0_r41 from android-14.0.0_r38</a></li>
-                      <li><a href="android-14.0.0_r41-to-android-14.0.0_r41.html">android-14.0.0_r42 from android-14.0.0_r41</a></li>
+                      <li><a href="android-14.0.0_r41-to-android-14.0.0_r42.html">android-14.0.0_r42 from android-14.0.0_r41</a></li>
                       <li><a href="android-14.0.0_r41-to-android-14.0.0_r43.html">android-14.0.0_r43 from android-14.0.0_r41</a></li>
                       <li><a href="android-14.0.0_r41-to-android-14.0.0_r44.html">android-14.0.0_r44 from android-14.0.0_r41</a></li>
                       <li><a href="android-14.0.0_r41-to-android-14.0.0_r45.html">android-14.0.0_r45 from android-14.0.0_r41</a></li>
@@ -117,6 +116,7 @@
 
                     <ul>
                       <li><a href="android-12.1.0_r1-to-android-13.0.0_r1.html">android-13.0.0_r1 from android-12.1.0_r1</a></li>
+                      <li><a href="android-13.0.0_r9-to-android-13.0.0_r1.html">android-13.0.0_r1 from android-13.0.0_r9</a></li>
                       <li><a href="android-13.0.0_r1-to-android-13.0.0_r2.html">android-13.0.0_r2 from android-13.0.0_r1</a></li>
                       <li><a href="android-13.0.0_r2-to-android-13.0.0_r3.html">android-13.0.0_r3 from android-13.0.0_r2</a></li>
                       <li><a href="android-13.0.0_r3-to-android-13.0.0_r4.html">android-13.0.0_r4 from android-13.0.0_r3</a></li>
@@ -125,7 +125,6 @@
                       <li><a href="android-13.0.0_r6-to-android-13.0.0_r7.html">android-13.0.0_r7 from android-13.0.0_r6</a></li>
                       <li><a href="android-13.0.0_r7-to-android-13.0.0_r8.html">android-13.0.0_r8 from android-13.0.0_r7</a></li>
                       <li><a href="android-13.0.0_r1-to-android-13.0.0_r9.html">android-13.0.0_r9 from android-13.0.0_r1</a></li>
-                      <li><a href="android-13.0.0_r9-to-android-13.0.0_r1.html">android-13.0.0_r1 from android-13.0.0_r9</a></li>
                       <li><a href="android-13.0.0_r8-to-android-13.0.0_r9.html">android-13.0.0_r9 from android-13.0.0_r8</a></li>
                       <li><a href="android-13.0.0_r9-to-android-13.0.0_r10.html">android-13.0.0_r10 from android-13.0.0_r9</a></li>
                       <li><a href="android-13.0.0_r9-to-android-13.0.0_r11.html">android-13.0.0_r11 from android-13.0.0_r9</a></li>
@@ -138,8 +137,8 @@
                       <li><a href="android-13.0.0_r17-to-android-13.0.0_r18.html">android-13.0.0_r18 from android-13.0.0_r17</a></li>
                       <li><a href="android-13.0.0_r18-to-android-13.0.0_r19.html">android-13.0.0_r19 from android-13.0.0_r18</a></li>
                       <li><a href="android-13.0.0_r19-to-android-13.0.0_r20.html">android-13.0.0_r20 from android-13.0.0_r19</a></li>
-                      <li><a href="android-13.0.0_r19-to-android-13.0.0_r22.html">android-13.0.0_r22 from android-13.0.0_r19</a></li>
                       <li><a href="android-13.0.0_r20-to-android-13.0.0_r21.html">android-13.0.0_r21 from android-13.0.0_r20</a></li>
+                      <li><a href="android-13.0.0_r19-to-android-13.0.0_r22.html">android-13.0.0_r22 from android-13.0.0_r19</a></li>
                       <li><a href="android-13.0.0_r20-to-android-13.0.0_r23.html">android-13.0.0_r23 from android-13.0.0_r20</a></li>
                       <li><a href="android-13.0.0_r23-to-android-13.0.0_r24.html">android-13.0.0_r24 from android-13.0.0_r23</a></li>
                       <li><a href="android-13.0.0_r23-to-android-13.0.0_r27.html">android-13.0.0_r27 from android-13.0.0_r23</a></li>
@@ -377,13 +376,13 @@
 </div>
 
 <div id="footer">
-  <div class="container">
-    <div class="row">
-    <div class="col-md-6">
-        <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
     </div>
-    </div>
-  </div>
 </div>
 </body>
 </html>
