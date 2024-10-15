@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-15.0.0_r1 to android-15.0.0_r2 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-15.0.0_r1 to android-15.0.0_r2 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/02a9523d4b">02a9523d4b</a> :  Version bump to AP3A.241005.015 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/887e3a0a1a">887e3a0a1a</a> :  Version bump to AP3A.241005.014 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/fc6c5b90fd">fc6c5b90fd</a> :  Version bump to AP3A.241005.013 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6cd375b688">6cd375b688</a> :  Version bump to AP3A.241005.012 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/de559d1683">de559d1683</a> :  Version bump to AP3A.241005.011 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/63797a0d7b">63797a0d7b</a> :  Version bump to AP3A.241005.010 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/887a64124c">887a64124c</a> :  Version bump to AP3A.241005.009.Y1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/57fd2f3c1d">57fd2f3c1d</a> :  Version bump to AP3A.241005.009.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7cf6264be9">7cf6264be9</a> :  Version bump to AP3A.241005.009 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f10bbe3171">f10bbe3171</a> :  Allow PLATFORM_BASE_OS override from product config<br />
+<a href="https://android.googlesource.com/platform/build/+/3c57d0b59f">3c57d0b59f</a> :  Version bump to AP3A.241005.006.U1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/472eb12e0c">472eb12e0c</a> :  Version bump to AP3A.241005.008 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4445352e75">4445352e75</a> :  Version bump to AP3A.241005.007 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1cd60788a0">1cd60788a0</a> :  Version bump to AP3A.241005.006 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/38f487ec08">38f487ec08</a> :  Version bump to AP3A.241005.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4ac36eb28d">4ac36eb28d</a> :  Version bump to AP3A.241005.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5ef136d0ee">5ef136d0ee</a> :  Version bump to AP3A.241005.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c4daaea12f">c4daaea12f</a> :  Version bump to AP3A.241005.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e53beed492">e53beed492</a> :  Version bump to AP3A.241005.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ddb8c2788b">ddb8c2788b</a> :  Version bump to AP3A.240905.013.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4b2ab9c1a6">4b2ab9c1a6</a> :  Version bump to AP3A.241001.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b4eb33b22b">b4eb33b22b</a> :  Version bump to AP3A.241001.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7a22ccf537">7a22ccf537</a> :  Version bump to AP3A.241001.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/27fcaf2931">27fcaf2931</a> :  Version bump to AP3A.241001.001.U1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/941181f3a2">941181f3a2</a> :  Version bump to AP3A.241001.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5a3b23eec2">5a3b23eec2</a> :  Version bump to AP3A.241001.001 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_build_release-show" class="showLink" onclick="show('platform_build_release');return false;">+</a><a href="#" id="platform_build_release-hide" class="hideLink" onclick="hide('platform_build_release');return false;">-</a>&nbsp;<a name="platform_build_release" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build/release">platform/build/release</a></h2>
+<div id="platform_build_release"><a href="https://android.googlesource.com/platform/build/release/+/0e03cf3">0e03cf3</a> :  Update aconfig flags for ap3a and trunk_staging to (ab/AP3A.241005.015).<br />
+<a href="https://android.googlesource.com/platform/build/release/+/3055754">3055754</a> :  update ap3a flags for release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_build_soong-show" class="showLink" onclick="show('platform_build_soong');return false;">+</a><a href="#" id="platform_build_soong-hide" class="hideLink" onclick="hide('platform_build_soong');return false;">-</a>&nbsp;<a name="platform_build_soong" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build/soong">platform/build/soong</a></h2>
+<div id="platform_build_soong"><a href="https://android.googlesource.com/platform/build/soong/+/d040708a6">d040708a6</a> :  dexpreopt rules for google mainline prebuilts with missing source<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/e99d6cd7115">e99d6cd7115</a> :  Wrap paths in cts command with `'` to avoid flag parsing errors when there are special characters in paths.<br />
+<a href="https://android.googlesource.com/platform/cts/+/9b2c090b992">9b2c090b992</a> :  Add a new variable to control the dynamic downloader<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_akita-show" class="showLink" onclick="show('device_google_akita');return false;">+</a><a href="#" id="device_google_akita-hide" class="hideLink" onclick="hide('device_google_akita');return false;">-</a>&nbsp;<a name="device_google_akita" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/akita">device/google/akita</a></h2>
+<div id="device_google_akita"><a href="https://android.googlesource.com/device/google/akita/+/8d2e6c8">8d2e6c8</a> :  akita: Add build_flags based properties for SMR/EMR build<br />
+<a href="https://android.googlesource.com/device/google/akita/+/6747021">6747021</a> :  gps: update gps 4.13.2_26<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_shusky-show" class="showLink" onclick="show('device_google_shusky');return false;">+</a><a href="#" id="device_google_shusky-hide" class="hideLink" onclick="hide('device_google_shusky');return false;">-</a>&nbsp;<a name="device_google_shusky" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/shusky">device/google/shusky</a></h2>
+<div id="device_google_shusky"><a href="https://android.googlesource.com/device/google/shusky/+/d833b80">d833b80</a> :  shusky: Add build_flags based properties for SMR/EMR build<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_zumapro-show" class="showLink" onclick="show('device_google_zumapro');return false;">+</a><a href="#" id="device_google_zumapro-hide" class="hideLink" onclick="hide('device_google_zumapro');return false;">-</a>&nbsp;<a name="device_google_zumapro" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/zumapro">device/google/zumapro</a></h2>
+<div id="device_google_zumapro"><a href="https://android.googlesource.com/device/google/zumapro/+/1e34339">1e34339</a> :  Fwk timeout for enable/disable should be greater than the max time PSS takes to enable/disable<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_toybox-show" class="showLink" onclick="show('platform_external_toybox');return false;">+</a><a href="#" id="platform_external_toybox-hide" class="hideLink" onclick="hide('platform_external_toybox');return false;">-</a>&nbsp;<a name="platform_external_toybox" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/toybox">platform/external/toybox</a></h2>
+<div id="platform_external_toybox"><a href="https://android.googlesource.com/platform/external/toybox/+/bdce75fc">bdce75fc</a> :  sendfile_len: fix bounds check.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/e6152d81ab0c">e6152d81ab0c</a> :  Revert "[Hide DCK Device] Hide exclusively managed devices from the Bluetooth chip of QS SysUI"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ce7f1fc82a4f">ce7f1fc82a4f</a> :  [Mobile] Move from DATA_SPN to SPN for networkName<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/59b24e31ca6b">59b24e31ca6b</a> :  [Mobile] Bugfix flag for SPN update<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1313f16c79e6">1313f16c79e6</a> :  [Mobile] Move from DATA_SPN to SPN for networkName<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/343d37e76850">343d37e76850</a> :  [Mobile] Bugfix flag for SPN update<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2c5a13a8fe85">2c5a13a8fe85</a> :  Log a warning if content view exceeds char limit<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6f304be5817a">6f304be5817a</a> :  Restore decorFitsSystemWindows from preserved window<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fdb0ec1df1eb">fdb0ec1df1eb</a> :  Added a check to avoid adding shared libraries to resources created based on system assets<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b398c207bc8c">b398c207bc8c</a> :  Synchronize calls to updateDoze<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e8bb4002d02f">e8bb4002d02f</a> :  Relax idMatch for DataConnectionState<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e0d91e4d04a7">e0d91e4d04a7</a> :  Relax idMatch for DataConnectionState<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6c841234e09a">6c841234e09a</a> :  Log the warning if logo description exceeds char limit.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e232c44ca351">e232c44ca351</a> :  Ignore SQL exceptions in getAccountsAsUserForPackage and syncSharedAccounts.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/04d785f9bef9">04d785f9bef9</a> :  Revert "Add power stats collector and processor for Camera and GNSS"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9bbdeaecb728">9bbdeaecb728</a> :  Prevent system service crash after SQL error in AccountManagerService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/22c6f644cb4d">22c6f644cb4d</a> :  Check whether installerPackageName contains only valid characters<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/efc4710b7fc9">efc4710b7fc9</a> :  Update AccountManagerService checkKeyIntent.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/d4484ab218">d4484ab218</a> :  Fixed null name not to display in carrier name in status bar on the device<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/1dbd5bd88d">1dbd5bd88d</a> :  Set Data SPN to SPN when not overridden<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/1a24ac4bfe">1a24ac4bfe</a> :  Set demoModeEnabled true or false immediately.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/762c305e24">762c305e24</a> :  Let sender permission allow background launch when starting recents<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/7cf67cd32e7">7cf67cd32e7</a> :  Turn off RILD reset in Reset Network Settings Flow<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/27475bacd74">27475bacd74</a> :  FRP bypass defense in App battery usage page<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_NetworkStack-show" class="showLink" onclick="show('platform_packages_modules_NetworkStack');return false;">+</a><a href="#" id="platform_packages_modules_NetworkStack-hide" class="hideLink" onclick="hide('platform_packages_modules_NetworkStack');return false;">-</a>&nbsp;<a name="platform_packages_modules_NetworkStack" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/NetworkStack">platform/packages/modules/NetworkStack</a></h2>
+<div id="platform_packages_modules_NetworkStack"><a href="https://android.googlesource.com/platform/packages/modules/NetworkStack/+/21f0bc92">21f0bc92</a> :  Ignore Reserved and DF flags in IP header<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Uwb-show" class="showLink" onclick="show('platform_packages_modules_Uwb');return false;">+</a><a href="#" id="platform_packages_modules_Uwb-hide" class="hideLink" onclick="hide('platform_packages_modules_Uwb');return false;">-</a>&nbsp;<a name="platform_packages_modules_Uwb" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Uwb">platform/packages/modules/Uwb</a></h2>
+<div id="platform_packages_modules_Uwb"><a href="https://android.googlesource.com/platform/packages/modules/Uwb/+/c262b121">c262b121</a> :  [UwbCts] Temporarily disable p-sts add controlee test.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_TelephonyProvider-show" class="showLink" onclick="show('platform_packages_providers_TelephonyProvider');return false;">+</a><a href="#" id="platform_packages_providers_TelephonyProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_TelephonyProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_TelephonyProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider">platform/packages/providers/TelephonyProvider</a></h2>
+<div id="platform_packages_providers_TelephonyProvider"><a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/833c31bc">833c31bc</a> :  Carrier ID table rollout all_sdk_carrier_list_Rollout_20240714 Publish the latest carrier id table. This build IS suitable for public release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/60f4225dc">60f4225dc</a> :  Check for Service state (VoiceRegState) only before placing call over CS domain<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_update_engine-show" class="showLink" onclick="show('platform_system_update_engine');return false;">+</a><a href="#" id="platform_system_update_engine-hide" class="hideLink" onclick="hide('platform_system_update_engine');return false;">-</a>&nbsp;<a name="platform_system_update_engine" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/update_engine">platform/system/update_engine</a></h2>
+<div id="platform_system_update_engine"><a href="https://android.googlesource.com/platform/system/update_engine/+/88863912">88863912</a> :  update_engine: fix checkpointing<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_tools_deviceinfra_prebuilts-show" class="showLink" onclick="show('platform_tools_deviceinfra_prebuilts');return false;">+</a><a href="#" id="platform_tools_deviceinfra_prebuilts-hide" class="hideLink" onclick="hide('platform_tools_deviceinfra_prebuilts');return false;">-</a>&nbsp;<a name="platform_tools_deviceinfra_prebuilts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/tools/deviceinfra/prebuilts">platform/tools/deviceinfra/prebuilts</a></h2>
+<div id="platform_tools_deviceinfra_prebuilts"><a href="https://android.googlesource.com/platform/tools/deviceinfra/prebuilts/+/aed1668">aed1668</a> :  Release deviceinfra prebuilts: version 816-20240820-220446, GitHub version ba88e737191106d4b5a21ec5ff6a17058563d164<br />
+<a href="https://android.googlesource.com/platform/tools/deviceinfra/prebuilts/+/993304e">993304e</a> :  Release deviceinfra prebuilts: version 803-20240809-045427, GitHub version 3e5e55b800be54cf2de3bed91502d7d7c38aeee4<br />
+<a href="https://android.googlesource.com/platform/tools/deviceinfra/prebuilts/+/d09f434">d09f434</a> :  Release deviceinfra prebuilts: version 775-20240717-040054, GitHub version 5bcda22cac4a61172195d72948eb72e877fa15ee<br />
+<a href="https://android.googlesource.com/platform/tools/deviceinfra/prebuilts/+/c394d26">c394d26</a> :  Release deviceinfra prebuilts: version 789-20240731-040024, GitHub version ee0bae8b9b08c0ebee05fb320aaa06df78757cea<br />
+<a href="https://android.googlesource.com/platform/tools/deviceinfra/prebuilts/+/6730cb4">6730cb4</a> :  Release deviceinfra prebuilts: version 786-20240728-040026, GitHub version 03181fdf7f336074f9c2b039a13868b24160f2d5<br />
+<a href="https://android.googlesource.com/platform/tools/deviceinfra/prebuilts/+/71b0a8a">71b0a8a</a> :  Release deviceinfra prebuilts: version 775-20240717-040054, GitHub version 5bcda22cac4a61172195d72948eb72e877fa15ee<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
