@@ -48,10 +48,11 @@ generate_tag_list "android-security-13"
 
 generate_version_divider "12L"
 generate_tag_list "android-12.1"
+generate_tag_list "android-security-12.1"
 
 generate_version_divider "12"
 generate_tag_list "android-12.0"
-generate_tag_list "android-security-12"
+generate_tag_list "android-security-12.0"
 
 generate_version_divider "11"
 generate_tag_list "android-11"
