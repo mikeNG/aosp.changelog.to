@@ -1,0 +1,790 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-12.1.0_r1 to android-security-12.1.0_r1 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-12.1.0_r1 to android-security-12.1.0_r1 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/2a57341178">2a57341178</a> :  Version bump to SSV2.220224.077 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/cd50d0fdd6">cd50d0fdd6</a> :  Version bump to SSV2.220224.076 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c0644f6b3f">c0644f6b3f</a> :  Version bump to SSV2.220224.075 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5178428526">5178428526</a> :  Version bump to SSV2.220224.074 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d1c550e8f7">d1c550e8f7</a> :  Version bump to SSV2.220224.073 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1db07587ce">1db07587ce</a> :  Version bump to SSV2.220224.072 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f0bcda30d7">f0bcda30d7</a> :  Version bump to SSV2.220224.071 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/245fa3ef8a">245fa3ef8a</a> :  Version bump to SSV2.220224.070 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/99f491fd47">99f491fd47</a> :  Version bump to SSV2.220224.069 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/91b910c90f">91b910c90f</a> :  Version bump to SSV2.220224.068 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9520ebb4c0">9520ebb4c0</a> :  Version bump to SSV2.220224.067 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d1dbed01ad">d1dbed01ad</a> :  Version bump to SSV2.220224.066 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b13ab65e64">b13ab65e64</a> :  Version bump to SSV2.220224.065 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/cfb9b586a0">cfb9b586a0</a> :  Version bump to SSV2.220224.064 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9e5d575018">9e5d575018</a> :  Version bump to SSV2.220224.063 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/09c8a4c7a2">09c8a4c7a2</a> :  Version bump to SSV2.220224.062 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/859802d166">859802d166</a> :  Version bump to SSV2.220224.061 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a557f4e20e">a557f4e20e</a> :  Version bump to SSV2.220224.060 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f5cf02b543">f5cf02b543</a> :  Version bump to SSV2.220224.059 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1d364bf001">1d364bf001</a> :  Version bump to SSV2.220224.058 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/988bb1eb4f">988bb1eb4f</a> :  Version bump to SSV2.220224.057 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/05eb2834bc">05eb2834bc</a> :  Version bump to SSV2.220224.056 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8fe106bd99">8fe106bd99</a> :  Version bump to SSV2.220224.055 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/82e533daa2">82e533daa2</a> :  Version bump to SSV2.220224.054 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/84efcaf7fa">84efcaf7fa</a> :  Version bump to SSV2.220224.053 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4b9ec47e79">4b9ec47e79</a> :  Version bump to SSV2.220224.052 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/eb9f660847">eb9f660847</a> :  Version bump to SSV2.220224.051 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b517baa21e">b517baa21e</a> :  Version bump to SSV2.220224.050 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f8c9abe305">f8c9abe305</a> :  Version bump to SSV2.220224.049 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2841ca8d0d">2841ca8d0d</a> :  Version bump to SSV2.220224.048 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/84018ef542">84018ef542</a> :  Version bump to SSV2.220224.047 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8079071d76">8079071d76</a> :  Version bump to SSV2.220224.046 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/63aba00f63">63aba00f63</a> :  Version bump to SSV2.220224.045 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/bef0d4a7a6">bef0d4a7a6</a> :  Version bump to SSV2.220224.044 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c1528cf226">c1528cf226</a> :  Version bump to SSV2.220224.043 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d7acfbb853">d7acfbb853</a> :  Version bump to SSV2.220224.042 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5b4f6aadd8">5b4f6aadd8</a> :  Version bump to SSV2.220224.041 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1b6976c90a">1b6976c90a</a> :  Version bump to SSV2.220224.040 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/df78ae629d">df78ae629d</a> :  Version bump to SSV2.220224.039 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f87ab98ec3">f87ab98ec3</a> :  Version bump to SSV2.220224.038 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/524f5c6457">524f5c6457</a> :  Version bump to SSV2.220224.037 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b358bfb8a7">b358bfb8a7</a> :  Version bump to SSV2.220224.036 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e0798611ca">e0798611ca</a> :  Version bump to SSV2.220224.035 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e75c76b85e">e75c76b85e</a> :  Version bump to SSV2.220224.034 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c5a076386f">c5a076386f</a> :  Version bump to SSV2.220224.033 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/cef0bc2c8c">cef0bc2c8c</a> :  Version bump to SSV2.220224.032 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d31ded19e9">d31ded19e9</a> :  Version bump to SSV2.220224.031 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e760e9fce2">e760e9fce2</a> :  Version bump to SSV2.220224.030 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6510948350">6510948350</a> :  Version bump to SSV2.220224.029 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/85e9abfb00">85e9abfb00</a> :  Version bump to SSV2.220224.028 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/61b907e4e3">61b907e4e3</a> :  Version bump to SSV2.220224.027 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d7085224ed">d7085224ed</a> :  Version bump to SSV2.220224.026 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/69cc2bbdc4">69cc2bbdc4</a> :  Version bump to SSV2.220224.025 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a728ab9395">a728ab9395</a> :  Version bump to SSV2.220224.024 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5683d6bfcc">5683d6bfcc</a> :  Version bump to SSV2.220224.023 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a4ce88545a">a4ce88545a</a> :  Version bump to SSV2.220224.022 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ce533764e2">ce533764e2</a> :  Version bump to SSV2.220224.021 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1ca1de8568">1ca1de8568</a> :  Version bump to SSV2.220224.020 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c85273016c">c85273016c</a> :  Version bump to SSV2.220224.019 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/06ccf897e2">06ccf897e2</a> :  Version bump to SSV2.220224.018 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/d74aa3862b">d74aa3862b</a> :  Version bump to SSV2.220224.017 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0b1949fb18">0b1949fb18</a> :  Version bump to SSV2.220224.016 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4593e0366a">4593e0366a</a> :  Version bump to SSV2.220224.015 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/205a297e69">205a297e69</a> :  Version bump to SSV2.220224.014 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/45ca509500">45ca509500</a> :  Version bump to SSV2.220224.013 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/09e4ad3777">09e4ad3777</a> :  Version bump to SSV2.220224.012 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/0e5f9a49ca">0e5f9a49ca</a> :  Version bump to SSV2.220224.011 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/922772d3cf">922772d3cf</a> :  Version bump to SSV2.220224.010 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c3d021695f">c3d021695f</a> :  Version bump to SSV2.220224.009 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/ca130ffe06">ca130ffe06</a> :  Version bump to SSV2.220224.008 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f3f39d5655">f3f39d5655</a> :  Version bump to SSV2.220224.007 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e27f6c4c7e">e27f6c4c7e</a> :  Version bump to SSV2.220224.006 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/74aa5cfa01">74aa5cfa01</a> :  Version bump to SSV2.220224.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f7f6a56587">f7f6a56587</a> :  Version bump to SSV2.220224.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b710a209ee">b710a209ee</a> :  Version bump to SSV2.220224.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/51d3adcb70">51d3adcb70</a> :  Version bump to SSV2.220224.002 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/5a0e790f55b">5a0e790f55b</a> :  Change open jpeg folder name<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_aac-show" class="showLink" onclick="show('platform_external_aac');return false;">+</a><a href="#" id="platform_external_aac-hide" class="hideLink" onclick="hide('platform_external_aac');return false;">-</a>&nbsp;<a name="platform_external_aac" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/aac">platform/external/aac</a></h2>
+<div id="platform_external_aac"><a href="https://android.googlesource.com/platform/external/aac/+/70d9e0c">70d9e0c</a> :  Increase patchParam array size by one and fix out-of-bounce write in resetLppTransposer().<br />
+<a href="https://android.googlesource.com/platform/external/aac/+/32092f9">32092f9</a> :  Reject invalid out of band config in transportDec_OutOfBandConfig() and skip re-allocation.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_angle-show" class="showLink" onclick="show('platform_external_angle');return false;">+</a><a href="#" id="platform_external_angle-hide" class="hideLink" onclick="hide('platform_external_angle');return false;">-</a>&nbsp;<a name="platform_external_angle" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/angle">platform/external/angle</a></h2>
+<div id="platform_external_angle"><a href="https://android.googlesource.com/platform/external/angle/+/2e45246b00">2e45246b00</a> :  Fix a bug when getting a gzip header extra field with inflate().<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_dtc-show" class="showLink" onclick="show('platform_external_dtc');return false;">+</a><a href="#" id="platform_external_dtc-hide" class="hideLink" onclick="hide('platform_external_dtc');return false;">-</a>&nbsp;<a name="platform_external_dtc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/dtc">platform/external/dtc</a></h2>
+<div id="platform_external_dtc"><a href="https://android.googlesource.com/platform/external/dtc/+/bf0ed85">bf0ed85</a> :  [automerge] libfdt: fdt_path_offset_namelen: Reject empty paths 2p: a6ac6d916d am: bfb9c7cab7<br />
+<a href="https://android.googlesource.com/platform/external/dtc/+/b2f70f0">b2f70f0</a> :  [automerge] Fix integer wrap sanitisation. 2p: 2b597691ef am: 312bb25a2c<br />
+<a href="https://android.googlesource.com/platform/external/dtc/+/b4de7ba">b4de7ba</a> :  [automerge] FROMGIT: libfdt: fdt_offset_ptr(): Fix comparison warnings 2p: 6f0fef2b2a<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_expat-show" class="showLink" onclick="show('platform_external_expat');return false;">+</a><a href="#" id="platform_external_expat-hide" class="hideLink" onclick="hide('platform_external_expat');return false;">-</a>&nbsp;<a name="platform_external_expat" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/expat">platform/external/expat</a></h2>
+<div id="platform_external_expat"><a href="https://android.googlesource.com/platform/external/expat/+/c343ffd9">c343ffd9</a> :  [CVE-2022-43680] Fix overeager DTD destruction (fixes #649)<br />
+<a href="https://android.googlesource.com/platform/external/expat/+/af59a741">af59a741</a> :  Prevent more integer overflows<br />
+<a href="https://android.googlesource.com/platform/external/expat/+/01416711">01416711</a> :  Prevent integer overflow in function doProlog<br />
+<a href="https://android.googlesource.com/platform/external/expat/+/8847b626">8847b626</a> :  Prevent XML_GetBuffer signed integer overflow<br />
+<a href="https://android.googlesource.com/platform/external/expat/+/b8819d3b">b8819d3b</a> :  Prevent integer overflow in copyString<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_freetype-show" class="showLink" onclick="show('platform_external_freetype');return false;">+</a><a href="#" id="platform_external_freetype-hide" class="hideLink" onclick="hide('platform_external_freetype');return false;">-</a>&nbsp;<a name="platform_external_freetype" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/freetype">platform/external/freetype</a></h2>
+<div id="platform_external_freetype"><a href="https://android.googlesource.com/platform/external/freetype/+/58f4e693e">58f4e693e</a> :  Cherrypick following three changes<br />
+<a href="https://android.googlesource.com/platform/external/freetype/+/82313ab60">82313ab60</a> :  DO NOT MERGE - Cherry-pick two upstream changes<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_libxml2-show" class="showLink" onclick="show('platform_external_libxml2');return false;">+</a><a href="#" id="platform_external_libxml2-hide" class="hideLink" onclick="hide('platform_external_libxml2');return false;">-</a>&nbsp;<a name="platform_external_libxml2" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/libxml2">platform/external/libxml2</a></h2>
+<div id="platform_external_libxml2"><a href="https://android.googlesource.com/platform/external/libxml2/+/ab6d3bea">ab6d3bea</a> :  malloc-fail: Fix OOB read after xmlRegGetCounter<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_pdfium-show" class="showLink" onclick="show('platform_external_pdfium');return false;">+</a><a href="#" id="platform_external_pdfium-hide" class="hideLink" onclick="hide('platform_external_pdfium');return false;">-</a>&nbsp;<a name="platform_external_pdfium" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/pdfium">platform/external/pdfium</a></h2>
+<div id="platform_external_pdfium"><a href="https://android.googlesource.com/platform/external/pdfium/+/96a44d29c">96a44d29c</a> :  Update pdfium to Chrome 114.0.5735.130 pdfium<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_sonivox-show" class="showLink" onclick="show('platform_external_sonivox');return false;">+</a><a href="#" id="platform_external_sonivox-hide" class="hideLink" onclick="hide('platform_external_sonivox');return false;">-</a>&nbsp;<a name="platform_external_sonivox" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/sonivox">platform/external/sonivox</a></h2>
+<div id="platform_external_sonivox"><a href="https://android.googlesource.com/platform/external/sonivox/+/f596b65">f596b65</a> :  fix buffer overrun in eas_wtengine<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_webp-show" class="showLink" onclick="show('platform_external_webp');return false;">+</a><a href="#" id="platform_external_webp-hide" class="hideLink" onclick="hide('platform_external_webp');return false;">-</a>&nbsp;<a name="platform_external_webp" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/webp">platform/external/webp</a></h2>
+<div id="platform_external_webp"><a href="https://android.googlesource.com/platform/external/webp/+/4dc9bc75">4dc9bc75</a> :  update to v1.2.0-8-g20ceff7e<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_zlib-show" class="showLink" onclick="show('platform_external_zlib');return false;">+</a><a href="#" id="platform_external_zlib-hide" class="hideLink" onclick="hide('platform_external_zlib');return false;">-</a>&nbsp;<a name="platform_external_zlib" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/zlib">platform/external/zlib</a></h2>
+<div id="platform_external_zlib"><a href="https://android.googlesource.com/platform/external/zlib/+/7702e56">7702e56</a> :  Fix a bug when getting a gzip header extra field with inflate().<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/326c584eba">326c584eba</a> :  omx: check HDR10+ info param size<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/73d11ac20f">73d11ac20f</a> :  StagefrightRecoder: Disabling B-frame support<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/07df1d8dd9">07df1d8dd9</a> :  libmediatranscoding: handle death recipient cookie ownership differently<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/ff81922f52">ff81922f52</a> :  Revert "Audio policy: anonymize Bluetooth MAC addresses"<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/fab76f21e5">fab76f21e5</a> :  Fix out of bounds read and write in onQueueFilled in outQueue<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/2b4e096ce0">2b4e096ce0</a> :  SoftVideoDecodeOMXComponent: validate OMX params for dynamic HDR<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/486c19ee9d">486c19ee9d</a> :  Validate OMX Params for VPx encoders<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/7a6c850b80">7a6c850b80</a> :  Audio policy: anonymize Bluetooth MAC addresses<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/68c514fe5e">68c514fe5e</a> :  Update mtp packet buffer<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/d3b6fab037">d3b6fab037</a> :  Fix convertYUV420Planar16ToY410 overflow issue for unsupported cropwidth.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/51939c9bc0">51939c9bc0</a> :  Codec2BufferUtils: Use cropped dimensions in RGB to YUV conversion<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/02936dda1e">02936dda1e</a> :  Revert "NdkMedia: fix android.mediav2.cts.CodecEncoderSurfaceTest failed."<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/c47a125961">c47a125961</a> :  NdkMedia: fix android.mediav2.cts.CodecEncoderSurfaceTest failed.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/3c28a81aa6">3c28a81aa6</a> :  Condition background record restriction on Sdk<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/f7b5a2f8c3">f7b5a2f8c3</a> :  Correct attribution source for MMAP thread<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/76225338a8">76225338a8</a> :  httplive: fix use-after-free<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/8dad47c382">8dad47c382</a> :  Initialise VPS buffer to NULL in constructor<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/18c566f984">18c566f984</a> :  Fix heap-use-after-free issue flagged by fuzzer test.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/9df8884c12">9df8884c12</a> :  Fix for heap buffer overflow issue flagged by fuzzer test.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/aca5e8f9c2">aca5e8f9c2</a> :  Fix Segv on unknown address error flagged by fuzzer test.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/a2ce4cc4f3">a2ce4cc4f3</a> :  Force unsilence record clients on startInput<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/c484bda0ac">c484bda0ac</a> :  Fix NuMediaExtractor::readSampleData buffer Handling<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/08d0401fd2">08d0401fd2</a> :  C2SurfaceSyncObj: prevent OOB read in Import<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/e2c6753c4d">e2c6753c4d</a> :  move MediaCodec metrics processing to looper thread<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/81b19a23cb">81b19a23cb</a> :  RESTRICT AUTOMERGE Use static token for myAttributionSource in ServiceUtilities<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/596645591c">596645591c</a> :  Fix Out of Bounds Read in AAVCAssembler<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/cd88ddb22a">cd88ddb22a</a> :  audio: fix missing package name in attribution source<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/cb83d38b56">cb83d38b56</a> :  libstagefright: fix heap use after free issue<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/17fce0f5ce">17fce0f5ce</a> :  [Fix vulnerability] setSecurityLevel in clearkey<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/3c037dc548">3c037dc548</a> :  Add missing bounds checks<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/8929b6fa52">8929b6fa52</a> :  Cache MMAP client silenced state.<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/656897557b">656897557b</a> :  Fix Out of Bounds read in TextDescriptions.cpp<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/64b5257c6f">64b5257c6f</a> :  Avoid read out of bounds<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/e9a8ccd909">e9a8ccd909</a> :  C2Allocator: protetct memory mappings from race condition<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/e73833e0ec">e73833e0ec</a> :  Safe parsing of HEIF framecount information<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/096cf0280a">096cf0280a</a> :  C2AllocatorIon:protect mMappings using mutex<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/98f07007e7b6">98f07007e7b6</a> :  RESTRICT AUTOMERGE Delete keystore keys from RecoveryService.rebootRecoveryWithCommand()<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a03f1e63c34b">a03f1e63c34b</a> :  DO NOT MERGE Ignore - Sanitized uri scheme by removing scheme delimiter<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e411339df935">e411339df935</a> :  Hide SAW subwindows<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5b23e7cf0f7c">5b23e7cf0f7c</a> :  Add the protection to avoid data overflow in BinaryXmlSerializer.java<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/11a632e1591c">11a632e1591c</a> :  Restrict USB poups while setup is in progress<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/781ce614bc86">781ce614bc86</a> :  Rate limiting PiP aspect ratio change request<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/338e0ac6ac70">338e0ac6ac70</a> :  RESTRICT AUTOMERGE Backport preventing BAL bypass via bound service<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/58a0ab5bc7ab">58a0ab5bc7ab</a> :  Fix security vulnerability of non-dynamic permission removal<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6c0e2b7df047">6c0e2b7df047</a> :  Verify UID of incoming Zygote connections.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8dfb447bc757">8dfb447bc757</a> :  [DO NOT MERGE][CDM] Fix setSkipPrompt on Android S<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a3e88190d66c">a3e88190d66c</a> :  Fix security vulnerability allowing apps to start from background<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5c5d028d3cd2">5c5d028d3cd2</a> :  [RESTRICT AUTOMERGE][PM] Send ACTION_PACKAGE_CHANGED when mimeGroups are changed<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cdf39d929ac0">cdf39d929ac0</a> :  [RESTRICT AUTOMERGE] AccessibilityManagerService: remove uninstalled services from enabled list after service update.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9b5390322b1a">9b5390322b1a</a> :  [CDM][CMD] Check permissions for CDM shell commands<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4432d030d8e7">4432d030d8e7</a> :  Resolve message/conversation image Uris with the correct user id<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/44e744a5d20f">44e744a5d20f</a> :  Check hidden API exemptions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c4d81d3eecd5">c4d81d3eecd5</a> :  [DO NOT MERGE][Autofill Framework] Add in check for intent filter when setting/updating service<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9432acc7d528">9432acc7d528</a> :  [DO NOT MERGE][CDM] Fix a security issue that allow 3p apps to skip prompt by setSkipPrompt<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c713eb91ae51">c713eb91ae51</a> :  Add more checkKeyIntent checks to AccountManagerService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/13f35720cb76">13f35720cb76</a> :  Fix vulnerability in AttributionSource due to incorrect Binder call<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/57ba37a9fc7f">57ba37a9fc7f</a> :  Fix error handling for non-dynamic permissions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/64e7a3910456">64e7a3910456</a> :  Hide window immediately if itself doesn't run hide animation<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c55be0c2dfe7">c55be0c2dfe7</a> :  Check for NLS bind permission when rebinding services<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/680c8bc8b86a">680c8bc8b86a</a> :  Added throttle when reporting shortcut usage<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ba46960bacdb">ba46960bacdb</a> :  Verify URI permission for channel sound update from NotificationListenerService<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cea77d5719a5">cea77d5719a5</a> :  DO NOT MERGE: Fix ActivityManager#killBackgroundProcesses permissions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f670a2fe9762">f670a2fe9762</a> :  DO NOT MERGE: ActivityManager#killBackgroundProcesses can kill caller's own app only<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/346a778e609e">346a778e609e</a> :  Update media visibility on lock screen<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7687744bf662">7687744bf662</a> :  Revert "Refactor the SADeviceState to AdiDeviceState"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a9dc2b63c990">a9dc2b63c990</a> :  Revert "AudioService: anonymize Bluetooth MAC addresses"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e07c04db6118">e07c04db6118</a> :  Prioritize system toasts<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/84aee654e63f">84aee654e63f</a> :  Fix security vulnerability that creates user with no restrictions when accountOptions are too long.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/505edca35e06">505edca35e06</a> :  isUserInLockDown can be true when there are other strong auth requirements<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/67f148ad393f">67f148ad393f</a> :  Don't store invalid pkgs when migrating filters<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4208b31baa97">4208b31baa97</a> :  RESTRICT AUTOMERGE Added limitations for attributions to handle invalid cases<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9d47c52e9d9f">9d47c52e9d9f</a> :  Disallow system apps to be installed/updated as instant.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a0ee17725891">a0ee17725891</a> :  Close AccountManagerService.session after timeout.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4b46bacd1d97">4b46bacd1d97</a> :  Validate package names passed to the installer.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/638ea6d4642f">638ea6d4642f</a> :  Resolve custom printer icon boundary exploit.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5c446eb70fa4">5c446eb70fa4</a> :  AudioService: anonymize Bluetooth MAC addresses<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/375f7c239e19">375f7c239e19</a> :  Refactor the SADeviceState to AdiDeviceState<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/772f02bd68ae">772f02bd68ae</a> :  Enforce persisted snoozed notifications limits<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4fca85d7bb6b">4fca85d7bb6b</a> :  [RESTRICT AUTOMERGE] Check permission of Autofill icon URIs<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/97ef4659b780">97ef4659b780</a> :  Restrict activity launch when caller is running in the background<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2601009f4aa4">2601009f4aa4</a> :  DO NOT MERGE Disallow Wallpaper service to launch activity from background.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2976f9b05fcc">2976f9b05fcc</a> :  Unbind TileService onNullBinding<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a6321142ea43">a6321142ea43</a> :  DO NOT MERGE: "Hide" /Android/data|obb|sanbox/ on shared storage<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/daa5e2976c50">daa5e2976c50</a> :  DO NOT MERGE Ensure finish lockscreen when usersetup incomplete<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/af574093dec4">af574093dec4</a> :  DO NOT MERGE: Fix ActivityManager#killBackgroundProcesses permissions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/32221876b827">32221876b827</a> :  Fix vulnerability that allowed attackers to start arbitary activities<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/eb4aa8717dcf">eb4aa8717dcf</a> :  RESTRICT AUTOMERGE Log to detect usage of whitelistToken when sending non-PI target<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a41773ae3f5e">a41773ae3f5e</a> :  [SB][Privacy] Fetch current active appops on startup.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a08795bd566a">a08795bd566a</a> :  [CDM] Validate component name length before requesting notification access.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/049d942fe683">049d942fe683</a> :  Truncate user data to a limit of 500 characters<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/443e17286504">443e17286504</a> :  RESTRICT AUTOMERGE: Check URI permissions for resumable media artwork<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/32691367d0b8">32691367d0b8</a> :  Move startWatchingModeWithFlags to the native supported binder calls<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d1c5a11b51ba">d1c5a11b51ba</a> :  Updated: always show the keyguard on device lockdown<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/52ba8f1ae209">52ba8f1ae209</a> :  Adding in verification of calling UID in onShellCommand<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/57cd7d2ae504">57cd7d2ae504</a> :  Revert "On device lockdown, always show the keyguard"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1cf1b7d442c3">1cf1b7d442c3</a> :  Validate userId when publishing shortcuts<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/825a59b3ca27">825a59b3ca27</a> :  Use readUniqueFileDescriptor in incidentd service<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f155cd02a720">f155cd02a720</a> :  Restrict number of shortcuts can be added through addDynamicShortcuts<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5c1ac2cb77bb">5c1ac2cb77bb</a> :  Require permission to unlock keyguard<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f8c2411e2151">f8c2411e2151</a> :  Validate URI-based shortcut icon at creation time.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8638149a03c6">8638149a03c6</a> :  Disable priority conversation widget for secondary users<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bdf1a2937abc">bdf1a2937abc</a> :  RESTRICT AUTOMERGE: Drop invalid data.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/58bca18a346a">58bca18a346a</a> :  Visit Uris related to Notification style extras<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d030cfd73ddf">d030cfd73ddf</a> :  Fix bypass BAL via `requestGeofence`<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7707d6a8f9fa">7707d6a8f9fa</a> :  Visit Uris added by WearableExtender<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/da9dd005ceaf">da9dd005ceaf</a> :  [SettingsProvider] verify ringtone URI before setting<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c0503393550a">c0503393550a</a> :  Use type safe API of readParcelableArray<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9f928748ac06">9f928748ac06</a> :  [DO NOT MERGE] Check caller's uid in backupAgentCreated callback<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0028157ff706">0028157ff706</a> :  DO NOT MERGE Fix BAL via notification.publicVersion<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8ba763834d1b">8ba763834d1b</a> :  Revert "Dismiss keyguard when simpin auth'd and..."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/18c3b194642f">18c3b194642f</a> :  [RESTRICT AUTOMERGE] Ignore small source rect hint<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ab61895c5bb6">ab61895c5bb6</a> :  RESTRICT AUTOMERGE: SettingsProvider: exclude secure_frp_mode from resets<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/78674527c841">78674527c841</a> :  Add userId check before loading icon in Device Controls<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e44c450970f1">e44c450970f1</a> :  Fixing DatabaseUtils to detect malformed UTF-16 strings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/697c280f33d8">697c280f33d8</a> :  Disallow loading icon from content URI to PipMenu<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5db921458dd4">5db921458dd4</a> :  [DO NOT MERGE] Verify URI Permissions in Autofill RemoteViews<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/60fa3b74e80b">60fa3b74e80b</a> :  Do not share key mappings with JNI object<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/270027cbd5b2">270027cbd5b2</a> :  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/023fdcfb4f0f">023fdcfb4f0f</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c9ed6f674f90">c9ed6f674f90</a> :  Add placeholder when media control title is blank<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bcc4a16e5bde">bcc4a16e5bde</a> :  RingtoneManager: verify default ringtone is audio<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1ebce10f0536">1ebce10f0536</a> :  Improve user handling when querying for resumable media<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8c2662e018ac">8c2662e018ac</a> :  Update AccountManagerService checkKeyIntentParceledCorrectly.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f5f974599512">f5f974599512</a> :  Forbid granting access to NLSes with too-long component names<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0c34be23de4e">0c34be23de4e</a> :  Ignore virtual presentation windows - RESTRICT AUTOMERGE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ff0d658194ba">ff0d658194ba</a> :  [DO NOT MERGE] Update quickshare intent rather than recreating<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/73ad2a106146">73ad2a106146</a> :  DO NOT MERGE Grant carrier privileges if package has carrier config access.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4b6b632bc4f4">4b6b632bc4f4</a> :  DO NOT MERGE Revert "Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bff69113f171">bff69113f171</a> :  Remove unnecessary padding code<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ae9945cf21b6">ae9945cf21b6</a> :  Use Settings.System.getIntForUser instead of getInt to make sure user specific settings are used<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/36721f26908a">36721f26908a</a> :  Resolve StatusHints image exploit across user.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c84b7d2dece7">c84b7d2dece7</a> :  Visit URIs in themed remoteviews icons.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/569251643fea">569251643fea</a> :  Fix PrivacyChip not visible issue<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/01124af96c52">01124af96c52</a> :  Check URIs in sized remote views.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dee248374a54">dee248374a54</a> :  Verify URI permissions in MediaMetadata<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9e8255cf410b">9e8255cf410b</a> :  Validate ComponentName for MediaButtonBroadcastReceiver<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4111de7b3912">4111de7b3912</a> :  Implement visitUris for RemoteViews ViewGroupActionAdd.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4f6882363816">4f6882363816</a> :  Check URIs in notification public version.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5f15749ff3c3">5f15749ff3c3</a> :  Preserve flags for non-runtime permissions upon package update.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5e04f4794484">5e04f4794484</a> :  Ensure policy has no absurdly long strings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/55dd32871f43">55dd32871f43</a> :  On device lockdown, always show the keyguard<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8ac4a9aea9ff">8ac4a9aea9ff</a> :  Verify URI permissions for notification shortcutIcon.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6c18f90d83e2">6c18f90d83e2</a> :  Do not load drawable for wallet card if the card image icon iscreated with content URI.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2087ec342fcc">2087ec342fcc</a> :  ActivityManagerService: Allow openContentUri from vendor/system/product.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7d3814d37c10">7d3814d37c10</a> :  DO NOT MERGE: ActivityManager#killBackgroundProcesses can kill caller's own app only<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a14d9266f43f">a14d9266f43f</a> :  Visit URIs in landscape/portrait custom remote views.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f38c2a049ad2">f38c2a049ad2</a> :  Truncate ShortcutInfo Id<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/685bca1b916b">685bca1b916b</a> :  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/09aa5ec63650">09aa5ec63650</a> :  Dismiss keyguard when simpin auth'd and...<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dfe08ce06bfe">dfe08ce06bfe</a> :  Only allow NEW_TASK flag when adjusting pending intents<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/821dd6fe53a9">821dd6fe53a9</a> :  Grant URI permissions to the CallStyle-related ones<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7cbbce516b5c">7cbbce516b5c</a> :  Limit the number of supported v1 and v2 signers<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/de1c16b2f673">de1c16b2f673</a> :  Sanitize VPN label to prevent HTML injection<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c6b4947a21b7">c6b4947a21b7</a> :  Revert "Ensure that only SysUI can override pending intent launch flags"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/71afc6aeb0bb">71afc6aeb0bb</a> :  Ensure that only SysUI can override pending intent launch flags<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fe5bf524cfbb">fe5bf524cfbb</a> :  [RESTRICT AUTOMERGE] Add BubbleMetadata detection to block FSI<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c8b2481f418e">c8b2481f418e</a> :  Enforce DevicePolicyManager.setUserControlDisabledPackages in AppStandbyController<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8e52eeb56339">8e52eeb56339</a> :  Handle invalid data during job loading.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f21c0b9123ff">f21c0b9123ff</a> :  Allow filtering of services<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/add9717e93f1">add9717e93f1</a> :  DO NOT MERGE: Grant MANAGE_USERS access to Traceur<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/766fe1dd6068">766fe1dd6068</a> :  Check key intent for selectors and prohibited flags<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4b7745152bda">4b7745152bda</a> :  [DO NOT MERGE] Prevent RemoteViews crashing SystemUi<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b65a3653bed3">b65a3653bed3</a> :  [DO NOT MERGE] Wait for preloading images to complete before inflating notifications<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4c20a1db541f">4c20a1db541f</a> :  Prevent sharesheet from previewing unowned URIs<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f44beb7e652e">f44beb7e652e</a> :  Remove Activity if it enters PiP without window<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bde7755e4f4a">bde7755e4f4a</a> :  Limit the number of shortcuts per app that can be retained by system<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2e0102e551ee">2e0102e551ee</a> :  Trim strings added to persistent snoozed notification storage.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/491402db836c">491402db836c</a> :  enforce stricter rules when registering phoneAccounts<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4dea696369a3">4dea696369a3</a> :  Uri: check authority and scheme as part of determining URI path<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6fb0ad7b4e56">6fb0ad7b4e56</a> :  Re-enforce MANAGE_ACTIVITY_TASKS for applySyncTransaction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/647114a022ed">647114a022ed</a> :  Checks if AccessibilityServiceInfo is within parcelable size.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/719c08648d98">719c08648d98</a> :  [RESTRICT AUTOMERGE][pm] still allow debuggable for system app downgrades<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/43fabc0a3e42">43fabc0a3e42</a> :  [RESTRICT AUTOMERGE][pm] prevent system app downgrades of versions lower than preload<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8273a3aece8c">8273a3aece8c</a> :  [RESTRICT AUTOMERGE] Fix bypass BG-FGS and BAL via package manager APIs<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ab24ebd18780">ab24ebd18780</a> :  Fix bypass BAL via LocationManager.requestFlush<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1b0136433311">1b0136433311</a> :  Add a limit on channel group creation<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0ab919ad8e88">0ab919ad8e88</a> :  [DO NOT MERGE] Backport BAL restrictions from T to S, this blocks apps from using Alarm Manager to bypass BAL restrictions.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a18dce4e10ac">a18dce4e10ac</a> :  [RESTRICT AUTOMERGE] Strip part of the activity info of another uid if no privilege<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/69e95cea07a7">69e95cea07a7</a> :  Encode Intent scheme when serializing to URI string RESTRICT AUTOMERGE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/39841cd4dfc9">39841cd4dfc9</a> :  Fix checkKeyIntentParceledCorrectly's bypass<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b20d7dc21ca2">b20d7dc21ca2</a> :  Checking if package belongs to UID before registering broadcast receiver<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6638c048b9cc">6638c048b9cc</a> :  Revert "[RESTRICT AUTOMERGE] Trim the activity info of another uid if no privilege"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b613961dcfef">b613961dcfef</a> :  [RESTRICT AUTOMERGE] Trim the activity info of another uid if no privilege<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b6c77bdbbae4">b6c77bdbbae4</a> :  DO NOT MERGE: Context#startInstrumentation could be started from SHELL only now.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/963d38e290b7">963d38e290b7</a> :  Revert "Ensure that only SysUI can override pending intent launch flags"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2a9ef6ff6ebf">2a9ef6ff6ebf</a> :  Enforce MediaButtonReceiver extracted component name matches session package name<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/eb5c388a0644">eb5c388a0644</a> :  Reconcile WorkSource parcel and unparcel code.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5d1c1f0af755">5d1c1f0af755</a> :  Move service initialization<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0ca417933f27">0ca417933f27</a> :  Enforce MediaButtonReceiver ComponentName belongs to app<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e4ac5c8cdf58">e4ac5c8cdf58</a> :  Revert "[RESTRICT AUTOMERGE] Trim the activity info of another uid if no privilege"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0e3142f91943">0e3142f91943</a> :  [DO NOT MERGE] Disallow clicks on privacy chip before provisioned<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/feebb44edbe5">feebb44edbe5</a> :  [RESTRICT AUTOMERGE] Do not send new Intent to non-exported activity when navigateUpTo<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/30ca0444d8ab">30ca0444d8ab</a> :  RESTRICT AUTOMERGE Use chain start token in performOpTransaction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cbf892ce119f">cbf892ce119f</a> :  Use rule package name in addAutomaticZenRule; specify "android" for all system apps<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/536b667ceb6c">536b667ceb6c</a> :  Convert argument to intent in ChooseTypeAndAccountActivity<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/358d340762f4">358d340762f4</a> :  fpService#authWithPrompt uses correct user handle.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f172ab6d13c2">f172ab6d13c2</a> :  [RESTRICT AUTOMERGE] Correct the behavior of ACTION_PACKAGE_DATA_CLEARED<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/023d867b6186">023d867b6186</a> :  [DO NOT MERGE] Revert "Check rule package name in ZenModeHelper.addAutomaticRule"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6a7f18d06bb4">6a7f18d06bb4</a> :  [DO NOT MERGE] Revert "Fix system zen rules by using owner package name if caller is system"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4169de565f06">4169de565f06</a> :  Fix system zen rules by using owner package name if caller is system<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7f1791adcf1e">7f1791adcf1e</a> :  Make Activites touch opaque - DO NOT MERGE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b39120dc45cb">b39120dc45cb</a> :  [DO NOT MERGE] Do not clear calling identify when using BiometricPrompt from FingerprintService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/855ae434a0fa">855ae434a0fa</a> :  [RESTRICT AUTOMERGE] Trim the activity info of another uid if no privilege<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5faf9a2ca45b">5faf9a2ca45b</a> :  Ensure that only SysUI can override pending intent launch flags<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/170a96fee739">170a96fee739</a> :  Enable user graularity for lockdown mode<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/270cf0c8be0d">270cf0c8be0d</a> :  Fix sharing to another profile where an app has multiple targets<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4f04c34ea197">4f04c34ea197</a> :  Add protections against queueing a UsbRequest when the underlying UsbDeviceConnection is closed.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d8055c997d4d">d8055c997d4d</a> :  RESTRICT AUTOMERGE Revoke SYSTEM_ALERT_WINDOW on upgrade past api 23<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e0794f1616c1">e0794f1616c1</a> :  [RESTRICT AUTOMERGE][SettingsProvider] key size limit for mutating settings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/83f2b6a817ea">83f2b6a817ea</a> :  RESTRICT AUTOMERGE Validate permission tree size on permission update<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ff36cdfa737e">ff36cdfa737e</a> :  Backport missing permission check for querying main activity intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8bae92e8bbd4">8bae92e8bbd4</a> :  [RESTRICT AUTOMERGE] [SettingsProvider] mem limit should be checked before settings are updated<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8cad24ddaa3e">8cad24ddaa3e</a> :  [DO NOT MERGE] Fix conditionId string trimming in AutomaticZenRule<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/eeb67077d87f">eeb67077d87f</a> :  Disable all A11yServices from an uninstalled package.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7a5bf02701d2">7a5bf02701d2</a> :  Limit length and number of MIME types you can set<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/244a971ce347">244a971ce347</a> :  Limit lengths of fields in Condition to a max length.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6a7aca4c77ca">6a7aca4c77ca</a> :  [DO NOT MERGE] Revert "Fix system zen rules by using owner package name if caller is system"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b1aa422f7d0d">b1aa422f7d0d</a> :  [DO NOT MERGE] Update window with FLAG_SECURE when bouncer is showing<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/82483782d8bd">82483782d8bd</a> :  Add safety checks on KEY_INTENT mismatch.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/59d4d5fe863f">59d4d5fe863f</a> :  [DO NOT MERGE] Fix permanent denial of service via setComponentEnabledSetting<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4b7d52e9d4a5">4b7d52e9d4a5</a> :  Lower per-app notificationchannel limit<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/48c005cfdffc">48c005cfdffc</a> :  [Do Not Merge] Ignore malformed shortcuts<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/75c616e9b3a7">75c616e9b3a7</a> :  Prevent exfiltration of system files via avatar picker.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c8da0b159b36">c8da0b159b36</a> :  [RESTRICT AUTOMERGE] Allow activity to be reparent while allowTaskReparenting is applied<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0b74066996fb">0b74066996fb</a> :  Fix a security issue in app widget service.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/09ceb1a67234">09ceb1a67234</a> :  Fix NPE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1d1fcdbd7628">1d1fcdbd7628</a> :  [pm] forbid deletion of protected packages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/92f73766da02">92f73766da02</a> :  Include all enabled services when FEEDBACK_ALL_MASK.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/78ff513a3772">78ff513a3772</a> :  Validate package name passed to setApplicationRestrictions. (Reland)<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c818f41822d8">c818f41822d8</a> :  Prevent non-admin users from deleting system apps.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d3e0d2cfd21f">d3e0d2cfd21f</a> :  Limit the size of NotificationChannel and NotificationChannelGroup<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/544df6981b85">544df6981b85</a> :  Revert "Prevent exfiltration of system files via user image settings."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0f1d76cfdf42">0f1d76cfdf42</a> :  Revert "Prevent non-admin users from deleting system apps."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8019cd236054">8019cd236054</a> :  Stop crashing the system on hitting the alarm limit<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dee9f5ccd5c9">dee9f5ccd5c9</a> :  [DO NOT MERGE] Do not dismiss keyguard after SIM PUK unlock<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/52ad8efc3c79">52ad8efc3c79</a> :  Make sure parallel broadcasts enforce excluded permissions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6fda1c93a25d">6fda1c93a25d</a> :  Fix system zen rules by using owner package name if caller is system<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c25ab79c4cfa">c25ab79c4cfa</a> :  Trim any long string inputs that come in to AutomaticZenRule<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f7cad71094a8">f7cad71094a8</a> :  DO NOT MERGE Fix auto-grant of AR runtime permission if device is upgrading from pre-Q<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5a0770b40e83">5a0770b40e83</a> :  Check rule package name in ZenModeHelper.addAutomaticRule<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fcdb59834f91">fcdb59834f91</a> :  Do not send AccessibilityEvent if notification is for different user.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ff5bd1e24c96">ff5bd1e24c96</a> :  [RESTRICT AUTOMERGE] Do not send new Intent to non-exported activity when navigateUpTo<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3f40e485f06a">3f40e485f06a</a> :  switch TelecomManager List getters to ParceledListSlice<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f942e1607471">f942e1607471</a> :  DO NOT MERGE Move accountname and typeName length check from Account.java to AccountManagerService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/59d00491007e">59d00491007e</a> :  Add excludedPackages parameter to broadcast<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/78d5f907029d">78d5f907029d</a> :  Enforce zen rule limit on a package level.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2260d53ca8cf">2260d53ca8cf</a> :  Strip transition information from activityoptions when sent to app<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d61a8e8c8050">d61a8e8c8050</a> :  Remove package name from SafetyNet logs<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/aa656b72f77d">aa656b72f77d</a> :  Fix Notification redaction when power cycling a non-dozing device while occluded.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ef08edd227ba">ef08edd227ba</a> :  Fix duplicate permission privilege escalation<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/839fc54249a7">839fc54249a7</a> :  Block FullScreenIntent while device is in use if notification has a silencing GroupAlertBehavior.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5e1ee5933856">5e1ee5933856</a> :  Parcel: recycle recycles<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4e61372db1e7">4e61372db1e7</a> :  Limit the number of concurrently snoozed notifications<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ef813bb9728e">ef813bb9728e</a> :  Restrict getInputMethodWindowVisibleHeight<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5768be944009">5768be944009</a> :  DO NOT MERGE Suppress notifications when device enter lockdown<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2e173a31cdba">2e173a31cdba</a> :  Only allow the system server to connect to sync adapters<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5f1d1a509ddf">5f1d1a509ddf</a> :  Stop using invalid URL to prevent unexpected crash<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/74d3ec9109c8">74d3ec9109c8</a> :  Remove package title from notification access confirmation intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5009919a8f9d">5009919a8f9d</a> :  Make CheckOp return allowed if any attr tag for a package is excluded<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/37ce73970270">37ce73970270</a> :  Allow system server uid to bypass location restriction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/361d56e9e37d">361d56e9e37d</a> :  Disallow privileged apps to bypass location restriction<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0bc470593b6e">0bc470593b6e</a> :  DO NOT MERGE. Add a permissions check to LocationManagerService.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dea51d3c8bc4">dea51d3c8bc4</a> :  Clear mInterface before calling resetIkeState()<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/83207c2168e7">83207c2168e7</a> :  Make sure callingPackage belongs to callingUid when checking BG-FGS restrictions.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ad8f3bbb9b0a">ad8f3bbb9b0a</a> :  Update ServiceState broadcast for location permissions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e1eea3177e06">e1eea3177e06</a> :  USB: Increase debounce time for DISCONNECT processing (revised)<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c3e63b9ccdd3">c3e63b9ccdd3</a> :  Log to EventLog on prepareUserStorage failure<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/518d5758120b">518d5758120b</a> :  Ignore errors preparing user storage for existing users<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f538b6acdafc">f538b6acdafc</a> :  UserDataPreparer: reboot to recovery for system user only<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b1bbdae50e53">b1bbdae50e53</a> :  UserDataPreparer: reboot to recovery if preparing user storage fails<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6edafce15eba">6edafce15eba</a> :  StorageManagerService: don't ignore failures to prepare user storage<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/11596b77e1c5">11596b77e1c5</a> :  DO NOT MERGE: WM: Call Transaction#sanitize<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/90b3efd54c81">90b3efd54c81</a> :  limit TelecomManager#registerPhoneAccount to 10; api doc update<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/44acf3376de1">44acf3376de1</a> :  [scv2] RESTRICT AUTOMERGE Add finalizeWorkProfileProvisioning.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a45f792185a4">a45f792185a4</a> :  Disallow too large display padding for wallpaper<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b4f10ef2fe94">b4f10ef2fe94</a> :  Fix NPE<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/614f9606ac2c">614f9606ac2c</a> :  Prevent exfiltration of system files via user image settings.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f11d5b6ed369">f11d5b6ed369</a> :  Prevent non-admin users from deleting system apps.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fd60a6c1b73c">fd60a6c1b73c</a> :  Fix security hole in GateKeeperResponse<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1d1b6ba181a3">1d1b6ba181a3</a> :  Update GeofenceHardwareRequestParcelable to match parcel/unparcel format.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9a45cb333288">9a45cb333288</a> :  Add an OEM configurable limit for zen rules<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c89bd29d2ccc">c89bd29d2ccc</a> :  Keyguard - Treat messsages to lock with priority<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9bccb5d1b4ba">9bccb5d1b4ba</a> :  [Ongoing Call] Don't call #getIntent to avoid a security vulnerability.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/77726fccd8a5">77726fccd8a5</a> :  Always restart apps if base.apk gets updated.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/91d787c2cb51">91d787c2cb51</a> :  Verify caller before auto granting slice permission<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0f3cf41c8ea8">0f3cf41c8ea8</a> :  Replace BitmapRegionDecoder with ImageDecoder<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d5704e471481">d5704e471481</a> :  [RESTRICT AUTOMERGE] Do not resume activity if behind a translucent task<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b29c7026cf3e">b29c7026cf3e</a> :  Update permissions for ServiceState broadcast<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/642a09a7b7d0">642a09a7b7d0</a> :  Filter notification APIs by user<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2d8c78c75630">2d8c78c75630</a> :  Security fixes for PendingIntent related apis in LauncherApps<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e015b279f07b">e015b279f07b</a> :  [RESTRICT AUTOMERGE] Add hide-non-system-overlay flag for HarmfulAppWarningActivity<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8b97240bf981">8b97240bf981</a> :  Restrict AdbManager broadcasts to apps with MANAGE_DEBUGGING permission.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/14862d3b346d">14862d3b346d</a> :  Validate pid can be trusted<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/15d872673799">15d872673799</a> :  Fix a mismatch in Bitmap_createFromParcel<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_minikin-show" class="showLink" onclick="show('platform_frameworks_minikin');return false;">+</a><a href="#" id="platform_frameworks_minikin-hide" class="hideLink" onclick="hide('platform_frameworks_minikin');return false;">-</a>&nbsp;<a name="platform_frameworks_minikin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/minikin">platform/frameworks/minikin</a></h2>
+<div id="platform_frameworks_minikin"><a href="https://android.googlesource.com/platform/frameworks/minikin/+/936478d">936478d</a> :  Fix OOB crash for registerLocaleList<br />
+<a href="https://android.googlesource.com/platform/frameworks/minikin/+/50f8ef0">50f8ef0</a> :  Fix OOB read for registerLocaleList<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/b7c81325ec">b7c81325ec</a> :  Add AppOps overload to be able to watch foreground changes.<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/be2a9ae608">be2a9ae608</a> :  Fix for heap-use-after-free in GPUService.cpp<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/e6c90021aa">e6c90021aa</a> :  Allow sensors list to be empty<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/927725a823">927725a823</a> :  Add removeInstanceForPackageMethod to SensorManager<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/642d230200">642d230200</a> :  Remove some new memory leaks from SensorManager<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/a968087391">a968087391</a> :  Check for malformed Sensor Flattenable<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/09f4445ca5">09f4445ca5</a> :  Mitigate the security vulnerability by sanitizing the transaction flags.<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/67d14d17dc">67d14d17dc</a> :  Allow windowhandles with NO_INPUT_CHANNEL - DO NOT MERGE<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/48b6681419">48b6681419</a> :  Initialize DrawingState::trustedOverlay to false in constructor<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/f4eedabb92">f4eedabb92</a> :  RESTRICT AUTOMERGE SurfaceFlinger: fix a potential race condition in stealReceiveChannel<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/7b6ab501f2">7b6ab501f2</a> :  DO NOT MERGE: SurfaceControl: Ensure unused fields are zeroed<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/1f38c7b272">1f38c7b272</a> :  DO NOT MERGE: SurfaceFlinger: Add Transaction#sanitize<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/27b8c20ade">27b8c20ade</a> :  Enforce privileged phone state for getSubscriptionProperty(GROUP_UUID)<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_interfaces-show" class="showLink" onclick="show('platform_hardware_interfaces');return false;">+</a><a href="#" id="platform_hardware_interfaces-hide" class="hideLink" onclick="hide('platform_hardware_interfaces');return false;">-</a>&nbsp;<a name="platform_hardware_interfaces" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/interfaces">platform/hardware/interfaces</a></h2>
+<div id="platform_hardware_interfaces"><a href="https://android.googlesource.com/platform/hardware/interfaces/+/feac66fe4d">feac66fe4d</a> :  Keep track of DeathMonitor cookies<br />
+<a href="https://android.googlesource.com/platform/hardware/interfaces/+/703d47656e">703d47656e</a> :  Add additional bounds checks to NNAPI FMQ deserialize utility functions<br />
+<a href="https://android.googlesource.com/platform/hardware/interfaces/+/f0c49e1c4b">f0c49e1c4b</a> :  Fix array out of bound in audioTransportToHal.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_nxp_nfc-show" class="showLink" onclick="show('platform_hardware_nxp_nfc');return false;">+</a><a href="#" id="platform_hardware_nxp_nfc-hide" class="hideLink" onclick="hide('platform_hardware_nxp_nfc');return false;">-</a>&nbsp;<a name="platform_hardware_nxp_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/nxp/nfc">platform/hardware/nxp/nfc</a></h2>
+<div id="platform_hardware_nxp_nfc"><a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/b60312a">b60312a</a> :  OOBR in AnalyzeMfcResp in NxpMfcReader.cc<br />
+<a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/ed590b4">ed590b4</a> :  OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2<br />
+<a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/dddf476">dddf476</a> :  Revert "OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2"<br />
+<a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/8da1390">8da1390</a> :  OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2<br />
+<a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/14fe5b9">14fe5b9</a> :  Revert "OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2"<br />
+<a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/5df475b">5df475b</a> :  OOBR in NxpMfcReader::SendIncDecRestoreCmdPart2<br />
+<a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/3295299">3295299</a> :  OOBW in phNxpNciHal_write_unlocked()<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Camera2-show" class="showLink" onclick="show('platform_packages_apps_Camera2');return false;">+</a><a href="#" id="platform_packages_apps_Camera2-hide" class="hideLink" onclick="hide('platform_packages_apps_Camera2');return false;">-</a>&nbsp;<a name="platform_packages_apps_Camera2" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Camera2">platform/packages/apps/Camera2</a></h2>
+<div id="platform_packages_apps_Camera2"><a href="https://android.googlesource.com/platform/packages/apps/Camera2/+/1dab7ddf9">1dab7ddf9</a> :  Camera2: Do not pass location info for startActivity case<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Car_Settings-show" class="showLink" onclick="show('platform_packages_apps_Car_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Car_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Car_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Car_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Car/Settings">platform/packages/apps/Car/Settings</a></h2>
+<div id="platform_packages_apps_Car_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Car/Settings/+/4cab383d6">4cab383d6</a> :  Convert argument to Intent in car settings AddAccountActivity.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Car/Settings/+/9cdc8eed9">9cdc8eed9</a> :  [automerge] Convert argument to Intent in car settings account removal. 2p: a7a4b16b8f<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Car/Settings/+/8f3822923">8f3822923</a> :  Extract app label from component name in notification access confirmation UI<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Contacts-show" class="showLink" onclick="show('platform_packages_apps_Contacts');return false;">+</a><a href="#" id="platform_packages_apps_Contacts-hide" class="hideLink" onclick="hide('platform_packages_apps_Contacts');return false;">-</a>&nbsp;<a name="platform_packages_apps_Contacts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Contacts">platform/packages/apps/Contacts</a></h2>
+<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/2193d07f2">2193d07f2</a> :  No longer export CallSubjectDialog<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Dialer-show" class="showLink" onclick="show('platform_packages_apps_Dialer');return false;">+</a><a href="#" id="platform_packages_apps_Dialer-hide" class="hideLink" onclick="hide('platform_packages_apps_Dialer');return false;">-</a>&nbsp;<a name="platform_packages_apps_Dialer" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Dialer">platform/packages/apps/Dialer</a></h2>
+<div id="platform_packages_apps_Dialer"><a href="https://android.googlesource.com/platform/packages/apps/Dialer/+/10e7d4197">10e7d4197</a> :  No longer export CallSubjectDialog<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_EmergencyInfo-show" class="showLink" onclick="show('platform_packages_apps_EmergencyInfo');return false;">+</a><a href="#" id="platform_packages_apps_EmergencyInfo-hide" class="hideLink" onclick="hide('platform_packages_apps_EmergencyInfo');return false;">-</a>&nbsp;<a name="platform_packages_apps_EmergencyInfo" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo">platform/packages/apps/EmergencyInfo</a></h2>
+<div id="platform_packages_apps_EmergencyInfo"><a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/463385bb">463385bb</a> :  Removes unnecessary permission from the EmergencyInfo app.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/4cf00d87">4cf00d87</a> :  Prevent exfiltration of system files via avatar picker.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/066a5052">066a5052</a> :  Revert "Prevent exfiltration of system files via user image settings."<br />
+<a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/42b04c22">42b04c22</a> :  Prevent exfiltration of system files via user image settings.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_KeyChain-show" class="showLink" onclick="show('platform_packages_apps_KeyChain');return false;">+</a><a href="#" id="platform_packages_apps_KeyChain-hide" class="hideLink" onclick="hide('platform_packages_apps_KeyChain');return false;">-</a>&nbsp;<a name="platform_packages_apps_KeyChain" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/KeyChain">platform/packages/apps/KeyChain</a></h2>
+<div id="platform_packages_apps_KeyChain"><a href="https://android.googlesource.com/platform/packages/apps/KeyChain/+/d2b0f9e">d2b0f9e</a> :  Encode authority part of uri before showing in UI<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/0b48cd0b6c">0b48cd0b6c</a> :  Fix permission bypass in legacy shortcut<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/cd47464acf">cd47464acf</a> :  Fix permission issue in legacy shortcut<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/7df880c1cc">7df880c1cc</a> :  Prevent falling into OtherActivityInputConsumer when over lockscreen<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/e470df7d7">e470df7d7</a> :  Remove factory-reset logic from post-suw syncauth<br />
+<a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/726e5bf91">726e5bf91</a> :  [scv2] RESTRICT AUTOMERGE Use finalizeWorkProfileProvisioning.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Nfc-show" class="showLink" onclick="show('platform_packages_apps_Nfc');return false;">+</a><a href="#" id="platform_packages_apps_Nfc-hide" class="hideLink" onclick="hide('platform_packages_apps_Nfc');return false;">-</a>&nbsp;<a name="platform_packages_apps_Nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Nfc">platform/packages/apps/Nfc</a></h2>
+<div id="platform_packages_apps_Nfc"><a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/a04dd0f5">a04dd0f5</a> :  Possible deadlock on the NfcService object<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/a9296f52">a9296f52</a> :  Ensure that SecureNFC setting cannot be bypassed<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/2af2b8c5">2af2b8c5</a> :  OOB read in phNciNfc_RecvMfResp()<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/6788bd57">6788bd57</a> :  Do not set default contactless application without user interaction<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/809ba7f3a4e">809ba7f3a4e</a> :  RESTRICT AUTOMERGE Restrict Settings Homepage prior to provisioning<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/78a8360e975">78a8360e975</a> :  Ignore fragment attr from ext authenticator resource<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/75ca173966b">75ca173966b</a> :  Replace getCallingActivity() with getLaunchedFromPackage()<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/ccabd3d0e7e">ccabd3d0e7e</a> :  Limit wifi item edit content's max length to 500<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9d707ec6d10">9d707ec6d10</a> :  Validate ringtone URIs before setting<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/5b8c54c7dc0">5b8c54c7dc0</a> :  RESTRICT AUTOMERGE: Catch exceptions from setLockCredential()<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/50b0c8d0cb2">50b0c8d0cb2</a> :  [RESTRICT AUTOMERGE] Restrict ApnEditor settings<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/931304bc302">931304bc302</a> :  DO NOT MERGE: Prevent non-system IME from becoming device admin<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/cf4420a5047">cf4420a5047</a> :  Settings: don't try to allow NLSes with too-long component names<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/cb449a2de29">cb449a2de29</a> :  Don't hide approved NLSes in Settings<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/afc0ffc654b">afc0ffc654b</a> :  Fix: Bluetooth and Wifi scanning location MainSwitch page policy transparency.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/6376a4f1275">6376a4f1275</a> :  Don't show NLSes with excessively long component names<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/cb6e1d8e4af">cb6e1d8e4af</a> :  Convert argument to intent in AddAccountSettings.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/6c81f3bc6c4">6c81f3bc6c4</a> :  [DO NOT MERGE] Enforce INTERACT_ACROSS_USERS_FULL permission for NotificationAccessDetails<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/bf50f860665">bf50f860665</a> :  Only primary user is allowed to control secure nfc<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/d83753d64e9">d83753d64e9</a> :  Add DISALLOW_APPS_CONTROL check into uninstall app for all users<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/3ba0bed404c">3ba0bed404c</a> :  FRP bypass defense in the settings app<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/c1cbfa27a55">c1cbfa27a55</a> :  Check Uri permission for FLAG_GRANT_READ/WRITE_URI_PERMISSION<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/b7f20c0ada8">b7f20c0ada8</a> :  Allow 2-pane deep link to access unexported Activity<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/4e674cbb4b7">4e674cbb4b7</a> :  Settings 2-pane deep link vulnerabilities<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/dffd89a4be7">dffd89a4be7</a> :  RESTRICT AUTOMERGE Make bluetooth switch not discoverable via SliceDeepLinkTrampoline<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9b3570921f0">9b3570921f0</a> :  Remove Intent selector from 2-pane deep link Intent<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/3c6ad102348">3c6ad102348</a> :  [DO NOT MERGE] Add FLAG_SECURE for ChooseLockPassword and Pattern<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/445cc2e28de">445cc2e28de</a> :  [DO NOT MERGE] Make bluetooth not discoverable via large screen deep link flow<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/ea7692e3ea2">ea7692e3ea2</a> :  [DO NOT MERGE] Fix can't change notification sound for work profile.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/35c2ee8e11b">35c2ee8e11b</a> :  [DO NOT MERGE] Fix Settings crash when setting a null ringtone<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/c6036b888bb">c6036b888bb</a> :  Extract app label from component name in notification access confirmation UI<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/f52008b45e3">f52008b45e3</a> :  RESTRICT AUTOMERGE Fix: policy enforcement for location wifi scanning<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9ff50f623ff">9ff50f623ff</a> :  Do not let guest user disable secuer nfc via SettingsSlice<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/d05d20278ba">d05d20278ba</a> :  RESTRICT AUTOMERGE Make bluetooth not discoverable via SliceDeepLinkTrampoline<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/b256e2e735e">b256e2e735e</a> :  Verify ringtone from ringtone picker is audio<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/2ac9c641624">2ac9c641624</a> :  Fix LaunchAnyWhere in AppRestrictionsFragment<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/db3d2deddc7">db3d2deddc7</a> :  Hide non-system overlay window on ActivityPicker<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/ab020e22053">ab020e22053</a> :  Restrict secondary users to share Wi-Fi network<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/ea01af3dc66">ea01af3dc66</a> :  Change default USB configuration to a RestrictedPreference<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/21bf0e6616f">21bf0e6616f</a> :  Hide private DNS settings UI in Guest mode<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/8551585b592">8551585b592</a> :  Do not let guest user disable secure nfc<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Traceur-show" class="showLink" onclick="show('platform_packages_apps_Traceur');return false;">+</a><a href="#" id="platform_packages_apps_Traceur-hide" class="hideLink" onclick="hide('platform_packages_apps_Traceur');return false;">-</a>&nbsp;<a name="platform_packages_apps_Traceur" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Traceur">platform/packages/apps/Traceur</a></h2>
+<div id="platform_packages_apps_Traceur"><a href="https://android.googlesource.com/platform/packages/apps/Traceur/+/9c64b011">9c64b011</a> :  Add DISALLOW_DEBUGGING_FEATURES check<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Traceur/+/f7ec4727">f7ec4727</a> :  Update Traceur to check admin user status<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_TvSettings-show" class="showLink" onclick="show('platform_packages_apps_TvSettings');return false;">+</a><a href="#" id="platform_packages_apps_TvSettings-hide" class="hideLink" onclick="hide('platform_packages_apps_TvSettings');return false;">-</a>&nbsp;<a name="platform_packages_apps_TvSettings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/TvSettings">platform/packages/apps/TvSettings</a></h2>
+<div id="platform_packages_apps_TvSettings"><a href="https://android.googlesource.com/platform/packages/apps/TvSettings/+/e3624c1c2">e3624c1c2</a> :  Convert argument to intent in addAccount TvSettings.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_DnsResolver-show" class="showLink" onclick="show('platform_packages_modules_DnsResolver');return false;">+</a><a href="#" id="platform_packages_modules_DnsResolver-hide" class="hideLink" onclick="hide('platform_packages_modules_DnsResolver');return false;">-</a>&nbsp;<a name="platform_packages_modules_DnsResolver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/DnsResolver">platform/packages/modules/DnsResolver</a></h2>
+<div id="platform_packages_modules_DnsResolver"><a href="https://android.googlesource.com/platform/packages/modules/DnsResolver/+/354b399d">354b399d</a> :  Fix use-after-free in DNS64 discovery thread<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_NeuralNetworks-show" class="showLink" onclick="show('platform_packages_modules_NeuralNetworks');return false;">+</a><a href="#" id="platform_packages_modules_NeuralNetworks-hide" class="hideLink" onclick="hide('platform_packages_modules_NeuralNetworks');return false;">-</a>&nbsp;<a name="platform_packages_modules_NeuralNetworks" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks">platform/packages/modules/NeuralNetworks</a></h2>
+<div id="platform_packages_modules_NeuralNetworks"><a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/7270383c5">7270383c5</a> :  Fix OOB Read in convertSubgraphFromHAL<br />
+<a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/a66a8b1f1">a66a8b1f1</a> :  Fix out of Bounds Read in convertSubgraphFromHAL in ShimConverter.cpp in libneuralnetworks_shim_static<br />
+<a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/c8526bf8b">c8526bf8b</a> :  Fix OOB read in parseInputs in ShimPreparedModel.cpp<br />
+<a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/eb8507507">eb8507507</a> :  Fix OOB Read in setOperandValue<br />
+<a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/0586a1150">0586a1150</a> :  Add additional bounds checks to NNAPI FMQ deserialize utility functions<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/0b70feb033">0b70feb033</a> :  RESTRICT AUTOMERGE Fix to restrict admin from granting permission to a sensor permission group<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/1cdbf14181">1cdbf14181</a> :  Do not grant notification access for work apps.<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/e5b860cc5d">e5b860cc5d</a> :  RESTRICT AUTOMERGE Finish ManagePermissionsActivity if device is not provisioned<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/2226224b47">2226224b47</a> :  Add one-time flag to permission if group is currently one-time<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/ffc9dcebf3">ffc9dcebf3</a> :  Hide overlays on ReviewPermissionsAtivity<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/39b3206029">39b3206029</a> :  Fix incorrect auto grant for split permissions<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_StatsD-show" class="showLink" onclick="show('platform_packages_modules_StatsD');return false;">+</a><a href="#" id="platform_packages_modules_StatsD-hide" class="hideLink" onclick="hide('platform_packages_modules_StatsD');return false;">-</a>&nbsp;<a name="platform_packages_modules_StatsD" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/StatsD">platform/packages/modules/StatsD</a></h2>
+<div id="platform_packages_modules_StatsD"><a href="https://android.googlesource.com/platform/packages/modules/StatsD/+/7b09611f0">7b09611f0</a> :  [statsd] Make executor thread a class member of MultiConditionTrigger<br />
+<a href="https://android.googlesource.com/platform/packages/modules/StatsD/+/23ae4f4b0">23ae4f4b0</a> :  [libstatssocket] Added validation for adding new data into StatsEvent<br />
+<a href="https://android.googlesource.com/platform/packages/modules/StatsD/+/6ec0971d8">6ec0971d8</a> :  Make log reader thread a class member<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/306072fecb">306072fecb</a> :  Update password check for WAPI<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/843c8592ac">843c8592ac</a> :  Add pre-share key check for wapi<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/6fd11bdd9d">6fd11bdd9d</a> :  Limit the ServiceFriendlyNames and limit the number of Passpoint per App<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/7b2b81112c">7b2b81112c</a> :  Add size check on PPS#policy<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/a39058dba3">a39058dba3</a> :  Only handle saveToStore from the WifiNetworkSuggestionsManager<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/e240538a9d">e240538a9d</a> :  Revert "Revert "[DO NOT MERGE] wifi: remove certificates for network factory reset""<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/b72619d74b">b72619d74b</a> :  Revert "[DO NOT MERGE] wifi: remove certificates for network factory reset"<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/cf672cd916">cf672cd916</a> :  wifi: Reset to default SAP configuration when doing factory reset<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/55d5044b11">55d5044b11</a> :  [Passpoint] Add more check to limit the config size<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/9b9d3d61b1">9b9d3d61b1</a> :  [DO NOT MERGE] passpoint: validate decorated identity prefix<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/389f41fe73">389f41fe73</a> :  Give the location mode exemption for emergency location service<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/0369224720">0369224720</a> :  [DO NOT MERGE] wifi: remove certificates for network factory reset<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_adb-show" class="showLink" onclick="show('platform_packages_modules_adb');return false;">+</a><a href="#" id="platform_packages_modules_adb-hide" class="hideLink" onclick="hide('platform_packages_modules_adb');return false;">-</a>&nbsp;<a name="platform_packages_modules_adb" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/adb">platform/packages/modules/adb</a></h2>
+<div id="platform_packages_modules_adb"><a href="https://android.googlesource.com/platform/packages/modules/adb/+/d25e43ad">d25e43ad</a> :  Backport of Win-specific suppression of potentially rogue construct that can engage in directory traversal on the host.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_ContactsProvider-show" class="showLink" onclick="show('platform_packages_providers_ContactsProvider');return false;">+</a><a href="#" id="platform_packages_providers_ContactsProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_ContactsProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_ContactsProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider">platform/packages/providers/ContactsProvider</a></h2>
+<div id="platform_packages_providers_ContactsProvider"><a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/6f45c2c1">6f45c2c1</a> :  enforce stricter CallLogProvider query<br />
+<a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/87c04e6b">87c04e6b</a> :  DO NOT MERGE Add check that prevents file operations outside of Call Composer Dir<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_DownloadProvider-show" class="showLink" onclick="show('platform_packages_providers_DownloadProvider');return false;">+</a><a href="#" id="platform_packages_providers_DownloadProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_DownloadProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_DownloadProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/DownloadProvider">platform/packages/providers/DownloadProvider</a></h2>
+<div id="platform_packages_providers_DownloadProvider"><a href="https://android.googlesource.com/platform/packages/providers/DownloadProvider/+/b2cc552f">b2cc552f</a> :  DO NOT MERGE: Consolidate queryChildDocumentsXxx() implementations<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/cd6937591">cd6937591</a> :  Prevent insertion in other users storage volumes<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/9ea1568b6">9ea1568b6</a> :  Fix path traversal vulnerabilities in MediaProvider<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/bfd453aa1">bfd453aa1</a> :  Canonicalize file path for insertion by legacy apps<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/8b397d918">8b397d918</a> :  Remove invalid surrogates during bindSelection<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/ec2ee6238">ec2ee6238</a> :  Canonicalise path before extracting relative path<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/571c32141">571c32141</a> :  isDataOrObbPath blocks access to Android/[data|obb] dirs only<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/b49faf9ca">b49faf9ca</a> :  DO NOT MERGE Avoid path traversal in MediaProvider delete call<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/dc1255a8b">dc1255a8b</a> :  Restrict legacy apps to insert files to other private app dirs<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_TelephonyProvider-show" class="showLink" onclick="show('platform_packages_providers_TelephonyProvider');return false;">+</a><a href="#" id="platform_packages_providers_TelephonyProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_TelephonyProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_TelephonyProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider">platform/packages/providers/TelephonyProvider</a></h2>
+<div id="platform_packages_providers_TelephonyProvider"><a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/d8931386">d8931386</a> :  DO NOT MERGE Block access to sms/mms db from work profile.<br />
+<a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/0d6db921">0d6db921</a> :  Update file permissions using canonical path<br />
+<a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/0231d47f">0231d47f</a> :  Check dir path before updating permissions.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/dac6bc98d">dac6bc98d</a> :  Resolve cross-user image exploit for conference status hints<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/aaf5ff093">aaf5ff093</a> :  Unbind CallScreeningService when timeout reached.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/762b25f36">762b25f36</a> :  DO NOT MERGE Unbind CS if connection is not created within 15 seconds.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/74cf226b7">74cf226b7</a> :  Resolve account image icon profile boundary exploit.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/d0ea37773">d0ea37773</a> :  Fix vulnerability in CallRedirectionService.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/611096e39">611096e39</a> :  Resolve StatusHints image exploit across user.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/63969c4e6">63969c4e6</a> :  Call Redirection: unbind service when onBind returns null<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/713ad14f1">713ad14f1</a> :  enforce stricter rules when registering phoneAccounts<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/d6397934a">d6397934a</a> :  DO NOT MERGE do not process content uri in call Intents<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/a0818f9e5">a0818f9e5</a> :  Ensure service unbind when receiving a null call screening service in onBind.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/d4b4ff7f2">d4b4ff7f2</a> :  Fix security vulnerability when register phone accounts.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/b58032b4c">b58032b4c</a> :  Hide overlay windows when showing phone account enable/disable screen.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/671411463">671411463</a> :  Fix security vulnerability issue for multi user call redirections.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/59933956c">59933956c</a> :  switch TelecomManager List getters to ParceledListSlice<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/f5f4dec65">f5f4dec65</a> :  limit TelecomManager#registerPhoneAccount to 10<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/ac1cc4d64">ac1cc4d64</a> :  Handle null bindings returned from ConnectionService.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/986254847">986254847</a> :  Fixed leak of cross user data in multiple settings.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telephony/+/2444b02a1">2444b02a1</a> :  DO NOT MERGE Grant carrier privileges if package has carrier config access.<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telephony/+/d29380842">d29380842</a> :  prevent overlays on the phone settings<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_ca-certificates-show" class="showLink" onclick="show('platform_system_ca-certificates');return false;">+</a><a href="#" id="platform_system_ca-certificates-hide" class="hideLink" onclick="hide('platform_system_ca-certificates');return false;">-</a>&nbsp;<a name="platform_system_ca-certificates" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/ca-certificates">platform/system/ca-certificates</a></h2>
+<div id="platform_system_ca-certificates"><a href="https://android.googlesource.com/platform/system/ca-certificates/+/9a9770b">9a9770b</a> :  Remove E-Tugra certificates.<br />
+<a href="https://android.googlesource.com/platform/system/ca-certificates/+/2a0ea48">2a0ea48</a> :  Drop TrustCor certificates<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_connectivity_wificond-show" class="showLink" onclick="show('platform_system_connectivity_wificond');return false;">+</a><a href="#" id="platform_system_connectivity_wificond-hide" class="hideLink" onclick="hide('platform_system_connectivity_wificond');return false;">-</a>&nbsp;<a name="platform_system_connectivity_wificond" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/connectivity/wificond">platform/system/connectivity/wificond</a></h2>
+<div id="platform_system_connectivity_wificond"><a href="https://android.googlesource.com/platform/system/connectivity/wificond/+/848c717">848c717</a> :  Use sp&lt;T&gt;::make to create the sp pointer for EventLoopCallback<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_core-show" class="showLink" onclick="show('platform_system_core');return false;">+</a><a href="#" id="platform_system_core-hide" class="hideLink" onclick="hide('platform_system_core');return false;">-</a>&nbsp;<a name="platform_system_core" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/core">platform/system/core</a></h2>
+<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/03b573b0d">03b573b0d</a> :  Add seal if ashmem-dev is backed by memfd<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_libfmq-show" class="showLink" onclick="show('platform_system_libfmq');return false;">+</a><a href="#" id="platform_system_libfmq-hide" class="hideLink" onclick="hide('platform_system_libfmq');return false;">-</a>&nbsp;<a name="platform_system_libfmq" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/libfmq">platform/system/libfmq</a></h2>
+<div id="platform_system_libfmq"><a href="https://android.googlesource.com/platform/system/libfmq/+/74d7ce9">74d7ce9</a> :  Use the values of the ptrs that we check<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_netd-show" class="showLink" onclick="show('platform_system_netd');return false;">+</a><a href="#" id="platform_system_netd-hide" class="hideLink" onclick="hide('platform_system_netd');return false;">-</a>&nbsp;<a name="platform_system_netd" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/netd">platform/system/netd</a></h2>
+<div id="platform_system_netd"><a href="https://android.googlesource.com/platform/system/netd/+/fd5d292a">fd5d292a</a> :  Fix Heap-use-after-free in MDnsSdListener::Monitor::run<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/14adc1dc">14adc1dc</a> :  OOBW in rw_i93_send_to_upper()<br />
+<a href="https://android.googlesource.com/platform/system/nfc/+/226142fb">226142fb</a> :  OOBW in nci_snd_set_routing_cmd()<br />
+<a href="https://android.googlesource.com/platform/system/nfc/+/c97e51c2">c97e51c2</a> :  The length of a packet should be non-zero<br />
+<a href="https://android.googlesource.com/platform/system/nfc/+/fb8ae8d3">fb8ae8d3</a> :  OOBR in nfc_ncif_proc_ee_discover_req()<br />
+<a href="https://android.googlesource.com/platform/system/nfc/+/f809ac23">f809ac23</a> :  Double Free in ce_t4t_data_cback<br />
+<a href="https://android.googlesource.com/platform/system/nfc/+/dd6eb012">dd6eb012</a> :  Out of Bounds Read in nfa_dm_check_set_config<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_sepolicy-show" class="showLink" onclick="show('platform_system_sepolicy');return false;">+</a><a href="#" id="platform_system_sepolicy-hide" class="hideLink" onclick="hide('platform_system_sepolicy');return false;">-</a>&nbsp;<a name="platform_system_sepolicy" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/sepolicy">platform/system/sepolicy</a></h2>
+<div id="platform_system_sepolicy"><a href="https://android.googlesource.com/platform/system/sepolicy/+/fa0ffa277">fa0ffa277</a> :  RESTRICT AUTOMERGE Allow system_server to call IKeystoreMaintenance.deleteAllKeys()<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_tools_apksig-show" class="showLink" onclick="show('platform_tools_apksig');return false;">+</a><a href="#" id="platform_tools_apksig-hide" class="hideLink" onclick="hide('platform_tools_apksig');return false;">-</a>&nbsp;<a name="platform_tools_apksig" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/tools/apksig">platform/tools/apksig</a></h2>
+<div id="platform_tools_apksig"><a href="https://android.googlesource.com/platform/tools/apksig/+/8a0a837">8a0a837</a> :  Limit the number of supported v1 and v2 signers<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
