@@ -13,7 +13,7 @@
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
-<title>android-security-14.0.0_r3 to android-security-14.0.0_r4 AOSP changelog</title>
+<title>android-security-13.0.0_r24 to android-security-13.0.0_r25 AOSP changelog</title>
 
 <script>
 function show(sectionId) {
@@ -53,7 +53,7 @@ function hide(sectionId) {
 <div class="container card">
 <div class="row">
     <div class="col-md-12">
-        <h1>android-security-14.0.0_r3 to android-security-14.0.0_r4 AOSP changelog</h1>
+        <h1>android-security-13.0.0_r24 to android-security-13.0.0_r25 AOSP changelog</h1>
     </div>
 </div>
 
@@ -70,38 +70,39 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="col-md-12">
         <div id="changes">
 <p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
-<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/12a11e76a4">12a11e76a4</a> :  Version bump to USV1.230808.012 [core/build_id.mk]<br />
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/21e97aa4f8">21e97aa4f8</a> :  Version bump to TSV1.220628.074 [core/build_id.mk]<br />
 </div></p>
 
-<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
-<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/a424120a62">a424120a62</a> :  Fix convertYUV420Planar16ToY410 overflow issue for unsupported cropwidth.<br />
-<a href="https://android.googlesource.com/platform/frameworks/av/+/4f9fa2df20">4f9fa2df20</a> :  Codec2BufferUtils: Use cropped dimensions in RGB to YUV conversion<br />
+<p><h2><a href="#" id="platform_external_giflib-show" class="showLink" onclick="show('platform_external_giflib');return false;">+</a><a href="#" id="platform_external_giflib-hide" class="hideLink" onclick="hide('platform_external_giflib');return false;">-</a>&nbsp;<a name="platform_external_giflib" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/giflib">platform/external/giflib</a></h2>
+<div id="platform_external_giflib"><a href="https://android.googlesource.com/platform/external/giflib/+/21f1b1b">21f1b1b</a> :  Fix potential overflow when calculating ImageSize<br />
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
-<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/bdf1cce569c9">bdf1cce569c9</a> :  Do not allow setting notification access across users.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/2c3fb40bca62">2c3fb40bca62</a> :  RESTRICT AUTOMERGE Log to detect usage of whitelistToken when sending non-PI target<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/f747b1e48830">f747b1e48830</a> :  [SB][Privacy] Fetch current active appops on startup.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/74d17f63ec61">74d17f63ec61</a> :  [CDM] Validate component name length before requesting notification access.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/b8331285ad4f">b8331285ad4f</a> :  Truncate user data to a limit of 500 characters<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/710dfb62f479">710dfb62f479</a> :  DO NOT MERGE Ensure finish lockscreen when usersetup incomplete<br />
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/42d3fee9c404">42d3fee9c404</a> :  Always show all approved apps<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/aa31697ed1de">aa31697ed1de</a> :  Pass SafeActivityOptions with actual caller for startActivityInTF<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ed032182f93d">ed032182f93d</a> :  Update checkKeyIntent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d58fdba12322">d58fdba12322</a> :  Fix allowlist token issues<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4543fc6a902e">4543fc6a902e</a> :  Enforce hard limits on hosts per package and widgets per host.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6d42793c60a1">6d42793c60a1</a> :  enforce limits for VisualVoicemailSmsFilterSettings properties<br />
 </div></p>
 
-<p><h2><a href="#" id="platform_packages_apps_Camera2-show" class="showLink" onclick="show('platform_packages_apps_Camera2');return false;">+</a><a href="#" id="platform_packages_apps_Camera2-hide" class="hideLink" onclick="hide('platform_packages_apps_Camera2');return false;">-</a>&nbsp;<a name="platform_packages_apps_Camera2" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Camera2">platform/packages/apps/Camera2</a></h2>
-<div id="platform_packages_apps_Camera2"><a href="https://android.googlesource.com/platform/packages/apps/Camera2/+/6dff83d22">6dff83d22</a> :  Camera2: Do not pass location info for startActivity case<br />
-</div></p>
-
-<p><h2><a href="#" id="platform_packages_apps_Nfc-show" class="showLink" onclick="show('platform_packages_apps_Nfc');return false;">+</a><a href="#" id="platform_packages_apps_Nfc-hide" class="hideLink" onclick="hide('platform_packages_apps_Nfc');return false;">-</a>&nbsp;<a name="platform_packages_apps_Nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Nfc">platform/packages/apps/Nfc</a></h2>
-<div id="platform_packages_apps_Nfc"><a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/650f7d76">650f7d76</a> :  Possible deadlock on the NfcService object<br />
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/0b4de68bd7">0b4de68bd7</a> :  libbinder: Parcel: validate read data before write<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/24a26f39f3">24a26f39f3</a> :  libbinder: Parcel: grow rejects large data pos<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/1d5f81bdd3">1d5f81bdd3</a> :  binder: fix FD handling in continueWrite<br />
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
-<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/460d0b5a63d">460d0b5a63d</a> :  Validate ringtone URIs before setting<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/0fb3408e879">0fb3408e879</a> :  Make sure work profile app cant enable notification listener services<br />
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/779372c34f0">779372c34f0</a> :  Disable factory reset in DSU mode<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/7fd48b9dad9">7fd48b9dad9</a> :  [CDM][NLS] Check if the NLS service has an intent-filter<br />
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
-<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/b32ccd8264">b32ccd8264</a> :  Fix some OOB errors in BTM parsing<br />
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/2f0cf867e2">2f0cf867e2</a> :  Resolve incomplete fix for SMP authentication bypass<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/49a83909c">49a83909c</a> :  enforce the calling package is the default dialer for VisualVoicemail<br />
 </div></p>
 
 
