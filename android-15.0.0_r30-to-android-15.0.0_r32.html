@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-15.0.0_r30 to android-15.0.0_r32 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-15.0.0_r30 to android-15.0.0_r32 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/1cd3439288">1cd3439288</a> :  Version bump to BP1A.250505.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/658b91d669">658b91d669</a> :  Version bump to BP1A.250505.004.D1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/aab4af2d67">aab4af2d67</a> :  Version bump to BP1A.250505.004.C1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/fb82efb4d6">fb82efb4d6</a> :  Version bump to BP1A.250505.004.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c4bb6b4807">c4bb6b4807</a> :  Version bump to BP1A.250505.004.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/510b9a41d5">510b9a41d5</a> :  Version bump to BP1A.250505.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9ba425968f">9ba425968f</a> :  Version bump to BP1A.250505.003.D1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/817db88c91">817db88c91</a> :  Version bump to BP1A.250505.003.C1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2d993e5945">2d993e5945</a> :  Version bump to BP1A.250505.003.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c5ef8f4737">c5ef8f4737</a> :  Version bump to BP1A.250505.003.B1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b57a80be5c">b57a80be5c</a> :  Version bump to BP1A.250505.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/1f7c93b259">1f7c93b259</a> :  Version bump to BP1A.250505.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a24d8e7fe3">a24d8e7fe3</a> :  Version bump to BP1A.250505.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/26587e9248">26587e9248</a> :  Version bump to BP1A.250305.019.W7 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f18b00186f">f18b00186f</a> :  Version bump to BP1A.250405.007.C1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/dba28dac26">dba28dac26</a> :  Version bump to BP1A.250405.007.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/144c84b4ee">144c84b4ee</a> :  Version bump to BP1A.250405.007.B1 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_build_release-show" class="showLink" onclick="show('platform_build_release');return false;">+</a><a href="#" id="platform_build_release-hide" class="hideLink" onclick="hide('platform_build_release');return false;">-</a>&nbsp;<a name="platform_build_release" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build/release">platform/build/release</a></h2>
+<div id="platform_build_release"><a href="https://android.googlesource.com/platform/build/release/+/be57613f">be57613f</a> :  Update build flags to BP1A.250505.005<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/d0c0aba78c3">d0c0aba78c3</a> :  Add CTS test for restricting setting app op mode by Shell for device provisioning app<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/cbc3f6f7cc">cbc3f6f7cc</a> :  audio policy: return input source updates to audio flinger<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/72e7904b0b46">72e7904b0b46</a> :  Log locale changes from AssetManager2.cpp<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0a21ad36df8b">0a21ad36df8b</a> :  Add config for auto data switch switch back case<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/93509ccdaa3a">93509ccdaa3a</a> :  set default locale when config change isn't locale<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6b552f6fc4a5">6b552f6fc4a5</a> :  Add some logging around locale changes<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/57707ea4c67f">57707ea4c67f</a> :  [AE] Prevent crash when launching activity's task id is invalid<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f9b0058a2d6e">f9b0058a2d6e</a> :  Remove Flag to clear allowlist duration<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d2f0725f92d4">d2f0725f92d4</a> :  Revert^2 "Clear the BAL allowlist duration"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cbf08f407561">cbf08f407561</a> :  Add equals method<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5a196bdc33a8">5a196bdc33a8</a> :  Remove normalize_home_intent flag<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/da0bb76e3042">da0bb76e3042</a> :  Prevent setting app op mode for device provisioning app through shell command<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fd16f565f2a0">fd16f565f2a0</a> :  Check dump permissions before dumping --high-priority<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7a050dfd572b">7a050dfd572b</a> :  Restrict the permission for accessing vpn profile<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b94e9942bb1f">b94e9942bb1f</a> :  Impose a threshold on the number of attributed op entries returned in a binder call<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6a242a0fcb75">6a242a0fcb75</a> :  Avoid app pinning requests if the Task is already locked<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/932b4445ec60">932b4445ec60</a> :  Normalize home intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/70ee03ab68e4">70ee03ab68e4</a> :  Don't allow non-system uids to use "android" as calling package.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/7962ad3f00">7962ad3f00</a> :  Fix a race condition that causes DatagramDispatcher to get stuck<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/038e6d96da">038e6d96da</a> :  Fix a race condition that causes DatagramDispatcher to get stuck<br />
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/a294d1ccb4">a294d1ccb4</a> :  Enable auto switch to satellite<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/c71eabd1e9b">c71eabd1e9b</a> :  Disable the ContentProtection setting switch bar when current user is a guest user.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/0841a813bec">0841a813bec</a> :  [CDM] Checks NLS component name instead of package name<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/55ba66d7c0d">55ba66d7c0d</a> :  Check package name format before using it for SPA nav<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7c4536458c">7c4536458c</a> :  Ensure address-related JNI allocations are released<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/c43102c53b">c43102c53b</a> :  BTM: Disconnects the device if encryption failed during connection with encryption reason reported by Controller<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/5c59036ed6">5c59036ed6</a> :  jni: Missing ReleaseByteArrayElements calls<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/1919f370fb">1919f370fb</a> :  Remove flag for bta_av_setconfig_rej_type_confusion<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/6dec5ff521">6dec5ff521</a> :  Remove flag btsec_le_oob_pairing<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/835b7a0252">835b7a0252</a> :  Add missing preconditions to get/setDefaultApplicationAsUser<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/5dd39c1ddc">5dd39c1ddc</a> :  Add size check for IP config<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-15.0.0_r25 to android-15.0.0_r31 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-15.0.0_r25 to android-15.0.0_r31 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/e79f03d930">e79f03d930</a> :  Version bump to BD4A.250505.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/3d271cc336">3d271cc336</a> :  Version bump to BD4A.250505.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/68ddc6f122">68ddc6f122</a> :  Version bump to BD4A.250505.001.X3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/666f5a24af">666f5a24af</a> :  Version bump to BD4A.250505.001.X2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/91744ce8fa">91744ce8fa</a> :  Version bump to BD4A.250505.001.X1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/abdf399f50">abdf399f50</a> :  Version bump to BD4A.250505.001 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/66176043d1">66176043d1</a> :  Version bump to BD4A.250405.003.Y4 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/8fe677bb2d">8fe677bb2d</a> :  Version bump to BD4A.250405.003.Y3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/5ac66d567f">5ac66d567f</a> :  Version bump to BD4A.250405.003.Y2 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7b6de9f412">7b6de9f412</a> :  Version bump to BD4A.250405.003.Y1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/2b4d01b2d0">2b4d01b2d0</a> :  Version bump to BD4A.250405.003.X1 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/477bd461973">477bd461973</a> :  Add CTS test for restricting setting app op mode by Shell for device provisioning app<br />
+<a href="https://android.googlesource.com/platform/cts/+/ab1f0d6d1e0">ab1f0d6d1e0</a> :  Add CTS test for restricting setting app op mode by Shell for device provisioning app<br />
+<a href="https://android.googlesource.com/platform/cts/+/1b6ba70b57e">1b6ba70b57e</a> :  Add CTS test for restricting setting app op mode by Shell for device provisioning app<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/5232462190">5232462190</a> :  audio policy: return input source updates to audio flinger<br />
+<a href="https://android.googlesource.com/platform/frameworks/av/+/4ac483bc02">4ac483bc02</a> :  audio policy: return input source updates to audio flinger<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/88b6e6400fa3">88b6e6400fa3</a> :  Log locale changes from AssetManager2.cpp<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/423fb501a87f">423fb501a87f</a> :  set default locale when config change isn't locale<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4d27231fda16">4d27231fda16</a> :  Add some logging around locale changes<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/559e5323bc7d">559e5323bc7d</a> :  [AE] Prevent crash when launching activity's task id is invalid<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ad31e80a8e9e">ad31e80a8e9e</a> :  Log locale changes from AssetManager2.cpp<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/958789d48a62">958789d48a62</a> :  set default locale when config change isn't locale<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bf610ad2f67f">bf610ad2f67f</a> :  Add some logging around locale changes<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a808e28d4f8d">a808e28d4f8d</a> :  [AE] Prevent crash when launching activity's task id is invalid<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/90e15e167020">90e15e167020</a> :  Normalize home intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/15fbdd0aeb5a">15fbdd0aeb5a</a> :  Add a list of Biometric protected packages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b6e9a74b8df1">b6e9a74b8df1</a> :  Remove Flag to clear allowlist duration<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/64aa5f5f0804">64aa5f5f0804</a> :  Revert^2 "Clear the BAL allowlist duration"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ad51966be202">ad51966be202</a> :  Add equals method<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/af5b88e2b022">af5b88e2b022</a> :  Prevent setting app op mode for device provisioning app through shell command<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b9ee3332dc20">b9ee3332dc20</a> :  Check dump permissions before dumping --high-priority<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5f0a74223918">5f0a74223918</a> :  Restrict the permission for accessing vpn profile<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dc9125a0961d">dc9125a0961d</a> :  Impose a threshold on the number of attributed op entries returned in a binder call<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1e4444f1c547">1e4444f1c547</a> :  Make UserSwitchObserver.onBeforeUserSwitching oneway but still blocking.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b1c3153e1f18">b1c3153e1f18</a> :  Avoid app pinning requests if the Task is already locked<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f908188e4bd3">f908188e4bd3</a> :  Revert "Make UserSwitchObserver.onBeforeUserSwitching oneway but still blocking."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e4eddd7dd1d5">e4eddd7dd1d5</a> :  Make UserSwitchObserver.onBeforeUserSwitching oneway but still blocking.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/78748c1e314d">78748c1e314d</a> :  Don't allow non-system uids to use "android" as calling package.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3e3369b7ccf3">3e3369b7ccf3</a> :  Move UserController.dispatchOnBeforeUserSwitching to mHandler thread.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/48b7c043666f">48b7c043666f</a> :  Delay appop revocation when only capability is lost<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/08c93407a230">08c93407a230</a> :  Revert "Move showing keyguard after the UserSwitchObservers."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1824c4b89919">1824c4b89919</a> :  Move showing keyguard after the UserSwitchObservers.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d30550b7c7ce">d30550b7c7ce</a> :  Normalize home intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/66bc7e6bfb4c">66bc7e6bfb4c</a> :  Add a list of Biometric protected packages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a1553af10ada">a1553af10ada</a> :  Make UserSwitchObserver.onBeforeUserSwitching oneway but still blocking.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/96372908ade7">96372908ade7</a> :  Revert "Make UserSwitchObserver.onBeforeUserSwitching oneway but still blocking."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f1fb19035f18">f1fb19035f18</a> :  Make UserSwitchObserver.onBeforeUserSwitching oneway but still blocking.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/eb9574f4654f">eb9574f4654f</a> :  Move UserController.dispatchOnBeforeUserSwitching to mHandler thread.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cfd590dacb0e">cfd590dacb0e</a> :  Delay appop revocation when only capability is lost<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/615aa9189c09">615aa9189c09</a> :  Revert "Move showing keyguard after the UserSwitchObservers."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/21f549298746">21f549298746</a> :  Move showing keyguard after the UserSwitchObservers.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c28e19debf4a">c28e19debf4a</a> :  Remove Flag to clear allowlist duration<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/688aa2d1f7a6">688aa2d1f7a6</a> :  Revert^2 "Clear the BAL allowlist duration"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8b0a1c981e43">8b0a1c981e43</a> :  Add equals method<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/206f8bde667a">206f8bde667a</a> :  Prevent setting app op mode for device provisioning app through shell command<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/420a8462f594">420a8462f594</a> :  Check dump permissions before dumping --high-priority<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/51f148077af8">51f148077af8</a> :  Restrict the permission for accessing vpn profile<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/db0580604b96">db0580604b96</a> :  Impose a threshold on the number of attributed op entries returned in a binder call<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fac8fd8ec0c8">fac8fd8ec0c8</a> :  Avoid app pinning requests if the Task is already locked<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/431da41c0257">431da41c0257</a> :  Don't allow non-system uids to use "android" as calling package.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/81d40045ac71">81d40045ac71</a> :  Normalize home intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fb4115f80f26">fb4115f80f26</a> :  Add a list of Biometric protected packages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a830dc3a4e17">a830dc3a4e17</a> :  Remove Flag to clear allowlist duration<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8b0c7729d89d">8b0c7729d89d</a> :  Revert^2 "Clear the BAL allowlist duration"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2a1caa00362f">2a1caa00362f</a> :  Add equals method<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0f1cc933177d">0f1cc933177d</a> :  Prevent setting app op mode for device provisioning app through shell command<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4e9a9b0d4a99">4e9a9b0d4a99</a> :  Check dump permissions before dumping --high-priority<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a7a2baf9bd3d">a7a2baf9bd3d</a> :  Restrict the permission for accessing vpn profile<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4d60cc5af0e9">4d60cc5af0e9</a> :  Impose a threshold on the number of attributed op entries returned in a binder call<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b71c82151a36">b71c82151a36</a> :  Make UserSwitchObserver.onBeforeUserSwitching oneway but still blocking.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/44ecce476bf4">44ecce476bf4</a> :  Avoid app pinning requests if the Task is already locked<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2a7c4fa27ba3">2a7c4fa27ba3</a> :  Revert "Make UserSwitchObserver.onBeforeUserSwitching oneway but still blocking."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a1b143fcbdb5">a1b143fcbdb5</a> :  Make UserSwitchObserver.onBeforeUserSwitching oneway but still blocking.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7277f83b9eda">7277f83b9eda</a> :  Don't allow non-system uids to use "android" as calling package.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/66d18f4cb8c7">66d18f4cb8c7</a> :  Move UserController.dispatchOnBeforeUserSwitching to mHandler thread.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e5062f340cd5">e5062f340cd5</a> :  Delay appop revocation when only capability is lost<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9d9cb903130a">9d9cb903130a</a> :  Revert "Move showing keyguard after the UserSwitchObservers."<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3790eb6db1e1">3790eb6db1e1</a> :  Move showing keyguard after the UserSwitchObservers.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/294514e3c5a">294514e3c5a</a> :  Disable the ContentProtection setting switch bar when current user is a guest user.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/43cc175e05b">43cc175e05b</a> :  [CDM] Checks NLS component name instead of package name<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/75ec5954759">75ec5954759</a> :  Check package name format before using it for SPA nav<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/5455be16360">5455be16360</a> :  [SPA] Add biometric authentication for package modification<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/f3241261c09">f3241261c09</a> :  [SPA] Add biometric authentication for package modification<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/f1dfa9a5241">f1dfa9a5241</a> :  Disable the ContentProtection setting switch bar when current user is a guest user.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/348e48ba507">348e48ba507</a> :  [CDM] Checks NLS component name instead of package name<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/6be40210dac">6be40210dac</a> :  Check package name format before using it for SPA nav<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/1dbec11658c">1dbec11658c</a> :  Disable the ContentProtection setting switch bar when current user is a guest user.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/8e999eed34a">8e999eed34a</a> :  [CDM] Checks NLS component name instead of package name<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/6ce5e84d630">6ce5e84d630</a> :  Check package name format before using it for SPA nav<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/0899e3642c6">0899e3642c6</a> :  [SPA] Add biometric authentication for package modification<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/5fc480ce2e">5fc480ce2e</a> :  Add missing preconditions to get/setDefaultApplicationAsUser<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/e1f1dbb546">e1f1dbb546</a> :  Add missing preconditions to get/setDefaultApplicationAsUser<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/c148b887ea">c148b887ea</a> :  Add missing preconditions to get/setDefaultApplicationAsUser<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/d722d2a691">d722d2a691</a> :  Add size check for IP config<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/67b5410020">67b5410020</a> :  Add size check for IP config<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/ec0c9d40d6">ec0c9d40d6</a> :  Add size check for IP config<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

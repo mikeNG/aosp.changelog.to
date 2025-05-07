@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-13.0.0_r28 to android-security-13.0.0_r29 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-13.0.0_r28 to android-security-13.0.0_r29 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/7964ad98cf">7964ad98cf</a> :  Version bump to TSV1.220628.079 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/eca7c7d0f5">eca7c7d0f5</a> :  Version bump to TSV1.220628.078 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_freetype-show" class="showLink" onclick="show('platform_external_freetype');return false;">+</a><a href="#" id="platform_external_freetype-hide" class="hideLink" onclick="hide('platform_external_freetype');return false;">-</a>&nbsp;<a name="platform_external_freetype" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/freetype">platform/external/freetype</a></h2>
+<div id="platform_external_freetype"><a href="https://android.googlesource.com/platform/external/freetype/+/bb6c48113">bb6c48113</a> :  DO NOT MERGE - Return if the subglyph count is too large<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/e2965a9cbd94">e2965a9cbd94</a> :  [vims] better handle assistant force stop<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/03bb6b20a8ea">03bb6b20a8ea</a> :  speech: No BIND_ALLOW_BACKGROUND_ACTIVITY_STARTS<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/43f736c78c9e">43f736c78c9e</a> :  RESTRICT AUTOMERGE Clear the BAL allowlist duration<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b285860ea484">b285860ea484</a> :  Remove invalid null check for callingPackage<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/00bfdca7824f">00bfdca7824f</a> :  RESTRICT AUTOMERGE Normalize home intent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/050cfc6d59cc">050cfc6d59cc</a> :  Allow core uids to register receiver as "android".<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/703caad99ce8">703caad99ce8</a> :  Impose a threshold on the number of attributed op entries returned in a binder call<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/355af484802d">355af484802d</a> :  Add a list of Biometric protected packages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dfe75b5caaf4">dfe75b5caaf4</a> :  Don't allow non-system uids to use "android" as calling package.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/16eef7644115">16eef7644115</a> :  Avoid app pinning requests if the Task is already locked<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/54ce11a8a72">54ce11a8a72</a> :  [CDM] Checks NLS component name instead of package name<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/1aebee954c2">1aebee954c2</a> :  Add biometric authentication for package modification<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/4b81907ce9">4b81907ce9</a> :  Fix OOB read in add_attr<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/772b7519c7">772b7519c7</a> :  Fix OOB read in bta_av_setconfig_rej<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/d8b4c44fb3">d8b4c44fb3</a> :  Fix authentication bypass bug in SMP<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/6a5828a4a4">6a5828a4a4</a> :  RESTRICT AUTOMERGE Revert "Fix a type confusion bug in bta_av_setconfig_rej"<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/fa88f0f26e">fa88f0f26e</a> :  Fix a type confusion bug in bta_av_setconfig_rej<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/5c07da90f7">5c07da90f7</a> :  RESTRICT AUTOMERGE Merge multiple requests by an app in the same task upwards (t)<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/1079834d5e">1079834d5e</a> :  Add size check for IP config<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
