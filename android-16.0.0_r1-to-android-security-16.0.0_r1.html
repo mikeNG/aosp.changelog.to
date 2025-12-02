@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-16.0.0_r1 to android-security-16.0.0_r1 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-16.0.0_r1 to android-security-16.0.0_r1 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_art-show" class="showLink" onclick="show('platform_art');return false;">+</a><a href="#" id="platform_art-hide" class="hideLink" onclick="hide('platform_art');return false;">-</a>&nbsp;<a name="platform_art" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/art">platform/art</a></h2>
+<div id="platform_art"><a href="https://android.googlesource.com/platform/art/+/3eb64751e5">3eb64751e5</a> :  Throw an exception in JNI::NewObject for abstract classes.<br />
+<a href="https://android.googlesource.com/platform/art/+/f511f3be3d">f511f3be3d</a> :  Add notice of requesting source code in art<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/b283612c03">b283612c03</a> :  Version bump to BP2A.250805.008 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6f0851c8f5">6f0851c8f5</a> :  Version bump to BP2A.250805.007 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/cda08bfbf5">cda08bfbf5</a> :  Add apexd.mainline_patch_level_2 to PRODUCT_PACKAGES<br />
+<a href="https://android.googlesource.com/platform/build/+/c165f2606d">c165f2606d</a> :  Version bump to BP2A.250605.031.A5 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/25a667c5ba">25a667c5ba</a> :  Version bump to BP2A.250805.005 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/83f08aaacb">83f08aaacb</a> :  Version bump to BP2A.250805.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/83ef811617">83ef811617</a> :  Version bump to BP2A.250805.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/760c13eaec">760c13eaec</a> :  Version bump to BP2A.250805.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/075580e965">075580e965</a> :  Version bump to BP2A.250605.031.A4 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/49a98eee32">49a98eee32</a> :  Version bump to BP2A.250705.008.A1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/735caf41be">735caf41be</a> :  Change the logic of checking if open source notice should be displayed<br />
+<a href="https://android.googlesource.com/platform/build/+/0a094673a6">0a094673a6</a> :  Version bump to BP2A.250605.006.E4 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/6aaabf2f27">6aaabf2f27</a> :  Version bump to BP2A.250605.031.T1 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/225666289f">225666289f</a> :  Version bump to BP2A.250705.008 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/c2fb95ace4">c2fb95ace4</a> :  Version bump to BP2A.250605.031.A3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/e46bd12439">e46bd12439</a> :  Version bump to BP2A.250705.007 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4348fac57b">4348fac57b</a> :  Version bump to BP2A.250705.006 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/938d4dfe0a">938d4dfe0a</a> :  Update html notice to include a notice of requesting source code<br />
+<a href="https://android.googlesource.com/platform/build/+/b484261a0e">b484261a0e</a> :  Version bump to BP2A.250705.004 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f1d705ed3c">f1d705ed3c</a> :  Version bump to BP2A.250605.006.E3 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/a0854cc706">a0854cc706</a> :  Version bump to BP2A.250705.003 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/9a7d68d612">9a7d68d612</a> :  Version bump to BP2A.250705.002 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/72615451ba">72615451ba</a> :  Mark "disable_synthetic_vsync_for_performance" flag as exported<br />
+<a href="https://android.googlesource.com/platform/build/+/a523502bb3">a523502bb3</a> :  Version bump to BP2A.250605.034 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f88a7ac1d8">f88a7ac1d8</a> :  Version bump to BP2A.250605.033 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/b1e64bd960">b1e64bd960</a> :  Version bump to BP2A.250605.032 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/f3de7c28bc">f3de7c28bc</a> :  Version bump to BP2A.250605.006.E2 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_build_release-show" class="showLink" onclick="show('platform_build_release');return false;">+</a><a href="#" id="platform_build_release-hide" class="hideLink" onclick="hide('platform_build_release');return false;">-</a>&nbsp;<a name="platform_build_release" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build/release">platform/build/release</a></h2>
+<div id="platform_build_release"><a href="https://android.googlesource.com/platform/build/release/+/5aaa5eec4">5aaa5eec4</a> :  Set BP2A SPL to 2025-08-05<br />
+<a href="https://android.googlesource.com/platform/build/release/+/9b8e5dd98">9b8e5dd98</a> :  BP2A: Set SPL to 2025-07-05<br />
+<a href="https://android.googlesource.com/platform/build/release/+/9785521f0">9785521f0</a> :  Set BP2A SPL to 2025-08-05<br />
+<a href="https://android.googlesource.com/platform/build/release/+/ca46a8978">ca46a8978</a> :  Set BP2A SPL to 2025-08-05<br />
+<a href="https://android.googlesource.com/platform/build/release/+/61792fd3a">61792fd3a</a> :  Advance Kernel to Build: 13662627 in 25Q2 shusky<br />
+<a href="https://android.googlesource.com/platform/build/release/+/03884fd91">03884fd91</a> :  Advance Kernel to Build: 13662628 in 25Q2 Comet<br />
+<a href="https://android.googlesource.com/platform/build/release/+/98f30e61c">98f30e61c</a> :  Advance Kernel to Build: 13662626 in 25Q2 Akita<br />
+<a href="https://android.googlesource.com/platform/build/release/+/54a950f38">54a950f38</a> :  Advance Kernel to Build: 13662626 in 25Q2 tangorpro<br />
+<a href="https://android.googlesource.com/platform/build/release/+/b143d0c67">b143d0c67</a> :  Advance Kernel to Build: 13662626 in 25Q2 felix<br />
+<a href="https://android.googlesource.com/platform/build/release/+/1cd27fd8d">1cd27fd8d</a> :  Advance Kernel to Build: 13662624 in 25Q2 pantah<br />
+<a href="https://android.googlesource.com/platform/build/release/+/3b6dce68a">3b6dce68a</a> :  Advance Kernel to Build: 13662624 in 25Q2 raviole<br />
+<a href="https://android.googlesource.com/platform/build/release/+/6a4906c43">6a4906c43</a> :  Advance Kernel to Build: 13662628 in 25Q2 Caimito<br />
+<a href="https://android.googlesource.com/platform/build/release/+/b2b4bacb5">b2b4bacb5</a> :  Advance Kernel to Build: 13662626 in 25Q2 lynx<br />
+<a href="https://android.googlesource.com/platform/build/release/+/8cbc9457b">8cbc9457b</a> :  Advance Kernel to Build: 13662625 in 25Q2 bluejay<br />
+<a href="https://android.googlesource.com/platform/build/release/+/2f8c5a0fe">2f8c5a0fe</a> :  Advance Kernel to Build: 13518276 in 25Q2 bluejay<br />
+<a href="https://android.googlesource.com/platform/build/release/+/0239bfe62">0239bfe62</a> :  Enable Whiskey for BP2A to allow TeamFood.<br />
+<a href="https://android.googlesource.com/platform/build/release/+/fd58449a8">fd58449a8</a> :  Advance Kernel to Build: 13499558 in 25Q2 bluejay<br />
+<a href="https://android.googlesource.com/platform/build/release/+/e31b46646">e31b46646</a> :  Advance Kernel to Build: 13492856 in 25Q2 bluejay<br />
+<a href="https://android.googlesource.com/platform/build/release/+/80ac296ea">80ac296ea</a> :  Trunk_staging: Set SPL to 2025-07-05<br />
+<a href="https://android.googlesource.com/platform/build/release/+/5158d6e68">5158d6e68</a> :  BP2A: Set SPL to 2025-07-05<br />
+<a href="https://android.googlesource.com/platform/build/release/+/f6a0f8847">f6a0f8847</a> :  Add flag com.android.graphics.surfaceflinger.flags.disable_synthetic_vsync_for_performance to bp2a.<br />
+<a href="https://android.googlesource.com/platform/build/release/+/e7a7a34f4">e7a7a34f4</a> :  Provide a whiskey kernel respin for .X5 build.<br />
+<a href="https://android.googlesource.com/platform/build/release/+/34d64edbb">34d64edbb</a> :  Advance Kernel to Build: 13436148 in 25Q2 bluejay<br />
+<a href="https://android.googlesource.com/platform/build/release/+/81d337d7d">81d337d7d</a> :  Advance Kernel to Build: 13436313 in 25Q2 Akita<br />
+<a href="https://android.googlesource.com/platform/build/release/+/bb97d4b77">bb97d4b77</a> :  Advance Kernel to Build: 13436313 in 25Q2 tangorpro<br />
+<a href="https://android.googlesource.com/platform/build/release/+/f962e5580">f962e5580</a> :  Advance Kernel to Build: 13436313 in 25Q2 felix<br />
+<a href="https://android.googlesource.com/platform/build/release/+/dfbd1eeaf">dfbd1eeaf</a> :  Advance Kernel to Build: 13436313 in 25Q2 lynx<br />
+<a href="https://android.googlesource.com/platform/build/release/+/0d8aaf0d4">0d8aaf0d4</a> :  Advance Kernel to Build: 13435191 in 25Q2 raviole<br />
+<a href="https://android.googlesource.com/platform/build/release/+/a81c129de">a81c129de</a> :  Advance Kernel to Build: 13435191 in 25Q2 pantah<br />
+<a href="https://android.googlesource.com/platform/build/release/+/2e9f70a5e">2e9f70a5e</a> :  Add flag com.android.server.telecom.flags.maybe_default_speaker_after_unhold to bp2a.<br />
+<a href="https://android.googlesource.com/platform/build/release/+/33299c8af">33299c8af</a> :  Remove flag com.android.graphics.libgui.flags.buffer_release_channel from bp2a.<br />
+<a href="https://android.googlesource.com/platform/build/release/+/56b57210a">56b57210a</a> :  Advance Kernel to Build: 13426191 in 25Q2 bluejay<br />
+<a href="https://android.googlesource.com/platform/build/release/+/83079be6b">83079be6b</a> :  Enable Whiskey for BP2A to allow TeamFood.<br />
+<a href="https://android.googlesource.com/platform/build/release/+/50759c31e">50759c31e</a> :  BP2A Kernel ReSpin #5<br />
+<a href="https://android.googlesource.com/platform/build/release/+/0cad8e1b5">0cad8e1b5</a> :  Revert the flag for disabling WEP for AAPM<br />
+<a href="https://android.googlesource.com/platform/build/release/+/28bc42391">28bc42391</a> :  Enable Whiskey for BP2A to allow TeamFood.<br />
+<a href="https://android.googlesource.com/platform/build/release/+/75bca026c">75bca026c</a> :  Advance Kernel to Build: 13395649 in 25Q2 bluejay<br />
+<a href="https://android.googlesource.com/platform/build/release/+/8cfd7c29e">8cfd7c29e</a> :  Kernel ReSpin (#3) for 25Q2<br />
+<a href="https://android.googlesource.com/platform/build/release/+/3bceb9ecf">3bceb9ecf</a> :  Kernel ReSpin (#3) for 25Q2<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_build_soong-show" class="showLink" onclick="show('platform_build_soong');return false;">+</a><a href="#" id="platform_build_soong-hide" class="hideLink" onclick="hide('platform_build_soong');return false;">-</a>&nbsp;<a name="platform_build_soong" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build/soong">platform/build/soong</a></h2>
+<div id="platform_build_soong"><a href="https://android.googlesource.com/platform/build/soong/+/4e3ec54112">4e3ec54112</a> :  Add new notice text for requesting source code<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/b5e27a23a03">b5e27a23a03</a> :  Skip test if no Settings app<br />
+<a href="https://android.googlesource.com/platform/cts/+/b6c173e91fe">b6c173e91fe</a> :  Skip the test if Settings application is not installed<br />
+<a href="https://android.googlesource.com/platform/cts/+/e3eea4e904f">e3eea4e904f</a> :  Increase size of the test virtual display<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_conscrypt-show" class="showLink" onclick="show('platform_external_conscrypt');return false;">+</a><a href="#" id="platform_external_conscrypt-hide" class="hideLink" onclick="hide('platform_external_conscrypt');return false;">-</a>&nbsp;<a name="platform_external_conscrypt" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/conscrypt">platform/external/conscrypt</a></h2>
+<div id="platform_external_conscrypt"><a href="https://android.googlesource.com/platform/external/conscrypt/+/bfbf476f8">bfbf476f8</a> :  Add notice of requesting source code in conscrypt<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_perfetto-show" class="showLink" onclick="show('platform_external_perfetto');return false;">+</a><a href="#" id="platform_external_perfetto-hide" class="hideLink" onclick="hide('platform_external_perfetto');return false;">-</a>&nbsp;<a name="platform_external_perfetto" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/perfetto">platform/external/perfetto</a></h2>
+<div id="platform_external_perfetto"><a href="https://android.googlesource.com/platform/external/perfetto/+/f6cb91e547">f6cb91e547</a> :  Disable some heapprofd cts tests for native bridge<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_rust_crabbyavif-show" class="showLink" onclick="show('platform_external_rust_crabbyavif');return false;">+</a><a href="#" id="platform_external_rust_crabbyavif-hide" class="hideLink" onclick="hide('platform_external_rust_crabbyavif');return false;">-</a>&nbsp;<a name="platform_external_rust_crabbyavif" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/rust/crabbyavif">platform/external/rust/crabbyavif</a></h2>
+<div id="platform_external_rust_crabbyavif"><a href="https://android.googlesource.com/platform/external/rust/crabbyavif/+/9bcc1a3">9bcc1a3</a> :  [25Q2-release] crabbyavif fixes for NV12 crashes<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/d1b598e270">d1b598e270</a> :  Add notice of requesting source code in media and media swcodec<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/c879fb5561f2">c879fb5561f2</a> :  Fix build failure in release branch<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/dee86220f445">dee86220f445</a> :  Implement onNullBinding() in autofill service connection<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/177eda822164">177eda822164</a> :  PrintSpooler: Require empty output for PDF<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ff8b0d46a53a">ff8b0d46a53a</a> :  cleanup: Fix permission protection of setObservedMotionEventSources<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0da1ac9dda56">0da1ac9dda56</a> :  Trim oversized strings in setId and setConversationId<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c0978bc04a25">c0978bc04a25</a> :  Check DPC package validity during package updates<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d5fee58e64ae">d5fee58e64ae</a> :  DevicePolicyManager: ignore invalid proxy settings<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bae8ab23b03d">bae8ab23b03d</a> :  Ensuring valid packageName when granting slice permission<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3668e1d4bbec">3668e1d4bbec</a> :  [RESTRICT AUTOMERGE] Disallow PINNED in setLaunchWindowingMode<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f745b6763bff">f745b6763bff</a> :  Prevent root from getting unverified attributions from non system apps<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c21f79312d3f">c21f79312d3f</a> :  Don't allow SdkSandbox to bypass systemUid check.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/50ae729881da">50ae729881da</a> :  Calculate how much memory is used per account.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b1c60eeadb2c">b1c60eeadb2c</a> :  Prevent non-system ShutdownActivity from being launched by BatteryService<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4e1be9d5eb9b">4e1be9d5eb9b</a> :  Don't allow hiding SysUi<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/57451c039840">57451c039840</a> :  Avoid mixups between different CPSes in ZenModeConditions<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c2774dc575e9">c2774dc575e9</a> :  Move BP window to Keyguard_dialog<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/eb3cf182f929">eb3cf182f929</a> :  Limits the display name to 1024 characters<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3a76075721bb">3a76075721bb</a> :  Do not allow custom animation of untrusted Toast<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ab5874fecde6">ab5874fecde6</a> :  Use consistent animation when forcibly hiding non system overlay<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b96d7a515e9e">b96d7a515e9e</a> :  Ignore pinned Windows<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d6b86833ee06">d6b86833ee06</a> :  Unexport ControlsActivity<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/705d322dc8b6">705d322dc8b6</a> :  Don't show dismissible keyguard in app pinning mode<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/55361a549fc2">55361a549fc2</a> :  Fix starting the activity with incorrect pid/uid<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0e27558ac3d1">0e27558ac3d1</a> :  Resolve merge conflict for ag/33497788<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c1a2f26e2ca5">c1a2f26e2ca5</a> :  Move listener additions within AccessibilityRepository to background<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/15bbf4f74046">15bbf4f74046</a> :  Change which a11y services we change behavior for<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8874f3eae9a9">8874f3eae9a9</a> :  Defer remove splash screen while device is locked<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e595e2ba7509">e595e2ba7509</a> :  Defer remove splash screen while device is locked<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b1c689062007">b1c689062007</a> :  Defer remove splash screen while device is locked<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/252d80a031fe">252d80a031fe</a> :  Register IME back callback on new dispatcher<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/457ca54b84bb">457ca54b84bb</a> :  Whiskey icon<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6b642076621d">6b642076621d</a> :  Change charging string in keyguard<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/23ddc74dc0bb">23ddc74dc0bb</a> :  [SB][Clock] Use tnum spacing if status bar clock has seconds enabled.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/39b099c8a281">39b099c8a281</a> :  [SB] Change status bar clock to normal font instead of tabular font.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/f80d65e4ab">f80d65e4ab</a> :  Don't blur too many layers<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/a9e6d5a3c6">a9e6d5a3c6</a> :  RPC Binder: clearer errors for wrong transact type<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/91aec28d0f">91aec28d0f</a> :  RPC Binder: shutdown on SPAN error.<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/300a057414">300a057414</a> :  RPC Binder: shutdown on ENOMEM<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/46e72b490e">46e72b490e</a> :  Protect objects in Parcel::appendFrom<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/70a060310f">70a060310f</a> :  Mark "disable_synthetic_vsync_for_performance" flag as exported<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/3bfae246fd">3bfae246fd</a> :  Turn off synthetic VSYNC when adjusting thread scheduling for performance<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/f33f9ef646">f33f9ef646</a> :  Remove get/set of voicemail ringtone uri in shared preferences.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_interfaces-show" class="showLink" onclick="show('platform_hardware_interfaces');return false;">+</a><a href="#" id="platform_hardware_interfaces-hide" class="hideLink" onclick="hide('platform_hardware_interfaces');return false;">-</a>&nbsp;<a name="platform_hardware_interfaces" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/interfaces">platform/hardware/interfaces</a></h2>
+<div id="platform_hardware_interfaces"><a href="https://android.googlesource.com/platform/hardware/interfaces/+/db2f4ca384">db2f4ca384</a> :  Fix error handling for VTS test on TWT<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_CellBroadcastReceiver-show" class="showLink" onclick="show('platform_packages_apps_CellBroadcastReceiver');return false;">+</a><a href="#" id="platform_packages_apps_CellBroadcastReceiver-hide" class="hideLink" onclick="hide('platform_packages_apps_CellBroadcastReceiver');return false;">-</a>&nbsp;<a name="platform_packages_apps_CellBroadcastReceiver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver">platform/packages/apps/CellBroadcastReceiver</a></h2>
+<div id="platform_packages_apps_CellBroadcastReceiver"><a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/9d38400f7">9d38400f7</a> :  Add notice of requesting source code in cellbroadcast<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Contacts-show" class="showLink" onclick="show('platform_packages_apps_Contacts');return false;">+</a><a href="#" id="platform_packages_apps_Contacts-hide" class="hideLink" onclick="hide('platform_packages_apps_Contacts');return false;">-</a>&nbsp;<a name="platform_packages_apps_Contacts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Contacts">platform/packages/apps/Contacts</a></h2>
+<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/c314edb9b">c314edb9b</a> :  Show account selection dialog when a single account exists.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_DocumentsUI-show" class="showLink" onclick="show('platform_packages_apps_DocumentsUI');return false;">+</a><a href="#" id="platform_packages_apps_DocumentsUI-hide" class="hideLink" onclick="hide('platform_packages_apps_DocumentsUI');return false;">-</a>&nbsp;<a name="platform_packages_apps_DocumentsUI" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI">platform/packages/apps/DocumentsUI</a></h2>
+<div id="platform_packages_apps_DocumentsUI"><a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/35a75b245">35a75b245</a> :  Trim the application name to make it safe for presentation<br />
+<a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/1c47fca33">1c47fca33</a> :  Add notice of requesting source code in docsui<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/2aa27461a40">2aa27461a40</a> :  Ignore face settings extras when called by an external package.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/25ed933c4cf">25ed933c4cf</a> :  startActivityForResult with earlier new Intent<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/504a34c4d4a">504a34c4d4a</a> :  Hide notification content in history<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/0f61e586873">0f61e586873</a> :  Use correct API to get calling package name in CredentialStorage<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/d50de07930e">d50de07930e</a> :  Drop PendingIntent extras from external packages during enrollment.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/dc41d27f1bd">dc41d27f1bd</a> :  Do not enable the Content Protection toggle for non-admin users.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/e985e294f15">e985e294f15</a> :  Add ComponentName explicitly to make sure arbitary intents aren't launched from Settings.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/e12156e2d80">e12156e2d80</a> :  AppRestrictions - use vetted component<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9fca47cbc17">9fca47cbc17</a> :  Add battery health tip<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Stk-show" class="showLink" onclick="show('platform_packages_apps_Stk');return false;">+</a><a href="#" id="platform_packages_apps_Stk-hide" class="hideLink" onclick="hide('platform_packages_apps_Stk');return false;">-</a>&nbsp;<a name="platform_packages_apps_Stk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Stk">platform/packages/apps/Stk</a></h2>
+<div id="platform_packages_apps_Stk"><a href="https://android.googlesource.com/platform/packages/apps/Stk/+/acdb866">acdb866</a> :  [STK] Fxied edge-to-edge UX support for StkLauncherActivity.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_AdServices-show" class="showLink" onclick="show('platform_packages_modules_AdServices');return false;">+</a><a href="#" id="platform_packages_modules_AdServices-hide" class="hideLink" onclick="hide('platform_packages_modules_AdServices');return false;">-</a>&nbsp;<a name="platform_packages_modules_AdServices" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/AdServices">platform/packages/modules/AdServices</a></h2>
+<div id="platform_packages_modules_AdServices"><a href="https://android.googlesource.com/platform/packages/modules/AdServices/+/207f9e9521">207f9e9521</a> :  Add notice of requesting source code in adservices<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_AppSearch-show" class="showLink" onclick="show('platform_packages_modules_AppSearch');return false;">+</a><a href="#" id="platform_packages_modules_AppSearch-hide" class="hideLink" onclick="hide('platform_packages_modules_AppSearch');return false;">-</a>&nbsp;<a name="platform_packages_modules_AppSearch" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/AppSearch">platform/packages/modules/AppSearch</a></h2>
+<div id="platform_packages_modules_AppSearch"><a href="https://android.googlesource.com/platform/packages/modules/AppSearch/+/ad3a3b4e">ad3a3b4e</a> :  Add notice of requesting source code in appsearch<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/33be5d45cb">33be5d45cb</a> :  Fix use after free in acl_arbiter<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/0821ec720a">0821ec720a</a> :  Add notice of requesting source code in bt<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_CaptivePortalLogin-show" class="showLink" onclick="show('platform_packages_modules_CaptivePortalLogin');return false;">+</a><a href="#" id="platform_packages_modules_CaptivePortalLogin-hide" class="hideLink" onclick="hide('platform_packages_modules_CaptivePortalLogin');return false;">-</a>&nbsp;<a name="platform_packages_modules_CaptivePortalLogin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/CaptivePortalLogin">platform/packages/modules/CaptivePortalLogin</a></h2>
+<div id="platform_packages_modules_CaptivePortalLogin"><a href="https://android.googlesource.com/platform/packages/modules/CaptivePortalLogin/+/5cfb2c8">5cfb2c8</a> :  Add notice of requesting source code in CaptivePortalLogin<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_ConfigInfrastructure-show" class="showLink" onclick="show('platform_packages_modules_ConfigInfrastructure');return false;">+</a><a href="#" id="platform_packages_modules_ConfigInfrastructure-hide" class="hideLink" onclick="hide('platform_packages_modules_ConfigInfrastructure');return false;">-</a>&nbsp;<a name="platform_packages_modules_ConfigInfrastructure" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/ConfigInfrastructure">platform/packages/modules/ConfigInfrastructure</a></h2>
+<div id="platform_packages_modules_ConfigInfrastructure"><a href="https://android.googlesource.com/platform/packages/modules/ConfigInfrastructure/+/61634cb">61634cb</a> :  Add notice of requesting source code in configinfra<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Connectivity-show" class="showLink" onclick="show('platform_packages_modules_Connectivity');return false;">+</a><a href="#" id="platform_packages_modules_Connectivity-hide" class="hideLink" onclick="hide('platform_packages_modules_Connectivity');return false;">-</a>&nbsp;<a name="platform_packages_modules_Connectivity" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Connectivity">platform/packages/modules/Connectivity</a></h2>
+<div id="platform_packages_modules_Connectivity"><a href="https://android.googlesource.com/platform/packages/modules/Connectivity/+/54ab3969e3">54ab3969e3</a> :  Add notice of requesting source code in tethering<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_CrashRecovery-show" class="showLink" onclick="show('platform_packages_modules_CrashRecovery');return false;">+</a><a href="#" id="platform_packages_modules_CrashRecovery-hide" class="hideLink" onclick="hide('platform_packages_modules_CrashRecovery');return false;">-</a>&nbsp;<a name="platform_packages_modules_CrashRecovery" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/CrashRecovery">platform/packages/modules/CrashRecovery</a></h2>
+<div id="platform_packages_modules_CrashRecovery"><a href="https://android.googlesource.com/platform/packages/modules/CrashRecovery/+/3bd1425">3bd1425</a> :  Add notice of requesting source code in crashrecovery<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_DnsResolver-show" class="showLink" onclick="show('platform_packages_modules_DnsResolver');return false;">+</a><a href="#" id="platform_packages_modules_DnsResolver-hide" class="hideLink" onclick="hide('platform_packages_modules_DnsResolver');return false;">-</a>&nbsp;<a name="platform_packages_modules_DnsResolver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/DnsResolver">platform/packages/modules/DnsResolver</a></h2>
+<div id="platform_packages_modules_DnsResolver"><a href="https://android.googlesource.com/platform/packages/modules/DnsResolver/+/9d5f9de8">9d5f9de8</a> :  Add notice of requesting source code in resolv<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_ExtServices-show" class="showLink" onclick="show('platform_packages_modules_ExtServices');return false;">+</a><a href="#" id="platform_packages_modules_ExtServices-hide" class="hideLink" onclick="hide('platform_packages_modules_ExtServices');return false;">-</a>&nbsp;<a name="platform_packages_modules_ExtServices" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/ExtServices">platform/packages/modules/ExtServices</a></h2>
+<div id="platform_packages_modules_ExtServices"><a href="https://android.googlesource.com/platform/packages/modules/ExtServices/+/33e7468">33e7468</a> :  Add notice of requesting source code in ExtService s_minus apk<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ExtServices/+/3844649">3844649</a> :  Add notice of requesting source code in ExtService t_plus<br />
+<a href="https://android.googlesource.com/platform/packages/modules/ExtServices/+/37e21e8">37e21e8</a> :  Add notice of requesting source code in extservices<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_HealthFitness-show" class="showLink" onclick="show('platform_packages_modules_HealthFitness');return false;">+</a><a href="#" id="platform_packages_modules_HealthFitness-hide" class="hideLink" onclick="hide('platform_packages_modules_HealthFitness');return false;">-</a>&nbsp;<a name="platform_packages_modules_HealthFitness" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/HealthFitness">platform/packages/modules/HealthFitness</a></h2>
+<div id="platform_packages_modules_HealthFitness"><a href="https://android.googlesource.com/platform/packages/modules/HealthFitness/+/313b45e55">313b45e55</a> :  Add notice of requesting source code in healthfitness<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_IPsec-show" class="showLink" onclick="show('platform_packages_modules_IPsec');return false;">+</a><a href="#" id="platform_packages_modules_IPsec-hide" class="hideLink" onclick="hide('platform_packages_modules_IPsec');return false;">-</a>&nbsp;<a name="platform_packages_modules_IPsec" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/IPsec">platform/packages/modules/IPsec</a></h2>
+<div id="platform_packages_modules_IPsec"><a href="https://android.googlesource.com/platform/packages/modules/IPsec/+/2b9813b6">2b9813b6</a> :  Add notice of requesting source code in ipsec<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_IntentResolver-show" class="showLink" onclick="show('platform_packages_modules_IntentResolver');return false;">+</a><a href="#" id="platform_packages_modules_IntentResolver-hide" class="hideLink" onclick="hide('platform_packages_modules_IntentResolver');return false;">-</a>&nbsp;<a name="platform_packages_modules_IntentResolver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/IntentResolver">platform/packages/modules/IntentResolver</a></h2>
+<div id="platform_packages_modules_IntentResolver"><a href="https://android.googlesource.com/platform/packages/modules/IntentResolver/+/9810de0f">9810de0f</a> :  Launch image editor as sharesheet-launching user (flag off)<br />
+<a href="https://android.googlesource.com/platform/packages/modules/IntentResolver/+/247af9e3">247af9e3</a> :  Sanitize cross-profile intents.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_ModuleMetadata-show" class="showLink" onclick="show('platform_packages_modules_ModuleMetadata');return false;">+</a><a href="#" id="platform_packages_modules_ModuleMetadata-hide" class="hideLink" onclick="hide('platform_packages_modules_ModuleMetadata');return false;">-</a>&nbsp;<a name="platform_packages_modules_ModuleMetadata" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/ModuleMetadata">platform/packages/modules/ModuleMetadata</a></h2>
+<div id="platform_packages_modules_ModuleMetadata"><a href="https://android.googlesource.com/platform/packages/modules/ModuleMetadata/+/6beac13">6beac13</a> :  Add notice of requesting source code in modulemetadata<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_NetworkStack-show" class="showLink" onclick="show('platform_packages_modules_NetworkStack');return false;">+</a><a href="#" id="platform_packages_modules_NetworkStack-hide" class="hideLink" onclick="hide('platform_packages_modules_NetworkStack');return false;">-</a>&nbsp;<a name="platform_packages_modules_NetworkStack" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/NetworkStack">platform/packages/modules/NetworkStack</a></h2>
+<div id="platform_packages_modules_NetworkStack"><a href="https://android.googlesource.com/platform/packages/modules/NetworkStack/+/35dfedb1b">35dfedb1b</a> :  Add notice of requesting source code in networkstack<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_NeuralNetworks-show" class="showLink" onclick="show('platform_packages_modules_NeuralNetworks');return false;">+</a><a href="#" id="platform_packages_modules_NeuralNetworks-hide" class="hideLink" onclick="hide('platform_packages_modules_NeuralNetworks');return false;">-</a>&nbsp;<a name="platform_packages_modules_NeuralNetworks" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks">platform/packages/modules/NeuralNetworks</a></h2>
+<div id="platform_packages_modules_NeuralNetworks"><a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/a9fdd3488">a9fdd3488</a> :  Add notice of requesting source code in neuralnetworks<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Nfc-show" class="showLink" onclick="show('platform_packages_modules_Nfc');return false;">+</a><a href="#" id="platform_packages_modules_Nfc-hide" class="hideLink" onclick="hide('platform_packages_modules_Nfc');return false;">-</a>&nbsp;<a name="platform_packages_modules_Nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Nfc">platform/packages/modules/Nfc</a></h2>
+<div id="platform_packages_modules_Nfc"><a href="https://android.googlesource.com/platform/packages/modules/Nfc/+/f660a3c2b">f660a3c2b</a> :  Add notice of requesting source code in nfc<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_OnDevicePersonalization-show" class="showLink" onclick="show('platform_packages_modules_OnDevicePersonalization');return false;">+</a><a href="#" id="platform_packages_modules_OnDevicePersonalization-hide" class="hideLink" onclick="hide('platform_packages_modules_OnDevicePersonalization');return false;">-</a>&nbsp;<a name="platform_packages_modules_OnDevicePersonalization" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/OnDevicePersonalization">platform/packages/modules/OnDevicePersonalization</a></h2>
+<div id="platform_packages_modules_OnDevicePersonalization"><a href="https://android.googlesource.com/platform/packages/modules/OnDevicePersonalization/+/5a1eb82c">5a1eb82c</a> :  Add notice of requesting source code in ondevicepersonalization<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/78fc913dec">78fc913dec</a> :  Stop one-time sessions iff when no one-time permission is granted<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/f85dfa7980">f85dfa7980</a> :  Ensure Gallery always shows as system fixed<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/754f4454dc">754f4454dc</a> :  Add notice of requesting source code in the apk-in-apex PermissionController<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/c42eebda93">c42eebda93</a> :  Add notice of requesting source code in permission<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/8e95b1f7a2">8e95b1f7a2</a> :  Remove unused variable and rename placeholder ID from ag/33467498<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/01cd09e5fe">01cd09e5fe</a> :  Add title and description for recommended assistants<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Profiling-show" class="showLink" onclick="show('platform_packages_modules_Profiling');return false;">+</a><a href="#" id="platform_packages_modules_Profiling-hide" class="hideLink" onclick="hide('platform_packages_modules_Profiling');return false;">-</a>&nbsp;<a name="platform_packages_modules_Profiling" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Profiling">platform/packages/modules/Profiling</a></h2>
+<div id="platform_packages_modules_Profiling"><a href="https://android.googlesource.com/platform/packages/modules/Profiling/+/9f633e4">9f633e4</a> :  Add notice of requesting source code in profiling<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_RemoteKeyProvisioning-show" class="showLink" onclick="show('platform_packages_modules_RemoteKeyProvisioning');return false;">+</a><a href="#" id="platform_packages_modules_RemoteKeyProvisioning-hide" class="hideLink" onclick="hide('platform_packages_modules_RemoteKeyProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_modules_RemoteKeyProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/RemoteKeyProvisioning">platform/packages/modules/RemoteKeyProvisioning</a></h2>
+<div id="platform_packages_modules_RemoteKeyProvisioning"><a href="https://android.googlesource.com/platform/packages/modules/RemoteKeyProvisioning/+/1495629">1495629</a> :  Add notice of requesting source code in rkpd<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Scheduling-show" class="showLink" onclick="show('platform_packages_modules_Scheduling');return false;">+</a><a href="#" id="platform_packages_modules_Scheduling-hide" class="hideLink" onclick="hide('platform_packages_modules_Scheduling');return false;">-</a>&nbsp;<a name="platform_packages_modules_Scheduling" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Scheduling">platform/packages/modules/Scheduling</a></h2>
+<div id="platform_packages_modules_Scheduling"><a href="https://android.googlesource.com/platform/packages/modules/Scheduling/+/57a13bc">57a13bc</a> :  Add notice of requesting source code in scheduling<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Scheduling/+/e9d961a">e9d961a</a> :  Update com.android.scheduling apex to specify certificate<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_SdkExtensions-show" class="showLink" onclick="show('platform_packages_modules_SdkExtensions');return false;">+</a><a href="#" id="platform_packages_modules_SdkExtensions-hide" class="hideLink" onclick="hide('platform_packages_modules_SdkExtensions');return false;">-</a>&nbsp;<a name="platform_packages_modules_SdkExtensions" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/SdkExtensions">platform/packages/modules/SdkExtensions</a></h2>
+<div id="platform_packages_modules_SdkExtensions"><a href="https://android.googlesource.com/platform/packages/modules/SdkExtensions/+/f05b179d">f05b179d</a> :  Add notice of requesting source code in sdkext<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_StatsD-show" class="showLink" onclick="show('platform_packages_modules_StatsD');return false;">+</a><a href="#" id="platform_packages_modules_StatsD-hide" class="hideLink" onclick="hide('platform_packages_modules_StatsD');return false;">-</a>&nbsp;<a name="platform_packages_modules_StatsD" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/StatsD">platform/packages/modules/StatsD</a></h2>
+<div id="platform_packages_modules_StatsD"><a href="https://android.googlesource.com/platform/packages/modules/StatsD/+/8eaf3bfd2">8eaf3bfd2</a> :  Add notice of requesting source code in statsd<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_UprobeStats-show" class="showLink" onclick="show('platform_packages_modules_UprobeStats');return false;">+</a><a href="#" id="platform_packages_modules_UprobeStats-hide" class="hideLink" onclick="hide('platform_packages_modules_UprobeStats');return false;">-</a>&nbsp;<a name="platform_packages_modules_UprobeStats" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/UprobeStats">platform/packages/modules/UprobeStats</a></h2>
+<div id="platform_packages_modules_UprobeStats"><a href="https://android.googlesource.com/platform/packages/modules/UprobeStats/+/006fe24">006fe24</a> :  Add notice of requesting source code in uprobestats<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Uwb-show" class="showLink" onclick="show('platform_packages_modules_Uwb');return false;">+</a><a href="#" id="platform_packages_modules_Uwb-hide" class="hideLink" onclick="hide('platform_packages_modules_Uwb');return false;">-</a>&nbsp;<a name="platform_packages_modules_Uwb" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Uwb">platform/packages/modules/Uwb</a></h2>
+<div id="platform_packages_modules_Uwb"><a href="https://android.googlesource.com/platform/packages/modules/Uwb/+/523173507">523173507</a> :  Add notice of requesting source code in uwb<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/c47809aec0">c47809aec0</a> :  Do not treat SdkSandBox as privileges App<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/e0f86c1dd6">e0f86c1dd6</a> :  Add notice of requesting source code in wifi<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_adb-show" class="showLink" onclick="show('platform_packages_modules_adb');return false;">+</a><a href="#" id="platform_packages_modules_adb-hide" class="hideLink" onclick="hide('platform_packages_modules_adb');return false;">-</a>&nbsp;<a name="platform_packages_modules_adb" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/adb">platform/packages/modules/adb</a></h2>
+<div id="platform_packages_modules_adb"><a href="https://android.googlesource.com/platform/packages/modules/adb/+/4796395a">4796395a</a> :  Add notice of requesting source code in adbd<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/a5f1f1827">a5f1f1827</a> :  Fix misuse of MediaProvider#INCLUDED_DEFAULT_DIRECTORIES<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/a6fcb5273">a6fcb5273</a> :  Move markMediaAsFavorite's logic from MediaStore to MediaProvider<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/393c52e5a">393c52e5a</a> :  Add notice of requesting source code in mediaprovider<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/20d56535c">20d56535c</a> :  Prevent infinite SPEAKER_OFF looping<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/ccfb4f069">ccfb4f069</a> :  fix: Use permission check for contact URI validation<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_apex-show" class="showLink" onclick="show('platform_system_apex');return false;">+</a><a href="#" id="platform_system_apex-hide" class="hideLink" onclick="hide('platform_system_apex');return false;">-</a>&nbsp;<a name="platform_system_apex" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/apex">platform/system/apex</a></h2>
+<div id="platform_system_apex"><a href="https://android.googlesource.com/platform/system/apex/+/5a33fa42">5a33fa42</a> :  New Patch Level for android mainline<br />
+<a href="https://android.googlesource.com/platform/system/apex/+/13bbfe3e">13bbfe3e</a> :  apexd: loosen no-overlap check on install<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_system_timezone-show" class="showLink" onclick="show('platform_system_timezone');return false;">+</a><a href="#" id="platform_system_timezone-hide" class="hideLink" onclick="hide('platform_system_timezone');return false;">-</a>&nbsp;<a name="platform_system_timezone" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/timezone">platform/system/timezone</a></h2>
+<div id="platform_system_timezone"><a href="https://android.googlesource.com/platform/system/timezone/+/69b69121">69b69121</a> :  Add notice of requesting source code in tzdata<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
