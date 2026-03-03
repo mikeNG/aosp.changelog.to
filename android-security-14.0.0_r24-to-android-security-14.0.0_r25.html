@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-14.0.0_r24 to android-security-14.0.0_r25 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-14.0.0_r24 to android-security-14.0.0_r25 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/bae596836b">bae596836b</a> :  Version bump to USV1.230808.049 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/4b26d9fa12">4b26d9fa12</a> :  Version bump to USV1.230808.048 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_dng_sdk-show" class="showLink" onclick="show('platform_external_dng_sdk');return false;">+</a><a href="#" id="platform_external_dng_sdk-hide" class="hideLink" onclick="hide('platform_external_dng_sdk');return false;">-</a>&nbsp;<a name="platform_external_dng_sdk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/dng_sdk">platform/external/dng_sdk</a></h2>
+<div id="platform_external_dng_sdk"><a href="https://android.googlesource.com/platform/external/dng_sdk/+/d0bfe8e">d0bfe8e</a> :  Update to DNG SDK 1.7.1 2410<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_sqlite-show" class="showLink" onclick="show('platform_external_sqlite');return false;">+</a><a href="#" id="platform_external_sqlite-hide" class="hideLink" onclick="hide('platform_external_sqlite');return false;">-</a>&nbsp;<a name="platform_external_sqlite" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/sqlite">platform/external/sqlite</a></h2>
+<div id="platform_external_sqlite"><a href="https://android.googlesource.com/platform/external/sqlite/+/3b55568">3b55568</a> :  Update sqlite to 3.42.1<br />
+<a href="https://android.googlesource.com/platform/external/sqlite/+/db53e52">db53e52</a> :  Upgrade SQLite to version 3.42.0<br />
+<a href="https://android.googlesource.com/platform/external/sqlite/+/ba40d84">ba40d84</a> :  Revert "Update sqlite to 3.39.6"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/8bf16f1ae9">8bf16f1ae9</a> :  Fix vulnerability in drmserver<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/77d8e59a1af6">77d8e59a1af6</a> :  [UidMigration] fix update uninstallation with sharedUserMaxSdkVersion<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cb1ce8020b43">cb1ce8020b43</a> :  Limit the number of services (NLSes, etc) that can be approved per user<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/00fd75533614">00fd75533614</a> :  Cleanup user-set NLS list on package removed<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e20813dba23a">e20813dba23a</a> :  MediaSession: Enforce max name length on broadcast receivers too<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d02a81da9715">d02a81da9715</a> :  RESTRICT AUTOMERGE: Validate the position value for UsageEvent<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5e1623a880d2">5e1623a880d2</a> :  Be more strict about content types for message array<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6a3e551a7d3f">6a3e551a7d3f</a> :  Prevent long press on profile notifs when locked<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c1f49d2c2cac">c1f49d2c2cac</a> :  RESTRICT AUTOMERGE Apps clearing self data shouldn't get permissions restored<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a9550d0a75d0">a9550d0a75d0</a> :  Explicitly unset INSTALL_FROM_MANAGED_USER_OR_PROFILE flag<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/699e4677367e">699e4677367e</a> :  Update isSameApp check<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ad0b8a7b63ac">ad0b8a7b63ac</a> :  Prevent launchedFromPackage spoofing via FLAG_ACTIVITY_FORWARD_RESULT.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ecf88469d44f">ecf88469d44f</a> :  Handle loadDescription OutOfMemoryError in DeviceAdminInfo<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bc52aa800354">bc52aa800354</a> :  Introduce InputMethodSubtypeSafeList<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/558ee85e1d4a">558ee85e1d4a</a> :  Harden InputMethodInfo parsing against large metadata<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b9455ddd2a42">b9455ddd2a42</a> :  Introduce InputMethodInfoSafeList<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d7a73fb8bfc2">d7a73fb8bfc2</a> :  RESTRICT AUTOMERGE Trim permission, permission group names<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a404da3cbbc6">a404da3cbbc6</a> :  RESTRICT AUTOMERGE Prohibit untrusted proxys from specifying proxied attribution tags<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7320b5316d76">7320b5316d76</a> :  Ensure sandboxed UIDs are treated as untrusted in Appops<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/334c15a0ebee">334c15a0ebee</a> :  [ENR] Only skip hide sensitive anim for showing public<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0c21f3c990cd">0c21f3c990cd</a> :  RESTRICT AUTOMERGE Ignore pinned Windows (Consolidated fix)<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4e7b14350ece">4e7b14350ece</a> :  Revert "RESTRICT AUTOMERGE Ignore pinned Windows"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/36e65fce2d51">36e65fce2d51</a> :  Prevent activity token leaked to another process<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9ff1c081e9f7">9ff1c081e9f7</a> :  [RESTRICT AUTOMERGE] Stay in app pinned mode upon SystemUI crash<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/75ca85729ad3">75ca85729ad3</a> :  RESTRICT AUTOMERGE Ignore pinned Windows<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/6906658b06">6906658b06</a> :  Clip to layer bounds when drawing blur regions<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/dab4de0e4b">dab4de0e4b</a> :  Truncate WindowInfo.name during parcelling.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_hardware_st_nfc-show" class="showLink" onclick="show('platform_hardware_st_nfc');return false;">+</a><a href="#" id="platform_hardware_st_nfc-hide" class="hideLink" onclick="hide('platform_hardware_st_nfc');return false;">-</a>&nbsp;<a name="platform_hardware_st_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/st/nfc">platform/hardware/st/nfc</a></h2>
+<div id="platform_hardware_st_nfc"><a href="https://android.googlesource.com/platform/hardware/st/nfc/+/502f180">502f180</a> :  [NFC] Fix use-after-free in eventCallback<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_DocumentsUI-show" class="showLink" onclick="show('platform_packages_apps_DocumentsUI');return false;">+</a><a href="#" id="platform_packages_apps_DocumentsUI-hide" class="hideLink" onclick="hide('platform_packages_apps_DocumentsUI');return false;">-</a>&nbsp;<a name="platform_packages_apps_DocumentsUI" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI">platform/packages/apps/DocumentsUI</a></h2>
+<div id="platform_packages_apps_DocumentsUI"><a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/a48245c5b">a48245c5b</a> :  Prevent a malicious selector from launching an arbitrary activity.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/19171d5c31a">19171d5c31a</a> :  Check permission of the calling package in multi-pane devices<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/e45172ad90">e45172ad90</a> :  RESTRICT AUTOMERGE Update RuntimePermissionsUpgradeController to accept null PermGroups<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/35b4e29a41">35b4e29a41</a> :  RESTRICT AUTOMERGE V2 Merge all permissions in a shared UID for every package in that UID<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/1b3339bc22">1b3339bc22</a> :  RESTRICT AUTOMERGE Add SystemGalleryRoleBehavior<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/d935a1e0b1">d935a1e0b1</a> :  Revert^2 "Ensure Gallery always shows as system fixed"<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/49053e04e1">49053e04e1</a> :  Revert "Revert "Display the system gallery storage permission as..."<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/c88f7c2d9f">c88f7c2d9f</a> :  Revert "Display the system gallery storage permission as system fixed"<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/08781ef6be">08781ef6be</a> :  Revert "Ensure Gallery always shows as system fixed"<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Virtualization-show" class="showLink" onclick="show('platform_packages_modules_Virtualization');return false;">+</a><a href="#" id="platform_packages_modules_Virtualization-hide" class="hideLink" onclick="hide('platform_packages_modules_Virtualization');return false;">-</a>&nbsp;<a name="platform_packages_modules_Virtualization" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Virtualization">platform/packages/modules/Virtualization</a></h2>
+<div id="platform_packages_modules_Virtualization"><a href="https://android.googlesource.com/platform/packages/modules/Virtualization/+/ed2818f83">ed2818f83</a> :  vmbase,pvmfw: aarch64: Clean dcache to PoC not PoU<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/003dd5514">003dd5514</a> :  Throw exception on MediaStore createRequest for non-existent uri<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/50387ce9d">50387ce9d</a> :  Fix ACCESS_MEDIA_LOCATION bypass via SAF picker<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/45db544a1">45db544a1</a> :  Store calling package uid of create bulk requests for permission checks<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/12fbdbc6b">12fbdbc6b</a> :  Restore calling identity when exception is thrown<br />
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/e599e8d93">e599e8d93</a> :  [security-aosp-udc-staging] Remove default ignoreable characters before regex checks<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_providers_TelephonyProvider-show" class="showLink" onclick="show('platform_packages_providers_TelephonyProvider');return false;">+</a><a href="#" id="platform_packages_providers_TelephonyProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_TelephonyProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_TelephonyProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider">platform/packages/providers/TelephonyProvider</a></h2>
+<div id="platform_packages_providers_TelephonyProvider"><a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/d3b6d700">d3b6d700</a> :  Fix SQL injection vulnerability in SMS/MMS providers<br />
+<a href="https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/1552b677">1552b677</a> :  Preventing deleting file that does not belong to parts directory.<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
