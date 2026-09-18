@@ -4,6 +4,20 @@ _Will_ generates a change log between different aosp tags.
 
 This tool works on your local checkout of the AOSP code. Be prepared, have the Repo tool installed and reserve 100GB of disk. For detailed requirementes see [source.android.com](https://source.android.com/source/downloading.html).
 
+### Dependencies
+
+The generator is a set of Bash scripts plus a small C helper.
+
+To generate changelogs you need:
+- `bash`, `git` and `repo` (from the AOSP toolchain)
+- a C compiler (`cc`/`gcc`), used by `make build` to compile `gitlog_to_html`
+- `mail` (mailx) for the new-tag notification script
+
+To preview or host the published site you only need `python3` (standard library only).
+
+The published pages load their front-end libraries from public CDNs: Bootstrap 3.4.1,
+jQuery 3.7.1 and the Google Sans Flex webfont (served by Google Fonts).
+
 ### Usage
 #### New tag notification
 ```
@@ -29,3 +43,27 @@ The `gh-pages` branch is cloned in a subdirectory of the generator repo, the cha
 $ ./upload_to_gh_pages.sh <AOSP working directory>
 ```
 The param `AOSP working directory` is **mandatory** and must specify the *absolute* path of the directory in which the whole AOSP code has been cloned.
+
+### Local preview
+
+The published site is plain static HTML, so you can host and inspect it locally.
+
+```
+$ make preview
+```
+
+This regenerates `gh-pages/index.html` and serves the site on http://127.0.0.1:8000.
+Use `make index` to only regenerate the index, or run the server on its own:
+```
+$ ./serve.sh [publish directory] [port]
+```
+
+Paths and ports can be overridden, for example:
+```
+$ make preview PORT=9000
+$ ./serve.sh ../gh-pages 9000
+```
+
+Other useful targets:
+- `make build` – compile the `gitlog_to_html` log formatter
+- `make clean` – remove build output
