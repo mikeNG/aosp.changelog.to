@@ -13,3 +13,10 @@ a.contactlink { text-decoration: none; color: #777; }
 #footer > .container { padding-right: 15px; padding-left: 15px; margin-top: 20px; }
 
 #changes .showLink { display: none }
+
+/* Monospace for the +/- project toggles. */
+#changes .showLink,
+#changes .hideLink { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+
+/* Monospace for commit hashes (links to a specific revision on googlesource). */
+#changes a[href*="/+/"] { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
