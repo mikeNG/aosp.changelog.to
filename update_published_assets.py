@@ -15,6 +15,15 @@ Usage:
 import pathlib
 import sys
 
+PRECONNECT = (
+    '<link rel="preconnect" href="https://fonts.googleapis.com">',
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
+)
+FONT_CSS = (
+    '<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:'
+    'opsz,wdth,wght@6..144,25..151,1..1000&display=swap" rel="stylesheet">'
+)
+
 BOOTSTRAP_CSS = (
     '<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" '
     'rel="stylesheet" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" '
@@ -52,6 +61,9 @@ def rewrite(text):
             continue
 
         if "bootstrapcdn.com/bootstrap/" in stripped and "bootstrap.min.css" in stripped:
+            for link in PRECONNECT:
+                out.append(indent + link + ending)
+            out.append(indent + FONT_CSS + ending)
             out.append(indent + BOOTSTRAP_CSS + ending)
             changed = True
             continue

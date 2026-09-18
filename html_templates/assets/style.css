@@ -1,5 +1,5 @@
-html { position: relative; min-height: 100%; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 12pt; }
-body { font-family: 'Open Sans', Arial, Helvetica, sans-serif; }
+html { position: relative; min-height: 100%; font-family: 'Google Sans Flex', Arial, Helvetica, sans-serif; font-size: 12pt; }
+body { font-family: 'Google Sans Flex', Arial, Helvetica, sans-serif; }
 .navbar { background-image: none; }
 .navbar-default { background-color: #f5f5f5; border: none }
 .donatebox { background: #eee; border-radius: 5px; padding: 10px}
