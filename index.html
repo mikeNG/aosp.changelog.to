@@ -4,11 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght@6..144,25..151,1..1000&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./assets/style.css" >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -17,21 +18,17 @@
 
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav"></ul>
+        <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto"></ul>
         </div>
     </div>
-</div>
+</nav>
 
 <div class="container">
     <div class="row">
@@ -41,19 +38,19 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <ul class="nav nav-tabs" id="navTabs">
-                <li class="active"><a href="#17" data-toggle="tab">17</a></li>
-                <li><a href="#16" data-toggle="tab">16</a></li>
-                <li><a href="#15" data-toggle="tab">15</a></li>
-                <li><a href="#14" data-toggle="tab">14</a></li>
-                <li><a href="#13" data-toggle="tab">13</a></li>
-                <li><a href="#12L" data-toggle="tab">12L</a></li>
-                <li><a href="#12" data-toggle="tab">12</a></li>
-                <li><a href="#11" data-toggle="tab">11</a></li>
+            <ul class="nav nav-tabs" id="navTabs" role="tablist">
+                <li class="nav-item" role="presentation"><a class="nav-link active" id="android-17-tab" data-bs-toggle="tab" href="#android-17" role="tab" aria-controls="android-17" aria-selected="true">17</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="android-16-tab" data-bs-toggle="tab" href="#android-16" role="tab" aria-controls="android-16" aria-selected="false">16</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="android-15-tab" data-bs-toggle="tab" href="#android-15" role="tab" aria-controls="android-15" aria-selected="false">15</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="android-14-tab" data-bs-toggle="tab" href="#android-14" role="tab" aria-controls="android-14" aria-selected="false">14</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="android-13-tab" data-bs-toggle="tab" href="#android-13" role="tab" aria-controls="android-13" aria-selected="false">13</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="android-12L-tab" data-bs-toggle="tab" href="#android-12L" role="tab" aria-controls="android-12L" aria-selected="false">12L</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="android-12-tab" data-bs-toggle="tab" href="#android-12" role="tab" aria-controls="android-12" aria-selected="false">12</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" id="android-11-tab" data-bs-toggle="tab" href="#android-11" role="tab" aria-controls="android-11" aria-selected="false">11</a></li>
             </ul>
 
             <div id="navTabsContent" class="tab-content">
-                <div class="tab-pane active" id="17">
+                <div class="tab-pane active" id="android-17" role="tabpanel" aria-labelledby="android-17-tab">
                     <h2>Android 17</h2>
 
                     <ul>
@@ -61,7 +58,7 @@
                       <li><a href="android-17.0.0_r1-to-android-security-17.0.0_r1.html">android-security-17.0.0_r1 from android-17.0.0_r1</a></li>
                     </ul>
                 </div>
-                <div class="tab-pane" id="16">
+                <div class="tab-pane" id="android-16" role="tabpanel">
                     <h2>Android 16</h2>
 
                     <ul>
@@ -79,7 +76,7 @@
                       <li><a href="android-security-16.0.0_r7-to-android-security-16.0.0_r8.html">android-security-16.0.0_r8 from android-security-16.0.0_r7</a></li>
                     </ul>
                 </div>
-                <div class="tab-pane" id="15">
+                <div class="tab-pane" id="android-15" role="tabpanel">
                     <h2>Android 15</h2>
 
                     <ul>
@@ -136,7 +133,7 @@
                       <li><a href="android-security-15.0.0_r16-to-android-security-15.0.0_r17.html">android-security-15.0.0_r17 from android-security-15.0.0_r16</a></li>
                     </ul>
                 </div>
-                <div class="tab-pane" id="14">
+                <div class="tab-pane" id="android-14" role="tabpanel">
                     <h2>Android 14</h2>
 
                     <ul>
@@ -240,7 +237,7 @@
                       <li><a href="android-security-14.0.0_r28-to-android-security-14.0.0_r29.html">android-security-14.0.0_r29 from android-security-14.0.0_r28</a></li>
                     </ul>
                 </div>
-                <div class="tab-pane" id="13">
+                <div class="tab-pane" id="android-13" role="tabpanel">
                     <h2>Android 13</h2>
 
                     <ul>
@@ -349,7 +346,7 @@
                       <li><a href="android-security-13.0.0_r32-to-android-security-13.0.0_r33.html">android-security-13.0.0_r33 from android-security-13.0.0_r32</a></li>
                     </ul>
                 </div>
-                <div class="tab-pane" id="12L">
+                <div class="tab-pane" id="android-12L" role="tabpanel">
                     <h2>Android 12L</h2>
 
                     <ul>
@@ -384,7 +381,7 @@
                       <li><a href="android-security-12.1.0_r6-to-android-security-12.1.0_r7.html">android-security-12.1.0_r7 from android-security-12.1.0_r6</a></li>
                     </ul>
                 </div>
-                <div class="tab-pane" id="12">
+                <div class="tab-pane" id="android-12" role="tabpanel">
                     <h2>Android 12</h2>
 
                     <ul>
@@ -449,7 +446,7 @@
                       <li><a href="android-security-12.0.0_r68-to-android-security-12.0.0_r69.html">android-security-12.0.0_r69 from android-security-12.0.0_r68</a></li>
                     </ul>
                 </div>
-                <div class="tab-pane" id="11">
+                <div class="tab-pane" id="android-11" role="tabpanel">
                     <h2>Android 11</h2>
 
                     <ul>
@@ -540,7 +537,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+                <p class="text-body-secondary">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
             </div>
         </div>
     </div>

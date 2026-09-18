@@ -4,11 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght@6..144,25..151,1..1000&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./assets/style.css" >
-<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -34,23 +35,18 @@ function hide(sectionId) {
 </script>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      </ul>
+    <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto"></ul>
     </div>
   </div>
-</div>
-<div class="container card">
+</nav>
+<div class="container">
 <div class="row">
     <div class="col-md-12">
         <h1>android-security-12.0.0_r48 to android-security-12.0.0_r49 AOSP changelog</h1>
@@ -70,48 +66,48 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="col-md-12">
         <div id="changes">
 <p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
-<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/7840dae7ef">7840dae7ef</a> :  Version bump to SSV1.210916.069 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/5577b40e1d">5577b40e1d</a> :  Version bump to SSV1.210916.068 [core/build_id.mk]<br />
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/7840dae7ef">7840dae7ef</a> :  Version bump to SSV1.210916.069 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/5577b40e1d">5577b40e1d</a> :  Version bump to SSV1.210916.068 [core/build_id.mk]
 </div></p>
 
 <p><h2><a href="#" id="platform_external_freetype-show" class="showLink" onclick="show('platform_external_freetype');return false;">+</a><a href="#" id="platform_external_freetype-hide" class="hideLink" onclick="hide('platform_external_freetype');return false;">-</a>&nbsp;<a name="platform_external_freetype" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/freetype">platform/external/freetype</a></h2>
-<div id="platform_external_freetype"><a href="https://android.googlesource.com/platform/external/freetype/+/8b3dcc022">8b3dcc022</a> :  DO NOT MERGE - Cherry-pick two upstream changes<br />
+<div id="platform_external_freetype"><a href="https://android.googlesource.com/platform/external/freetype/+/8b3dcc022">8b3dcc022</a> :  DO NOT MERGE - Cherry-pick two upstream changes
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
-<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/0188c4ff58">0188c4ff58</a> :  Force unsilence record clients on startInput<br />
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/0188c4ff58">0188c4ff58</a> :  Force unsilence record clients on startInput
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
-<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/8ad6cabe2572">8ad6cabe2572</a> :  Visit URIs in landscape/portrait custom remote views.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/bfbc4b6fdb4b">bfbc4b6fdb4b</a> :  Truncate ShortcutInfo Id<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/f2d7a8dfcaa1">f2d7a8dfcaa1</a> :  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/1707468a608a">1707468a608a</a> :  Dismiss keyguard when simpin auth'd and...<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/6df4d818dfb1">6df4d818dfb1</a> :  Only allow NEW_TASK flag when adjusting pending intents<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/9399ed3281d1">9399ed3281d1</a> :  Grant URI permissions to the CallStyle-related ones<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/b8fc2998ebdf">b8fc2998ebdf</a> :  Limit the number of supported v1 and v2 signers<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/76735553e9d3">76735553e9d3</a> :  Sanitize VPN label to prevent HTML injection<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/d276d2655bc7">d276d2655bc7</a> :  Revert "Ensure that only SysUI can override pending intent launch flags"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/5a83ccf3573c">5a83ccf3573c</a> :  Ensure that only SysUI can override pending intent launch flags<br />
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/8ad6cabe2572">8ad6cabe2572</a> :  Visit URIs in landscape/portrait custom remote views.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bfbc4b6fdb4b">bfbc4b6fdb4b</a> :  Truncate ShortcutInfo Id
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f2d7a8dfcaa1">f2d7a8dfcaa1</a> :  Verify URI permissions for EXTRA_REMOTE_INPUT_HISTORY_ITEMS.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1707468a608a">1707468a608a</a> :  Dismiss keyguard when simpin auth'd and...
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6df4d818dfb1">6df4d818dfb1</a> :  Only allow NEW_TASK flag when adjusting pending intents
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9399ed3281d1">9399ed3281d1</a> :  Grant URI permissions to the CallStyle-related ones
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b8fc2998ebdf">b8fc2998ebdf</a> :  Limit the number of supported v1 and v2 signers
+<a href="https://android.googlesource.com/platform/frameworks/base/+/76735553e9d3">76735553e9d3</a> :  Sanitize VPN label to prevent HTML injection
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d276d2655bc7">d276d2655bc7</a> :  Revert "Ensure that only SysUI can override pending intent launch flags"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5a83ccf3573c">5a83ccf3573c</a> :  Ensure that only SysUI can override pending intent launch flags
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
-<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/558b0d4532b">558b0d4532b</a> :  Fix: Bluetooth and Wifi scanning location MainSwitch page policy transparency.<br />
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/558b0d4532b">558b0d4532b</a> :  Fix: Bluetooth and Wifi scanning location MainSwitch page policy transparency.
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
-<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/62c73a0e67">62c73a0e67</a> :  Add pre-share key check for wapi<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/61b45f0191">61b45f0191</a> :  Limit the ServiceFriendlyNames and limit the number of Passpoint per App<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/643901ba64">643901ba64</a> :  Add size check on PPS#policy<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/c077248b09">c077248b09</a> :  Only handle saveToStore from the WifiNetworkSuggestionsManager<br />
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/62c73a0e67">62c73a0e67</a> :  Add pre-share key check for wapi
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/61b45f0191">61b45f0191</a> :  Limit the ServiceFriendlyNames and limit the number of Passpoint per App
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/643901ba64">643901ba64</a> :  Add size check on PPS#policy
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/c077248b09">c077248b09</a> :  Only handle saveToStore from the WifiNetworkSuggestionsManager
 </div></p>
 
 <p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
-<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/f3bf6add">f3bf6add</a> :  OOBW in rw_i93_send_to_upper()<br />
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/f3bf6add">f3bf6add</a> :  OOBW in rw_i93_send_to_upper()
 </div></p>
 
 <p><h2><a href="#" id="platform_tools_apksig-show" class="showLink" onclick="show('platform_tools_apksig');return false;">+</a><a href="#" id="platform_tools_apksig-hide" class="hideLink" onclick="hide('platform_tools_apksig');return false;">-</a>&nbsp;<a name="platform_tools_apksig" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/tools/apksig">platform/tools/apksig</a></h2>
-<div id="platform_tools_apksig"><a href="https://android.googlesource.com/platform/tools/apksig/+/0caee3f">0caee3f</a> :  Limit the number of supported v1 and v2 signers<br />
+<div id="platform_tools_apksig"><a href="https://android.googlesource.com/platform/tools/apksig/+/0caee3f">0caee3f</a> :  Limit the number of supported v1 and v2 signers
 </div></p>
 
 
@@ -124,7 +120,7 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+                <p class="text-body-secondary">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
             </div>
         </div>
     </div>

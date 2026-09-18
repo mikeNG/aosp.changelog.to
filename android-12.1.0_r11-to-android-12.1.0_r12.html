@@ -4,11 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght@6..144,25..151,1..1000&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./assets/style.css" >
-<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -34,23 +35,18 @@ function hide(sectionId) {
 </script>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      </ul>
+    <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto"></ul>
     </div>
   </div>
-</div>
-<div class="container card">
+</nav>
+<div class="container">
 <div class="row">
     <div class="col-md-12">
         <h1>android-12.1.0_r11 to android-12.1.0_r12 AOSP changelog</h1>
@@ -70,679 +66,679 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="col-md-12">
         <div id="changes">
 <p><h2><a href="#" id="platform_bootable_recovery-show" class="showLink" onclick="show('platform_bootable_recovery');return false;">+</a><a href="#" id="platform_bootable_recovery-hide" class="hideLink" onclick="hide('platform_bootable_recovery');return false;">-</a>&nbsp;<a name="platform_bootable_recovery" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/bootable/recovery">platform/bootable/recovery</a></h2>
-<div id="platform_bootable_recovery"><a href="https://android.googlesource.com/platform/bootable/recovery/+/6402ec57">6402ec57</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_bootable_recovery"><a href="https://android.googlesource.com/platform/bootable/recovery/+/6402ec57">6402ec57</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
-<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/989fbe90ef">989fbe90ef</a> :  Version bump to SD2A.220601.001.A1 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/5d3aa38bbd">5d3aa38bbd</a> :  Update Security String to 2022-06-01<br />
-<a href="https://android.googlesource.com/platform/build/+/13bdb8eeaf">13bdb8eeaf</a> :  Version bump to SD2A.220123.051 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/8fc1a9a7e0">8fc1a9a7e0</a> :  Version bump to SD2A.220123.050 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/4c692711f3">4c692711f3</a> :  Version bump to SD2A.220123.049 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/928c8a14d3">928c8a14d3</a> :  Version bump to SD2A.220123.048 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/c7fab483cc">c7fab483cc</a> :  Version bump to SD2A.220123.047 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/ed347c94b2">ed347c94b2</a> :  Version bump to SD2A.220123.046 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/1e3093a7d9">1e3093a7d9</a> :  Version bump to SD2A.220123.045 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/4d09a35bba">4d09a35bba</a> :  Version bump to SD2A.220123.044 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/a126062754">a126062754</a> :  Version bump to SD2A.220123.043 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/30535b7a4a">30535b7a4a</a> :  Version bump to SD2A.220123.041 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/8f77e59f79">8f77e59f79</a> :  Version bump to SD2A.220123.040 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/3a77d88871">3a77d88871</a> :  Version bump to SD2A.220123.039 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/fdb110717f">fdb110717f</a> :  Version bump to SD2A.220123.038 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/80c07ebae6">80c07ebae6</a> :  Version bump to SD2A.220123.037 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/9d3c570628">9d3c570628</a> :  Version bump to SD2A.220123.036 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b69f39dea5">b69f39dea5</a> :  Version bump to SD2A.220123.035 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/6726249e4a">6726249e4a</a> :  Version bump to SD2A.220123.034 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/e9b0f081a9">e9b0f081a9</a> :  Version bump to SD2A.220123.033 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/a1cf70f852">a1cf70f852</a> :  Version bump to SD2A.220123.032 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/80762c8837">80762c8837</a> :  Version bump to SD2A.220123.031 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b065623b4c">b065623b4c</a> :  Version bump to SD2A.220123.030 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/300f6ff495">300f6ff495</a> :  Version bump to SD2A.220123.029 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/8e54467c05">8e54467c05</a> :  Version bump to SD2A.220123.028 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/f5c1935df2">f5c1935df2</a> :  Version bump to SD2A.220123.027 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/1b14f87222">1b14f87222</a> :  Version bump to SD2A.220123.026 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/6eb197cb7f">6eb197cb7f</a> :  Version bump to SD2A.220123.025 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/c134d1e5d2">c134d1e5d2</a> :  Update Security String to 2022-04-05<br />
-<a href="https://android.googlesource.com/platform/build/+/3057d4481d">3057d4481d</a> :  Version bump to SD2A.220123.023 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/7e17d87187">7e17d87187</a> :  Version bump to SD2A.220123.022 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/73b350ebe6">73b350ebe6</a> :  Version bump to SD2A.220123.021 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/e2a8dc01ed">e2a8dc01ed</a> :  Version bump to SD2A.220123.020 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/81c63a60df">81c63a60df</a> :  Version bump to SD2A.220123.019 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/e6f8d3eaa4">e6f8d3eaa4</a> :  Version bump to SD2A.220123.018 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/c4f0550919">c4f0550919</a> :  Version bump to SD2A.220123.017 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/0b12ccb78c">0b12ccb78c</a> :  Version bump to SD2A.220123.016 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/df3fed3dff">df3fed3dff</a> :  Version bump to SD2A.220123.015 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/04a9b44f16">04a9b44f16</a> :  Version bump to SD2A.220123.014 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/a3331b8270">a3331b8270</a> :  Version bump to SD2A.220123.013 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b683099f80">b683099f80</a> :  Version bump to SD2A.220123.012 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/e843a5ecb4">e843a5ecb4</a> :  Version bump to SD2A.220123.011 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/84f0c2697a">84f0c2697a</a> :  Version bump to SD2A.220123.010 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/cf42195218">cf42195218</a> :  Version bump to SD2A.220123.009 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b82004bd09">b82004bd09</a> :  Version bump to SD2A.220123.008 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/8844ab97c9">8844ab97c9</a> :  Version bump to SD2A.220123.007 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/d3c50b36be">d3c50b36be</a> :  Version bump to SD2A.220123.006 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/d34cbd19a3">d34cbd19a3</a> :  Version bump to SD2A.220123.005 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/368c0565dd">368c0565dd</a> :  Version bump to SD2A.220123.004 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/63cca48bd3">63cca48bd3</a> :  Version bump to SD2A.220123.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b84590e19a">b84590e19a</a> :  Version bump to SD2A.220123.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/e0c8fa663c">e0c8fa663c</a> :  Version bump to SD2A.220122.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/4e43ca5639">4e43ca5639</a> :  Version bump to SD2A.220120.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/f027b8b628">f027b8b628</a> :  Version bump to SD2A.220117.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/9696431256">9696431256</a> :  Version bump to SD2A.220117.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/e9b69963c0">e9b69963c0</a> :  Version bump to SD2A.220114.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/38b7cd73bd">38b7cd73bd</a> :  Version bump to SD2A.220113.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/9e4d42b8c7">9e4d42b8c7</a> :  Version bump to SD2A.220113.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/95434dbd2f">95434dbd2f</a> :  Version bump to SD2A.211223.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/acadba34fe">acadba34fe</a> :  Version bump to SD2A.211216.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/767d1f1f2a">767d1f1f2a</a> :  Version bump to SD2A.211206.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/16ae76b70e">16ae76b70e</a> :  Version bump to SD2A.211203.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/06644cb1b2">06644cb1b2</a> :  Version bump to SD2A.211122.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/63ef402cb5">63ef402cb5</a> :  Version bump to SD2A.211119.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/038d71735e">038d71735e</a> :  Version bump to SD2A.211118.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/6981fea328">6981fea328</a> :  Version bump to SD2A.211118.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/82e9ae8153">82e9ae8153</a> :  Version bump to SD2A.211117.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/61191bb5b8">61191bb5b8</a> :  Version bump to SD2A.211117.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/2e284cb03b">2e284cb03b</a> :  Version bump to SD2A.211112.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/71ca7899b1">71ca7899b1</a> :  Version bump to SD2A.211109.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/96a38feb4f">96a38feb4f</a> :  Version bump to SD2A.211105.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/09ce3b5d3d">09ce3b5d3d</a> :  Version bump to SD2A.211102.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/e1fbb12e28">e1fbb12e28</a> :  Version bump to SD2A.211027.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/4e473d4df1">4e473d4df1</a> :  Version bump to SD2A.211026.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/3ffe72e6e0">3ffe72e6e0</a> :  Version bump to SD2A.211025.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/927af612c5">927af612c5</a> :  Version bump to SD2A.211021.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/a4fd67b94c">a4fd67b94c</a> :  Version bump to SD2A.211020.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/147ccf5396">147ccf5396</a> :  Version bump to SD2A.211015.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/e7d3f98772">e7d3f98772</a> :  Version bump to SD2A.211014.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/f1e812f87b">f1e812f87b</a> :  Version bump to SD2A.211014.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/17c49b9e2e">17c49b9e2e</a> :  Version bump to SD2A.211001.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/7429be76b1">7429be76b1</a> :  Version bump to SD2A.210924.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/437a62d7dc">437a62d7dc</a> :  Version bump to SD2A.210909.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/6b0b4e7b2a">6b0b4e7b2a</a> :  Version bump to SD2A.210729.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/955c6c9661">955c6c9661</a> :  Version bump to SD2A.210729.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/5fd3b95be2">5fd3b95be2</a> :  Version bump to SD2A.210723.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b990cf157a">b990cf157a</a> :  Version bump to SD2A.210720.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/cec3fc1eff">cec3fc1eff</a> :  Version bump to SD2A.210719.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/973369c546">973369c546</a> :  Version bump to SD2A.210715.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/27c32bdefa">27c32bdefa</a> :  Version bump to SD2A.210712.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/d695ee7b30">d695ee7b30</a> :  Version bump to SD2A.210708.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/6f06fefcf3">6f06fefcf3</a> :  Version bump to SD2A.210701.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/a2e8a11c25">a2e8a11c25</a> :  Version bump to SD2A.210630.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/0da583c30e">0da583c30e</a> :  Version bump to SD2A.210630.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/05c8704d96">05c8704d96</a> :  Version bump to SD2A.210624.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/56c3919880">56c3919880</a> :  Version bump to SD2A.210622.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/1633d0a1d9">1633d0a1d9</a> :  Version bump to SD2A.210618.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/dd162fcc77">dd162fcc77</a> :  Version bump to SD2A.210617.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b55d6a9330">b55d6a9330</a> :  Version bump to SD2A.210616.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/eb4b55f5de">eb4b55f5de</a> :  Version bump to SD2A.210616.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/bdfacdccd0">bdfacdccd0</a> :  Version bump to SD2A.210615.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b71a6fa1bc">b71a6fa1bc</a> :  Version bump to SD2A.210609.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/26ae7a8c22">26ae7a8c22</a> :  Version bump to SD2A.210607.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/de63eb0c63">de63eb0c63</a> :  Version bump to SD2A.210604.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/a8aad862e2">a8aad862e2</a> :  Version bump to SD2A.210603.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/5f268be353">5f268be353</a> :  Version bump to SD2A.210602.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/1f67262dc9">1f67262dc9</a> :  Version bump to SD2A.210602.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/90e8c41d28">90e8c41d28</a> :  Version bump to SD2A.210526.003 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/0f6679bb81">0f6679bb81</a> :  Version bump to SD2A.210526.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/f24561952b">f24561952b</a> :  Version bump to SD2A.210521.002 [core/build_id.mk]<br />
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/989fbe90ef">989fbe90ef</a> :  Version bump to SD2A.220601.001.A1 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/5d3aa38bbd">5d3aa38bbd</a> :  Update Security String to 2022-06-01
+<a href="https://android.googlesource.com/platform/build/+/13bdb8eeaf">13bdb8eeaf</a> :  Version bump to SD2A.220123.051 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/8fc1a9a7e0">8fc1a9a7e0</a> :  Version bump to SD2A.220123.050 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/4c692711f3">4c692711f3</a> :  Version bump to SD2A.220123.049 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/928c8a14d3">928c8a14d3</a> :  Version bump to SD2A.220123.048 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/c7fab483cc">c7fab483cc</a> :  Version bump to SD2A.220123.047 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/ed347c94b2">ed347c94b2</a> :  Version bump to SD2A.220123.046 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/1e3093a7d9">1e3093a7d9</a> :  Version bump to SD2A.220123.045 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/4d09a35bba">4d09a35bba</a> :  Version bump to SD2A.220123.044 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/a126062754">a126062754</a> :  Version bump to SD2A.220123.043 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/30535b7a4a">30535b7a4a</a> :  Version bump to SD2A.220123.041 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/8f77e59f79">8f77e59f79</a> :  Version bump to SD2A.220123.040 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/3a77d88871">3a77d88871</a> :  Version bump to SD2A.220123.039 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/fdb110717f">fdb110717f</a> :  Version bump to SD2A.220123.038 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/80c07ebae6">80c07ebae6</a> :  Version bump to SD2A.220123.037 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/9d3c570628">9d3c570628</a> :  Version bump to SD2A.220123.036 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b69f39dea5">b69f39dea5</a> :  Version bump to SD2A.220123.035 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/6726249e4a">6726249e4a</a> :  Version bump to SD2A.220123.034 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/e9b0f081a9">e9b0f081a9</a> :  Version bump to SD2A.220123.033 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/a1cf70f852">a1cf70f852</a> :  Version bump to SD2A.220123.032 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/80762c8837">80762c8837</a> :  Version bump to SD2A.220123.031 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b065623b4c">b065623b4c</a> :  Version bump to SD2A.220123.030 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/300f6ff495">300f6ff495</a> :  Version bump to SD2A.220123.029 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/8e54467c05">8e54467c05</a> :  Version bump to SD2A.220123.028 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/f5c1935df2">f5c1935df2</a> :  Version bump to SD2A.220123.027 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/1b14f87222">1b14f87222</a> :  Version bump to SD2A.220123.026 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/6eb197cb7f">6eb197cb7f</a> :  Version bump to SD2A.220123.025 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/c134d1e5d2">c134d1e5d2</a> :  Update Security String to 2022-04-05
+<a href="https://android.googlesource.com/platform/build/+/3057d4481d">3057d4481d</a> :  Version bump to SD2A.220123.023 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/7e17d87187">7e17d87187</a> :  Version bump to SD2A.220123.022 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/73b350ebe6">73b350ebe6</a> :  Version bump to SD2A.220123.021 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/e2a8dc01ed">e2a8dc01ed</a> :  Version bump to SD2A.220123.020 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/81c63a60df">81c63a60df</a> :  Version bump to SD2A.220123.019 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/e6f8d3eaa4">e6f8d3eaa4</a> :  Version bump to SD2A.220123.018 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/c4f0550919">c4f0550919</a> :  Version bump to SD2A.220123.017 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/0b12ccb78c">0b12ccb78c</a> :  Version bump to SD2A.220123.016 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/df3fed3dff">df3fed3dff</a> :  Version bump to SD2A.220123.015 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/04a9b44f16">04a9b44f16</a> :  Version bump to SD2A.220123.014 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/a3331b8270">a3331b8270</a> :  Version bump to SD2A.220123.013 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b683099f80">b683099f80</a> :  Version bump to SD2A.220123.012 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/e843a5ecb4">e843a5ecb4</a> :  Version bump to SD2A.220123.011 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/84f0c2697a">84f0c2697a</a> :  Version bump to SD2A.220123.010 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/cf42195218">cf42195218</a> :  Version bump to SD2A.220123.009 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b82004bd09">b82004bd09</a> :  Version bump to SD2A.220123.008 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/8844ab97c9">8844ab97c9</a> :  Version bump to SD2A.220123.007 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/d3c50b36be">d3c50b36be</a> :  Version bump to SD2A.220123.006 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/d34cbd19a3">d34cbd19a3</a> :  Version bump to SD2A.220123.005 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/368c0565dd">368c0565dd</a> :  Version bump to SD2A.220123.004 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/63cca48bd3">63cca48bd3</a> :  Version bump to SD2A.220123.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b84590e19a">b84590e19a</a> :  Version bump to SD2A.220123.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/e0c8fa663c">e0c8fa663c</a> :  Version bump to SD2A.220122.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/4e43ca5639">4e43ca5639</a> :  Version bump to SD2A.220120.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/f027b8b628">f027b8b628</a> :  Version bump to SD2A.220117.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/9696431256">9696431256</a> :  Version bump to SD2A.220117.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/e9b69963c0">e9b69963c0</a> :  Version bump to SD2A.220114.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/38b7cd73bd">38b7cd73bd</a> :  Version bump to SD2A.220113.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/9e4d42b8c7">9e4d42b8c7</a> :  Version bump to SD2A.220113.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/95434dbd2f">95434dbd2f</a> :  Version bump to SD2A.211223.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/acadba34fe">acadba34fe</a> :  Version bump to SD2A.211216.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/767d1f1f2a">767d1f1f2a</a> :  Version bump to SD2A.211206.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/16ae76b70e">16ae76b70e</a> :  Version bump to SD2A.211203.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/06644cb1b2">06644cb1b2</a> :  Version bump to SD2A.211122.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/63ef402cb5">63ef402cb5</a> :  Version bump to SD2A.211119.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/038d71735e">038d71735e</a> :  Version bump to SD2A.211118.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/6981fea328">6981fea328</a> :  Version bump to SD2A.211118.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/82e9ae8153">82e9ae8153</a> :  Version bump to SD2A.211117.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/61191bb5b8">61191bb5b8</a> :  Version bump to SD2A.211117.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/2e284cb03b">2e284cb03b</a> :  Version bump to SD2A.211112.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/71ca7899b1">71ca7899b1</a> :  Version bump to SD2A.211109.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/96a38feb4f">96a38feb4f</a> :  Version bump to SD2A.211105.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/09ce3b5d3d">09ce3b5d3d</a> :  Version bump to SD2A.211102.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/e1fbb12e28">e1fbb12e28</a> :  Version bump to SD2A.211027.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/4e473d4df1">4e473d4df1</a> :  Version bump to SD2A.211026.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/3ffe72e6e0">3ffe72e6e0</a> :  Version bump to SD2A.211025.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/927af612c5">927af612c5</a> :  Version bump to SD2A.211021.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/a4fd67b94c">a4fd67b94c</a> :  Version bump to SD2A.211020.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/147ccf5396">147ccf5396</a> :  Version bump to SD2A.211015.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/e7d3f98772">e7d3f98772</a> :  Version bump to SD2A.211014.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/f1e812f87b">f1e812f87b</a> :  Version bump to SD2A.211014.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/17c49b9e2e">17c49b9e2e</a> :  Version bump to SD2A.211001.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/7429be76b1">7429be76b1</a> :  Version bump to SD2A.210924.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/437a62d7dc">437a62d7dc</a> :  Version bump to SD2A.210909.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/6b0b4e7b2a">6b0b4e7b2a</a> :  Version bump to SD2A.210729.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/955c6c9661">955c6c9661</a> :  Version bump to SD2A.210729.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/5fd3b95be2">5fd3b95be2</a> :  Version bump to SD2A.210723.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b990cf157a">b990cf157a</a> :  Version bump to SD2A.210720.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/cec3fc1eff">cec3fc1eff</a> :  Version bump to SD2A.210719.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/973369c546">973369c546</a> :  Version bump to SD2A.210715.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/27c32bdefa">27c32bdefa</a> :  Version bump to SD2A.210712.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/d695ee7b30">d695ee7b30</a> :  Version bump to SD2A.210708.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/6f06fefcf3">6f06fefcf3</a> :  Version bump to SD2A.210701.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/a2e8a11c25">a2e8a11c25</a> :  Version bump to SD2A.210630.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/0da583c30e">0da583c30e</a> :  Version bump to SD2A.210630.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/05c8704d96">05c8704d96</a> :  Version bump to SD2A.210624.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/56c3919880">56c3919880</a> :  Version bump to SD2A.210622.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/1633d0a1d9">1633d0a1d9</a> :  Version bump to SD2A.210618.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/dd162fcc77">dd162fcc77</a> :  Version bump to SD2A.210617.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b55d6a9330">b55d6a9330</a> :  Version bump to SD2A.210616.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/eb4b55f5de">eb4b55f5de</a> :  Version bump to SD2A.210616.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/bdfacdccd0">bdfacdccd0</a> :  Version bump to SD2A.210615.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b71a6fa1bc">b71a6fa1bc</a> :  Version bump to SD2A.210609.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/26ae7a8c22">26ae7a8c22</a> :  Version bump to SD2A.210607.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/de63eb0c63">de63eb0c63</a> :  Version bump to SD2A.210604.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/a8aad862e2">a8aad862e2</a> :  Version bump to SD2A.210603.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/5f268be353">5f268be353</a> :  Version bump to SD2A.210602.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/1f67262dc9">1f67262dc9</a> :  Version bump to SD2A.210602.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/90e8c41d28">90e8c41d28</a> :  Version bump to SD2A.210526.003 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/0f6679bb81">0f6679bb81</a> :  Version bump to SD2A.210526.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/f24561952b">f24561952b</a> :  Version bump to SD2A.210521.002 [core/build_id.mk]
 </div></p>
 
 <p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
-<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/9e7d76ba74e">9e7d76ba74e</a> :  [DO NOT MERGE] Temporarily exclude KeyManagementTest on work profile and secondary user.<br />
-<a href="https://android.googlesource.com/platform/cts/+/aaa9b16923f">aaa9b16923f</a> :  [DO NOT MERGE]Add testNoRemotelyAccessibleListeningUdpPorts to known-failures<br />
-<a href="https://android.googlesource.com/platform/cts/+/02a749b8173">02a749b8173</a> :  [DO NOT MERGE] Add KeyManagementTests to known failures until mainline can be updated.<br />
-<a href="https://android.googlesource.com/platform/cts/+/702910c9d91">702910c9d91</a> :  Use shell stdin to install packages pre-S instead of writing files.<br />
-<a href="https://android.googlesource.com/platform/cts/+/36b069d5625">36b069d5625</a> :  Revert "Add tests for the api Context#checkUriPermission"<br />
-<a href="https://android.googlesource.com/platform/cts/+/3827db7d9dd">3827db7d9dd</a> :  Revert "Add tests for the api Context#checkUriPermission"<br />
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/9e7d76ba74e">9e7d76ba74e</a> :  [DO NOT MERGE] Temporarily exclude KeyManagementTest on work profile and secondary user.
+<a href="https://android.googlesource.com/platform/cts/+/aaa9b16923f">aaa9b16923f</a> :  [DO NOT MERGE]Add testNoRemotelyAccessibleListeningUdpPorts to known-failures
+<a href="https://android.googlesource.com/platform/cts/+/02a749b8173">02a749b8173</a> :  [DO NOT MERGE] Add KeyManagementTests to known failures until mainline can be updated.
+<a href="https://android.googlesource.com/platform/cts/+/702910c9d91">702910c9d91</a> :  Use shell stdin to install packages pre-S instead of writing files.
+<a href="https://android.googlesource.com/platform/cts/+/36b069d5625">36b069d5625</a> :  Revert "Add tests for the api Context#checkUriPermission"
+<a href="https://android.googlesource.com/platform/cts/+/3827db7d9dd">3827db7d9dd</a> :  Revert "Add tests for the api Context#checkUriPermission"
 </div></p>
 
 <p><h2><a href="#" id="device_google_atv-show" class="showLink" onclick="show('device_google_atv');return false;">+</a><a href="#" id="device_google_atv-hide" class="hideLink" onclick="hide('device_google_atv');return false;">-</a>&nbsp;<a name="device_google_atv" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/atv">device/google/atv</a></h2>
-<div id="device_google_atv"><a href="https://android.googlesource.com/device/google/atv/+/7dda139">7dda139</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="device_google_atv"><a href="https://android.googlesource.com/device/google/atv/+/7dda139">7dda139</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="device_google_bluejay-show" class="showLink" onclick="show('device_google_bluejay');return false;">+</a><a href="#" id="device_google_bluejay-hide" class="hideLink" onclick="hide('device_google_bluejay');return false;">-</a>&nbsp;<a name="device_google_bluejay" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay">device/google/bluejay</a></h2>
-<div id="device_google_bluejay"><a href="https://android.googlesource.com/device/google/bluejay/+/7bb8eae">7bb8eae</a> :  [DO NOT MERGE] Jump SVN to 4<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/3d83041">3d83041</a> :  Jump SVN to 3 for VZW FRC4<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/a82a055">a82a055</a> :  Jump SVN to 2 for VZW FRC3<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/97a1493">97a1493</a> :  Revert "Revert "Config: fine tune the ambient threshold to improve the brightness""<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/96bcd1f">96bcd1f</a> :  Update regulation e-label of B3<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/296ee65">296ee65</a> :  Revert "Config: fine tune the ambient threshold to improve the brightness"<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/b003e03">b003e03</a> :  audio: update audio tuning table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/0bf16af">0bf16af</a> :  Set USER_GMS_CORE_PREBUILT_Y2021W39_FOR_PIXEL_DEVICE for bluejay device<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/a891d1d">a891d1d</a> :  Add regulation e-labels of B3<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/dc44b52">dc44b52</a> :  Config: fine tune the ambient threshold to improve the brightness stability<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/1b6ed74">1b6ed74</a> :  powerhint: release BC max frequency when launching<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/138ca07">138ca07</a> :  powerhint: fork powerhint.json for b3<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/c1b50b8">c1b50b8</a> :  thermal: increase SEVERE GPU power budget<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/6027829">6027829</a> :  Update ./DevInfo/Mod model name<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/c9518a5">c9518a5</a> :  audio: remove 3 channel config for primary input<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/251ab58">251ab58</a> :  Bluetooth: B3 BT SAR tables for US/EU/CA/JP<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/70811d8">70811d8</a> :  power_profile: Correct CPU topology and power number<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/d010f15">d010f15</a> :  Reveal model/make name in camera EXIF<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/4d03382">4d03382</a> :  thermal: Deploy BCL policy<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/611fc32">611fc32</a> :  conf: remove world writable on speaker.cal<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/873bc59">873bc59</a> :  fingerprint: Build fps extension lib<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/6265f30">6265f30</a> :  correct MMS UA, UAProf for B3<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/4c0d670">4c0d670</a> :  audio: update audio tuning table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/156bdf9">156bdf9</a> :  audio: update audio tuning table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/318acd4">318acd4</a> :  audio: update audio tuning table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/b6b4bf0">b6b4bf0</a> :  PowerHal: move power HAL property to PRODUCT_VENDOR_PROPERTIES<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/9fa1038">9fa1038</a> :  Adjust lmkd kill timeout<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/09a484c">09a484c</a> :  audio: update audio tuning table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/9db71fc">9db71fc</a> :  audio: add mfg_audio record for usb recording<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/9ec5a18">9ec5a18</a> :  audio: update audio tuning table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/9fa2de1">9fa2de1</a> :  audio: update audio table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/a3c45b1">a3c45b1</a> :  [DO NOT MERGE] Add HAL attributes to support LPPe DBH features<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/066f73a">066f73a</a> :  Enable media performance class 12<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/d6002e6">d6002e6</a> :  vibrator: stop support primitives THUD/SPIN/LOW_TICK<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/a2f3533">a2f3533</a> :  vibrator: stop support primitives THUD/SPIN/LOW_TICK<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/54b24aa">54b24aa</a> :  audio: update audio tuning table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/a88c78a">a88c78a</a> :  Device uses default prox sensor for falsing<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/731a1b4">731a1b4</a> :  audio: add usb headset mic source to factory test<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/c540dcf">c540dcf</a> :  Add system property for 1080p 60fps binning mode<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/63ded05">63ded05</a> :  display: update display color data<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/540bbaf">540bbaf</a> :  [DO NOT MERGE] Update PRODUCT_SHIPPING_API_LEVEL for gs101 devices<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/1f49d8c">1f49d8c</a> :  thermal: Update thermal config<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/1683c88">1683c88</a> :  DO NOT MERGE Revert udfps haptics updates<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/3078eef">3078eef</a> :  gps: Update EnableOnChipStopNotification<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/4b80986">4b80986</a> :  audio: update audio tuning table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/a287ca6">a287ca6</a> :  Set up configs and some voice packs of Text-To-Speech.<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/97d004e">97d004e</a> :  Build B3 default CMF color wallpaper<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/47f2b58">47f2b58</a> :  audio: Add command to set PCM steam wait time for voice and audio.<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/b2a0b28">b2a0b28</a> :  Add NFC CFG files for different SKUs<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/d0b00f6">d0b00f6</a> :  Set audio.camerasound.force for JP devices<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/842383d">842383d</a> :  Camera: Enable to raise buffer allocation priority<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/50b0e40">50b0e40</a> :  Update bluejay self-extractors and factory-images path<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/abcaad4">abcaad4</a> :  audio: change format of deep-buffer to float<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/ccf1131">ccf1131</a> :  power_profile: add battery capacity<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/f369e32">f369e32</a> :  Camera: Enable extended launch boost<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/34e00b6">34e00b6</a> :  Update udfps haptics config values<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/eec2f96">eec2f96</a> :  display: update display tuning profiles<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/c4bea84">c4bea84</a> :  audio: update voice tuning table<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/aed7239">aed7239</a> :  [DO NOT MERGE] Move bluejay source code into bluejay device folders<br />
-<a href="https://android.googlesource.com/device/google/bluejay/+/a65dfc7">a65dfc7</a> :  Initial empty repository<br />
+<div id="device_google_bluejay"><a href="https://android.googlesource.com/device/google/bluejay/+/7bb8eae">7bb8eae</a> :  [DO NOT MERGE] Jump SVN to 4
+<a href="https://android.googlesource.com/device/google/bluejay/+/3d83041">3d83041</a> :  Jump SVN to 3 for VZW FRC4
+<a href="https://android.googlesource.com/device/google/bluejay/+/a82a055">a82a055</a> :  Jump SVN to 2 for VZW FRC3
+<a href="https://android.googlesource.com/device/google/bluejay/+/97a1493">97a1493</a> :  Revert "Revert "Config: fine tune the ambient threshold to improve the brightness""
+<a href="https://android.googlesource.com/device/google/bluejay/+/96bcd1f">96bcd1f</a> :  Update regulation e-label of B3
+<a href="https://android.googlesource.com/device/google/bluejay/+/296ee65">296ee65</a> :  Revert "Config: fine tune the ambient threshold to improve the brightness"
+<a href="https://android.googlesource.com/device/google/bluejay/+/b003e03">b003e03</a> :  audio: update audio tuning table
+<a href="https://android.googlesource.com/device/google/bluejay/+/0bf16af">0bf16af</a> :  Set USER_GMS_CORE_PREBUILT_Y2021W39_FOR_PIXEL_DEVICE for bluejay device
+<a href="https://android.googlesource.com/device/google/bluejay/+/a891d1d">a891d1d</a> :  Add regulation e-labels of B3
+<a href="https://android.googlesource.com/device/google/bluejay/+/dc44b52">dc44b52</a> :  Config: fine tune the ambient threshold to improve the brightness stability
+<a href="https://android.googlesource.com/device/google/bluejay/+/1b6ed74">1b6ed74</a> :  powerhint: release BC max frequency when launching
+<a href="https://android.googlesource.com/device/google/bluejay/+/138ca07">138ca07</a> :  powerhint: fork powerhint.json for b3
+<a href="https://android.googlesource.com/device/google/bluejay/+/c1b50b8">c1b50b8</a> :  thermal: increase SEVERE GPU power budget
+<a href="https://android.googlesource.com/device/google/bluejay/+/6027829">6027829</a> :  Update ./DevInfo/Mod model name
+<a href="https://android.googlesource.com/device/google/bluejay/+/c9518a5">c9518a5</a> :  audio: remove 3 channel config for primary input
+<a href="https://android.googlesource.com/device/google/bluejay/+/251ab58">251ab58</a> :  Bluetooth: B3 BT SAR tables for US/EU/CA/JP
+<a href="https://android.googlesource.com/device/google/bluejay/+/70811d8">70811d8</a> :  power_profile: Correct CPU topology and power number
+<a href="https://android.googlesource.com/device/google/bluejay/+/d010f15">d010f15</a> :  Reveal model/make name in camera EXIF
+<a href="https://android.googlesource.com/device/google/bluejay/+/4d03382">4d03382</a> :  thermal: Deploy BCL policy
+<a href="https://android.googlesource.com/device/google/bluejay/+/611fc32">611fc32</a> :  conf: remove world writable on speaker.cal
+<a href="https://android.googlesource.com/device/google/bluejay/+/873bc59">873bc59</a> :  fingerprint: Build fps extension lib
+<a href="https://android.googlesource.com/device/google/bluejay/+/6265f30">6265f30</a> :  correct MMS UA, UAProf for B3
+<a href="https://android.googlesource.com/device/google/bluejay/+/4c0d670">4c0d670</a> :  audio: update audio tuning table
+<a href="https://android.googlesource.com/device/google/bluejay/+/156bdf9">156bdf9</a> :  audio: update audio tuning table
+<a href="https://android.googlesource.com/device/google/bluejay/+/318acd4">318acd4</a> :  audio: update audio tuning table
+<a href="https://android.googlesource.com/device/google/bluejay/+/b6b4bf0">b6b4bf0</a> :  PowerHal: move power HAL property to PRODUCT_VENDOR_PROPERTIES
+<a href="https://android.googlesource.com/device/google/bluejay/+/9fa1038">9fa1038</a> :  Adjust lmkd kill timeout
+<a href="https://android.googlesource.com/device/google/bluejay/+/09a484c">09a484c</a> :  audio: update audio tuning table
+<a href="https://android.googlesource.com/device/google/bluejay/+/9db71fc">9db71fc</a> :  audio: add mfg_audio record for usb recording
+<a href="https://android.googlesource.com/device/google/bluejay/+/9ec5a18">9ec5a18</a> :  audio: update audio tuning table
+<a href="https://android.googlesource.com/device/google/bluejay/+/9fa2de1">9fa2de1</a> :  audio: update audio table
+<a href="https://android.googlesource.com/device/google/bluejay/+/a3c45b1">a3c45b1</a> :  [DO NOT MERGE] Add HAL attributes to support LPPe DBH features
+<a href="https://android.googlesource.com/device/google/bluejay/+/066f73a">066f73a</a> :  Enable media performance class 12
+<a href="https://android.googlesource.com/device/google/bluejay/+/d6002e6">d6002e6</a> :  vibrator: stop support primitives THUD/SPIN/LOW_TICK
+<a href="https://android.googlesource.com/device/google/bluejay/+/a2f3533">a2f3533</a> :  vibrator: stop support primitives THUD/SPIN/LOW_TICK
+<a href="https://android.googlesource.com/device/google/bluejay/+/54b24aa">54b24aa</a> :  audio: update audio tuning table
+<a href="https://android.googlesource.com/device/google/bluejay/+/a88c78a">a88c78a</a> :  Device uses default prox sensor for falsing
+<a href="https://android.googlesource.com/device/google/bluejay/+/731a1b4">731a1b4</a> :  audio: add usb headset mic source to factory test
+<a href="https://android.googlesource.com/device/google/bluejay/+/c540dcf">c540dcf</a> :  Add system property for 1080p 60fps binning mode
+<a href="https://android.googlesource.com/device/google/bluejay/+/63ded05">63ded05</a> :  display: update display color data
+<a href="https://android.googlesource.com/device/google/bluejay/+/540bbaf">540bbaf</a> :  [DO NOT MERGE] Update PRODUCT_SHIPPING_API_LEVEL for gs101 devices
+<a href="https://android.googlesource.com/device/google/bluejay/+/1f49d8c">1f49d8c</a> :  thermal: Update thermal config
+<a href="https://android.googlesource.com/device/google/bluejay/+/1683c88">1683c88</a> :  DO NOT MERGE Revert udfps haptics updates
+<a href="https://android.googlesource.com/device/google/bluejay/+/3078eef">3078eef</a> :  gps: Update EnableOnChipStopNotification
+<a href="https://android.googlesource.com/device/google/bluejay/+/4b80986">4b80986</a> :  audio: update audio tuning table
+<a href="https://android.googlesource.com/device/google/bluejay/+/a287ca6">a287ca6</a> :  Set up configs and some voice packs of Text-To-Speech.
+<a href="https://android.googlesource.com/device/google/bluejay/+/97d004e">97d004e</a> :  Build B3 default CMF color wallpaper
+<a href="https://android.googlesource.com/device/google/bluejay/+/47f2b58">47f2b58</a> :  audio: Add command to set PCM steam wait time for voice and audio.
+<a href="https://android.googlesource.com/device/google/bluejay/+/b2a0b28">b2a0b28</a> :  Add NFC CFG files for different SKUs
+<a href="https://android.googlesource.com/device/google/bluejay/+/d0b00f6">d0b00f6</a> :  Set audio.camerasound.force for JP devices
+<a href="https://android.googlesource.com/device/google/bluejay/+/842383d">842383d</a> :  Camera: Enable to raise buffer allocation priority
+<a href="https://android.googlesource.com/device/google/bluejay/+/50b0e40">50b0e40</a> :  Update bluejay self-extractors and factory-images path
+<a href="https://android.googlesource.com/device/google/bluejay/+/abcaad4">abcaad4</a> :  audio: change format of deep-buffer to float
+<a href="https://android.googlesource.com/device/google/bluejay/+/ccf1131">ccf1131</a> :  power_profile: add battery capacity
+<a href="https://android.googlesource.com/device/google/bluejay/+/f369e32">f369e32</a> :  Camera: Enable extended launch boost
+<a href="https://android.googlesource.com/device/google/bluejay/+/34e00b6">34e00b6</a> :  Update udfps haptics config values
+<a href="https://android.googlesource.com/device/google/bluejay/+/eec2f96">eec2f96</a> :  display: update display tuning profiles
+<a href="https://android.googlesource.com/device/google/bluejay/+/c4bea84">c4bea84</a> :  audio: update voice tuning table
+<a href="https://android.googlesource.com/device/google/bluejay/+/aed7239">aed7239</a> :  [DO NOT MERGE] Move bluejay source code into bluejay device folders
+<a href="https://android.googlesource.com/device/google/bluejay/+/a65dfc7">a65dfc7</a> :  Initial empty repository
 </div></p>
 
 <p><h2><a href="#" id="device_google_bluejay-kernel-show" class="showLink" onclick="show('device_google_bluejay-kernel');return false;">+</a><a href="#" id="device_google_bluejay-kernel-hide" class="hideLink" onclick="hide('device_google_bluejay-kernel');return false;">-</a>&nbsp;<a name="device_google_bluejay-kernel" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay-kernel">device/google/bluejay-kernel</a></h2>
-<div id="device_google_bluejay-kernel"><a href="https://android.googlesource.com/device/google/bluejay-kernel/+/56a083d0b">56a083d0b</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/c809af3f5">c809af3f5</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/38a851fad">38a851fad</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/7b9770265">7b9770265</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/7dfd7599b">7dfd7599b</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/21b638e0a">21b638e0a</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/fbb22c184">fbb22c184</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/206563681">206563681</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/95149b674">95149b674</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/1d743698a">1d743698a</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/c0f8bea7b">c0f8bea7b</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/2408d8154">2408d8154</a> :  Revert "bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]"<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/b9b37e487">b9b37e487</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/9a74e1455">9a74e1455</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/7ae9dbaa2">7ae9dbaa2</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/a63781f8d">a63781f8d</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/52e9dfc3c">52e9dfc3c</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/eb7c9b000">eb7c9b000</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/ba630c2a8">ba630c2a8</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/bb8ee89f6">bb8ee89f6</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/57cd7f3d1">57cd7f3d1</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/e8d5f7974">e8d5f7974</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/ae88c2ca9">ae88c2ca9</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/c0d7956ad">c0d7956ad</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/82c23b5c3">82c23b5c3</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/98cf39427">98cf39427</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/e4245b544">e4245b544</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/76fac5908">76fac5908</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/10f8e2ffa">10f8e2ffa</a> :  add OWNERS file for kernel image<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/d634081e5">d634081e5</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/4856419d1">4856419d1</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/5ec2119f4">5ec2119f4</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/452e197ec">452e197ec</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/2b5505203">2b5505203</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/970ab36bc">970ab36bc</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/ddff1ccfc">ddff1ccfc</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/64d5cbc54">64d5cbc54</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/e65b3acd0">e65b3acd0</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/b4087c862">b4087c862</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/acb9941b8">acb9941b8</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/c5c0c4287">c5c0c4287</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/b1e9cf269">b1e9cf269</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/1499258ba">1499258ba</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/41f5c41ed">41f5c41ed</a> :  bluejay: update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/1dea7a630">1dea7a630</a> :  update kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/8a2d0aaa4">8a2d0aaa4</a> :  Add original-kernel-headers<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/a3714e5f6">a3714e5f6</a> :  bluejay: Initial Commit kernel-and-modules prebuilt<br />
-<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/cbb63e035">cbb63e035</a> :  Initial empty repository<br />
+<div id="device_google_bluejay-kernel"><a href="https://android.googlesource.com/device/google/bluejay-kernel/+/56a083d0b">56a083d0b</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/c809af3f5">c809af3f5</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/38a851fad">38a851fad</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/7b9770265">7b9770265</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/7dfd7599b">7dfd7599b</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/21b638e0a">21b638e0a</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/fbb22c184">fbb22c184</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/206563681">206563681</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/95149b674">95149b674</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/1d743698a">1d743698a</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/c0f8bea7b">c0f8bea7b</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/2408d8154">2408d8154</a> :  Revert "bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]"
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/b9b37e487">b9b37e487</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/9a74e1455">9a74e1455</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/7ae9dbaa2">7ae9dbaa2</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/a63781f8d">a63781f8d</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/52e9dfc3c">52e9dfc3c</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/eb7c9b000">eb7c9b000</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/ba630c2a8">ba630c2a8</a> :  bluejay: update kernel-and-modules prebuilt [ DO NOT MERGE ]
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/bb8ee89f6">bb8ee89f6</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/57cd7f3d1">57cd7f3d1</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/e8d5f7974">e8d5f7974</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/ae88c2ca9">ae88c2ca9</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/c0d7956ad">c0d7956ad</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/82c23b5c3">82c23b5c3</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/98cf39427">98cf39427</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/e4245b544">e4245b544</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/76fac5908">76fac5908</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/10f8e2ffa">10f8e2ffa</a> :  add OWNERS file for kernel image
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/d634081e5">d634081e5</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/4856419d1">4856419d1</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/5ec2119f4">5ec2119f4</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/452e197ec">452e197ec</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/2b5505203">2b5505203</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/970ab36bc">970ab36bc</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/ddff1ccfc">ddff1ccfc</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/64d5cbc54">64d5cbc54</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/e65b3acd0">e65b3acd0</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/b4087c862">b4087c862</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/acb9941b8">acb9941b8</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/c5c0c4287">c5c0c4287</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/b1e9cf269">b1e9cf269</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/1499258ba">1499258ba</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/41f5c41ed">41f5c41ed</a> :  bluejay: update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/1dea7a630">1dea7a630</a> :  update kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/8a2d0aaa4">8a2d0aaa4</a> :  Add original-kernel-headers
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/a3714e5f6">a3714e5f6</a> :  bluejay: Initial Commit kernel-and-modules prebuilt
+<a href="https://android.googlesource.com/device/google/bluejay-kernel/+/cbb63e035">cbb63e035</a> :  Initial empty repository
 </div></p>
 
 <p><h2><a href="#" id="device_google_bluejay-sepolicy-show" class="showLink" onclick="show('device_google_bluejay-sepolicy');return false;">+</a><a href="#" id="device_google_bluejay-sepolicy-hide" class="hideLink" onclick="hide('device_google_bluejay-sepolicy');return false;">-</a>&nbsp;<a name="device_google_bluejay-sepolicy" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/bluejay-sepolicy">device/google/bluejay-sepolicy</a></h2>
-<div id="device_google_bluejay-sepolicy"><a href="https://android.googlesource.com/device/google/bluejay-sepolicy/+/ad04f38">ad04f38</a> :  Move bluejay source code into bluejay device folders<br />
-<a href="https://android.googlesource.com/device/google/bluejay-sepolicy/+/3e87f73">3e87f73</a> :  Initial empty repository<br />
+<div id="device_google_bluejay-sepolicy"><a href="https://android.googlesource.com/device/google/bluejay-sepolicy/+/ad04f38">ad04f38</a> :  Move bluejay source code into bluejay device folders
+<a href="https://android.googlesource.com/device/google/bluejay-sepolicy/+/3e87f73">3e87f73</a> :  Initial empty repository
 </div></p>
 
 <p><h2><a href="#" id="device_google_coral-show" class="showLink" onclick="show('device_google_coral');return false;">+</a><a href="#" id="device_google_coral-hide" class="hideLink" onclick="hide('device_google_coral');return false;">-</a>&nbsp;<a name="device_google_coral" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/coral">device/google/coral</a></h2>
-<div id="device_google_coral"><a href="https://android.googlesource.com/device/google/coral/+/97ff2fe2">97ff2fe2</a> :  Revert "Modify IKeymasterDevice/default to version 4.1"<br />
+<div id="device_google_coral"><a href="https://android.googlesource.com/device/google/coral/+/97ff2fe2">97ff2fe2</a> :  Revert "Modify IKeymasterDevice/default to version 4.1"
 </div></p>
 
 <p><h2><a href="#" id="device_google_gs101-show" class="showLink" onclick="show('device_google_gs101');return false;">+</a><a href="#" id="device_google_gs101-hide" class="hideLink" onclick="hide('device_google_gs101');return false;">-</a>&nbsp;<a name="device_google_gs101" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/gs101">device/google/gs101</a></h2>
-<div id="device_google_gs101"><a href="https://android.googlesource.com/device/google/gs101/+/2c085856">2c085856</a> :  [DO NOT MERGE][B3][FRC] gps: update gps driver 129.20.23.535938<br />
-<a href="https://android.googlesource.com/device/google/gs101/+/74a9ae44">74a9ae44</a> :  [DO NOT MERGE] gps: update gps driver 129.20.23.528152<br />
-<a href="https://android.googlesource.com/device/google/gs101/+/7c0c90a1">7c0c90a1</a> :  extension: Correct assgine owner<br />
-<a href="https://android.googlesource.com/device/google/gs101/+/6fae1aea">6fae1aea</a> :  Boost DISPLAY_UPDATE_IMMINENT higher for 60HZ<br />
-<a href="https://android.googlesource.com/device/google/gs101/+/9440c6bf">9440c6bf</a> :  DO NOT MERGE Remove unintended face config<br />
-<a href="https://android.googlesource.com/device/google/gs101/+/7143857c">7143857c</a> :  Disable Early Cmaping feature<br />
+<div id="device_google_gs101"><a href="https://android.googlesource.com/device/google/gs101/+/2c085856">2c085856</a> :  [DO NOT MERGE][B3][FRC] gps: update gps driver 129.20.23.535938
+<a href="https://android.googlesource.com/device/google/gs101/+/74a9ae44">74a9ae44</a> :  [DO NOT MERGE] gps: update gps driver 129.20.23.528152
+<a href="https://android.googlesource.com/device/google/gs101/+/7c0c90a1">7c0c90a1</a> :  extension: Correct assgine owner
+<a href="https://android.googlesource.com/device/google/gs101/+/6fae1aea">6fae1aea</a> :  Boost DISPLAY_UPDATE_IMMINENT higher for 60HZ
+<a href="https://android.googlesource.com/device/google/gs101/+/9440c6bf">9440c6bf</a> :  DO NOT MERGE Remove unintended face config
+<a href="https://android.googlesource.com/device/google/gs101/+/7143857c">7143857c</a> :  Disable Early Cmaping feature
 </div></p>
 
 <p><h2><a href="#" id="device_google_raviole-show" class="showLink" onclick="show('device_google_raviole');return false;">+</a><a href="#" id="device_google_raviole-hide" class="hideLink" onclick="hide('device_google_raviole');return false;">-</a>&nbsp;<a name="device_google_raviole" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/raviole">device/google/raviole</a></h2>
-<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/c5925e18">c5925e18</a> :  powerhint: release BC max frequency when launching<br />
-<a href="https://android.googlesource.com/device/google/raviole/+/07ca449a">07ca449a</a> :  powerhint: fork powerhint.json for slider/whitefin<br />
-<a href="https://android.googlesource.com/device/google/raviole/+/06b64060">06b64060</a> :  powerhint: fork powerhint.json for raviole<br />
-<a href="https://android.googlesource.com/device/google/raviole/+/6e14956f">6e14956f</a> :  Update SVN to 22 for Oriole-Raven for Mar QPR 2022<br />
-<a href="https://android.googlesource.com/device/google/raviole/+/f4db03bb">f4db03bb</a> :  Update SVN to 21 for O6R4 Feb MPR 2022<br />
-<a href="https://android.googlesource.com/device/google/raviole/+/668a12e2">668a12e2</a> :  DO NOT MERGE Remove unintended faceauth configs<br />
-<a href="https://android.googlesource.com/device/google/raviole/+/e2628da8">e2628da8</a> :  Revert "Disable ASP only on PROTO1.0 devices"<br />
+<div id="device_google_raviole"><a href="https://android.googlesource.com/device/google/raviole/+/c5925e18">c5925e18</a> :  powerhint: release BC max frequency when launching
+<a href="https://android.googlesource.com/device/google/raviole/+/07ca449a">07ca449a</a> :  powerhint: fork powerhint.json for slider/whitefin
+<a href="https://android.googlesource.com/device/google/raviole/+/06b64060">06b64060</a> :  powerhint: fork powerhint.json for raviole
+<a href="https://android.googlesource.com/device/google/raviole/+/6e14956f">6e14956f</a> :  Update SVN to 22 for Oriole-Raven for Mar QPR 2022
+<a href="https://android.googlesource.com/device/google/raviole/+/f4db03bb">f4db03bb</a> :  Update SVN to 21 for O6R4 Feb MPR 2022
+<a href="https://android.googlesource.com/device/google/raviole/+/668a12e2">668a12e2</a> :  DO NOT MERGE Remove unintended faceauth configs
+<a href="https://android.googlesource.com/device/google/raviole/+/e2628da8">e2628da8</a> :  Revert "Disable ASP only on PROTO1.0 devices"
 </div></p>
 
 <p><h2><a href="#" id="device_google_sunfish-show" class="showLink" onclick="show('device_google_sunfish');return false;">+</a><a href="#" id="device_google_sunfish-hide" class="hideLink" onclick="hide('device_google_sunfish');return false;">-</a>&nbsp;<a name="device_google_sunfish" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/sunfish">device/google/sunfish</a></h2>
-<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/75cce8d0">75cce8d0</a> :  Revert "Modify IKeymasterDevice/default to version 4.1"<br />
+<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/75cce8d0">75cce8d0</a> :  Revert "Modify IKeymasterDevice/default to version 4.1"
 </div></p>
 
 <p><h2><a href="#" id="platform_external_aac-show" class="showLink" onclick="show('platform_external_aac');return false;">+</a><a href="#" id="platform_external_aac-hide" class="hideLink" onclick="hide('platform_external_aac');return false;">-</a>&nbsp;<a name="platform_external_aac" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/aac">platform/external/aac</a></h2>
-<div id="platform_external_aac"><a href="https://android.googlesource.com/platform/external/aac/+/04bb5a8">04bb5a8</a> :  Reject invalid out of band config in transportDec_OutOfBandConfig() and skip re-allocation.<br />
+<div id="platform_external_aac"><a href="https://android.googlesource.com/platform/external/aac/+/04bb5a8">04bb5a8</a> :  Reject invalid out of band config in transportDec_OutOfBandConfig() and skip re-allocation.
 </div></p>
 
 <p><h2><a href="#" id="platform_external_selinux-show" class="showLink" onclick="show('platform_external_selinux');return false;">+</a><a href="#" id="platform_external_selinux-hide" class="hideLink" onclick="hide('platform_external_selinux');return false;">-</a>&nbsp;<a name="platform_external_selinux" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/selinux">platform/external/selinux</a></h2>
-<div id="platform_external_selinux"><a href="https://android.googlesource.com/platform/external/selinux/+/31161cb0">31161cb0</a> :  Skip closef for property backend<br />
+<div id="platform_external_selinux"><a href="https://android.googlesource.com/platform/external/selinux/+/31161cb0">31161cb0</a> :  Skip closef for property backend
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
-<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/050e00a81d">050e00a81d</a> :  Safe parsing of HEIF framecount information<br />
-<a href="https://android.googlesource.com/platform/frameworks/av/+/d631ae70d7">d631ae70d7</a> :  C2AllocatorIon:protect mMappings using mutex<br />
-<a href="https://android.googlesource.com/platform/frameworks/av/+/1ef371de0d">1ef371de0d</a> :  AudioTrack: Refine the wait for volume ramp on pause<br />
-<a href="https://android.googlesource.com/platform/frameworks/av/+/3223c09a3c">3223c09a3c</a> :  VT: fixed an infinite loop of RR sending.<br />
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/050e00a81d">050e00a81d</a> :  Safe parsing of HEIF framecount information
+<a href="https://android.googlesource.com/platform/frameworks/av/+/d631ae70d7">d631ae70d7</a> :  C2AllocatorIon:protect mMappings using mutex
+<a href="https://android.googlesource.com/platform/frameworks/av/+/1ef371de0d">1ef371de0d</a> :  AudioTrack: Refine the wait for volume ramp on pause
+<a href="https://android.googlesource.com/platform/frameworks/av/+/3223c09a3c">3223c09a3c</a> :  VT: fixed an infinite loop of RR sending.
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
-<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/01c718a42fe1">01c718a42fe1</a> :  [Ongoing Call] Don't call #getIntent to avoid a security vulnerability.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/fe205882e5ab">fe205882e5ab</a> :  limit TelecomManager#registerPhoneAccount to 10; api doc update<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/09d5eb29c9eb">09d5eb29c9eb</a> :  [scv2] RESTRICT AUTOMERGE Add finalizeWorkProfileProvisioning.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/a62b0e343a7e">a62b0e343a7e</a> :  Disallow too large display padding for wallpaper<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/15558b03f5ec">15558b03f5ec</a> :  Fix NPE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/f918c3e51c6b">f918c3e51c6b</a> :  Prevent exfiltration of system files via user image settings.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/b1646337a748">b1646337a748</a> :  Prevent non-admin users from deleting system apps.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/d15f00a09260">d15f00a09260</a> :  Fix security hole in GateKeeperResponse<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/26c1e6434359">26c1e6434359</a> :  Update GeofenceHardwareRequestParcelable to match parcel/unparcel format.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/6f7fb3bc318e">6f7fb3bc318e</a> :  Add an OEM configurable limit for zen rules<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/5aa3aa0b8182">5aa3aa0b8182</a> :  Keyguard - Treat messsages to lock with priority<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/cdd072e03ad7">cdd072e03ad7</a> :  Always restart apps if base.apk gets updated.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/ede6398a26f8">ede6398a26f8</a> :  Verify caller before auto granting slice permission<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/d1b9a4efade6">d1b9a4efade6</a> :  Replace BitmapRegionDecoder with ImageDecoder<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/88e0bd640587">88e0bd640587</a> :  [RESTRICT AUTOMERGE] Do not resume activity if behind a translucent task<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/7daaa15d4ded">7daaa15d4ded</a> :  Update permissions for ServiceState broadcast<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/e8b88942a262">e8b88942a262</a> :  Filter notification APIs by user<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/7ba4df08d29b">7ba4df08d29b</a> :  Dialing phone state should update active sub<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/86ea7ec6ddbb">86ea7ec6ddbb</a> :  Revert "Revert "Update BrightnessTracker to use same sensor as ABC.""<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/17525010413a">17525010413a</a> :  Revert "Revert "[RESTRICT AUTOMERGE] Make thresholds tuneable in the ddc""<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/7dd392a1970e">7dd392a1970e</a> :  Revert "Revert "[RESTRICT AUTOMERGE]DisplayManager: Make sure RampAnimator sets property in linear space.""<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/76d7c5af40fe">76d7c5af40fe</a> :  Revert "Revert "[RESTRICT AUTOMERGE]DisplayManager: Switch RampAnimator to ramp in HLG space.""<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/f4e1af0ae605">f4e1af0ae605</a> :  Revert "Fixes cannot leave dozing when dismiss keyguard"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/274eecfba13a">274eecfba13a</a> :  Fix dialog exit animation<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/e828f33713a4">e828f33713a4</a> :  Revert "[RESTRICT AUTOMERGE]DisplayManager: Switch RampAnimator to ramp in HLG space."<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/26f62282acff">26f62282acff</a> :  Revert "[RESTRICT AUTOMERGE]DisplayManager: Make sure RampAnimator sets property in linear space."<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/b464ef4dc204">b464ef4dc204</a> :  Revert "[RESTRICT AUTOMERGE] Make thresholds tuneable in the ddc"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/340a7fdfa41b">340a7fdfa41b</a> :  Revert "Update BrightnessTracker to use same sensor as ABC."<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/fa935c5737f9">fa935c5737f9</a> :  Revert "[DO NOT MERGE] Keyguard was hiding occluding activities"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/25c8931f7fa5">25c8931f7fa5</a> :  Remove QQS brightness controller<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/fa01b15be962">fa01b15be962</a> :  Remove toast window token after being rate-limited<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/9aeb773ac333">9aeb773ac333</a> :  DO NOT MERGE DozeScreenState unregisters for AuthControllerCB<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/d3be2c9d4b7d">d3be2c9d4b7d</a> :  Don't re-hide the keyguard if it isn't showing.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/1613632a763d">1613632a763d</a> :  [DO NOT MERGE] Keyguard was hiding occluding activities<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/599b0ad1011f">599b0ad1011f</a> :  Skip restore of read-only directories<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/f24d549cc6f0">f24d549cc6f0</a> :  Update BrightnessTracker to use same sensor as ABC.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/7ace3f267538">7ace3f267538</a> :  [RESTRICT AUTOMERGE] Make thresholds tuneable in the ddc<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/46ddcce6644b">46ddcce6644b</a> :  [RESTRICT AUTOMERGE]DisplayManager: Make sure RampAnimator sets property in linear space.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/682f01c6a920">682f01c6a920</a> :  [RESTRICT AUTOMERGE]DisplayManager: Switch RampAnimator to ramp in HLG space.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/f4b11ee219e5">f4b11ee219e5</a> :  Fix bug where shade is infinitely squishy after wallpaper change<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/97f6cad5b9e9">97f6cad5b9e9</a> :  Security fixes for PendingIntent related apis in LauncherApps<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/49c4d7422853">49c4d7422853</a> :  [RESTRICT AUTOMERGE] Add hide-non-system-overlay flag for HarmfulAppWarningActivity<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/873112a626f5">873112a626f5</a> :  Restrict AdbManager broadcasts to apps with MANAGE_DEBUGGING permission.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/82d5c0e3066e">82d5c0e3066e</a> :  Validate pid can be trusted<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/1a820ee311df">1a820ee311df</a> :  Add leash check in PipTaskOrganizer#fadeExistingPip<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/e7de53560865">e7de53560865</a> :  Fix a mismatch in Bitmap_createFromParcel<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/6f0332e49874">6f0332e49874</a> :  Check current user when the operations runs for fingerprint hidl.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/bcc7de13be22">bcc7de13be22</a> :  Fix enrollment cancelation race conditions.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/5bd6ff638d13">5bd6ff638d13</a> :  [DO NOT MERGE] Keyguard PIN View - Landscape fixes<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/3c867253870d">3c867253870d</a> :  DO NOT MERGE Doze-Pulsing should always go to display on<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/22e52cba7240">22e52cba7240</a> :  DO NOT MERGE Fix issue with bubble stack &amp; bubble data expanded bit being out of sync<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/7e322c154f8e">7e322c154f8e</a> :  [DO NOT MERGE] Fix regression for enter PIP when onUserLeaveHint<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/9dfdc6f64c16">9dfdc6f64c16</a> :  Dispose of input event reciever along with monitor<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/e150cec3130f">e150cec3130f</a> :  Fix missing group alertOverride recalculation<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/70d585a51e6f">70d585a51e6f</a> :  Allow alertOverride if the summary GROUP_ALERT_ALL<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/aaff0354f556">aaff0354f556</a> :  Fix the animation glitch when NSSL adds and removes a HUN in the same frame.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/2bf4d8ad1389">2bf4d8ad1389</a> :  Check that PowerManager#isInteractive is false before showing the AOD UI for screen off.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/c3f31f3095da">c3f31f3095da</a> :  DO NOT MERGE Transform UDFPS touch coordinates to portrait mode<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/49558aebdb2a">49558aebdb2a</a> :  Revert "Decode the input of both setStream and setResource calls first"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/03900f7771d2">03900f7771d2</a> :  Removed edge and tip hint for udfps<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/5d1a37b3c0f0">5d1a37b3c0f0</a> :  Removed edge and tip hint for udfps<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/2c764bb66095">2c764bb66095</a> :  Removed edge and tip hint for udfps<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/e0edb527fa22">e0edb527fa22</a> :  Fixed a crash when dragging down on the NotificationShelf<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/ada60a50003d">ada60a50003d</a> :  Remove check preventing keyguardGoingAwayRunnable from being called if it's already going away.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/588a63251ca4">588a63251ca4</a> :  Revert "PiP: Recalculate size if too big/small on display change."<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/6de01e296c01">6de01e296c01</a> :  Revert "PiP: support direct entering split from PiP."<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/83187d73adfd">83187d73adfd</a> :  Revert "CameraServiceProxy: Clean up app compat overrides"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/1a940b1e0ded">1a940b1e0ded</a> :  Null check if renderer is null<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/3f3227a8dbd4">3f3227a8dbd4</a> :  Revert "Keep FLAG_SHOW_WALLPAPER flag on NotificationShade."<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/0a36d802b3f5">0a36d802b3f5</a> :  Revert "Keep FLAG_SHOW_WALLPAPER flag on NotificationShade."<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/e303170a1959">e303170a1959</a> :  Log and skip noteEvent calls with null name<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/338e161fdf24">338e161fdf24</a> :  Fix NullPointerException in PhantomProcessList due to race condition<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/d2f7d4c4039f">d2f7d4c4039f</a> :  Reset to LiftReveal when going to sleep due to timing out, after a biometric auth.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/207feb72a82c">207feb72a82c</a> :  Use alpha instead of invisible for views below shelf to skip redraw<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/ed6406c08085">ed6406c08085</a> :  Revert "Clean up previous DA organizer when registering"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/7b99c6c98004">7b99c6c98004</a> :  Revert "Enforce package visibility to the api checkUriPermission"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/d7c8d48ac83e">d7c8d48ac83e</a> :  Revert "Enforce package visibility to the api checkUriPermission"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/c479487680b4">c479487680b4</a> :  Add Binder.clearCallingIdentity to TracingServiceProxy<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/f8c9de4bd8b2">f8c9de4bd8b2</a> :  Fix SysUI NPE crash during the boot/init progress<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/20d94778db14">20d94778db14</a> :  canScheduleExactAlarms returns true for older apps<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/9778961fbcf7">9778961fbcf7</a> :  Fix ripples not going away<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/623f3fd26246">623f3fd26246</a> :  Don't destroy the FalsingManager in Wallet.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/ace06f5ce062">ace06f5ce062</a> :  Remove color font and icons overlays<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/8ddda8231241">8ddda8231241</a> :  Don't destroy the FalsingManager in Wallet.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/1c68a32db114">1c68a32db114</a> :  Fix disappearing notifications when closing fullscreen QS<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/f47437365575">f47437365575</a> :  Don't destroy the FalsingManager in Wallet.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/fd191ef40fb7">fd191ef40fb7</a> :  Visual changes to tap-again toast.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/27eb21ac66d8">27eb21ac66d8</a> :  Copy configuration when getting resources for a rotation<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/9a9368338d2e">9a9368338d2e</a> :  Recreate QuickAccessWallet for Wallet Tile and Lockscreen Icon when the default payment app has changed.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/9baf8fd2671a">9baf8fd2671a</a> :  Show a small toast when a double tap is needed.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/9cc7606eb7a3">9cc7606eb7a3</a> :  Recreate QuickAccessWallet for Wallet Tile and Lockscreen Icon when the default payment app has changed.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/24f29d3af7c2">24f29d3af7c2</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/7f8253683f46">7f8253683f46</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/ae46b85cabc1">ae46b85cabc1</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/ab3f7a164c4c">ab3f7a164c4c</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/cc0575eaf15b">cc0575eaf15b</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/ce95ca422fd0">ce95ca422fd0</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/70db221f1a4f">70db221f1a4f</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/b3f39df3bce9">b3f39df3bce9</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/7bb3a49271b5">7bb3a49271b5</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/0fe0f16e8e32">0fe0f16e8e32</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/ed039faa2c22">ed039faa2c22</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/61a7d9904d35">61a7d9904d35</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/53258964261f">53258964261f</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/157898258ac8">157898258ac8</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/b7abd17ee392">b7abd17ee392</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/d0fedcea6c7a">d0fedcea6c7a</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/bdb14be5d95f">bdb14be5d95f</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/f0e981d3dd5a">f0e981d3dd5a</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/4f5a81d2f3ba">4f5a81d2f3ba</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/a3cf176eef3b">a3cf176eef3b</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/df9df7a27670">df9df7a27670</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/6267d1183907">6267d1183907</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/12fad431089a">12fad431089a</a> :  Improve the windows register and unregister mechanism<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/472c84ad006b">472c84ad006b</a> :  Include RootDisplayArea feature id in DisplayAreaInfo<br />
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/01c718a42fe1">01c718a42fe1</a> :  [Ongoing Call] Don't call #getIntent to avoid a security vulnerability.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fe205882e5ab">fe205882e5ab</a> :  limit TelecomManager#registerPhoneAccount to 10; api doc update
+<a href="https://android.googlesource.com/platform/frameworks/base/+/09d5eb29c9eb">09d5eb29c9eb</a> :  [scv2] RESTRICT AUTOMERGE Add finalizeWorkProfileProvisioning.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a62b0e343a7e">a62b0e343a7e</a> :  Disallow too large display padding for wallpaper
+<a href="https://android.googlesource.com/platform/frameworks/base/+/15558b03f5ec">15558b03f5ec</a> :  Fix NPE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f918c3e51c6b">f918c3e51c6b</a> :  Prevent exfiltration of system files via user image settings.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b1646337a748">b1646337a748</a> :  Prevent non-admin users from deleting system apps.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d15f00a09260">d15f00a09260</a> :  Fix security hole in GateKeeperResponse
+<a href="https://android.googlesource.com/platform/frameworks/base/+/26c1e6434359">26c1e6434359</a> :  Update GeofenceHardwareRequestParcelable to match parcel/unparcel format.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6f7fb3bc318e">6f7fb3bc318e</a> :  Add an OEM configurable limit for zen rules
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5aa3aa0b8182">5aa3aa0b8182</a> :  Keyguard - Treat messsages to lock with priority
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cdd072e03ad7">cdd072e03ad7</a> :  Always restart apps if base.apk gets updated.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ede6398a26f8">ede6398a26f8</a> :  Verify caller before auto granting slice permission
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d1b9a4efade6">d1b9a4efade6</a> :  Replace BitmapRegionDecoder with ImageDecoder
+<a href="https://android.googlesource.com/platform/frameworks/base/+/88e0bd640587">88e0bd640587</a> :  [RESTRICT AUTOMERGE] Do not resume activity if behind a translucent task
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7daaa15d4ded">7daaa15d4ded</a> :  Update permissions for ServiceState broadcast
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e8b88942a262">e8b88942a262</a> :  Filter notification APIs by user
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7ba4df08d29b">7ba4df08d29b</a> :  Dialing phone state should update active sub
+<a href="https://android.googlesource.com/platform/frameworks/base/+/86ea7ec6ddbb">86ea7ec6ddbb</a> :  Revert "Revert "Update BrightnessTracker to use same sensor as ABC.""
+<a href="https://android.googlesource.com/platform/frameworks/base/+/17525010413a">17525010413a</a> :  Revert "Revert "[RESTRICT AUTOMERGE] Make thresholds tuneable in the ddc""
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7dd392a1970e">7dd392a1970e</a> :  Revert "Revert "[RESTRICT AUTOMERGE]DisplayManager: Make sure RampAnimator sets property in linear space.""
+<a href="https://android.googlesource.com/platform/frameworks/base/+/76d7c5af40fe">76d7c5af40fe</a> :  Revert "Revert "[RESTRICT AUTOMERGE]DisplayManager: Switch RampAnimator to ramp in HLG space.""
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f4e1af0ae605">f4e1af0ae605</a> :  Revert "Fixes cannot leave dozing when dismiss keyguard"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/274eecfba13a">274eecfba13a</a> :  Fix dialog exit animation
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e828f33713a4">e828f33713a4</a> :  Revert "[RESTRICT AUTOMERGE]DisplayManager: Switch RampAnimator to ramp in HLG space."
+<a href="https://android.googlesource.com/platform/frameworks/base/+/26f62282acff">26f62282acff</a> :  Revert "[RESTRICT AUTOMERGE]DisplayManager: Make sure RampAnimator sets property in linear space."
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b464ef4dc204">b464ef4dc204</a> :  Revert "[RESTRICT AUTOMERGE] Make thresholds tuneable in the ddc"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/340a7fdfa41b">340a7fdfa41b</a> :  Revert "Update BrightnessTracker to use same sensor as ABC."
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fa935c5737f9">fa935c5737f9</a> :  Revert "[DO NOT MERGE] Keyguard was hiding occluding activities"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/25c8931f7fa5">25c8931f7fa5</a> :  Remove QQS brightness controller
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fa01b15be962">fa01b15be962</a> :  Remove toast window token after being rate-limited
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9aeb773ac333">9aeb773ac333</a> :  DO NOT MERGE DozeScreenState unregisters for AuthControllerCB
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d3be2c9d4b7d">d3be2c9d4b7d</a> :  Don't re-hide the keyguard if it isn't showing.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1613632a763d">1613632a763d</a> :  [DO NOT MERGE] Keyguard was hiding occluding activities
+<a href="https://android.googlesource.com/platform/frameworks/base/+/599b0ad1011f">599b0ad1011f</a> :  Skip restore of read-only directories
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f24d549cc6f0">f24d549cc6f0</a> :  Update BrightnessTracker to use same sensor as ABC.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7ace3f267538">7ace3f267538</a> :  [RESTRICT AUTOMERGE] Make thresholds tuneable in the ddc
+<a href="https://android.googlesource.com/platform/frameworks/base/+/46ddcce6644b">46ddcce6644b</a> :  [RESTRICT AUTOMERGE]DisplayManager: Make sure RampAnimator sets property in linear space.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/682f01c6a920">682f01c6a920</a> :  [RESTRICT AUTOMERGE]DisplayManager: Switch RampAnimator to ramp in HLG space.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f4b11ee219e5">f4b11ee219e5</a> :  Fix bug where shade is infinitely squishy after wallpaper change
+<a href="https://android.googlesource.com/platform/frameworks/base/+/97f6cad5b9e9">97f6cad5b9e9</a> :  Security fixes for PendingIntent related apis in LauncherApps
+<a href="https://android.googlesource.com/platform/frameworks/base/+/49c4d7422853">49c4d7422853</a> :  [RESTRICT AUTOMERGE] Add hide-non-system-overlay flag for HarmfulAppWarningActivity
+<a href="https://android.googlesource.com/platform/frameworks/base/+/873112a626f5">873112a626f5</a> :  Restrict AdbManager broadcasts to apps with MANAGE_DEBUGGING permission.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/82d5c0e3066e">82d5c0e3066e</a> :  Validate pid can be trusted
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1a820ee311df">1a820ee311df</a> :  Add leash check in PipTaskOrganizer#fadeExistingPip
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e7de53560865">e7de53560865</a> :  Fix a mismatch in Bitmap_createFromParcel
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6f0332e49874">6f0332e49874</a> :  Check current user when the operations runs for fingerprint hidl.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bcc7de13be22">bcc7de13be22</a> :  Fix enrollment cancelation race conditions.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5bd6ff638d13">5bd6ff638d13</a> :  [DO NOT MERGE] Keyguard PIN View - Landscape fixes
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3c867253870d">3c867253870d</a> :  DO NOT MERGE Doze-Pulsing should always go to display on
+<a href="https://android.googlesource.com/platform/frameworks/base/+/22e52cba7240">22e52cba7240</a> :  DO NOT MERGE Fix issue with bubble stack &amp; bubble data expanded bit being out of sync
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7e322c154f8e">7e322c154f8e</a> :  [DO NOT MERGE] Fix regression for enter PIP when onUserLeaveHint
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9dfdc6f64c16">9dfdc6f64c16</a> :  Dispose of input event reciever along with monitor
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e150cec3130f">e150cec3130f</a> :  Fix missing group alertOverride recalculation
+<a href="https://android.googlesource.com/platform/frameworks/base/+/70d585a51e6f">70d585a51e6f</a> :  Allow alertOverride if the summary GROUP_ALERT_ALL
+<a href="https://android.googlesource.com/platform/frameworks/base/+/aaff0354f556">aaff0354f556</a> :  Fix the animation glitch when NSSL adds and removes a HUN in the same frame.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2bf4d8ad1389">2bf4d8ad1389</a> :  Check that PowerManager#isInteractive is false before showing the AOD UI for screen off.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c3f31f3095da">c3f31f3095da</a> :  DO NOT MERGE Transform UDFPS touch coordinates to portrait mode
+<a href="https://android.googlesource.com/platform/frameworks/base/+/49558aebdb2a">49558aebdb2a</a> :  Revert "Decode the input of both setStream and setResource calls first"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/03900f7771d2">03900f7771d2</a> :  Removed edge and tip hint for udfps
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5d1a37b3c0f0">5d1a37b3c0f0</a> :  Removed edge and tip hint for udfps
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2c764bb66095">2c764bb66095</a> :  Removed edge and tip hint for udfps
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e0edb527fa22">e0edb527fa22</a> :  Fixed a crash when dragging down on the NotificationShelf
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ada60a50003d">ada60a50003d</a> :  Remove check preventing keyguardGoingAwayRunnable from being called if it's already going away.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/588a63251ca4">588a63251ca4</a> :  Revert "PiP: Recalculate size if too big/small on display change."
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6de01e296c01">6de01e296c01</a> :  Revert "PiP: support direct entering split from PiP."
+<a href="https://android.googlesource.com/platform/frameworks/base/+/83187d73adfd">83187d73adfd</a> :  Revert "CameraServiceProxy: Clean up app compat overrides"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1a940b1e0ded">1a940b1e0ded</a> :  Null check if renderer is null
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3f3227a8dbd4">3f3227a8dbd4</a> :  Revert "Keep FLAG_SHOW_WALLPAPER flag on NotificationShade."
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0a36d802b3f5">0a36d802b3f5</a> :  Revert "Keep FLAG_SHOW_WALLPAPER flag on NotificationShade."
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e303170a1959">e303170a1959</a> :  Log and skip noteEvent calls with null name
+<a href="https://android.googlesource.com/platform/frameworks/base/+/338e161fdf24">338e161fdf24</a> :  Fix NullPointerException in PhantomProcessList due to race condition
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d2f7d4c4039f">d2f7d4c4039f</a> :  Reset to LiftReveal when going to sleep due to timing out, after a biometric auth.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/207feb72a82c">207feb72a82c</a> :  Use alpha instead of invisible for views below shelf to skip redraw
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ed6406c08085">ed6406c08085</a> :  Revert "Clean up previous DA organizer when registering"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7b99c6c98004">7b99c6c98004</a> :  Revert "Enforce package visibility to the api checkUriPermission"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d7c8d48ac83e">d7c8d48ac83e</a> :  Revert "Enforce package visibility to the api checkUriPermission"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c479487680b4">c479487680b4</a> :  Add Binder.clearCallingIdentity to TracingServiceProxy
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f8c9de4bd8b2">f8c9de4bd8b2</a> :  Fix SysUI NPE crash during the boot/init progress
+<a href="https://android.googlesource.com/platform/frameworks/base/+/20d94778db14">20d94778db14</a> :  canScheduleExactAlarms returns true for older apps
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9778961fbcf7">9778961fbcf7</a> :  Fix ripples not going away
+<a href="https://android.googlesource.com/platform/frameworks/base/+/623f3fd26246">623f3fd26246</a> :  Don't destroy the FalsingManager in Wallet.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ace06f5ce062">ace06f5ce062</a> :  Remove color font and icons overlays
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8ddda8231241">8ddda8231241</a> :  Don't destroy the FalsingManager in Wallet.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1c68a32db114">1c68a32db114</a> :  Fix disappearing notifications when closing fullscreen QS
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f47437365575">f47437365575</a> :  Don't destroy the FalsingManager in Wallet.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fd191ef40fb7">fd191ef40fb7</a> :  Visual changes to tap-again toast.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/27eb21ac66d8">27eb21ac66d8</a> :  Copy configuration when getting resources for a rotation
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9a9368338d2e">9a9368338d2e</a> :  Recreate QuickAccessWallet for Wallet Tile and Lockscreen Icon when the default payment app has changed.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9baf8fd2671a">9baf8fd2671a</a> :  Show a small toast when a double tap is needed.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9cc7606eb7a3">9cc7606eb7a3</a> :  Recreate QuickAccessWallet for Wallet Tile and Lockscreen Icon when the default payment app has changed.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/24f29d3af7c2">24f29d3af7c2</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7f8253683f46">7f8253683f46</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ae46b85cabc1">ae46b85cabc1</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ab3f7a164c4c">ab3f7a164c4c</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cc0575eaf15b">cc0575eaf15b</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ce95ca422fd0">ce95ca422fd0</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/70db221f1a4f">70db221f1a4f</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b3f39df3bce9">b3f39df3bce9</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7bb3a49271b5">7bb3a49271b5</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0fe0f16e8e32">0fe0f16e8e32</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ed039faa2c22">ed039faa2c22</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/61a7d9904d35">61a7d9904d35</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/53258964261f">53258964261f</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/157898258ac8">157898258ac8</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b7abd17ee392">b7abd17ee392</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d0fedcea6c7a">d0fedcea6c7a</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/bdb14be5d95f">bdb14be5d95f</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/f0e981d3dd5a">f0e981d3dd5a</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4f5a81d2f3ba">4f5a81d2f3ba</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a3cf176eef3b">a3cf176eef3b</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/df9df7a27670">df9df7a27670</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6267d1183907">6267d1183907</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/12fad431089a">12fad431089a</a> :  Improve the windows register and unregister mechanism
+<a href="https://android.googlesource.com/platform/frameworks/base/+/472c84ad006b">472c84ad006b</a> :  Include RootDisplayArea feature id in DisplayAreaInfo
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_opt_chips-show" class="showLink" onclick="show('platform_frameworks_opt_chips');return false;">+</a><a href="#" id="platform_frameworks_opt_chips-hide" class="hideLink" onclick="hide('platform_frameworks_opt_chips');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_chips" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/chips">platform/frameworks/opt/chips</a></h2>
-<div id="platform_frameworks_opt_chips"><a href="https://android.googlesource.com/platform/frameworks/opt/chips/+/6fb8d70">6fb8d70</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_frameworks_opt_chips"><a href="https://android.googlesource.com/platform/frameworks/opt/chips/+/6fb8d70">6fb8d70</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_opt_net_wifi-show" class="showLink" onclick="show('platform_frameworks_opt_net_wifi');return false;">+</a><a href="#" id="platform_frameworks_opt_net_wifi-hide" class="hideLink" onclick="hide('platform_frameworks_opt_net_wifi');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_net_wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi">platform/frameworks/opt/net/wifi</a></h2>
-<div id="platform_frameworks_opt_net_wifi"><a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/e7ea51c12">e7ea51c12</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_frameworks_opt_net_wifi"><a href="https://android.googlesource.com/platform/frameworks/opt/net/wifi/+/e7ea51c12">e7ea51c12</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
-<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/42b695d986">42b695d986</a> :  Allow silent eCall redial over WiFi when IMS REG not on IWLAN<br />
-<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/3a920b2460">3a920b2460</a> :  Release wakelock if setRadioCapability is not supported<br />
-<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/9dd860fa22">9dd860fa22</a> :  DO NOT MERGE Provided temp solution for 5G+ icon not shown<br />
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/42b695d986">42b695d986</a> :  Allow silent eCall redial over WiFi when IMS REG not on IWLAN
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/3a920b2460">3a920b2460</a> :  Release wakelock if setRadioCapability is not supported
+<a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/9dd860fa22">9dd860fa22</a> :  DO NOT MERGE Provided temp solution for 5G+ icon not shown
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_opt_timezonepicker-show" class="showLink" onclick="show('platform_frameworks_opt_timezonepicker');return false;">+</a><a href="#" id="platform_frameworks_opt_timezonepicker-hide" class="hideLink" onclick="hide('platform_frameworks_opt_timezonepicker');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_timezonepicker" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/timezonepicker">platform/frameworks/opt/timezonepicker</a></h2>
-<div id="platform_frameworks_opt_timezonepicker"><a href="https://android.googlesource.com/platform/frameworks/opt/timezonepicker/+/8bb335e">8bb335e</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_frameworks_opt_timezonepicker"><a href="https://android.googlesource.com/platform/frameworks/opt/timezonepicker/+/8bb335e">8bb335e</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_wilhelm-show" class="showLink" onclick="show('platform_frameworks_wilhelm');return false;">+</a><a href="#" id="platform_frameworks_wilhelm-hide" class="hideLink" onclick="hide('platform_frameworks_wilhelm');return false;">-</a>&nbsp;<a name="platform_frameworks_wilhelm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/wilhelm">platform/frameworks/wilhelm</a></h2>
-<div id="platform_frameworks_wilhelm"><a href="https://android.googlesource.com/platform/frameworks/wilhelm/+/69aa565">69aa565</a> :  Android AudioRecord: AttributionSource fixup<br />
+<div id="platform_frameworks_wilhelm"><a href="https://android.googlesource.com/platform/frameworks/wilhelm/+/69aa565">69aa565</a> :  Android AudioRecord: AttributionSource fixup
 </div></p>
 
 <p><h2><a href="#" id="platform_hardware_google_camera-show" class="showLink" onclick="show('platform_hardware_google_camera');return false;">+</a><a href="#" id="platform_hardware_google_camera-hide" class="hideLink" onclick="hide('platform_hardware_google_camera');return false;">-</a>&nbsp;<a name="platform_hardware_google_camera" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/google/camera">platform/hardware/google/camera</a></h2>
-<div id="platform_hardware_google_camera"><a href="https://android.googlesource.com/platform/hardware/google/camera/+/a679f4f">a679f4f</a> :  camera: handle hidl transaction error [DO NOT MERGE]<br />
+<div id="platform_hardware_google_camera"><a href="https://android.googlesource.com/platform/hardware/google/camera/+/a679f4f">a679f4f</a> :  camera: handle hidl transaction error [DO NOT MERGE]
 </div></p>
 
 <p><h2><a href="#" id="platform_hardware_google_pixel-show" class="showLink" onclick="show('platform_hardware_google_pixel');return false;">+</a><a href="#" id="platform_hardware_google_pixel-hide" class="hideLink" onclick="hide('platform_hardware_google_pixel');return false;">-</a>&nbsp;<a name="platform_hardware_google_pixel" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/google/pixel">platform/hardware/google/pixel</a></h2>
-<div id="platform_hardware_google_pixel"><a href="https://android.googlesource.com/platform/hardware/google/pixel/+/7ebda1bf">7ebda1bf</a> :  Set lmk stall_limit_critical threshold<br />
-<a href="https://android.googlesource.com/platform/hardware/google/pixel/+/3f5a44cd">3f5a44cd</a> :  vibrator: cs40l26: property-controlled primitives support<br />
-<a href="https://android.googlesource.com/platform/hardware/google/pixel/+/b2720ed5">b2720ed5</a> :  vibrator: cs40l26: property-enabled chirp<br />
+<div id="platform_hardware_google_pixel"><a href="https://android.googlesource.com/platform/hardware/google/pixel/+/7ebda1bf">7ebda1bf</a> :  Set lmk stall_limit_critical threshold
+<a href="https://android.googlesource.com/platform/hardware/google/pixel/+/3f5a44cd">3f5a44cd</a> :  vibrator: cs40l26: property-controlled primitives support
+<a href="https://android.googlesource.com/platform/hardware/google/pixel/+/b2720ed5">b2720ed5</a> :  vibrator: cs40l26: property-enabled chirp
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_BasicSmsReceiver-show" class="showLink" onclick="show('platform_packages_apps_BasicSmsReceiver');return false;">+</a><a href="#" id="platform_packages_apps_BasicSmsReceiver-hide" class="hideLink" onclick="hide('platform_packages_apps_BasicSmsReceiver');return false;">-</a>&nbsp;<a name="platform_packages_apps_BasicSmsReceiver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/BasicSmsReceiver">platform/packages/apps/BasicSmsReceiver</a></h2>
-<div id="platform_packages_apps_BasicSmsReceiver"><a href="https://android.googlesource.com/platform/packages/apps/BasicSmsReceiver/+/e664a38">e664a38</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_BasicSmsReceiver"><a href="https://android.googlesource.com/platform/packages/apps/BasicSmsReceiver/+/e664a38">e664a38</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Car_Settings-show" class="showLink" onclick="show('platform_packages_apps_Car_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Car_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Car_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Car_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Car/Settings">platform/packages/apps/Car/Settings</a></h2>
-<div id="platform_packages_apps_Car_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Car/Settings/+/281c0639f">281c0639f</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_Car_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Car/Settings/+/281c0639f">281c0639f</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Car_SystemUI-show" class="showLink" onclick="show('platform_packages_apps_Car_SystemUI');return false;">+</a><a href="#" id="platform_packages_apps_Car_SystemUI-hide" class="hideLink" onclick="hide('platform_packages_apps_Car_SystemUI');return false;">-</a>&nbsp;<a name="platform_packages_apps_Car_SystemUI" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Car/SystemUI">platform/packages/apps/Car/SystemUI</a></h2>
-<div id="platform_packages_apps_Car_SystemUI"><a href="https://android.googlesource.com/platform/packages/apps/Car/SystemUI/+/36a3cfc7">36a3cfc7</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_Car_SystemUI"><a href="https://android.googlesource.com/platform/packages/apps/Car/SystemUI/+/36a3cfc7">36a3cfc7</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Car_SystemUpdater-show" class="showLink" onclick="show('platform_packages_apps_Car_SystemUpdater');return false;">+</a><a href="#" id="platform_packages_apps_Car_SystemUpdater-hide" class="hideLink" onclick="hide('platform_packages_apps_Car_SystemUpdater');return false;">-</a>&nbsp;<a name="platform_packages_apps_Car_SystemUpdater" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Car/SystemUpdater">platform/packages/apps/Car/SystemUpdater</a></h2>
-<div id="platform_packages_apps_Car_SystemUpdater"><a href="https://android.googlesource.com/platform/packages/apps/Car/SystemUpdater/+/f80001c">f80001c</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_Car_SystemUpdater"><a href="https://android.googlesource.com/platform/packages/apps/Car/SystemUpdater/+/f80001c">f80001c</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_CellBroadcastReceiver-show" class="showLink" onclick="show('platform_packages_apps_CellBroadcastReceiver');return false;">+</a><a href="#" id="platform_packages_apps_CellBroadcastReceiver-hide" class="hideLink" onclick="hide('platform_packages_apps_CellBroadcastReceiver');return false;">-</a>&nbsp;<a name="platform_packages_apps_CellBroadcastReceiver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver">platform/packages/apps/CellBroadcastReceiver</a></h2>
-<div id="platform_packages_apps_CellBroadcastReceiver"><a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/10b776c93">10b776c93</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/92ad13580">92ad13580</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/992231fc5">992231fc5</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/9f3002f77">9f3002f77</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/7b3d8d569">7b3d8d569</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/390e1f0d7">390e1f0d7</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/9217012eb">9217012eb</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/a25244d4c">a25244d4c</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/c94cf356d">c94cf356d</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_CellBroadcastReceiver"><a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/10b776c93">10b776c93</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/92ad13580">92ad13580</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/992231fc5">992231fc5</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/9f3002f77">9f3002f77</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/7b3d8d569">7b3d8d569</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/390e1f0d7">390e1f0d7</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/9217012eb">9217012eb</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/a25244d4c">a25244d4c</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver/+/c94cf356d">c94cf356d</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_CertInstaller-show" class="showLink" onclick="show('platform_packages_apps_CertInstaller');return false;">+</a><a href="#" id="platform_packages_apps_CertInstaller-hide" class="hideLink" onclick="hide('platform_packages_apps_CertInstaller');return false;">-</a>&nbsp;<a name="platform_packages_apps_CertInstaller" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/CertInstaller">platform/packages/apps/CertInstaller</a></h2>
-<div id="platform_packages_apps_CertInstaller"><a href="https://android.googlesource.com/platform/packages/apps/CertInstaller/+/18ed447">18ed447</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_CertInstaller"><a href="https://android.googlesource.com/platform/packages/apps/CertInstaller/+/18ed447">18ed447</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Contacts-show" class="showLink" onclick="show('platform_packages_apps_Contacts');return false;">+</a><a href="#" id="platform_packages_apps_Contacts-hide" class="hideLink" onclick="hide('platform_packages_apps_Contacts');return false;">-</a>&nbsp;<a name="platform_packages_apps_Contacts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Contacts">platform/packages/apps/Contacts</a></h2>
-<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/0e35045d1">0e35045d1</a> :  No longer export CallSubjectDialog<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/38795f904">38795f904</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/d1a22ebc8">d1a22ebc8</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/0e35045d1">0e35045d1</a> :  No longer export CallSubjectDialog
+<a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/38795f904">38795f904</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/d1a22ebc8">d1a22ebc8</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Dialer-show" class="showLink" onclick="show('platform_packages_apps_Dialer');return false;">+</a><a href="#" id="platform_packages_apps_Dialer-hide" class="hideLink" onclick="hide('platform_packages_apps_Dialer');return false;">-</a>&nbsp;<a name="platform_packages_apps_Dialer" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Dialer">platform/packages/apps/Dialer</a></h2>
-<div id="platform_packages_apps_Dialer"><a href="https://android.googlesource.com/platform/packages/apps/Dialer/+/aafc6aabc">aafc6aabc</a> :  No longer export CallSubjectDialog<br />
+<div id="platform_packages_apps_Dialer"><a href="https://android.googlesource.com/platform/packages/apps/Dialer/+/aafc6aabc">aafc6aabc</a> :  No longer export CallSubjectDialog
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_DocumentsUI-show" class="showLink" onclick="show('platform_packages_apps_DocumentsUI');return false;">+</a><a href="#" id="platform_packages_apps_DocumentsUI-hide" class="hideLink" onclick="hide('platform_packages_apps_DocumentsUI');return false;">-</a>&nbsp;<a name="platform_packages_apps_DocumentsUI" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI">platform/packages/apps/DocumentsUI</a></h2>
-<div id="platform_packages_apps_DocumentsUI"><a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/8e96f5846">8e96f5846</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f324da7f0">f324da7f0</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_DocumentsUI"><a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/8e96f5846">8e96f5846</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/f324da7f0">f324da7f0</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_EmergencyInfo-show" class="showLink" onclick="show('platform_packages_apps_EmergencyInfo');return false;">+</a><a href="#" id="platform_packages_apps_EmergencyInfo-hide" class="hideLink" onclick="hide('platform_packages_apps_EmergencyInfo');return false;">-</a>&nbsp;<a name="platform_packages_apps_EmergencyInfo" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo">platform/packages/apps/EmergencyInfo</a></h2>
-<div id="platform_packages_apps_EmergencyInfo"><a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/21c4941b">21c4941b</a> :  Prevent exfiltration of system files via user image settings.<br />
-<a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/e772d9b8">e772d9b8</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_EmergencyInfo"><a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/21c4941b">21c4941b</a> :  Prevent exfiltration of system files via user image settings.
+<a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/e772d9b8">e772d9b8</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_KeyChain-show" class="showLink" onclick="show('platform_packages_apps_KeyChain');return false;">+</a><a href="#" id="platform_packages_apps_KeyChain-hide" class="hideLink" onclick="hide('platform_packages_apps_KeyChain');return false;">-</a>&nbsp;<a name="platform_packages_apps_KeyChain" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/KeyChain">platform/packages/apps/KeyChain</a></h2>
-<div id="platform_packages_apps_KeyChain"><a href="https://android.googlesource.com/platform/packages/apps/KeyChain/+/317cf31">317cf31</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_KeyChain"><a href="https://android.googlesource.com/platform/packages/apps/KeyChain/+/317cf31">317cf31</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
-<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/ba6d0ba2d6">ba6d0ba2d6</a> :  Fix bug where back swipe to icon in All Apps search result.<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/354b6d6f96">354b6d6f96</a> :  Add fallback for missing remote animation callbacks<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/dcdb875c86">dcdb875c86</a> :  Revert "Adding support for dynamic letter spacing for icon labels"<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/36d73c1205">36d73c1205</a> :  Use fixed width in overveiw grid<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/196a4d8f1d">196a4d8f1d</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/e48fe79094">e48fe79094</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/54ed95a03f">54ed95a03f</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/ba6d0ba2d6">ba6d0ba2d6</a> :  Fix bug where back swipe to icon in All Apps search result.
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/354b6d6f96">354b6d6f96</a> :  Add fallback for missing remote animation callbacks
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/dcdb875c86">dcdb875c86</a> :  Revert "Adding support for dynamic letter spacing for icon labels"
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/36d73c1205">36d73c1205</a> :  Use fixed width in overveiw grid
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/196a4d8f1d">196a4d8f1d</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/e48fe79094">e48fe79094</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/54ed95a03f">54ed95a03f</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
-<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/8f13f0b95">8f13f0b95</a> :  [scv2] RESTRICT AUTOMERGE Use finalizeWorkProfileProvisioning.<br />
-<a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/e83c4da3d">e83c4da3d</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/8f13f0b95">8f13f0b95</a> :  [scv2] RESTRICT AUTOMERGE Use finalizeWorkProfileProvisioning.
+<a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/e83c4da3d">e83c4da3d</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Nfc-show" class="showLink" onclick="show('platform_packages_apps_Nfc');return false;">+</a><a href="#" id="platform_packages_apps_Nfc-hide" class="hideLink" onclick="hide('platform_packages_apps_Nfc');return false;">-</a>&nbsp;<a name="platform_packages_apps_Nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Nfc">platform/packages/apps/Nfc</a></h2>
-<div id="platform_packages_apps_Nfc"><a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/1d9f4ed8">1d9f4ed8</a> :  OOB read in phNciNfc_RecvMfResp()<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/df0050e3">df0050e3</a> :  Do not set default contactless application without user interaction<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/12dba168">12dba168</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_Nfc"><a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/1d9f4ed8">1d9f4ed8</a> :  OOB read in phNciNfc_RecvMfResp()
+<a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/df0050e3">df0050e3</a> :  Do not set default contactless application without user interaction
+<a href="https://android.googlesource.com/platform/packages/apps/Nfc/+/12dba168">12dba168</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_PhoneCommon-show" class="showLink" onclick="show('platform_packages_apps_PhoneCommon');return false;">+</a><a href="#" id="platform_packages_apps_PhoneCommon-hide" class="hideLink" onclick="hide('platform_packages_apps_PhoneCommon');return false;">-</a>&nbsp;<a name="platform_packages_apps_PhoneCommon" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/PhoneCommon">platform/packages/apps/PhoneCommon</a></h2>
-<div id="platform_packages_apps_PhoneCommon"><a href="https://android.googlesource.com/platform/packages/apps/PhoneCommon/+/e882e09">e882e09</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_PhoneCommon"><a href="https://android.googlesource.com/platform/packages/apps/PhoneCommon/+/e882e09">e882e09</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_SafetyRegulatoryInfo-show" class="showLink" onclick="show('platform_packages_apps_SafetyRegulatoryInfo');return false;">+</a><a href="#" id="platform_packages_apps_SafetyRegulatoryInfo-hide" class="hideLink" onclick="hide('platform_packages_apps_SafetyRegulatoryInfo');return false;">-</a>&nbsp;<a name="platform_packages_apps_SafetyRegulatoryInfo" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/SafetyRegulatoryInfo">platform/packages/apps/SafetyRegulatoryInfo</a></h2>
-<div id="platform_packages_apps_SafetyRegulatoryInfo"><a href="https://android.googlesource.com/platform/packages/apps/SafetyRegulatoryInfo/+/4ee53e1">4ee53e1</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_SafetyRegulatoryInfo"><a href="https://android.googlesource.com/platform/packages/apps/SafetyRegulatoryInfo/+/4ee53e1">4ee53e1</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
-<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/55314158845">55314158845</a> :  Hide non-system overlay window on ActivityPicker<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/793da920725">793da920725</a> :  Restrict secondary users to share Wi-Fi network<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/562a4a05c3a">562a4a05c3a</a> :  Change default USB configuration to a RestrictedPreference<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/03874ba7110">03874ba7110</a> :  Hide private DNS settings UI in Guest mode<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/d4aabac2567">d4aabac2567</a> :  Use android.app.AlertDialog in SetupChooseLockGeneric<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/0a4574da1df">0a4574da1df</a> :  [Settings] SIM colors are referenced by getIntArray() within source code<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/b7df6767eed">b7df6767eed</a> :  Do not let guest user disable secure nfc<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9c54bb2e027">9c54bb2e027</a> :  Added lottie animations for udfps side/tip<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/f8dc7676c28">f8dc7676c28</a> :  Added lottie animations for udfps side/tip<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/f200614c70a">f200614c70a</a> :  Added lottie animations for udfps side/tip<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/e66708b1eb9">e66708b1eb9</a> :  Revert "Return enrollment consent status to caller."<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/c18e0b740ba">c18e0b740ba</a> :  Fix the issue of permanent loading when Wi-Fi is disabled<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/022c562accf">022c562accf</a> :  Fix crash due to traffic light face Lottie animation<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/f67b96048ea">f67b96048ea</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/d7149d676eb">d7149d676eb</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/55314158845">55314158845</a> :  Hide non-system overlay window on ActivityPicker
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/793da920725">793da920725</a> :  Restrict secondary users to share Wi-Fi network
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/562a4a05c3a">562a4a05c3a</a> :  Change default USB configuration to a RestrictedPreference
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/03874ba7110">03874ba7110</a> :  Hide private DNS settings UI in Guest mode
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/d4aabac2567">d4aabac2567</a> :  Use android.app.AlertDialog in SetupChooseLockGeneric
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/0a4574da1df">0a4574da1df</a> :  [Settings] SIM colors are referenced by getIntArray() within source code
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/b7df6767eed">b7df6767eed</a> :  Do not let guest user disable secure nfc
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9c54bb2e027">9c54bb2e027</a> :  Added lottie animations for udfps side/tip
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/f8dc7676c28">f8dc7676c28</a> :  Added lottie animations for udfps side/tip
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/f200614c70a">f200614c70a</a> :  Added lottie animations for udfps side/tip
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/e66708b1eb9">e66708b1eb9</a> :  Revert "Return enrollment consent status to caller."
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/c18e0b740ba">c18e0b740ba</a> :  Fix the issue of permanent loading when Wi-Fi is disabled
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/022c562accf">022c562accf</a> :  Fix crash due to traffic light face Lottie animation
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/f67b96048ea">f67b96048ea</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/d7149d676eb">d7149d676eb</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_StorageManager-show" class="showLink" onclick="show('platform_packages_apps_StorageManager');return false;">+</a><a href="#" id="platform_packages_apps_StorageManager-hide" class="hideLink" onclick="hide('platform_packages_apps_StorageManager');return false;">-</a>&nbsp;<a name="platform_packages_apps_StorageManager" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/StorageManager">platform/packages/apps/StorageManager</a></h2>
-<div id="platform_packages_apps_StorageManager"><a href="https://android.googlesource.com/platform/packages/apps/StorageManager/+/fb0081b">fb0081b</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/StorageManager/+/a5ae587">a5ae587</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_StorageManager"><a href="https://android.googlesource.com/platform/packages/apps/StorageManager/+/fb0081b">fb0081b</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/StorageManager/+/a5ae587">a5ae587</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Tag-show" class="showLink" onclick="show('platform_packages_apps_Tag');return false;">+</a><a href="#" id="platform_packages_apps_Tag-hide" class="hideLink" onclick="hide('platform_packages_apps_Tag');return false;">-</a>&nbsp;<a name="platform_packages_apps_Tag" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Tag">platform/packages/apps/Tag</a></h2>
-<div id="platform_packages_apps_Tag"><a href="https://android.googlesource.com/platform/packages/apps/Tag/+/2647dc3">2647dc3</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_Tag"><a href="https://android.googlesource.com/platform/packages/apps/Tag/+/2647dc3">2647dc3</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_ThemePicker-show" class="showLink" onclick="show('platform_packages_apps_ThemePicker');return false;">+</a><a href="#" id="platform_packages_apps_ThemePicker-hide" class="hideLink" onclick="hide('platform_packages_apps_ThemePicker');return false;">-</a>&nbsp;<a name="platform_packages_apps_ThemePicker" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ThemePicker">platform/packages/apps/ThemePicker</a></h2>
-<div id="platform_packages_apps_ThemePicker"><a href="https://android.googlesource.com/platform/packages/apps/ThemePicker/+/cd8fe12e">cd8fe12e</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_ThemePicker"><a href="https://android.googlesource.com/platform/packages/apps/ThemePicker/+/cd8fe12e">cd8fe12e</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Traceur-show" class="showLink" onclick="show('platform_packages_apps_Traceur');return false;">+</a><a href="#" id="platform_packages_apps_Traceur-hide" class="hideLink" onclick="hide('platform_packages_apps_Traceur');return false;">-</a>&nbsp;<a name="platform_packages_apps_Traceur" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Traceur">platform/packages/apps/Traceur</a></h2>
-<div id="platform_packages_apps_Traceur"><a href="https://android.googlesource.com/platform/packages/apps/Traceur/+/3d9578d">3d9578d</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_Traceur"><a href="https://android.googlesource.com/platform/packages/apps/Traceur/+/3d9578d">3d9578d</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_TvSettings-show" class="showLink" onclick="show('platform_packages_apps_TvSettings');return false;">+</a><a href="#" id="platform_packages_apps_TvSettings-hide" class="hideLink" onclick="hide('platform_packages_apps_TvSettings');return false;">-</a>&nbsp;<a name="platform_packages_apps_TvSettings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/TvSettings">platform/packages/apps/TvSettings</a></h2>
-<div id="platform_packages_apps_TvSettings"><a href="https://android.googlesource.com/platform/packages/apps/TvSettings/+/588294256">588294256</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_TvSettings"><a href="https://android.googlesource.com/platform/packages/apps/TvSettings/+/588294256">588294256</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_WallpaperPicker2-show" class="showLink" onclick="show('platform_packages_apps_WallpaperPicker2');return false;">+</a><a href="#" id="platform_packages_apps_WallpaperPicker2-hide" class="hideLink" onclick="hide('platform_packages_apps_WallpaperPicker2');return false;">-</a>&nbsp;<a name="platform_packages_apps_WallpaperPicker2" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/WallpaperPicker2">platform/packages/apps/WallpaperPicker2</a></h2>
-<div id="platform_packages_apps_WallpaperPicker2"><a href="https://android.googlesource.com/platform/packages/apps/WallpaperPicker2/+/fb98e320">fb98e320</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_apps_WallpaperPicker2"><a href="https://android.googlesource.com/platform/packages/apps/WallpaperPicker2/+/fb98e320">fb98e320</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_CaptivePortalLogin-show" class="showLink" onclick="show('platform_packages_modules_CaptivePortalLogin');return false;">+</a><a href="#" id="platform_packages_modules_CaptivePortalLogin-hide" class="hideLink" onclick="hide('platform_packages_modules_CaptivePortalLogin');return false;">-</a>&nbsp;<a name="platform_packages_modules_CaptivePortalLogin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/CaptivePortalLogin">platform/packages/modules/CaptivePortalLogin</a></h2>
-<div id="platform_packages_modules_CaptivePortalLogin"><a href="https://android.googlesource.com/platform/packages/modules/CaptivePortalLogin/+/a9134fe">a9134fe</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_modules_CaptivePortalLogin"><a href="https://android.googlesource.com/platform/packages/modules/CaptivePortalLogin/+/a9134fe">a9134fe</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_CellBroadcastService-show" class="showLink" onclick="show('platform_packages_modules_CellBroadcastService');return false;">+</a><a href="#" id="platform_packages_modules_CellBroadcastService-hide" class="hideLink" onclick="hide('platform_packages_modules_CellBroadcastService');return false;">-</a>&nbsp;<a name="platform_packages_modules_CellBroadcastService" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/CellBroadcastService">platform/packages/modules/CellBroadcastService</a></h2>
-<div id="platform_packages_modules_CellBroadcastService"><a href="https://android.googlesource.com/platform/packages/modules/CellBroadcastService/+/ba8ef4e">ba8ef4e</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_modules_CellBroadcastService"><a href="https://android.googlesource.com/platform/packages/modules/CellBroadcastService/+/ba8ef4e">ba8ef4e</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Connectivity-show" class="showLink" onclick="show('platform_packages_modules_Connectivity');return false;">+</a><a href="#" id="platform_packages_modules_Connectivity-hide" class="hideLink" onclick="hide('platform_packages_modules_Connectivity');return false;">-</a>&nbsp;<a name="platform_packages_modules_Connectivity" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Connectivity">platform/packages/modules/Connectivity</a></h2>
-<div id="platform_packages_modules_Connectivity"><a href="https://android.googlesource.com/platform/packages/modules/Connectivity/+/477b15ca43">477b15ca43</a> :  Do not verify field count in tests used in CTS<br />
+<div id="platform_packages_modules_Connectivity"><a href="https://android.googlesource.com/platform/packages/modules/Connectivity/+/477b15ca43">477b15ca43</a> :  Do not verify field count in tests used in CTS
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_ExtServices-show" class="showLink" onclick="show('platform_packages_modules_ExtServices');return false;">+</a><a href="#" id="platform_packages_modules_ExtServices-hide" class="hideLink" onclick="hide('platform_packages_modules_ExtServices');return false;">-</a>&nbsp;<a name="platform_packages_modules_ExtServices" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/ExtServices">platform/packages/modules/ExtServices</a></h2>
-<div id="platform_packages_modules_ExtServices"><a href="https://android.googlesource.com/platform/packages/modules/ExtServices/+/09dc8a2">09dc8a2</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_modules_ExtServices"><a href="https://android.googlesource.com/platform/packages/modules/ExtServices/+/09dc8a2">09dc8a2</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_NetworkStack-show" class="showLink" onclick="show('platform_packages_modules_NetworkStack');return false;">+</a><a href="#" id="platform_packages_modules_NetworkStack-hide" class="hideLink" onclick="hide('platform_packages_modules_NetworkStack');return false;">-</a>&nbsp;<a name="platform_packages_modules_NetworkStack" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/NetworkStack">platform/packages/modules/NetworkStack</a></h2>
-<div id="platform_packages_modules_NetworkStack"><a href="https://android.googlesource.com/platform/packages/modules/NetworkStack/+/1ac2be9b">1ac2be9b</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_modules_NetworkStack"><a href="https://android.googlesource.com/platform/packages/modules/NetworkStack/+/1ac2be9b">1ac2be9b</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
-<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/b7ee59660">b7ee59660</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/a39f1214f">a39f1214f</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/b7ee59660">b7ee59660</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/modules/Permission/+/a39f1214f">a39f1214f</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
-<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/1834b2fd73">1834b2fd73</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/d3da11ae0e">d3da11ae0e</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/13cc9fee9e">13cc9fee9e</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/1834b2fd73">1834b2fd73</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/d3da11ae0e">d3da11ae0e</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/13cc9fee9e">13cc9fee9e</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_adb-show" class="showLink" onclick="show('platform_packages_modules_adb');return false;">+</a><a href="#" id="platform_packages_modules_adb-hide" class="hideLink" onclick="hide('platform_packages_modules_adb');return false;">-</a>&nbsp;<a name="platform_packages_modules_adb" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/adb">platform/packages/modules/adb</a></h2>
-<div id="platform_packages_modules_adb"><a href="https://android.googlesource.com/platform/packages/modules/adb/+/6e8945a5">6e8945a5</a> :  Backport of Win-specific suppression of potentially rogue construct that can engage in directory traversal on the host.<br />
-<a href="https://android.googlesource.com/platform/packages/modules/adb/+/aac30037">aac30037</a> :  Temporarily manually change versionName in apex_manifest.json<br />
-<a href="https://android.googlesource.com/platform/packages/modules/adb/+/bde7c6ca">bde7c6ca</a> :  Temporarily manually change versionName in apex_manifest.json<br />
+<div id="platform_packages_modules_adb"><a href="https://android.googlesource.com/platform/packages/modules/adb/+/6e8945a5">6e8945a5</a> :  Backport of Win-specific suppression of potentially rogue construct that can engage in directory traversal on the host.
+<a href="https://android.googlesource.com/platform/packages/modules/adb/+/aac30037">aac30037</a> :  Temporarily manually change versionName in apex_manifest.json
+<a href="https://android.googlesource.com/platform/packages/modules/adb/+/bde7c6ca">bde7c6ca</a> :  Temporarily manually change versionName in apex_manifest.json
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_providers_ContactsProvider-show" class="showLink" onclick="show('platform_packages_providers_ContactsProvider');return false;">+</a><a href="#" id="platform_packages_providers_ContactsProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_ContactsProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_ContactsProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider">platform/packages/providers/ContactsProvider</a></h2>
-<div id="platform_packages_providers_ContactsProvider"><a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/6a071c69">6a071c69</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/b4a61eaa">b4a61eaa</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_providers_ContactsProvider"><a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/6a071c69">6a071c69</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/providers/ContactsProvider/+/b4a61eaa">b4a61eaa</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_providers_DownloadProvider-show" class="showLink" onclick="show('platform_packages_providers_DownloadProvider');return false;">+</a><a href="#" id="platform_packages_providers_DownloadProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_DownloadProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_DownloadProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/DownloadProvider">platform/packages/providers/DownloadProvider</a></h2>
-<div id="platform_packages_providers_DownloadProvider"><a href="https://android.googlesource.com/platform/packages/providers/DownloadProvider/+/710c9798">710c9798</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_providers_DownloadProvider"><a href="https://android.googlesource.com/platform/packages/providers/DownloadProvider/+/710c9798">710c9798</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
-<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/b82a6e9ca">b82a6e9ca</a> :  Restrict legacy apps to insert files to other private app dirs<br />
-<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/ea853d082">ea853d082</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/b82a6e9ca">b82a6e9ca</a> :  Restrict legacy apps to insert files to other private app dirs
+<a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/ea853d082">ea853d082</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_providers_TvProvider-show" class="showLink" onclick="show('platform_packages_providers_TvProvider');return false;">+</a><a href="#" id="platform_packages_providers_TvProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_TvProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_TvProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/TvProvider">platform/packages/providers/TvProvider</a></h2>
-<div id="platform_packages_providers_TvProvider"><a href="https://android.googlesource.com/platform/packages/providers/TvProvider/+/682ba8e">682ba8e</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_providers_TvProvider"><a href="https://android.googlesource.com/platform/packages/providers/TvProvider/+/682ba8e">682ba8e</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_services_BuiltInPrintService-show" class="showLink" onclick="show('platform_packages_services_BuiltInPrintService');return false;">+</a><a href="#" id="platform_packages_services_BuiltInPrintService-hide" class="hideLink" onclick="hide('platform_packages_services_BuiltInPrintService');return false;">-</a>&nbsp;<a name="platform_packages_services_BuiltInPrintService" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/BuiltInPrintService">platform/packages/services/BuiltInPrintService</a></h2>
-<div id="platform_packages_services_BuiltInPrintService"><a href="https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/ca107d5">ca107d5</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_services_BuiltInPrintService"><a href="https://android.googlesource.com/platform/packages/services/BuiltInPrintService/+/ca107d5">ca107d5</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_services_Car-show" class="showLink" onclick="show('platform_packages_services_Car');return false;">+</a><a href="#" id="platform_packages_services_Car-hide" class="hideLink" onclick="hide('platform_packages_services_Car');return false;">-</a>&nbsp;<a name="platform_packages_services_Car" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Car">platform/packages/services/Car</a></h2>
-<div id="platform_packages_services_Car"><a href="https://android.googlesource.com/platform/packages/services/Car/+/3c80e6034e">3c80e6034e</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/services/Car/+/12995d7a16">12995d7a16</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_services_Car"><a href="https://android.googlesource.com/platform/packages/services/Car/+/3c80e6034e">3c80e6034e</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/services/Car/+/12995d7a16">12995d7a16</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_services_Iwlan-show" class="showLink" onclick="show('platform_packages_services_Iwlan');return false;">+</a><a href="#" id="platform_packages_services_Iwlan-hide" class="hideLink" onclick="hide('platform_packages_services_Iwlan');return false;">-</a>&nbsp;<a name="platform_packages_services_Iwlan" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Iwlan">platform/packages/services/Iwlan</a></h2>
-<div id="platform_packages_services_Iwlan"><a href="https://android.googlesource.com/platform/packages/services/Iwlan/+/c0a5dc3">c0a5dc3</a> :  Correct the logic for updating mNetwork<br />
+<div id="platform_packages_services_Iwlan"><a href="https://android.googlesource.com/platform/packages/services/Iwlan/+/c0a5dc3">c0a5dc3</a> :  Correct the logic for updating mNetwork
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
-<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/54a1cff41">54a1cff41</a> :  limit TelecomManager#registerPhoneAccount to 10<br />
-<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/964f87efb">964f87efb</a> :  Handle null bindings returned from ConnectionService.<br />
-<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/476f462b5">476f462b5</a> :  Revert "Remove BIND_ALLOW_BACKGROUND_ACTIVITY_STARTS for ConnectionService bind."<br />
-<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/add9201b2">add9201b2</a> :  Add pending intent immutability to Call block disabled notification.<br />
-<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/ce979c9ca">ce979c9ca</a> :  Add pending intent immutability to Call block disabled notification.<br />
-<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/38f83ad63">38f83ad63</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/54a1cff41">54a1cff41</a> :  limit TelecomManager#registerPhoneAccount to 10
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/964f87efb">964f87efb</a> :  Handle null bindings returned from ConnectionService.
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/476f462b5">476f462b5</a> :  Revert "Remove BIND_ALLOW_BACKGROUND_ACTIVITY_STARTS for ConnectionService bind."
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/add9201b2">add9201b2</a> :  Add pending intent immutability to Call block disabled notification.
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/ce979c9ca">ce979c9ca</a> :  Add pending intent immutability to Call block disabled notification.
+<a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/38f83ad63">38f83ad63</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
-<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/4f6fed3dd">4f6fed3dd</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/4f6fed3dd">4f6fed3dd</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_wallpapers_LivePicker-show" class="showLink" onclick="show('platform_packages_wallpapers_LivePicker');return false;">+</a><a href="#" id="platform_packages_wallpapers_LivePicker-hide" class="hideLink" onclick="hide('platform_packages_wallpapers_LivePicker');return false;">-</a>&nbsp;<a name="platform_packages_wallpapers_LivePicker" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/wallpapers/LivePicker">platform/packages/wallpapers/LivePicker</a></h2>
-<div id="platform_packages_wallpapers_LivePicker"><a href="https://android.googlesource.com/platform/packages/wallpapers/LivePicker/+/99949e2">99949e2</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<div id="platform_packages_wallpapers_LivePicker"><a href="https://android.googlesource.com/platform/packages/wallpapers/LivePicker/+/99949e2">99949e2</a> :  Import translations. DO NOT MERGE ANYWHERE
 </div></p>
 
 <p><h2><a href="#" id="platform_system_core-show" class="showLink" onclick="show('platform_system_core');return false;">+</a><a href="#" id="platform_system_core-hide" class="hideLink" onclick="hide('platform_system_core');return false;">-</a>&nbsp;<a name="platform_system_core" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/core">platform/system/core</a></h2>
-<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/f53f37180">f53f37180</a> :  init: Wait for snapuserd before starting second stage<br />
+<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/f53f37180">f53f37180</a> :  init: Wait for snapuserd before starting second stage
 </div></p>
 
 <p><h2><a href="#" id="platform_system_memory_lmkd-show" class="showLink" onclick="show('platform_system_memory_lmkd');return false;">+</a><a href="#" id="platform_system_memory_lmkd-hide" class="hideLink" onclick="hide('platform_system_memory_lmkd');return false;">-</a>&nbsp;<a name="platform_system_memory_lmkd" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/memory/lmkd">platform/system/memory/lmkd</a></h2>
-<div id="platform_system_memory_lmkd"><a href="https://android.googlesource.com/platform/system/memory/lmkd/+/7b50cf5">7b50cf5</a> :  lmkd: Log psi averages in killinfo reports<br />
-<a href="https://android.googlesource.com/platform/system/memory/lmkd/+/88e9759">88e9759</a> :  lmkd: Allow killing perceptible apps when recorded stall is too high<br />
+<div id="platform_system_memory_lmkd"><a href="https://android.googlesource.com/platform/system/memory/lmkd/+/7b50cf5">7b50cf5</a> :  lmkd: Log psi averages in killinfo reports
+<a href="https://android.googlesource.com/platform/system/memory/lmkd/+/88e9759">88e9759</a> :  lmkd: Allow killing perceptible apps when recorded stall is too high
 </div></p>
 
 <p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
-<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/b1a9ecff">b1a9ecff</a> :  OOBR in nfc_ncif_proc_ee_discover_req()<br />
-<a href="https://android.googlesource.com/platform/system/nfc/+/2a0067cb">2a0067cb</a> :  Double Free in ce_t4t_data_cback<br />
-<a href="https://android.googlesource.com/platform/system/nfc/+/7b0513ef">7b0513ef</a> :  Out of Bounds Read in nfa_dm_check_set_config<br />
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/b1a9ecff">b1a9ecff</a> :  OOBR in nfc_ncif_proc_ee_discover_req()
+<a href="https://android.googlesource.com/platform/system/nfc/+/2a0067cb">2a0067cb</a> :  Double Free in ce_t4t_data_cback
+<a href="https://android.googlesource.com/platform/system/nfc/+/7b0513ef">7b0513ef</a> :  Out of Bounds Read in nfa_dm_check_set_config
 </div></p>
 
 <p><h2><a href="#" id="platform_system_sepolicy-show" class="showLink" onclick="show('platform_system_sepolicy');return false;">+</a><a href="#" id="platform_system_sepolicy-hide" class="hideLink" onclick="hide('platform_system_sepolicy');return false;">-</a>&nbsp;<a name="platform_system_sepolicy" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/sepolicy">platform/system/sepolicy</a></h2>
-<div id="platform_system_sepolicy"><a href="https://android.googlesource.com/platform/system/sepolicy/+/6cf2cf1b3">6cf2cf1b3</a> :  Add ro.lmk.stall_limit_critical property policies<br />
-<a href="https://android.googlesource.com/platform/system/sepolicy/+/d702d0229">d702d0229</a> :  Allow MediaProvider to access the media metrics service<br />
-<a href="https://android.googlesource.com/platform/system/sepolicy/+/72bb622f4">72bb622f4</a> :  Ensure that only desired processes can access TracingServiceProxy<br />
-<a href="https://android.googlesource.com/platform/system/sepolicy/+/43cf7f63f">43cf7f63f</a> :  Revert "Revert "priv_app: use per-app selinux contexts""<br />
+<div id="platform_system_sepolicy"><a href="https://android.googlesource.com/platform/system/sepolicy/+/6cf2cf1b3">6cf2cf1b3</a> :  Add ro.lmk.stall_limit_critical property policies
+<a href="https://android.googlesource.com/platform/system/sepolicy/+/d702d0229">d702d0229</a> :  Allow MediaProvider to access the media metrics service
+<a href="https://android.googlesource.com/platform/system/sepolicy/+/72bb622f4">72bb622f4</a> :  Ensure that only desired processes can access TracingServiceProxy
+<a href="https://android.googlesource.com/platform/system/sepolicy/+/43cf7f63f">43cf7f63f</a> :  Revert "Revert "priv_app: use per-app selinux contexts""
 </div></p>
 
 
@@ -755,7 +751,7 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+                <p class="text-body-secondary">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
             </div>
         </div>
     </div>

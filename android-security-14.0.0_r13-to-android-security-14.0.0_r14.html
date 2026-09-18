@@ -4,11 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght@6..144,25..151,1..1000&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./assets/style.css" >
-<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -34,23 +35,18 @@ function hide(sectionId) {
 </script>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      </ul>
+    <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto"></ul>
     </div>
   </div>
-</div>
-<div class="container card">
+</nav>
+<div class="container">
 <div class="row">
     <div class="col-md-12">
         <h1>android-security-14.0.0_r13 to android-security-14.0.0_r14 AOSP changelog</h1>
@@ -70,52 +66,52 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="col-md-12">
         <div id="changes">
 <p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
-<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/15e9588ffa">15e9588ffa</a> :  Version bump to USV1.230808.028 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/84c0824865">84c0824865</a> :  Version bump to USV1.230808.027 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/953afc1ce1">953afc1ce1</a> :  Version bump to USV1.230808.026 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/3021518836">3021518836</a> :  Version bump to USV1.230808.025 [core/build_id.mk]<br />
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/15e9588ffa">15e9588ffa</a> :  Version bump to USV1.230808.028 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/84c0824865">84c0824865</a> :  Version bump to USV1.230808.027 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/953afc1ce1">953afc1ce1</a> :  Version bump to USV1.230808.026 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/3021518836">3021518836</a> :  Version bump to USV1.230808.025 [core/build_id.mk]
 </div></p>
 
 <p><h2><a href="#" id="platform_external_skia-show" class="showLink" onclick="show('platform_external_skia');return false;">+</a><a href="#" id="platform_external_skia-hide" class="hideLink" onclick="hide('platform_external_skia');return false;">-</a>&nbsp;<a name="platform_external_skia" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/skia">platform/external/skia</a></h2>
-<div id="platform_external_skia"><a href="https://android.googlesource.com/platform/external/skia/+/0b628a960e">0b628a960e</a> :  RESTRICT AUTOMERGE: Avoid potential overflow when allocating 3D mask from emboss filter<br />
+<div id="platform_external_skia"><a href="https://android.googlesource.com/platform/external/skia/+/0b628a960e">0b628a960e</a> :  RESTRICT AUTOMERGE: Avoid potential overflow when allocating 3D mask from emboss filter
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
-<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/67d6e0832201">67d6e0832201</a> :  Restrict access to directories<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/4677d3ee0ec2">4677d3ee0ec2</a> :  RESTRICT AUTOMERGE Clear app-provided shortcut icons<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/31c098c4271a">31c098c4271a</a> :  Disallow device admin package and protected packages to be reinstalled as instant.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/2457d4e459ee">2457d4e459ee</a> :  Set no data transfer on function switch timeout for accessory mode<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/50eec20b570c">50eec20b570c</a> :  Check more URIs in notifications<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/86c2c60dd9ba">86c2c60dd9ba</a> :  RingtoneManager: allow video ringtone URI<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/55a3d36701bb">55a3d36701bb</a> :  Remove authenticator data if it was disabled.<br />
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/67d6e0832201">67d6e0832201</a> :  Restrict access to directories
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4677d3ee0ec2">4677d3ee0ec2</a> :  RESTRICT AUTOMERGE Clear app-provided shortcut icons
+<a href="https://android.googlesource.com/platform/frameworks/base/+/31c098c4271a">31c098c4271a</a> :  Disallow device admin package and protected packages to be reinstalled as instant.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2457d4e459ee">2457d4e459ee</a> :  Set no data transfer on function switch timeout for accessory mode
+<a href="https://android.googlesource.com/platform/frameworks/base/+/50eec20b570c">50eec20b570c</a> :  Check more URIs in notifications
+<a href="https://android.googlesource.com/platform/frameworks/base/+/86c2c60dd9ba">86c2c60dd9ba</a> :  RingtoneManager: allow video ringtone URI
+<a href="https://android.googlesource.com/platform/frameworks/base/+/55a3d36701bb">55a3d36701bb</a> :  Remove authenticator data if it was disabled.
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
-<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/eb7cf7e9df">eb7cf7e9df</a> :  Fix DisplayState sanitization.<br />
-<a href="https://android.googlesource.com/platform/frameworks/native/+/d72f7f4200">d72f7f4200</a> :  Revert "Fix DisplayState sanitization."<br />
-<a href="https://android.googlesource.com/platform/frameworks/native/+/24bddbdd6d">24bddbdd6d</a> :  Fix DisplayState sanitization.<br />
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/eb7cf7e9df">eb7cf7e9df</a> :  Fix DisplayState sanitization.
+<a href="https://android.googlesource.com/platform/frameworks/native/+/d72f7f4200">d72f7f4200</a> :  Revert "Fix DisplayState sanitization."
+<a href="https://android.googlesource.com/platform/frameworks/native/+/24bddbdd6d">24bddbdd6d</a> :  Fix DisplayState sanitization.
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
-<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/975c2853541">975c2853541</a> :  Checks cross user permission before handling intent<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/26ce013dfd7">26ce013dfd7</a> :  startActivityForResult with new Intent<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/6253b87704b">6253b87704b</a> :  RESTRICT AUTOMERGE Stops hiding a11y services with the same package+label as an activity.<br />
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/975c2853541">975c2853541</a> :  Checks cross user permission before handling intent
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/26ce013dfd7">26ce013dfd7</a> :  startActivityForResult with new Intent
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/6253b87704b">6253b87704b</a> :  RESTRICT AUTOMERGE Stops hiding a11y services with the same package+label as an activity.
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
-<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/62f61e1952">62f61e1952</a> :  Fix security isseu by change the field in WifiConfig<br />
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/62f61e1952">62f61e1952</a> :  Fix security isseu by change the field in WifiConfig
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
-<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/33ff6a663">33ff6a663</a> :  Prevent apps from renaming files they don't own<br />
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/33ff6a663">33ff6a663</a> :  Prevent apps from renaming files they don't own
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
-<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/386e16ae2">386e16ae2</a> :  Revert "DO NOT MERGE"<br />
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/386e16ae2">386e16ae2</a> :  Revert "DO NOT MERGE"
 </div></p>
 
 <p><h2><a href="#" id="platform_system_keymint-show" class="showLink" onclick="show('platform_system_keymint');return false;">+</a><a href="#" id="platform_system_keymint-hide" class="hideLink" onclick="hide('platform_system_keymint');return false;">-</a>&nbsp;<a name="platform_system_keymint" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/keymint">platform/system/keymint</a></h2>
-<div id="platform_system_keymint"><a href="https://android.googlesource.com/platform/system/keymint/+/1f6bf0c">1f6bf0c</a> :  Update legacy provisioning msg list<br />
+<div id="platform_system_keymint"><a href="https://android.googlesource.com/platform/system/keymint/+/1f6bf0c">1f6bf0c</a> :  Update legacy provisioning msg list
 </div></p>
 
 
@@ -128,7 +124,7 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+                <p class="text-body-secondary">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
             </div>
         </div>
     </div>

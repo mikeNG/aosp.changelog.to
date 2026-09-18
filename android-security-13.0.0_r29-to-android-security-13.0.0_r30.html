@@ -4,11 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght@6..144,25..151,1..1000&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./assets/style.css" >
-<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -34,23 +35,18 @@ function hide(sectionId) {
 </script>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      </ul>
+    <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto"></ul>
     </div>
   </div>
-</div>
-<div class="container card">
+</nav>
+<div class="container">
 <div class="row">
     <div class="col-md-12">
         <h1>android-security-13.0.0_r29 to android-security-13.0.0_r30 AOSP changelog</h1>
@@ -70,38 +66,38 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="col-md-12">
         <div id="changes">
 <p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
-<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/12ccb355c7">12ccb355c7</a> :  Version bump to TSV1.220628.080 [core/build_id.mk]<br />
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/12ccb355c7">12ccb355c7</a> :  Version bump to TSV1.220628.080 [core/build_id.mk]
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
-<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/011c760e4b">011c760e4b</a> :  mediandk: clean up AMediaCodec_getInput/OutputBuffer semantics<br />
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/011c760e4b">011c760e4b</a> :  mediandk: clean up AMediaCodec_getInput/OutputBuffer semantics
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
-<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/7533875af284">7533875af284</a> :  PM: Restrict subclass construction.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/eb25997c2dd6">eb25997c2dd6</a> :  Guard against excessively long package names and certificates.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/e5bdb6bc1acd">e5bdb6bc1acd</a> :  fix: Unbind an A11yService from onNullBinding<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/477045b32130">477045b32130</a> :  Fixing the default values for pending intent at LocationPendingIntentTransport.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/3743d1dad4c1">3743d1dad4c1</a> :  Use ParceledListSlice for ZenModeConfig and AutomaticZenRules<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/0618fe6b5b32">0618fe6b5b32</a> :  Zero-initialize CursorWindow buffer<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/e061bde6eef6">e061bde6eef6</a> :  DO NOT MERGE: Verify KeyEvents in IME<br />
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/7533875af284">7533875af284</a> :  PM: Restrict subclass construction.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/eb25997c2dd6">eb25997c2dd6</a> :  Guard against excessively long package names and certificates.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e5bdb6bc1acd">e5bdb6bc1acd</a> :  fix: Unbind an A11yService from onNullBinding
+<a href="https://android.googlesource.com/platform/frameworks/base/+/477045b32130">477045b32130</a> :  Fixing the default values for pending intent at LocationPendingIntentTransport.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3743d1dad4c1">3743d1dad4c1</a> :  Use ParceledListSlice for ZenModeConfig and AutomaticZenRules
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0618fe6b5b32">0618fe6b5b32</a> :  Zero-initialize CursorWindow buffer
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e061bde6eef6">e061bde6eef6</a> :  DO NOT MERGE: Verify KeyEvents in IME
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
-<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/9e633e910">9e633e910</a> :  Fix confused deputy vulnerability in termsActivity to access terms_disclaimer Uri only if the calling app has the permissions<br />
-<a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/7e72425a7">7e72425a7</a> :  Remove invalid URLs in terms activity<br />
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/9e633e910">9e633e910</a> :  Fix confused deputy vulnerability in termsActivity to access terms_disclaimer Uri only if the calling app has the permissions
+<a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/7e72425a7">7e72425a7</a> :  Remove invalid URLs in terms activity
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
-<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/edefb0087d">edefb0087d</a> :  RESTRICT AUTOMERGE parse userId from authority in opp in the same way as ContentProvider<br />
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/edefb0087d">edefb0087d</a> :  RESTRICT AUTOMERGE parse userId from authority in opp in the same way as ContentProvider
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Connectivity-show" class="showLink" onclick="show('platform_packages_modules_Connectivity');return false;">+</a><a href="#" id="platform_packages_modules_Connectivity-hide" class="hideLink" onclick="hide('platform_packages_modules_Connectivity');return false;">-</a>&nbsp;<a name="platform_packages_modules_Connectivity" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Connectivity">platform/packages/modules/Connectivity</a></h2>
-<div id="platform_packages_modules_Connectivity"><a href="https://android.googlesource.com/platform/packages/modules/Connectivity/+/b5c655f0f6">b5c655f0f6</a> :  Add missing permission check to offerNetwork<br />
+<div id="platform_packages_modules_Connectivity"><a href="https://android.googlesource.com/platform/packages/modules/Connectivity/+/b5c655f0f6">b5c655f0f6</a> :  Add missing permission check to offerNetwork
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
-<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/38499b18c7">38499b18c7</a> :  Display the system gallery storage permission as system fixed<br />
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/38499b18c7">38499b18c7</a> :  Display the system gallery storage permission as system fixed
 </div></p>
 
 
@@ -114,7 +110,7 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+                <p class="text-body-secondary">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
             </div>
         </div>
     </div>

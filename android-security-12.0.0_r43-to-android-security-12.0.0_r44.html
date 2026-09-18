@@ -4,11 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght@6..144,25..151,1..1000&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./assets/style.css" >
-<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -34,23 +35,18 @@ function hide(sectionId) {
 </script>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      </ul>
+    <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto"></ul>
     </div>
   </div>
-</div>
-<div class="container card">
+</nav>
+<div class="container">
 <div class="row">
     <div class="col-md-12">
         <h1>android-security-12.0.0_r43 to android-security-12.0.0_r44 AOSP changelog</h1>
@@ -70,66 +66,66 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="col-md-12">
         <div id="changes">
 <p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
-<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/311145b92e">311145b92e</a> :  Version bump to SSV1.210916.054 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/c23ca43573">c23ca43573</a> :  Version bump to SSV1.210916.053 [core/build_id.mk]<br />
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/311145b92e">311145b92e</a> :  Version bump to SSV1.210916.054 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/c23ca43573">c23ca43573</a> :  Version bump to SSV1.210916.053 [core/build_id.mk]
 </div></p>
 
 <p><h2><a href="#" id="platform_external_expat-show" class="showLink" onclick="show('platform_external_expat');return false;">+</a><a href="#" id="platform_external_expat-hide" class="hideLink" onclick="hide('platform_external_expat');return false;">-</a>&nbsp;<a name="platform_external_expat" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/expat">platform/external/expat</a></h2>
-<div id="platform_external_expat"><a href="https://android.googlesource.com/platform/external/expat/+/ac7aa55a">ac7aa55a</a> :  [CVE-2022-43680] Fix overeager DTD destruction (fixes #649)<br />
+<div id="platform_external_expat"><a href="https://android.googlesource.com/platform/external/expat/+/ac7aa55a">ac7aa55a</a> :  [CVE-2022-43680] Fix overeager DTD destruction (fixes #649)
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
-<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/ec942b17a9">ec942b17a9</a> :  move MediaCodec metrics processing to looper thread<br />
-<a href="https://android.googlesource.com/platform/frameworks/av/+/323e700ba8">323e700ba8</a> :  RESTRICT AUTOMERGE Use static token for myAttributionSource in ServiceUtilities<br />
-<a href="https://android.googlesource.com/platform/frameworks/av/+/a41382ef37">a41382ef37</a> :  Fix Out of Bounds Read in AAVCAssembler<br />
-<a href="https://android.googlesource.com/platform/frameworks/av/+/34804c2cce">34804c2cce</a> :  audio: fix missing package name in attribution source<br />
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/ec942b17a9">ec942b17a9</a> :  move MediaCodec metrics processing to looper thread
+<a href="https://android.googlesource.com/platform/frameworks/av/+/323e700ba8">323e700ba8</a> :  RESTRICT AUTOMERGE Use static token for myAttributionSource in ServiceUtilities
+<a href="https://android.googlesource.com/platform/frameworks/av/+/a41382ef37">a41382ef37</a> :  Fix Out of Bounds Read in AAVCAssembler
+<a href="https://android.googlesource.com/platform/frameworks/av/+/34804c2cce">34804c2cce</a> :  audio: fix missing package name in attribution source
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
-<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/c6f5d72cea12">c6f5d72cea12</a> :  Disable click on privacy chip before provision<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/2777165c17d8">2777165c17d8</a> :  RESTRICT AUTOMERGE Use chain start token in performOpTransaction<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/560d3deedc46">560d3deedc46</a> :  Use rule package name in addAutomaticZenRule; specify "android" for all system apps<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/876ae86c9fc2">876ae86c9fc2</a> :  Convert argument to intent in ChooseTypeAndAccountActivity<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/c1c2efd3f7e6">c1c2efd3f7e6</a> :  [RESTRICT AUTOMERGE] Correct the behavior of ACTION_PACKAGE_DATA_CLEARED<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/50f7af560c51">50f7af560c51</a> :  [DO NOT MERGE] Revert "Check rule package name in ZenModeHelper.addAutomaticRule"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/12ccd08c0a1b">12ccd08c0a1b</a> :  [DO NOT MERGE] Revert "Fix system zen rules by using owner package name if caller is system"<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/0a1612dee7e3">0a1612dee7e3</a> :  [DO NOT MERGE] fpService#authWithPrompt uses correct user handle.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/fbb31134ac2f">fbb31134ac2f</a> :  Fix system zen rules by using owner package name if caller is system<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/3037af55ed28">3037af55ed28</a> :  Check rule package name in ZenModeHelper.addAutomaticRule<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/cf56e7e2940e">cf56e7e2940e</a> :  Make Activites touch opaque - DO NOT MERGE<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/15b2c2981222">15b2c2981222</a> :  [DO NOT MERGE] Do not clear calling identify when using BiometricPrompt from FingerprintService.<br />
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/c6f5d72cea12">c6f5d72cea12</a> :  Disable click on privacy chip before provision
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2777165c17d8">2777165c17d8</a> :  RESTRICT AUTOMERGE Use chain start token in performOpTransaction
+<a href="https://android.googlesource.com/platform/frameworks/base/+/560d3deedc46">560d3deedc46</a> :  Use rule package name in addAutomaticZenRule; specify "android" for all system apps
+<a href="https://android.googlesource.com/platform/frameworks/base/+/876ae86c9fc2">876ae86c9fc2</a> :  Convert argument to intent in ChooseTypeAndAccountActivity
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c1c2efd3f7e6">c1c2efd3f7e6</a> :  [RESTRICT AUTOMERGE] Correct the behavior of ACTION_PACKAGE_DATA_CLEARED
+<a href="https://android.googlesource.com/platform/frameworks/base/+/50f7af560c51">50f7af560c51</a> :  [DO NOT MERGE] Revert "Check rule package name in ZenModeHelper.addAutomaticRule"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/12ccd08c0a1b">12ccd08c0a1b</a> :  [DO NOT MERGE] Revert "Fix system zen rules by using owner package name if caller is system"
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0a1612dee7e3">0a1612dee7e3</a> :  [DO NOT MERGE] fpService#authWithPrompt uses correct user handle.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fbb31134ac2f">fbb31134ac2f</a> :  Fix system zen rules by using owner package name if caller is system
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3037af55ed28">3037af55ed28</a> :  Check rule package name in ZenModeHelper.addAutomaticRule
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cf56e7e2940e">cf56e7e2940e</a> :  Make Activites touch opaque - DO NOT MERGE
+<a href="https://android.googlesource.com/platform/frameworks/base/+/15b2c2981222">15b2c2981222</a> :  [DO NOT MERGE] Do not clear calling identify when using BiometricPrompt from FingerprintService.
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
-<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/11fb9f667f">11fb9f667f</a> :  Allow windowhandles with NO_INPUT_CHANNEL - DO NOT MERGE<br />
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/11fb9f667f">11fb9f667f</a> :  Allow windowhandles with NO_INPUT_CHANNEL - DO NOT MERGE
 </div></p>
 
 <p><h2><a href="#" id="platform_hardware_interfaces-show" class="showLink" onclick="show('platform_hardware_interfaces');return false;">+</a><a href="#" id="platform_hardware_interfaces-hide" class="hideLink" onclick="hide('platform_hardware_interfaces');return false;">-</a>&nbsp;<a name="platform_hardware_interfaces" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/interfaces">platform/hardware/interfaces</a></h2>
-<div id="platform_hardware_interfaces"><a href="https://android.googlesource.com/platform/hardware/interfaces/+/bc119ccb7c">bc119ccb7c</a> :  Add additional bounds checks to NNAPI FMQ deserialize utility functions<br />
+<div id="platform_hardware_interfaces"><a href="https://android.googlesource.com/platform/hardware/interfaces/+/bc119ccb7c">bc119ccb7c</a> :  Add additional bounds checks to NNAPI FMQ deserialize utility functions
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_EmergencyInfo-show" class="showLink" onclick="show('platform_packages_apps_EmergencyInfo');return false;">+</a><a href="#" id="platform_packages_apps_EmergencyInfo-hide" class="hideLink" onclick="hide('platform_packages_apps_EmergencyInfo');return false;">-</a>&nbsp;<a name="platform_packages_apps_EmergencyInfo" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo">platform/packages/apps/EmergencyInfo</a></h2>
-<div id="platform_packages_apps_EmergencyInfo"><a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/1b90e48b">1b90e48b</a> :  Removes unnecessary permission from the EmergencyInfo app.<br />
+<div id="platform_packages_apps_EmergencyInfo"><a href="https://android.googlesource.com/platform/packages/apps/EmergencyInfo/+/1b90e48b">1b90e48b</a> :  Removes unnecessary permission from the EmergencyInfo app.
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
-<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/64b1543c876">64b1543c876</a> :  RESTRICT AUTOMERGE Make bluetooth switch not discoverable via SliceDeepLinkTrampoline<br />
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/64b1543c876">64b1543c876</a> :  RESTRICT AUTOMERGE Make bluetooth switch not discoverable via SliceDeepLinkTrampoline
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_NeuralNetworks-show" class="showLink" onclick="show('platform_packages_modules_NeuralNetworks');return false;">+</a><a href="#" id="platform_packages_modules_NeuralNetworks-hide" class="hideLink" onclick="hide('platform_packages_modules_NeuralNetworks');return false;">-</a>&nbsp;<a name="platform_packages_modules_NeuralNetworks" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks">platform/packages/modules/NeuralNetworks</a></h2>
-<div id="platform_packages_modules_NeuralNetworks"><a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/3b995ff9d">3b995ff9d</a> :  Add additional bounds checks to NNAPI FMQ deserialize utility functions<br />
+<div id="platform_packages_modules_NeuralNetworks"><a href="https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/3b995ff9d">3b995ff9d</a> :  Add additional bounds checks to NNAPI FMQ deserialize utility functions
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Permission-show" class="showLink" onclick="show('platform_packages_modules_Permission');return false;">+</a><a href="#" id="platform_packages_modules_Permission-hide" class="hideLink" onclick="hide('platform_packages_modules_Permission');return false;">-</a>&nbsp;<a name="platform_packages_modules_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Permission">platform/packages/modules/Permission</a></h2>
-<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/596c5aa46">596c5aa46</a> :  Add one-time flag to permission if group is currently one-time<br />
+<div id="platform_packages_modules_Permission"><a href="https://android.googlesource.com/platform/packages/modules/Permission/+/596c5aa46">596c5aa46</a> :  Add one-time flag to permission if group is currently one-time
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Wifi-show" class="showLink" onclick="show('platform_packages_modules_Wifi');return false;">+</a><a href="#" id="platform_packages_modules_Wifi-hide" class="hideLink" onclick="hide('platform_packages_modules_Wifi');return false;">-</a>&nbsp;<a name="platform_packages_modules_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Wifi">platform/packages/modules/Wifi</a></h2>
-<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/bd5b511e4b">bd5b511e4b</a> :  [DO NOT MERGE] wifi: Reset to default SAP configuration when doing factory reset<br />
+<div id="platform_packages_modules_Wifi"><a href="https://android.googlesource.com/platform/packages/modules/Wifi/+/bd5b511e4b">bd5b511e4b</a> :  [DO NOT MERGE] wifi: Reset to default SAP configuration when doing factory reset
 </div></p>
 
 <p><h2><a href="#" id="platform_system_connectivity_wificond-show" class="showLink" onclick="show('platform_system_connectivity_wificond');return false;">+</a><a href="#" id="platform_system_connectivity_wificond-hide" class="hideLink" onclick="hide('platform_system_connectivity_wificond');return false;">-</a>&nbsp;<a name="platform_system_connectivity_wificond" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/connectivity/wificond">platform/system/connectivity/wificond</a></h2>
-<div id="platform_system_connectivity_wificond"><a href="https://android.googlesource.com/platform/system/connectivity/wificond/+/30d9781">30d9781</a> :  Use sp&lt;T&gt;::make to create the sp pointer for EventLoopCallback<br />
+<div id="platform_system_connectivity_wificond"><a href="https://android.googlesource.com/platform/system/connectivity/wificond/+/30d9781">30d9781</a> :  Use sp&lt;T&gt;::make to create the sp pointer for EventLoopCallback
 </div></p>
 
 
@@ -142,7 +138,7 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+                <p class="text-body-secondary">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
             </div>
         </div>
     </div>

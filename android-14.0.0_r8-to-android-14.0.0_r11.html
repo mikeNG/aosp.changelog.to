@@ -4,11 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght@6..144,25..151,1..1000&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./assets/style.css" >
-<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -34,23 +35,18 @@ function hide(sectionId) {
 </script>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      </ul>
+    <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto"></ul>
     </div>
   </div>
-</div>
-<div class="container card">
+</nav>
+<div class="container">
 <div class="row">
     <div class="col-md-12">
         <h1>android-14.0.0_r8 to android-14.0.0_r11 AOSP changelog</h1>
@@ -70,146 +66,146 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="col-md-12">
         <div id="changes">
 <p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
-<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/56922231c1">56922231c1</a> :  Version bump to UD1A.230803.041 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/00aa6ab0fd">00aa6ab0fd</a> :  Version bump to UD1A.230803.022.Y1 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/83acbceb7b">83acbceb7b</a> :  Version bump to UD1A.230803.022.Z3 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b914b766fe">b914b766fe</a> :  Version bump to UD1A.230803.040 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/92b98ea699">92b98ea699</a> :  Version bump to UD1A.230803.022.Z2 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/4044c207c5">4044c207c5</a> :  Version bump to UD1A.230803.039 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/5d609a43c8">5d609a43c8</a> :  Version bump to UD1A.230803.022.Z1 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b172092648">b172092648</a> :  Version bump to UD1A.230803.038 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b635a7097b">b635a7097b</a> :  Version bump to UD1A.230803.037 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/fbc9122c43">fbc9122c43</a> :  Version bump to UD1A.230803.036 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/5af0c4292a">5af0c4292a</a> :  Version bump to UD1A.230803.035 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/a5ed253ec6">a5ed253ec6</a> :  Version bump to UD1A.230803.034 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/f49812947c">f49812947c</a> :  Version bump to UD1A.230803.033 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/eb167f9370">eb167f9370</a> :  Version bump to UD1A.230803.032 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/b86f472867">b86f472867</a> :  Version bump to UD1A.230803.031 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/0879d14d89">0879d14d89</a> :  Version bump to UD1A.230803.022.D1 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/7f174eaf01">7f174eaf01</a> :  Version bump to UD1A.230803.022.A5 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/12fd7d531e">12fd7d531e</a> :  Version bump to UD1A.230803.022.C1 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/2725e66b86">2725e66b86</a> :  Version bump to UD1A.230803.030 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/a9b5761312">a9b5761312</a> :  Version bump to UD1A.230803.029 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/9eff021894">9eff021894</a> :  Version bump to UD1A.230803.022.A4 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/5384e9c6b6">5384e9c6b6</a> :  Version bump to UD1A.230803.028 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/ecc2ac07bf">ecc2ac07bf</a> :  Update Security String to 2023-10-05<br />
-<a href="https://android.googlesource.com/platform/build/+/fe92fa8449">fe92fa8449</a> :  Version bump to UD1A.230803.022.A3 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/5a0b138842">5a0b138842</a> :  Version bump to UD1A.230803.026 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/38e4705e89">38e4705e89</a> :  Version bump to UD1A.230803.022.A2 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/c68684a6b7">c68684a6b7</a> :  Version bump to UD1A.230803.025 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/3279f486b7">3279f486b7</a> :  Version bump to UD1A.230803.024 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/05a95e54ed">05a95e54ed</a> :  Version bump to UD1A.230803.022.A1 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/5da682f0b7">5da682f0b7</a> :  Version bump to UD1A.230803.023 [core/build_id.mk]<br />
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/56922231c1">56922231c1</a> :  Version bump to UD1A.230803.041 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/00aa6ab0fd">00aa6ab0fd</a> :  Version bump to UD1A.230803.022.Y1 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/83acbceb7b">83acbceb7b</a> :  Version bump to UD1A.230803.022.Z3 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b914b766fe">b914b766fe</a> :  Version bump to UD1A.230803.040 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/92b98ea699">92b98ea699</a> :  Version bump to UD1A.230803.022.Z2 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/4044c207c5">4044c207c5</a> :  Version bump to UD1A.230803.039 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/5d609a43c8">5d609a43c8</a> :  Version bump to UD1A.230803.022.Z1 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b172092648">b172092648</a> :  Version bump to UD1A.230803.038 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b635a7097b">b635a7097b</a> :  Version bump to UD1A.230803.037 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/fbc9122c43">fbc9122c43</a> :  Version bump to UD1A.230803.036 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/5af0c4292a">5af0c4292a</a> :  Version bump to UD1A.230803.035 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/a5ed253ec6">a5ed253ec6</a> :  Version bump to UD1A.230803.034 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/f49812947c">f49812947c</a> :  Version bump to UD1A.230803.033 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/eb167f9370">eb167f9370</a> :  Version bump to UD1A.230803.032 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/b86f472867">b86f472867</a> :  Version bump to UD1A.230803.031 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/0879d14d89">0879d14d89</a> :  Version bump to UD1A.230803.022.D1 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/7f174eaf01">7f174eaf01</a> :  Version bump to UD1A.230803.022.A5 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/12fd7d531e">12fd7d531e</a> :  Version bump to UD1A.230803.022.C1 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/2725e66b86">2725e66b86</a> :  Version bump to UD1A.230803.030 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/a9b5761312">a9b5761312</a> :  Version bump to UD1A.230803.029 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/9eff021894">9eff021894</a> :  Version bump to UD1A.230803.022.A4 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/5384e9c6b6">5384e9c6b6</a> :  Version bump to UD1A.230803.028 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/ecc2ac07bf">ecc2ac07bf</a> :  Update Security String to 2023-10-05
+<a href="https://android.googlesource.com/platform/build/+/fe92fa8449">fe92fa8449</a> :  Version bump to UD1A.230803.022.A3 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/5a0b138842">5a0b138842</a> :  Version bump to UD1A.230803.026 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/38e4705e89">38e4705e89</a> :  Version bump to UD1A.230803.022.A2 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/c68684a6b7">c68684a6b7</a> :  Version bump to UD1A.230803.025 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/3279f486b7">3279f486b7</a> :  Version bump to UD1A.230803.024 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/05a95e54ed">05a95e54ed</a> :  Version bump to UD1A.230803.022.A1 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/5da682f0b7">5da682f0b7</a> :  Version bump to UD1A.230803.023 [core/build_id.mk]
 </div></p>
 
 <p><h2><a href="#" id="device_google_shusky-show" class="showLink" onclick="show('device_google_shusky');return false;">+</a><a href="#" id="device_google_shusky-hide" class="hideLink" onclick="hide('device_google_shusky');return false;">-</a>&nbsp;<a name="device_google_shusky" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/shusky">device/google/shusky</a></h2>
-<div id="device_google_shusky"><a href="https://android.googlesource.com/device/google/shusky/+/318f32a">318f32a</a> :  Revert "Adjust height ratio for keyboard"<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/c6d2209">c6d2209</a> :  Adjust height ratio for keyboard<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/1bcead3">1bcead3</a> :  powerhint: mask game mode tuning for app launch<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/2570c23">2570c23</a> :  powerhint: disable prefer_idle in game mode<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/507472f">507472f</a> :  powerhint: game mode tuning<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/5f81337">5f81337</a> :  powerhint: add tapered_dvfs_headroom_enabled node<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/eecae0b">eecae0b</a> :  Disable limiting camera_hal for LAUNCH hint<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/5120cc6">5120cc6</a> :  Disable Smooth Display by default<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/b6d465a">b6d465a</a> :  Disable Smooth Display by default<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/af8c493">af8c493</a> :  Jump SVN to 2<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/c6dc45a">c6dc45a</a> :  Update ./DevInfo/Mod model name<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/39ef68b">39ef68b</a> :  Disable Smooth Display by default<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/5f81c69">5f81c69</a> :  Disable Smooth Display by default<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/6775314">6775314</a> :  audio: FM table check in (2023/08/28) for telephony.<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/00b81c5">00b81c5</a> :  husky: Update OOTF LUT<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/6ace24c">6ace24c</a> :  Jump SVN to 3<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/32356d4">32356d4</a> :  Jump SVN to 2<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/2ac34bf">2ac34bf</a> :  Jump SVN to 2<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/44a8d88">44a8d88</a> :  Add config_selected_udfps_touch_detection to HK3<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/9060876">9060876</a> :  Update ./DevInfo/Mod model name<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/2f3ef80">2f3ef80</a> :  Boost top-app during FP storage access<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/a52950f">a52950f</a> :  Update ./DevInfo/Mod model name<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/d0bf8bd">d0bf8bd</a> :  audio: FRC Exit recording tuning table update<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/4b9bfb6">4b9bfb6</a> :  display: remove blocking zone<br />
-<a href="https://android.googlesource.com/device/google/shusky/+/7a778a9">7a778a9</a> :  Update lock icon padding which is also used for UDFPS<br />
+<div id="device_google_shusky"><a href="https://android.googlesource.com/device/google/shusky/+/318f32a">318f32a</a> :  Revert "Adjust height ratio for keyboard"
+<a href="https://android.googlesource.com/device/google/shusky/+/c6d2209">c6d2209</a> :  Adjust height ratio for keyboard
+<a href="https://android.googlesource.com/device/google/shusky/+/1bcead3">1bcead3</a> :  powerhint: mask game mode tuning for app launch
+<a href="https://android.googlesource.com/device/google/shusky/+/2570c23">2570c23</a> :  powerhint: disable prefer_idle in game mode
+<a href="https://android.googlesource.com/device/google/shusky/+/507472f">507472f</a> :  powerhint: game mode tuning
+<a href="https://android.googlesource.com/device/google/shusky/+/5f81337">5f81337</a> :  powerhint: add tapered_dvfs_headroom_enabled node
+<a href="https://android.googlesource.com/device/google/shusky/+/eecae0b">eecae0b</a> :  Disable limiting camera_hal for LAUNCH hint
+<a href="https://android.googlesource.com/device/google/shusky/+/5120cc6">5120cc6</a> :  Disable Smooth Display by default
+<a href="https://android.googlesource.com/device/google/shusky/+/b6d465a">b6d465a</a> :  Disable Smooth Display by default
+<a href="https://android.googlesource.com/device/google/shusky/+/af8c493">af8c493</a> :  Jump SVN to 2
+<a href="https://android.googlesource.com/device/google/shusky/+/c6dc45a">c6dc45a</a> :  Update ./DevInfo/Mod model name
+<a href="https://android.googlesource.com/device/google/shusky/+/39ef68b">39ef68b</a> :  Disable Smooth Display by default
+<a href="https://android.googlesource.com/device/google/shusky/+/5f81c69">5f81c69</a> :  Disable Smooth Display by default
+<a href="https://android.googlesource.com/device/google/shusky/+/6775314">6775314</a> :  audio: FM table check in (2023/08/28) for telephony.
+<a href="https://android.googlesource.com/device/google/shusky/+/00b81c5">00b81c5</a> :  husky: Update OOTF LUT
+<a href="https://android.googlesource.com/device/google/shusky/+/6ace24c">6ace24c</a> :  Jump SVN to 3
+<a href="https://android.googlesource.com/device/google/shusky/+/32356d4">32356d4</a> :  Jump SVN to 2
+<a href="https://android.googlesource.com/device/google/shusky/+/2ac34bf">2ac34bf</a> :  Jump SVN to 2
+<a href="https://android.googlesource.com/device/google/shusky/+/44a8d88">44a8d88</a> :  Add config_selected_udfps_touch_detection to HK3
+<a href="https://android.googlesource.com/device/google/shusky/+/9060876">9060876</a> :  Update ./DevInfo/Mod model name
+<a href="https://android.googlesource.com/device/google/shusky/+/2f3ef80">2f3ef80</a> :  Boost top-app during FP storage access
+<a href="https://android.googlesource.com/device/google/shusky/+/a52950f">a52950f</a> :  Update ./DevInfo/Mod model name
+<a href="https://android.googlesource.com/device/google/shusky/+/d0bf8bd">d0bf8bd</a> :  audio: FRC Exit recording tuning table update
+<a href="https://android.googlesource.com/device/google/shusky/+/4b9bfb6">4b9bfb6</a> :  display: remove blocking zone
+<a href="https://android.googlesource.com/device/google/shusky/+/7a778a9">7a778a9</a> :  Update lock icon padding which is also used for UDFPS
 </div></p>
 
 <p><h2><a href="#" id="device_google_zuma-show" class="showLink" onclick="show('device_google_zuma');return false;">+</a><a href="#" id="device_google_zuma-hide" class="hideLink" onclick="hide('device_google_zuma');return false;">-</a>&nbsp;<a name="device_google_zuma" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/zuma">device/google/zuma</a></h2>
-<div id="device_google_zuma"><a href="https://android.googlesource.com/device/google/zuma/+/590a83c">590a83c</a> :  Revert "Revert "init.zuma.rc: Disable util-awareness for mids and bigs""<br />
-<a href="https://android.googlesource.com/device/google/zuma/+/275420e">275420e</a> :  Add task_profiles MaxPerformance for storageproxyd<br />
+<div id="device_google_zuma"><a href="https://android.googlesource.com/device/google/zuma/+/590a83c">590a83c</a> :  Revert "Revert "init.zuma.rc: Disable util-awareness for mids and bigs""
+<a href="https://android.googlesource.com/device/google/zuma/+/275420e">275420e</a> :  Add task_profiles MaxPerformance for storageproxyd
 </div></p>
 
 <p><h2><a href="#" id="device_google_zuma-sepolicy-show" class="showLink" onclick="show('device_google_zuma-sepolicy');return false;">+</a><a href="#" id="device_google_zuma-sepolicy-hide" class="hideLink" onclick="hide('device_google_zuma-sepolicy');return false;">-</a>&nbsp;<a name="device_google_zuma-sepolicy" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/zuma-sepolicy">device/google/zuma-sepolicy</a></h2>
-<div id="device_google_zuma-sepolicy"><a href="https://android.googlesource.com/device/google/zuma-sepolicy/+/700c697">700c697</a> :  Allow hal_power_default to access sysfs_scsi_devices_0000<br />
+<div id="device_google_zuma-sepolicy"><a href="https://android.googlesource.com/device/google/zuma-sepolicy/+/700c697">700c697</a> :  Allow hal_power_default to access sysfs_scsi_devices_0000
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
-<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/b6d0430c30">b6d0430c30</a> :  Hide accurate onFrameRendered calls behind render metrics feature flag<br />
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/b6d0430c30">b6d0430c30</a> :  Hide accurate onFrameRendered calls behind render metrics feature flag
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
-<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/f55d872482db">f55d872482db</a> :  Don't skip resume on transient-launch activity<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/0fa31dde63e3">0fa31dde63e3</a> :  Fix light reveal state<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/8dfea2b9758b">8dfea2b9758b</a> :  Test new upgrade steps<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/b0ead136d1dd">b0ead136d1dd</a> :  Update the behavior to match the documentation.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/0bdc3bb349ae">0bdc3bb349ae</a> :  Fix StorageStatsService#getTotalBytes<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/5db28b1dd290">5db28b1dd290</a> :  Add device logger for active device and action state change<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/7b140282c249">7b140282c249</a> :  Fix possible leaks in CanvasContext HintSessionWrapper<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/4a5614c70c4d">4a5614c70c4d</a> :  Update process animating state with different reasons<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/1c30970845eb">1c30970845eb</a> :  Check isInteractive after traversal before hiding keyguard.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/748d4e479159">748d4e479159</a> :  Add a flag byForegroundService to enqueueNotification() call.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/541c20605d89">541c20605d89</a> :  RESTRICT AUTOMERGE: SettingsProvider: exclude secure_frp_mode from resets<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/9718f8ba4d49">9718f8ba4d49</a> :  [MediaProjection] Address deadlock between multiple services<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/51820099def5">51820099def5</a> :  Fix null pointer exception when getting app label for headless app<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/8bf4449d902f">8bf4449d902f</a> :  Implement targetSize in BoundingBoxOverlapDetector<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/112739014bf4">112739014bf4</a> :  Add a 5 second timeout to launch animation touch blocking<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/0158be304bda">0158be304bda</a> :  Add LogBuffer that passively tracks touch handling in the shade<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/b49613bb6e1a">b49613bb6e1a</a> :  Update operationContext with sessionInfo for Atom logs<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/4d9e94c9b23d">4d9e94c9b23d</a> :  skip load refresh rate profile if null<br />
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/f55d872482db">f55d872482db</a> :  Don't skip resume on transient-launch activity
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0fa31dde63e3">0fa31dde63e3</a> :  Fix light reveal state
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8dfea2b9758b">8dfea2b9758b</a> :  Test new upgrade steps
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b0ead136d1dd">b0ead136d1dd</a> :  Update the behavior to match the documentation.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0bdc3bb349ae">0bdc3bb349ae</a> :  Fix StorageStatsService#getTotalBytes
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5db28b1dd290">5db28b1dd290</a> :  Add device logger for active device and action state change
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7b140282c249">7b140282c249</a> :  Fix possible leaks in CanvasContext HintSessionWrapper
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4a5614c70c4d">4a5614c70c4d</a> :  Update process animating state with different reasons
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1c30970845eb">1c30970845eb</a> :  Check isInteractive after traversal before hiding keyguard.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/748d4e479159">748d4e479159</a> :  Add a flag byForegroundService to enqueueNotification() call.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/541c20605d89">541c20605d89</a> :  RESTRICT AUTOMERGE: SettingsProvider: exclude secure_frp_mode from resets
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9718f8ba4d49">9718f8ba4d49</a> :  [MediaProjection] Address deadlock between multiple services
+<a href="https://android.googlesource.com/platform/frameworks/base/+/51820099def5">51820099def5</a> :  Fix null pointer exception when getting app label for headless app
+<a href="https://android.googlesource.com/platform/frameworks/base/+/8bf4449d902f">8bf4449d902f</a> :  Implement targetSize in BoundingBoxOverlapDetector
+<a href="https://android.googlesource.com/platform/frameworks/base/+/112739014bf4">112739014bf4</a> :  Add a 5 second timeout to launch animation touch blocking
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0158be304bda">0158be304bda</a> :  Add LogBuffer that passively tracks touch handling in the shade
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b49613bb6e1a">b49613bb6e1a</a> :  Update operationContext with sessionInfo for Atom logs
+<a href="https://android.googlesource.com/platform/frameworks/base/+/4d9e94c9b23d">4d9e94c9b23d</a> :  skip load refresh rate profile if null
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
-<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/a81021b473">a81021b473</a> :  Improve updateInputFlinger performance<br />
-<a href="https://android.googlesource.com/platform/frameworks/native/+/cde05d38b5">cde05d38b5</a> :  Modify shader includes to match with vendor code<br />
-<a href="https://android.googlesource.com/platform/frameworks/native/+/c26344b3d1">c26344b3d1</a> :  SF: use frame rate override even when the physical range is single<br />
-<a href="https://android.googlesource.com/platform/frameworks/native/+/52c8c19b30">52c8c19b30</a> :  SF: fix a bug when render frame rate range is lower then supported<br />
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/a81021b473">a81021b473</a> :  Improve updateInputFlinger performance
+<a href="https://android.googlesource.com/platform/frameworks/native/+/cde05d38b5">cde05d38b5</a> :  Modify shader includes to match with vendor code
+<a href="https://android.googlesource.com/platform/frameworks/native/+/c26344b3d1">c26344b3d1</a> :  SF: use frame rate override even when the physical range is single
+<a href="https://android.googlesource.com/platform/frameworks/native/+/52c8c19b30">52c8c19b30</a> :  SF: fix a bug when render frame rate range is lower then supported
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
-<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/7b8fe588b8">7b8fe588b8</a> :  Update cardId for downloaded embedded profile<br />
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/7b8fe588b8">7b8fe588b8</a> :  Update cardId for downloaded embedded profile
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Contacts-show" class="showLink" onclick="show('platform_packages_apps_Contacts');return false;">+</a><a href="#" id="platform_packages_apps_Contacts-hide" class="hideLink" onclick="hide('platform_packages_apps_Contacts');return false;">-</a>&nbsp;<a name="platform_packages_apps_Contacts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Contacts">platform/packages/apps/Contacts</a></h2>
-<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/cc7ceaaeb">cc7ceaaeb</a> :  Don't allow importing contacts to accounts passed in by intent unless it is valid<br />
+<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/cc7ceaaeb">cc7ceaaeb</a> :  Don't allow importing contacts to accounts passed in by intent unless it is valid
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
-<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/ca19705064">ca19705064</a> :  Ensure Gesture Nav Edu animation scales to fit different screen sizes<br />
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/ca19705064">ca19705064</a> :  Ensure Gesture Nav Edu animation scales to fit different screen sizes
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
-<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/3a8d830d59c">3a8d830d59c</a> :  Update the API usage to get total size of devices<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/ff95e7c369b">ff95e7c369b</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9dbda9bd7ea">9dbda9bd7ea</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/afe6d48e5b7">afe6d48e5b7</a> :  RESTRICT AUTOMERGE: Catch exceptions from setLockCredential()<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/103a088e836">103a088e836</a> :  Fix talkback not announcing requirement in ChooseLock<br />
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/3a8d830d59c">3a8d830d59c</a> :  Update the API usage to get total size of devices
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/ff95e7c369b">ff95e7c369b</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/9dbda9bd7ea">9dbda9bd7ea</a> :  Import translations. DO NOT MERGE ANYWHERE
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/afe6d48e5b7">afe6d48e5b7</a> :  RESTRICT AUTOMERGE: Catch exceptions from setLockCredential()
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/103a088e836">103a088e836</a> :  Fix talkback not announcing requirement in ChooseLock
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Traceur-show" class="showLink" onclick="show('platform_packages_apps_Traceur');return false;">+</a><a href="#" id="platform_packages_apps_Traceur-hide" class="hideLink" onclick="hide('platform_packages_apps_Traceur');return false;">-</a>&nbsp;<a name="platform_packages_apps_Traceur" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Traceur">platform/packages/apps/Traceur</a></h2>
-<div id="platform_packages_apps_Traceur"><a href="https://android.googlesource.com/platform/packages/apps/Traceur/+/f353204">f353204</a> :  Remove drain_period_ms option from default config<br />
+<div id="platform_packages_apps_Traceur"><a href="https://android.googlesource.com/platform/packages/apps/Traceur/+/f353204">f353204</a> :  Remove drain_period_ms option from default config
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
-<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8b668cb82a">8b668cb82a</a> :  Validate buffer length in sdpu_build_uuid_seq<br />
-<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/201c18bb65">201c18bb65</a> :  Fix an integer underflow in build_read_multi_rsp<br />
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/8b668cb82a">8b668cb82a</a> :  Validate buffer length in sdpu_build_uuid_seq
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/201c18bb65">201c18bb65</a> :  Fix an integer underflow in build_read_multi_rsp
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
-<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/cec0387fe">cec0387fe</a> :  Fix vulnerability in CallRedirectionService.<br />
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/cec0387fe">cec0387fe</a> :  Fix vulnerability in CallRedirectionService.
 </div></p>
 
 <p><h2><a href="#" id="platform_system_core-show" class="showLink" onclick="show('platform_system_core');return false;">+</a><a href="#" id="platform_system_core-hide" class="hideLink" onclick="hide('platform_system_core');return false;">-</a>&nbsp;<a name="platform_system_core" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/core">platform/system/core</a></h2>
-<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/ba385197a">ba385197a</a> :  libprocessgroup: optimize SetAttributeAction::ExecuteForProcess performance<br />
+<div id="platform_system_core"><a href="https://android.googlesource.com/platform/system/core/+/ba385197a">ba385197a</a> :  libprocessgroup: optimize SetAttributeAction::ExecuteForProcess performance
 </div></p>
 
 <p><h2><a href="#" id="platform_system_vold-show" class="showLink" onclick="show('platform_system_vold');return false;">+</a><a href="#" id="platform_system_vold-hide" class="hideLink" onclick="hide('platform_system_vold');return false;">-</a>&nbsp;<a name="platform_system_vold" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/vold">platform/system/vold</a></h2>
-<div id="platform_system_vold"><a href="https://android.googlesource.com/platform/system/vold/+/0814d89c">0814d89c</a> :  Add vdc volume getStorageSize<br />
+<div id="platform_system_vold"><a href="https://android.googlesource.com/platform/system/vold/+/0814d89c">0814d89c</a> :  Add vdc volume getStorageSize
 </div></p>
 
 
@@ -222,7 +218,7 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+                <p class="text-body-secondary">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
             </div>
         </div>
     </div>

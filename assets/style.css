@@ -1,9 +1,13 @@
-html { position: relative; min-height: 100%; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 12pt; }
-body { font-family: 'Open Sans', Arial, Helvetica, sans-serif; }
-.navbar { background-image: none; }
-.navbar-default { background-color: #f5f5f5; border: none }
+html { position: relative; min-height: 100%; font-family: 'Google Sans Flex', Arial, Helvetica, sans-serif; font-size: 14px; }
+body { font-family: 'Google Sans Flex', Arial, Helvetica, sans-serif; }
+
+/* Restore the Bootstrap 3 typography defaults this site was built against. */
+a { color: #337ab7; text-decoration: none; }
+a:hover, a:focus { color: #23527c; text-decoration: underline; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top: 20px; margin-bottom: 10px; }
+h4, .h4, h5, .h5, h6, .h6 { margin-top: 10px; margin-bottom: 10px; }
+
 .donatebox { background: #eee; border-radius: 5px; padding: 10px}
-.navbar-brand a { color:#777 }
 .navbar-logo { position: relative; top: 50%; transform: translateY(-50%) }
 
 body { margin-bottom: 60px; margin-top: 60px; }
@@ -13,3 +17,19 @@ a.contactlink { text-decoration: none; color: #777; }
 #footer > .container { padding-right: 15px; padding-left: 15px; margin-top: 20px; }
 
 #changes .showLink { display: none }
+
+/* Large changelogs can contain hundreds of thousands of commit lines. Keep one
+   change per line via newlines (instead of a <br> element per line) and let the
+   browser skip layout/paint for project sections that are off-screen. */
+#changes div {
+	white-space: pre-line;
+	content-visibility: auto;
+	contain-intrinsic-size: auto 500px;
+}
+
+/* Monospace for the +/- project toggles. */
+#changes .showLink,
+#changes .hideLink { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+
+/* Monospace for commit hashes (links to a specific revision on googlesource). */
+#changes a[href*="/+/"] { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }

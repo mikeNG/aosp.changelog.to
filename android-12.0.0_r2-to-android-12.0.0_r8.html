@@ -4,11 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght@6..144,25..151,1..1000&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./assets/style.css" >
-<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <link rel="icon" href="./assets/favicon.svg" type="image/svg">
 <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -34,23 +35,18 @@ function hide(sectionId) {
 </script>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      </ul>
+    <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto"></ul>
     </div>
   </div>
-</div>
-<div class="container card">
+</nav>
+<div class="container">
 <div class="row">
     <div class="col-md-12">
         <h1>android-12.0.0_r2 to android-12.0.0_r8 AOSP changelog</h1>
@@ -70,76 +66,76 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="col-md-12">
         <div id="changes">
 <p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
-<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/c3fa5c5a55">c3fa5c5a55</a> :  Version bump to SP1A.211105.002 [core/build_id.mk]<br />
-<a href="https://android.googlesource.com/platform/build/+/65c38e6610">65c38e6610</a> :  Update Security String to 2021-11-05<br />
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/c3fa5c5a55">c3fa5c5a55</a> :  Version bump to SP1A.211105.002 [core/build_id.mk]
+<a href="https://android.googlesource.com/platform/build/+/65c38e6610">65c38e6610</a> :  Update Security String to 2021-11-05
 </div></p>
 
 <p><h2><a href="#" id="device_google_barbet-show" class="showLink" onclick="show('device_google_barbet');return false;">+</a><a href="#" id="device_google_barbet-hide" class="hideLink" onclick="hide('device_google_barbet');return false;">-</a>&nbsp;<a name="device_google_barbet" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/barbet">device/google/barbet</a></h2>
-<div id="device_google_barbet"><a href="https://android.googlesource.com/device/google/barbet/+/4e5016c">4e5016c</a> :  Update Barbet SVN to 12<br />
+<div id="device_google_barbet"><a href="https://android.googlesource.com/device/google/barbet/+/4e5016c">4e5016c</a> :  Update Barbet SVN to 12
 </div></p>
 
 <p><h2><a href="#" id="device_google_coral-show" class="showLink" onclick="show('device_google_coral');return false;">+</a><a href="#" id="device_google_coral-hide" class="hideLink" onclick="hide('device_google_coral');return false;">-</a>&nbsp;<a name="device_google_coral" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/coral">device/google/coral</a></h2>
-<div id="device_google_coral"><a href="https://android.googlesource.com/device/google/coral/+/40a80396">40a80396</a> :  Update Coral SVN to 48<br />
+<div id="device_google_coral"><a href="https://android.googlesource.com/device/google/coral/+/40a80396">40a80396</a> :  Update Coral SVN to 48
 </div></p>
 
 <p><h2><a href="#" id="device_google_redbull-show" class="showLink" onclick="show('device_google_redbull');return false;">+</a><a href="#" id="device_google_redbull-hide" class="hideLink" onclick="hide('device_google_redbull');return false;">-</a>&nbsp;<a name="device_google_redbull" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/redbull">device/google/redbull</a></h2>
-<div id="device_google_redbull"><a href="https://android.googlesource.com/device/google/redbull/+/fbd8725">fbd8725</a> :  Update Redbull SVN to 37<br />
+<div id="device_google_redbull"><a href="https://android.googlesource.com/device/google/redbull/+/fbd8725">fbd8725</a> :  Update Redbull SVN to 37
 </div></p>
 
 <p><h2><a href="#" id="device_google_sunfish-show" class="showLink" onclick="show('device_google_sunfish');return false;">+</a><a href="#" id="device_google_sunfish-hide" class="hideLink" onclick="hide('device_google_sunfish');return false;">-</a>&nbsp;<a name="device_google_sunfish" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/sunfish">device/google/sunfish</a></h2>
-<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/b20dd56f">b20dd56f</a> :  Update Sunfish SVN to 33<br />
+<div id="device_google_sunfish"><a href="https://android.googlesource.com/device/google/sunfish/+/b20dd56f">b20dd56f</a> :  Update Sunfish SVN to 33
 </div></p>
 
 <p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
-<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/39627225836a">39627225836a</a> :  [DO NOT MERGE] Make sure WiFi and Cell tiles are not created in Provider Model<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/5aaf7d855901">5aaf7d855901</a> :  FooterView color logic cleanup<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/cb890336d6a8">cb890336d6a8</a> :  Fix Security issue for Html.fromHtml without escape<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/3f7e5e446494">3f7e5e446494</a> :  Mark RECOGNIZE_SPEECH Filter as ONLY_IF_NO_MATCH_FOUND<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/20552b60ee15">20552b60ee15</a> :  TIF: fix issue of using caller-aware methods after clearCallingIdentity()<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/63777c0ca8e1">63777c0ca8e1</a> :  Revoke internal permissions upon owner change.<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/57f6ccc10b0a">57f6ccc10b0a</a> :  Prevent apps from spamming addAccountExplicitly. See comment here for the discussion on solution https://b.corp.google.com/issues/169762606#comment14<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/afa5f3c37aea">afa5f3c37aea</a> :  Bluetooth: Fix formatting in getAlias()<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/9a4e52fa5661">9a4e52fa5661</a> :  Use ArrayMap instead of SparseArray to manage the ProviderKey<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/d4fcdd283984">d4fcdd283984</a> :  Fix IME flickering when swiping out to home<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/58334b0b04e7">58334b0b04e7</a> :  Notification playback: pause on release<br />
-<a href="https://android.googlesource.com/platform/frameworks/base/+/ec361daff705">ec361daff705</a> :  Improve InsetsPolicy#adjustVisibilityForIme when switching apps<br />
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/39627225836a">39627225836a</a> :  [DO NOT MERGE] Make sure WiFi and Cell tiles are not created in Provider Model
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5aaf7d855901">5aaf7d855901</a> :  FooterView color logic cleanup
+<a href="https://android.googlesource.com/platform/frameworks/base/+/cb890336d6a8">cb890336d6a8</a> :  Fix Security issue for Html.fromHtml without escape
+<a href="https://android.googlesource.com/platform/frameworks/base/+/3f7e5e446494">3f7e5e446494</a> :  Mark RECOGNIZE_SPEECH Filter as ONLY_IF_NO_MATCH_FOUND
+<a href="https://android.googlesource.com/platform/frameworks/base/+/20552b60ee15">20552b60ee15</a> :  TIF: fix issue of using caller-aware methods after clearCallingIdentity()
+<a href="https://android.googlesource.com/platform/frameworks/base/+/63777c0ca8e1">63777c0ca8e1</a> :  Revoke internal permissions upon owner change.
+<a href="https://android.googlesource.com/platform/frameworks/base/+/57f6ccc10b0a">57f6ccc10b0a</a> :  Prevent apps from spamming addAccountExplicitly. See comment here for the discussion on solution https://b.corp.google.com/issues/169762606#comment14
+<a href="https://android.googlesource.com/platform/frameworks/base/+/afa5f3c37aea">afa5f3c37aea</a> :  Bluetooth: Fix formatting in getAlias()
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9a4e52fa5661">9a4e52fa5661</a> :  Use ArrayMap instead of SparseArray to manage the ProviderKey
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d4fcdd283984">d4fcdd283984</a> :  Fix IME flickering when swiping out to home
+<a href="https://android.googlesource.com/platform/frameworks/base/+/58334b0b04e7">58334b0b04e7</a> :  Notification playback: pause on release
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ec361daff705">ec361daff705</a> :  Improve InsetsPolicy#adjustVisibilityForIme when switching apps
 </div></p>
 
 <p><h2><a href="#" id="platform_hardware_nxp_nfc-show" class="showLink" onclick="show('platform_hardware_nxp_nfc');return false;">+</a><a href="#" id="platform_hardware_nxp_nfc-hide" class="hideLink" onclick="hide('platform_hardware_nxp_nfc');return false;">-</a>&nbsp;<a name="platform_hardware_nxp_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/hardware/nxp/nfc">platform/hardware/nxp/nfc</a></h2>
-<div id="platform_hardware_nxp_nfc"><a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/95e1dd9">95e1dd9</a> :  OOBW in phNxpNciHal_process_ext_rsp<br />
+<div id="platform_hardware_nxp_nfc"><a href="https://android.googlesource.com/platform/hardware/nxp/nfc/+/95e1dd9">95e1dd9</a> :  OOBW in phNxpNciHal_process_ext_rsp
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Contacts-show" class="showLink" onclick="show('platform_packages_apps_Contacts');return false;">+</a><a href="#" id="platform_packages_apps_Contacts-hide" class="hideLink" onclick="hide('platform_packages_apps_Contacts');return false;">-</a>&nbsp;<a name="platform_packages_apps_Contacts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Contacts">platform/packages/apps/Contacts</a></h2>
-<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/80dd1abac">80dd1abac</a> :  Add permission to start NFC activity to ensure it is from NFC stack<br />
+<div id="platform_packages_apps_Contacts"><a href="https://android.googlesource.com/platform/packages/apps/Contacts/+/80dd1abac">80dd1abac</a> :  Add permission to start NFC activity to ensure it is from NFC stack
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
-<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/0d53b02d23">0d53b02d23</a> :  Fixing ModelPreload cancelling existing load<br />
-<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/0ab476cb92">0ab476cb92</a> :  Only call setCurrentPage in applyLoadPlan if mCurrentPage is outdated<br />
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/0d53b02d23">0d53b02d23</a> :  Fixing ModelPreload cancelling existing load
+<a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/0ab476cb92">0ab476cb92</a> :  Only call setCurrentPage in applyLoadPlan if mCurrentPage is outdated
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_ManagedProvisioning-show" class="showLink" onclick="show('platform_packages_apps_ManagedProvisioning');return false;">+</a><a href="#" id="platform_packages_apps_ManagedProvisioning-hide" class="hideLink" onclick="hide('platform_packages_apps_ManagedProvisioning');return false;">-</a>&nbsp;<a name="platform_packages_apps_ManagedProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning">platform/packages/apps/ManagedProvisioning</a></h2>
-<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/28eb3e449">28eb3e449</a> :  [RESTRICT AUTOMERGE] Protect Context#startService from BackgroundServiceStartNotAllowedException<br />
+<div id="platform_packages_apps_ManagedProvisioning"><a href="https://android.googlesource.com/platform/packages/apps/ManagedProvisioning/+/28eb3e449">28eb3e449</a> :  [RESTRICT AUTOMERGE] Protect Context#startService from BackgroundServiceStartNotAllowedException
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
-<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/4d67f4c8471">4d67f4c8471</a> :  Hide Camera background running time in the battery usage screen<br />
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/4d67f4c8471">4d67f4c8471</a> :  Hide Camera background running time in the battery usage screen
 </div></p>
 
 <p><h2><a href="#" id="platform_packages_providers_MediaProvider-show" class="showLink" onclick="show('platform_packages_providers_MediaProvider');return false;">+</a><a href="#" id="platform_packages_providers_MediaProvider-hide" class="hideLink" onclick="hide('platform_packages_providers_MediaProvider');return false;">-</a>&nbsp;<a name="platform_packages_providers_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/providers/MediaProvider">platform/packages/providers/MediaProvider</a></h2>
-<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/f67688aff">f67688aff</a> :  transcoding: Empty the list and move to server side list.<br />
+<div id="platform_packages_providers_MediaProvider"><a href="https://android.googlesource.com/platform/packages/providers/MediaProvider/+/f67688aff">f67688aff</a> :  transcoding: Empty the list and move to server side list.
 </div></p>
 
 <p><h2><a href="#" id="platform_prebuilts_module_sdk_art-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_art');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_art-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_art');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_art" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/art">platform/prebuilts/module_sdk/art</a></h2>
-<div id="platform_prebuilts_module_sdk_art"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/art/+/06189d0">06189d0</a> :  DO NOT MERGE Drop prebuilt files to android source tree.<br />
+<div id="platform_prebuilts_module_sdk_art"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/art/+/06189d0">06189d0</a> :  DO NOT MERGE Drop prebuilt files to android source tree.
 </div></p>
 
 <p><h2><a href="#" id="platform_system_incremental_delivery-show" class="showLink" onclick="show('platform_system_incremental_delivery');return false;">+</a><a href="#" id="platform_system_incremental_delivery-hide" class="hideLink" onclick="hide('platform_system_incremental_delivery');return false;">-</a>&nbsp;<a name="platform_system_incremental_delivery" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/incremental_delivery">platform/system/incremental_delivery</a></h2>
-<div id="platform_system_incremental_delivery"><a href="https://android.googlesource.com/platform/system/incremental_delivery/+/2463a5d">2463a5d</a> :  Fix for loading progress for mapped files.<br />
+<div id="platform_system_incremental_delivery"><a href="https://android.googlesource.com/platform/system/incremental_delivery/+/2463a5d">2463a5d</a> :  Fix for loading progress for mapped files.
 </div></p>
 
 <p><h2><a href="#" id="platform_system_nfc-show" class="showLink" onclick="show('platform_system_nfc');return false;">+</a><a href="#" id="platform_system_nfc-hide" class="hideLink" onclick="hide('platform_system_nfc');return false;">-</a>&nbsp;<a name="platform_system_nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/system/nfc">platform/system/nfc</a></h2>
-<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/5dc0d849">5dc0d849</a> :  Tag-mismatch in rw_t4t_data_cback<br />
+<div id="platform_system_nfc"><a href="https://android.googlesource.com/platform/system/nfc/+/5dc0d849">5dc0d849</a> :  Tag-mismatch in rw_t4t_data_cback
 </div></p>
 
 
@@ -152,7 +148,7 @@ generated using a modified version of <a href="https://groups.google.com/d/msg/a
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+                <p class="text-body-secondary">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
             </div>
         </div>
     </div>
