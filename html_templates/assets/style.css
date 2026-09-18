@@ -18,6 +18,15 @@ a.contactlink { text-decoration: none; color: #777; }
 
 #changes .showLink { display: none }
 
+/* Large changelogs can contain hundreds of thousands of commit lines. Keep one
+   change per line via newlines (instead of a <br> element per line) and let the
+   browser skip layout/paint for project sections that are off-screen. */
+#changes div {
+	white-space: pre-line;
+	content-visibility: auto;
+	contain-intrinsic-size: auto 500px;
+}
+
 /* Monospace for the +/- project toggles. */
 #changes .showLink,
 #changes .hideLink { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }

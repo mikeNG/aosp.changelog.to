@@ -66,7 +66,7 @@ void writeChangeId(char *changeId) {
 void writeForkPoint() {	
 	fputs("Forked at : ", stdout);
 	writeChangeId(forkPoint);
-	fputs("<br /><br />", stdout);
+	fputs("\n\n", stdout);
 }
 
 
@@ -150,7 +150,7 @@ void newChange(char *line, int *changeCount) {
 		line++;
 	}
 	
-	fputs("<br />\n", stdout);
+	fputs("\n", stdout);
 }
 
 void processLine(char *line, int *changeCount) {

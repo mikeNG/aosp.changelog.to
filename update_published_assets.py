@@ -10,7 +10,8 @@ so this script brings them in line with the current templates:
   Bootstrap 5 bundle,
 * drop the unused Font Awesome reference,
 * rewrite the Bootstrap 3 navbar to the Bootstrap 5 markup,
-* rename the classes that were removed in Bootstrap 5.
+* rename the classes that were removed in Bootstrap 5,
+* drop the per-commit ``<br />`` now that changes are newline separated.
 
 Usage:
     ./update_published_assets.py [publish_dir]
@@ -51,7 +52,15 @@ CLASS_RENAMES = (
     ('class="text-muted"', 'class="text-body-secondary"'),
 )
 
-MARKER = "cdn.jsdelivr.net/npm/bootstrap@5.3.8"
+def strip_line_breaks(text):
+    """Drop the per-line <br /> now that changes are newline separated."""
+    if "<br />" not in text:
+        return text, False
+
+    # Keep the blank line that followed the "Forked at" merge-base link.
+    text = text.replace("<br /><br />", "\n\n")
+    text = text.replace("<br />", "")
+    return text, True
 
 
 def rewrite_head(text):
@@ -119,9 +128,6 @@ def rewrite_navbar(text):
 
 
 def rewrite(text):
-    if MARKER in text:
-        return text, False
-
     changed = False
     text, did = rewrite_head(text)
     changed = changed or did
@@ -132,6 +138,9 @@ def rewrite(text):
         if old in text:
             text = text.replace(old, new)
             changed = True
+
+    text, did = strip_line_breaks(text)
+    changed = changed or did
 
     return text, changed
 
