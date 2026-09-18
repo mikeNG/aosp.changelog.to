@@ -6,12 +6,13 @@ output_file="$publish_dir/index.html"
 
 function generate_version_divider() {
     local tab_id="$1"
+    local tab_label="$2"
 
     cat << EOF >> "$output_file"
                     </ul>
                 </div>
-                <div class="tab-pane" id="$tab_id">
-                    <h2>Android $tab_id</h2>
+                <div class="tab-pane" id="$tab_id" role="tabpanel">
+                    <h2>Android $tab_label</h2>
 
                     <ul>
 EOF
@@ -38,31 +39,31 @@ cat "${script_dir}/html_templates/index_header.html" > "$output_file"
 generate_tag_list "android-17"
 generate_tag_list "android-security-17"
 
-generate_version_divider "16"
+generate_version_divider "android-16" "16"
 generate_tag_list "android-16"
 generate_tag_list "android-security-16"
 
-generate_version_divider "15"
+generate_version_divider "android-15" "15"
 generate_tag_list "android-15"
 generate_tag_list "android-security-15"
 
-generate_version_divider "14"
+generate_version_divider "android-14" "14"
 generate_tag_list "android-14"
 generate_tag_list "android-security-14"
 
-generate_version_divider "13"
+generate_version_divider "android-13" "13"
 generate_tag_list "android-13"
 generate_tag_list "android-security-13"
 
-generate_version_divider "12L"
+generate_version_divider "android-12L" "12L"
 generate_tag_list "android-12.1"
 generate_tag_list "android-security-12.1"
 
-generate_version_divider "12"
+generate_version_divider "android-12" "12"
 generate_tag_list "android-12.0"
 generate_tag_list "android-security-12.0"
 
-generate_version_divider "11"
+generate_version_divider "android-11" "11"
 generate_tag_list "android-11"
 generate_tag_list "android-security-11"
 

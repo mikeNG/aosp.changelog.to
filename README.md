@@ -15,8 +15,8 @@ To generate changelogs you need:
 
 To preview or host the published site you only need `python3` (standard library only).
 
-The published pages load their front-end libraries from public CDNs: Bootstrap 3.4.1,
-jQuery 3.7.1 and the Google Sans Flex webfont (served by Google Fonts).
+The published pages load their front-end libraries from public CDNs: Bootstrap 5.3.8
+(no jQuery required) and the Google Sans Flex webfont (served by Google Fonts).
 
 ### Usage
 #### New tag notification
