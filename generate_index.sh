@@ -36,6 +36,7 @@ function generate_tag_list() {
 cat "${script_dir}/html_templates/index_header.html" > "$output_file"
 
 generate_tag_list "android-17"
+generate_tag_list "android-security-17"
 
 generate_version_divider "16"
 generate_tag_list "android-16"
